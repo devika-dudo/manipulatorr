@@ -1,0 +1,574 @@
+<?xml version="1.0"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="urdf_humble_test">
+  <link name="world"/>
+    <joint name="base_joint" type="fixed">
+       <parent link="world"/>
+       <child link="base_link"/>
+       <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
+    </joint>
+
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.121698985911283 -0.0236195696900434 0.0372916801910451"
+        rpy="0 0 0" />
+      <mass
+        value="0.605406509419497" />
+      <inertia
+        ixx="0.000512871371503761"
+        ixy="-1.63572815361529E-07"
+        ixz="6.72590933444044E-09"
+        iyy="0.0005129245435565"
+        iyz="-1.03810185969549E-09"
+        izz="0.000944657855345465" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <box size="0.2 0.2 0.05"/>
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <box size="0.2 0.2 0.05"/>
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link_1">
+    <inertial>
+      <origin
+        xyz="1.253072492928E-05 0.143555093249607 0.0245373628541532"
+        rpy="0 0 0" />
+      <mass
+        value="0.77988040158824" />
+      <inertia
+        ixx="0.000946347994701942"
+        ixy="-1.56160174792233E-08"
+        ixz="6.24390645523272E-08"
+        iyy="0.000791439543866449"
+        iyz="-0.000180284945000654"
+        izz="0.00115466589270351" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <box size="0.2 0.2 0.05"/>
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <box size="0.2 0.2 0.05"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_1"
+    type="revolute">
+    <origin
+      xyz="-0.12173 -0.02365 0"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_1" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.1"
+      upper="3.1"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_2">
+    <inertial>
+      <origin
+        xyz="0.193508430434921 -0.0505187421740012 -0.0192144311714147"
+        rpy="0 0 0" />
+      <mass
+        value="0.443829266836424" />
+      <inertia
+        ixx="0.000292001732345868"
+        ixy="0.000113404038150472"
+        ixz="4.71209275747654E-10"
+        iyy="0.000696048134487327"
+        iyz="-1.23664245588396E-10"
+        izz="0.000788121904047933" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <box size="0.2 0.2 0.05"/>
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <box size="0.2 0.2 0.05"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_2"
+    type="revolute">
+    <origin
+      xyz="0 0.16104 -0.02365"
+      rpy="0 0 0" />
+    <parent
+      link="link_1" />
+    <child
+      link="link_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_3">
+    <inertial>
+      <origin
+        xyz="-0.193037373819607 0.105517447006236 0.0359263292630594"
+        rpy="0 0 0" />
+      <mass
+        value="1.67091128229235" />
+      <inertia
+        ixx="0.00180934738055401"
+        ixy="0.000466254324106307"
+        ixz="-6.69328806721858E-05"
+        iyy="0.00240700972817156"
+        iyz="3.65787680462394E-05"
+        izz="0.00354745402088964" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <box size="0.2 0.2 0.05"/>
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <box size="0.2 0.2 0.05"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_3"
+    type="revolute">
+    <origin
+      xyz="0.38703 -0.10104 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_2" />
+    <child
+      link="link_3" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="5.4"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_4">
+    <inertial>
+      <origin
+        xyz="-0.000187554386352998 -0.000227879286717581 0.108399844251528"
+        rpy="0 0 0" />
+      <mass
+        value="0.186464706015941" />
+      <inertia
+        ixx="9.1301187552365E-05"
+        ixy="-3.87294369979115E-06"
+        ixz="1.12596217174292E-05"
+        iyy="8.99372698306374E-05"
+        iyz="1.34762616465969E-05"
+        izz="9.52179259926329E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <box size="0.2 0.2 0.05"/>
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <box size="0.2 0.2 0.05"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_4"
+    type="revolute">
+    <origin
+      xyz="-0.38609 0.21104 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_3" />
+    <child
+      link="link_4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_5">
+    <inertial>
+      <origin
+        xyz="0.0120020619795153 -0.0682246810571049 0.0195180747082753"
+        rpy="0 0 0" />
+      <mass
+        value="0.383985526073569" />
+      <inertia
+        ixx="0.00119108318051543"
+        ixy="3.05957418140055E-05"
+        ixz="3.71467472242149E-05"
+        iyy="0.00102257169282491"
+        iyz="-0.000211154261991035"
+        izz="0.000274966805072859" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <box size="0.2 0.2 0.05"/>
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <box size="0.2 0.2 0.05"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_5"
+    type="revolute">
+    <origin
+      xyz="-0.0225 -0.02681 0.12075"
+      rpy="0 0 -0.872490093071967" />
+    <parent
+      link="link_4" />
+    <child
+      link="link_5" />
+    <axis
+      xyz="0.173285966010945 -0.984871552022726 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_6">
+    <inertial>
+      <origin
+        xyz="-5.02365226015544E-06 -3.4770807517126E-06 0.113953179250801"
+        rpy="0 0 0" />
+      <mass
+        value="0.0188998061392809" />
+      <inertia
+        ixx="6.05112847267621E-05"
+        ixy="1.17157925715202E-12"
+        ixz="3.92243347315067E-09"
+        iyy="6.05111612280011E-05"
+        iyz="1.23181343957805E-08"
+        izz="3.07815908805619E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <box size="0.2 0.2 0.05"/>
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <box size="0.2 0.2 0.05"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_6"
+    type="revolute">
+    <origin
+      xyz="0.0154118344148917 -0.0875777161152765 -0.12075"
+      rpy="0 0 1.74498018614393" />
+    <parent
+      link="link_5" />
+    <child
+      link="link_6" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="20"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_7">
+    <inertial>
+      <origin
+        xyz="-0.0101375264035755 4.61953293967587E-06 0.075571813348983"
+        rpy="0 0 0" />
+      <mass
+        value="0.0711438414703714" />
+      <inertia
+        ixx="1.02077228304247E-05"
+        ixy="8.52993902103974E-10"
+        ixz="-1.72824022392027E-06"
+        iyy="6.09656314561203E-05"
+        iyz="2.23587538206773E-10"
+        izz="6.16571834569286E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <box size="0.2 0.2 0.05"/>
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <box size="0.2 0.2 0.05"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_7"
+    type="prismatic">
+    <origin
+      xyz="0.0154118344148917 -0.0875777161152765 -0.12075"
+      rpy="0 0 1.74498018614393" />
+    <parent
+      link="link_5" />
+    <child
+      link="link_7" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0.11"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="joint_6"
+      multiplier="0.005"
+      offset="0" />
+  </joint>
+  <ros2_control name="GazeboSystem" type="system">
+  <hardware>
+    <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+  </hardware>
+  <joint name="joint_1">
+     <command_interface name="position"/>
+     <state_interface name="position">
+       <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="velocity"/>
+   </joint>
+   
+   <joint name="joint_2">
+     <command_interface name="position"/>
+     <state_interface name="position">
+       <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="velocity"/>
+   </joint>
+       
+  <joint name="joint_3">
+     <command_interface name="position"/>
+     <state_interface name="position">
+       <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="velocity"/>
+   </joint>
+   
+   <joint name="joint_4">
+     <command_interface name="position"/>
+     <state_interface name="position">
+       <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="velocity"/>
+   </joint>
+   
+   <joint name="joint_5">
+     <command_interface name="position"/>
+     <state_interface name="position">
+       <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="velocity"/>
+   </joint>
+   
+   <joint name="joint_6">
+     <command_interface name="position"/>
+     <state_interface name="position">
+       <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="velocity"/>
+   </joint>
+   
+   <joint name="joint_7">
+     <command_interface name="position"/>
+     <state_interface name="position">
+       <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="velocity"/>
+   </joint>
+</ros2_control>
+<transmission name="trans_joint_1">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="joint_1">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="joint_1_motor">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<transmission name="trans_joint_2">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="joint_2">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="joint_2_motor">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<transmission name="trans_joint_3">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="joint_3">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="joint_3_motor">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<transmission name="trans_joint_4">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="joint_4">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="joint_4_motor">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<transmission name="trans_joint_5">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="joint_5">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="joint_5_motor">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<transmission name="trans_joint_6">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="joint_6">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="joint_6_motor">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<gazebo>
+    <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
+      <parameters>$(find urdf_humble_test)/config/controller_manager.yaml</parameters>
+    </plugin>
+</gazebo>
+
+</robot>
