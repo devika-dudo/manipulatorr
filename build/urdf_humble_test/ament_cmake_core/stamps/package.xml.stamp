@@ -35,7 +35,7 @@
   <depend>controller_manager</depend>
   
     <export>
-    <gazebo_ros gazebo_model_path="/home/devika/the_final/install/urdf_humble_test/share"/>
+    <gazebo_ros gazebo_model_path="${prefix}/.."/>
     <gazebo_ros gazebo_plugin_path="lib"/>
 
     <build_type>ament_cmake</build_type>
