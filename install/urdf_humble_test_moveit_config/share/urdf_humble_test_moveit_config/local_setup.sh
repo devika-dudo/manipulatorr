@@ -1,0 +1,1 @@
+/home/devika/robo_ws/build/urdf_humble_test_moveit_config/ament_cmake_environment_hooks/local_setup.sh

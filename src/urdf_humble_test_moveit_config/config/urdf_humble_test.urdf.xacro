@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="urdf_humble_test">
+    <xacro:arg name="initial_positions_file" default="initial_positions.yaml" />
+
+    <!-- Import urdf_humble_test urdf file -->
+    <xacro:include filename="$(find urdf_humble_test)/urdf/model.urdf" />
+
+    <!-- Import control_xacro -->
+    <xacro:include filename="urdf_humble_test.ros2_control.xacro" />
+
+
+    <xacro:urdf_humble_test_ros2_control name="FakeSystem" initial_positions_file="$(arg initial_positions_file)"/>
+
+</robot>

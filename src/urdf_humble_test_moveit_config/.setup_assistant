@@ -1,0 +1,10 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: urdf_humble_test
+    relative_path: urdf/model.urdf
+  srdf:
+    relative_path: config/urdf_humble_test.srdf
+  package_settings:
+    author_name: Devika
+    author_email: devika@email.com
+    generated_timestamp: 1744121494

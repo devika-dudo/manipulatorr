@@ -1,0 +1,60 @@
+[0.047s] Invoking command in '/home/devika/robo_ws/build/urdf_humble_test_moveit_config': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake /home/devika/robo_ws/src/urdf_humble_test_moveit_config -DCMAKE_INSTALL_PREFIX=/home/devika/robo_ws/install/urdf_humble_test_moveit_config
+[0.894s] -- The C compiler identification is GNU 11.4.0
+[1.578s] -- The CXX compiler identification is GNU 11.4.0
+[1.611s] -- Detecting C compiler ABI info
+[1.794s] -- Detecting C compiler ABI info - done
+[1.811s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.812s] -- Detecting C compile features
+[1.814s] -- Detecting C compile features - done
+[1.822s] -- Detecting CXX compiler ABI info
+[2.018s] -- Detecting CXX compiler ABI info - done
+[2.034s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.034s] -- Detecting CXX compile features
+[2.035s] -- Detecting CXX compile features - done
+[2.043s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.558s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[3.196s] -- Configuring done
+[3.203s] -- Generating done
+[3.207s] -- Build files have been written to: /home/devika/robo_ws/build/urdf_humble_test_moveit_config
+[3.221s] Invoked command in '/home/devika/robo_ws/build/urdf_humble_test_moveit_config' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake /home/devika/robo_ws/src/urdf_humble_test_moveit_config -DCMAKE_INSTALL_PREFIX=/home/devika/robo_ws/install/urdf_humble_test_moveit_config
+[3.228s] Invoking command in '/home/devika/robo_ws/build/urdf_humble_test_moveit_config': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/devika/robo_ws/build/urdf_humble_test_moveit_config -- -j8 -l8
+[3.366s] Invoked command in '/home/devika/robo_ws/build/urdf_humble_test_moveit_config' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/devika/robo_ws/build/urdf_humble_test_moveit_config -- -j8 -l8
+[3.374s] Invoking command in '/home/devika/robo_ws/build/urdf_humble_test_moveit_config': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/devika/robo_ws/build/urdf_humble_test_moveit_config
+[3.408s] -- Install configuration: ""
+[3.408s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/ament_index/resource_index/package_run_dependencies/urdf_humble_test_moveit_config
+[3.409s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/ament_index/resource_index/parent_prefix_path/urdf_humble_test_moveit_config
+[3.409s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/environment/ament_prefix_path.sh
+[3.410s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/environment/ament_prefix_path.dsv
+[3.410s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/environment/path.sh
+[3.410s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/environment/path.dsv
+[3.411s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/local_setup.bash
+[3.411s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/local_setup.sh
+[3.411s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/local_setup.zsh
+[3.412s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/local_setup.dsv
+[3.412s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/package.dsv
+[3.413s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/ament_index/resource_index/packages/urdf_humble_test_moveit_config
+[3.413s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/cmake/urdf_humble_test_moveit_configConfig.cmake
+[3.414s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/cmake/urdf_humble_test_moveit_configConfig-version.cmake
+[3.414s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/package.xml
+[3.415s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/launch
+[3.415s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/launch/moveit_rviz.launch.py
+[3.415s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/launch/static_virtual_joint_tfs.launch.py
+[3.416s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/launch/spawn_controllers.launch.py
+[3.416s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/launch/move_group.launch.py
+[3.416s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/launch/demo.launch.py
+[3.416s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/launch/rsp.launch.py
+[3.416s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/launch/warehouse_db.launch.py
+[3.417s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/launch/setup_assistant.launch.py
+[3.417s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/config
+[3.417s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/config/pilz_cartesian_limits.yaml
+[3.418s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/config/kinematics.yaml
+[3.418s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/config/ros2_controllers.yaml
+[3.418s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/config/moveit.rviz
+[3.418s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/config/initial_positions.yaml
+[3.419s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/config/moveit_controllers.yaml
+[3.419s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/config/urdf_humble_test.srdf
+[3.419s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/config/joint_limits.yaml
+[3.420s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/config/urdf_humble_test.urdf.xacro
+[3.420s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/config/urdf_humble_test.ros2_control.xacro
+[3.421s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/.setup_assistant
+[3.428s] Invoked command in '/home/devika/robo_ws/build/urdf_humble_test_moveit_config' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/devika/robo_ws/build/urdf_humble_test_moveit_config
