@@ -1,1 +1,10 @@
-/home/devika/robo_ws/src/urdf_humble_test_moveit_config/launch/pilz_industrial_motion_planner_planning_planner.yaml
+planning_plugin: pilz_industrial_motion_planner/CommandPlanner
+request_adapters: >-
+  default_planner_request_adapters/FixWorkspaceBounds
+  default_planner_request_adapters/FixStartStateBounds
+  default_planner_request_adapters/FixStartStateCollision
+  default_planner_request_adapters/FixStartStatePathConstraints
+default_planner_config: PTP
+capabilities: >-
+    pilz_industrial_motion_planner/MoveGroupSequenceAction
+    pilz_industrial_motion_planner/MoveGroupSequenceService
