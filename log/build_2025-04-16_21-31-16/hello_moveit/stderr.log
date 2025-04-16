@@ -1,0 +1,8 @@
+In file included from [01m[K/home/devika/robo_ws/src/hello_moveit/src/hello_moveit_v1.cpp:17[m[K:
+[01m[K/opt/ros/humble/include/moveit_visual_tools/moveit_visual_tools.h:56:10:[m[K [01;31m[Kfatal error: [m[Kgraph_msgs/msg/geometry_graph.hpp: No such file or directory
+   56 | #include [01;31m[K<graph_msgs/msg/geometry_graph.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/hello_moveit.dir/build.make:76: CMakeFiles/hello_moveit.dir/src/hello_moveit_v1.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/hello_moveit.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

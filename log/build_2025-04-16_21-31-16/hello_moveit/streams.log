@@ -1,0 +1,42 @@
+[0.599s] Invoking command in '/home/devika/robo_ws/build/hello_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble /usr/bin/cmake --build /home/devika/robo_ws/build/hello_moveit -- -j8 -l8
+[0.660s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.904s] -- Found moveit_ros_planning_interface: 2.5.8 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)
+[0.946s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+[1.002s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.006s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.017s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.035s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.058s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.583s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[1.682s] -- Found parameter_traits: 0.4.0 (/opt/ros/humble/share/parameter_traits/cmake)
+[1.738s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.742s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.973s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.066s] -- Found rclcpp_lifecycle: 16.0.11 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[2.138s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[2.241s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[2.311s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.657s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[2.730s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+[2.787s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[2.890s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.042s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.043s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/devika/robo_ws/src/hello_moveit/include>
+[3.043s] -- Configured cppcheck exclude dirs and/or files: 
+[3.044s] -- Added test 'lint_cmake' to check CMake code style
+[3.046s] -- Added test 'uncrustify' to check C / C++ code style
+[3.046s] -- Configured uncrustify additional arguments: 
+[3.046s] -- Added test 'xmllint' to check XML markup files
+[3.049s] -- Configuring done
+[3.111s] -- Generating done
+[3.126s] -- Build files have been written to: /home/devika/robo_ws/build/hello_moveit
+[3.215s] [ 50%] [32mBuilding CXX object CMakeFiles/hello_moveit.dir/src/hello_moveit_v1.cpp.o[0m
+[7.070s] In file included from [01m[K/home/devika/robo_ws/src/hello_moveit/src/hello_moveit_v1.cpp:17[m[K:
+[7.070s] [01m[K/opt/ros/humble/include/moveit_visual_tools/moveit_visual_tools.h:56:10:[m[K [01;31m[Kfatal error: [m[Kgraph_msgs/msg/geometry_graph.hpp: No such file or directory
+[7.070s]    56 | #include [01;31m[K<graph_msgs/msg/geometry_graph.hpp>[m[K
+[7.071s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.071s] compilation terminated.
+[7.096s] gmake[2]: *** [CMakeFiles/hello_moveit.dir/build.make:76: CMakeFiles/hello_moveit.dir/src/hello_moveit_v1.cpp.o] Error 1
+[7.097s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/hello_moveit.dir/all] Error 2
+[7.098s] gmake: *** [Makefile:146: all] Error 2
+[7.105s] Invoked command in '/home/devika/robo_ws/build/hello_moveit' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble /usr/bin/cmake --build /home/devika/robo_ws/build/hello_moveit -- -j8 -l8

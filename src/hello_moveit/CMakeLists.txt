@@ -9,7 +9,7 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(moveit_ros_planning_interface REQUIRED)
 find_package(rclcpp REQUIRED)
-
+find_package(graph_msgs REQUIRED)
 add_executable(hello_moveit src/hello_moveit_v1.cpp)
 
 target_include_directories(hello_moveit PUBLIC
@@ -22,8 +22,12 @@ ament_target_dependencies(
   hello_moveit
   moveit_ros_planning_interface
   rclcpp
+  graph_msgs
 )
-
+# Install launch files
+install(DIRECTORY launch/
+  DESTINATION share/${PROJECT_NAME}/launch
+)
 install(TARGETS
   hello_moveit
   DESTINATION lib/${PROJECT_NAME}

@@ -1,0 +1,3 @@
+[console_scripts]
+pose_estimator_node = cylinder_position_estimator.pose_estimator_node:main
+

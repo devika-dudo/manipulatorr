@@ -1,3 +1,4 @@
+/home/devika/robo_ws/install/hello_moveit/share/hello_moveit/launch/hello.launch.py
 /home/devika/robo_ws/install/hello_moveit/lib/hello_moveit/hello_moveit
 /home/devika/robo_ws/install/hello_moveit/share/ament_index/resource_index/package_run_dependencies/hello_moveit
 /home/devika/robo_ws/install/hello_moveit/share/ament_index/resource_index/parent_prefix_path/hello_moveit

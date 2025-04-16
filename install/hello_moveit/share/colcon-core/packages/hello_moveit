@@ -1,1 +1,1 @@
-moveit_ros_planning_interface:rclcpp
+moveit_planners:moveit_ros_planning_interface:pilz_industrial_motion_planner:rclcpp

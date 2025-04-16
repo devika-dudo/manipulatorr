@@ -1,0 +1,1295 @@
+[0.000000] (-) TimerEvent: {}
+[0.001776] (cylinder_position_estimator) JobQueued: {'identifier': 'cylinder_position_estimator', 'dependencies': OrderedDict()}
+[0.001870] (gazebo_ros2_control) JobQueued: {'identifier': 'gazebo_ros2_control', 'dependencies': OrderedDict()}
+[0.001909] (hello_moveit) JobQueued: {'identifier': 'hello_moveit', 'dependencies': OrderedDict()}
+[0.001945] (perception_vision) JobQueued: {'identifier': 'perception_vision', 'dependencies': OrderedDict()}
+[0.001980] (urdf_humble_test) JobQueued: {'identifier': 'urdf_humble_test', 'dependencies': OrderedDict([('gazebo_ros2_control', '/home/devika/robo_ws/install/gazebo_ros2_control')])}
+[0.002023] (urdf_humble_test_moveit_config) JobQueued: {'identifier': 'urdf_humble_test_moveit_config', 'dependencies': OrderedDict([('gazebo_ros2_control', '/home/devika/robo_ws/install/gazebo_ros2_control'), ('urdf_humble_test', '/home/devika/robo_ws/install/urdf_humble_test')])}
+[0.002097] (gazebo_ros2_control) JobStarted: {'identifier': 'gazebo_ros2_control'}
+[0.017777] (cylinder_position_estimator) JobStarted: {'identifier': 'cylinder_position_estimator'}
+[0.033658] (hello_moveit) JobStarted: {'identifier': 'hello_moveit'}
+[0.043746] (perception_vision) JobStarted: {'identifier': 'perception_vision'}
+[0.064241] (gazebo_ros2_control) JobProgress: {'identifier': 'gazebo_ros2_control', 'progress': 'cmake'}
+[0.065529] (gazebo_ros2_control) Command: {'cmd': ['/usr/bin/cmake', '/home/devika/robo_ws/src/gazebo_ros2_control', '-DCMAKE_INSTALL_PREFIX=/home/devika/robo_ws/install/gazebo_ros2_control'], 'cwd': '/home/devika/robo_ws/build/gazebo_ros2_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'devika'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/devika/robo_ws/install/gazebo_ros2_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/devika'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2897'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/devika/robo_ws/install:/home/devika/manga_ws/install:/home/devika/some_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'devika'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'devika'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/devika/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/devika:@/tmp/.ICE-unix/1570,unix/devika:/tmp/.ICE-unix/1570'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f888b7d5_e258_4181_92ec_4571cea58831'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.0M0242'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.100'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/devika/robo_ws/install/urdf_humble_test_moveit_config:/home/devika/robo_ws/install/urdf_humble_test:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/hello_moveit:/home/devika/robo_ws/install/gazebo_ros2_control:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/manga_ws/install/urdf_humble_test_moveit_config:/home/devika/manga_ws/install/urdf_humble_test:/home/devika/manga_ws/install/hello_moveit:/home/devika/some_ws/install/motoman_hc10_support:/home/devika/some_ws/install/motoman_resources:/home/devika/some_ws/install/hello_moveit:/home/devika/some_ws/install/hc20_sim_moveit_config:/home/devika/some_ws/install/hc20_moveit_config:/home/devika/some_ws/install/hc10_movit2v3:/home/devika/some_ws/install/hc10dt_moveit_config:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/devika/robo_ws/build/gazebo_ros2_control'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/devika/robo_ws/install/perception_vision/lib/python3.10/site-packages:/home/devika/robo_ws/install/cylinder_position_estimator/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/devika/robo_ws/install/urdf_humble_test_moveit_config:/home/devika/robo_ws/install/urdf_humble_test:/home/devika/robo_ws/install/hello_moveit:/home/devika/robo_ws/install/gazebo_ros2_control:/home/devika/manga_ws/install/urdf_humble_test_moveit_config:/home/devika/manga_ws/install/urdf_humble_test:/home/devika/manga_ws/install/hello_moveit:/home/devika/some_ws/install/motoman_hc10_support:/home/devika/some_ws/install/motoman_resources:/home/devika/some_ws/install/hello_moveit:/home/devika/some_ws/install/hc20_sim_moveit_config:/home/devika/some_ws/install/hc20_moveit_config:/home/devika/some_ws/install/hc10_movit2v3:/home/devika/some_ws/install/hc10dt_moveit_config:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble')]), 'shell': False}
+[0.099110] (-) TimerEvent: {}
+[0.199540] (-) TimerEvent: {}
+[0.300049] (-) TimerEvent: {}
+[0.400589] (-) TimerEvent: {}
+[0.501083] (-) TimerEvent: {}
+[0.601667] (-) TimerEvent: {}
+[0.702205] (-) TimerEvent: {}
+[0.734465] (hello_moveit) JobProgress: {'identifier': 'hello_moveit', 'progress': 'cmake'}
+[0.737055] (hello_moveit) Command: {'cmd': ['/usr/bin/cmake', '/home/devika/robo_ws/src/hello_moveit', '-DCMAKE_INSTALL_PREFIX=/home/devika/robo_ws/install/hello_moveit'], 'cwd': '/home/devika/robo_ws/build/hello_moveit', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'devika'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/devika/robo_ws/install/gazebo_ros2_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/devika'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2897'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/devika/robo_ws/install:/home/devika/manga_ws/install:/home/devika/some_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'devika'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'devika'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/devika/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/devika:@/tmp/.ICE-unix/1570,unix/devika:/tmp/.ICE-unix/1570'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f888b7d5_e258_4181_92ec_4571cea58831'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.0M0242'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.100'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/devika/robo_ws/install/urdf_humble_test_moveit_config:/home/devika/robo_ws/install/urdf_humble_test:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/hello_moveit:/home/devika/robo_ws/install/gazebo_ros2_control:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/manga_ws/install/urdf_humble_test_moveit_config:/home/devika/manga_ws/install/urdf_humble_test:/home/devika/manga_ws/install/hello_moveit:/home/devika/some_ws/install/motoman_hc10_support:/home/devika/some_ws/install/motoman_resources:/home/devika/some_ws/install/hello_moveit:/home/devika/some_ws/install/hc20_sim_moveit_config:/home/devika/some_ws/install/hc20_moveit_config:/home/devika/some_ws/install/hc10_movit2v3:/home/devika/some_ws/install/hc10dt_moveit_config:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/devika/robo_ws/build/hello_moveit'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/devika/robo_ws/install/perception_vision/lib/python3.10/site-packages:/home/devika/robo_ws/install/cylinder_position_estimator/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/devika/robo_ws/install/urdf_humble_test_moveit_config:/home/devika/robo_ws/install/urdf_humble_test:/home/devika/robo_ws/install/hello_moveit:/home/devika/robo_ws/install/gazebo_ros2_control:/home/devika/manga_ws/install/urdf_humble_test_moveit_config:/home/devika/manga_ws/install/urdf_humble_test:/home/devika/manga_ws/install/hello_moveit:/home/devika/some_ws/install/motoman_hc10_support:/home/devika/some_ws/install/motoman_resources:/home/devika/some_ws/install/hello_moveit:/home/devika/some_ws/install/hc20_sim_moveit_config:/home/devika/some_ws/install/hc20_moveit_config:/home/devika/some_ws/install/hc10_movit2v3:/home/devika/some_ws/install/hc10dt_moveit_config:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble')]), 'shell': False}
+[0.745092] (gazebo_ros2_control) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.745461] (gazebo_ros2_control) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.745616] (gazebo_ros2_control) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.745749] (gazebo_ros2_control) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.745896] (gazebo_ros2_control) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.746027] (gazebo_ros2_control) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.746181] (gazebo_ros2_control) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.746331] (gazebo_ros2_control) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.746458] (gazebo_ros2_control) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.746581] (gazebo_ros2_control) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.746698] (gazebo_ros2_control) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.746812] (gazebo_ros2_control) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.746935] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.802266] (-) TimerEvent: {}
+[0.890299] (hello_moveit) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.902450] (-) TimerEvent: {}
+[1.003307] (-) TimerEvent: {}
+[1.035212] (hello_moveit) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.054420] (hello_moveit) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.104910] (-) TimerEvent: {}
+[1.126119] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.205282] (-) TimerEvent: {}
+[1.230351] (hello_moveit) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.248437] (hello_moveit) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.248970] (hello_moveit) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.249847] (hello_moveit) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.256237] (hello_moveit) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.305508] (-) TimerEvent: {}
+[1.403698] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found angles: 1.15.0 (/opt/ros/humble/share/angles/cmake)\n'}
+[1.405658] (-) TimerEvent: {}
+[1.417223] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found controller_manager: 2.49.0 (/opt/ros/humble/share/controller_manager/cmake)\n'}
+[1.458319] (hello_moveit) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.477108] (hello_moveit) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.480563] (hello_moveit) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.480850] (hello_moveit) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.488182] (hello_moveit) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.505837] (-) TimerEvent: {}
+[1.581987] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.602522] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.606090] (-) TimerEvent: {}
+[1.629305] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.666904] (gazebo_ros2_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.706317] (-) TimerEvent: {}
+[1.715377] (gazebo_ros2_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.806509] (-) TimerEvent: {}
+[1.907589] (-) TimerEvent: {}
+[1.916298] (hello_moveit) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[2.008024] (-) TimerEvent: {}
+[2.108943] (-) TimerEvent: {}
+[2.210257] (-) TimerEvent: {}
+[2.226428] (hello_moveit) StdoutLine: {'line': b'-- Found moveit_ros_planning_interface: 2.5.8 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)\n'}
+[2.310500] (-) TimerEvent: {}
+[2.411699] (-) TimerEvent: {}
+[2.475121] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.485608] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.512973] (-) TimerEvent: {}
+[2.561285] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[2.613127] (-) TimerEvent: {}
+[2.714353] (-) TimerEvent: {}
+[2.753323] (cylinder_position_estimator) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/cylinder_position_estimator', 'build', '--build-base', '/home/devika/robo_ws/build/cylinder_position_estimator/build', 'install', '--record', '/home/devika/robo_ws/build/cylinder_position_estimator/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/devika/robo_ws/src/cylinder_position_estimator', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_IN:en', 'USER': 'devika', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/devika/robo_ws/install/gazebo_ros2_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/devika', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2897', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/devika/robo_ws/install:/home/devika/manga_ws/install:/home/devika/some_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'devika', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'devika', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': ':/home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/devika/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/devika:@/tmp/.ICE-unix/1570,unix/devika:/tmp/.ICE-unix/1570', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/f888b7d5_e258_4181_92ec_4571cea58831', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.0M0242', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.100', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/devika/robo_ws/install/urdf_humble_test_moveit_config:/home/devika/robo_ws/install/urdf_humble_test:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/hello_moveit:/home/devika/robo_ws/install/gazebo_ros2_control:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/manga_ws/install/urdf_humble_test_moveit_config:/home/devika/manga_ws/install/urdf_humble_test:/home/devika/manga_ws/install/hello_moveit:/home/devika/some_ws/install/motoman_hc10_support:/home/devika/some_ws/install/motoman_resources:/home/devika/some_ws/install/hello_moveit:/home/devika/some_ws/install/hc20_sim_moveit_config:/home/devika/some_ws/install/hc20_moveit_config:/home/devika/some_ws/install/hc10_movit2v3:/home/devika/some_ws/install/hc10dt_moveit_config:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/devika/robo_ws/build/cylinder_position_estimator', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/devika/robo_ws/build/cylinder_position_estimator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/devika/robo_ws/install/cylinder_position_estimator/lib/python3.10/site-packages:/home/devika/robo_ws/install/perception_vision/lib/python3.10/site-packages:/home/devika/robo_ws/install/cylinder_position_estimator/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/devika/robo_ws/install/urdf_humble_test_moveit_config:/home/devika/robo_ws/install/urdf_humble_test:/home/devika/robo_ws/install/hello_moveit:/home/devika/robo_ws/install/gazebo_ros2_control:/home/devika/manga_ws/install/urdf_humble_test_moveit_config:/home/devika/manga_ws/install/urdf_humble_test:/home/devika/manga_ws/install/hello_moveit:/home/devika/some_ws/install/motoman_hc10_support:/home/devika/some_ws/install/motoman_resources:/home/devika/some_ws/install/hello_moveit:/home/devika/some_ws/install/hc20_sim_moveit_config:/home/devika/some_ws/install/hc20_moveit_config:/home/devika/some_ws/install/hc10_movit2v3:/home/devika/some_ws/install/hc10dt_moveit_config'}, 'shell': False}
+[2.762585] (perception_vision) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/perception_vision', 'build', '--build-base', '/home/devika/robo_ws/build/perception_vision/build', 'install', '--record', '/home/devika/robo_ws/build/perception_vision/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/devika/robo_ws/src/perception_vision', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_IN:en', 'USER': 'devika', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/devika/robo_ws/install/gazebo_ros2_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/devika', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2897', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/devika/robo_ws/install:/home/devika/manga_ws/install:/home/devika/some_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'devika', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'devika', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': ':/home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/devika/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/devika:@/tmp/.ICE-unix/1570,unix/devika:/tmp/.ICE-unix/1570', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/f888b7d5_e258_4181_92ec_4571cea58831', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.0M0242', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.100', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/devika/robo_ws/install/urdf_humble_test_moveit_config:/home/devika/robo_ws/install/urdf_humble_test:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/hello_moveit:/home/devika/robo_ws/install/gazebo_ros2_control:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/manga_ws/install/urdf_humble_test_moveit_config:/home/devika/manga_ws/install/urdf_humble_test:/home/devika/manga_ws/install/hello_moveit:/home/devika/some_ws/install/motoman_hc10_support:/home/devika/some_ws/install/motoman_resources:/home/devika/some_ws/install/hello_moveit:/home/devika/some_ws/install/hc20_sim_moveit_config:/home/devika/some_ws/install/hc20_moveit_config:/home/devika/some_ws/install/hc10_movit2v3:/home/devika/some_ws/install/hc10dt_moveit_config:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/devika/robo_ws/build/perception_vision', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/devika/robo_ws/build/perception_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/devika/robo_ws/install/perception_vision/lib/python3.10/site-packages:/home/devika/robo_ws/install/perception_vision/lib/python3.10/site-packages:/home/devika/robo_ws/install/cylinder_position_estimator/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/devika/robo_ws/install/urdf_humble_test_moveit_config:/home/devika/robo_ws/install/urdf_humble_test:/home/devika/robo_ws/install/hello_moveit:/home/devika/robo_ws/install/gazebo_ros2_control:/home/devika/manga_ws/install/urdf_humble_test_moveit_config:/home/devika/manga_ws/install/urdf_humble_test:/home/devika/manga_ws/install/hello_moveit:/home/devika/some_ws/install/motoman_hc10_support:/home/devika/some_ws/install/motoman_resources:/home/devika/some_ws/install/hello_moveit:/home/devika/some_ws/install/hc20_sim_moveit_config:/home/devika/some_ws/install/hc20_moveit_config:/home/devika/some_ws/install/hc10_movit2v3:/home/devika/some_ws/install/hc10dt_moveit_config'}, 'shell': False}
+[2.766612] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[2.775371] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[2.814502] (-) TimerEvent: {}
+[2.821039] (hello_moveit) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread \n'}
+[2.832565] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[2.846077] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[2.867861] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[2.900263] (gazebo_ros2_control) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.914752] (-) TimerEvent: {}
+[2.933572] (gazebo_ros2_control) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[2.961438] (hello_moveit) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.979999] (hello_moveit) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[3.006379] (hello_moveit) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[3.014907] (-) TimerEvent: {}
+[3.046900] (hello_moveit) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.099904] (hello_moveit) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.115091] (-) TimerEvent: {}
+[3.142897] (gazebo_ros2_control) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[3.147294] (gazebo_ros2_control) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[3.215334] (-) TimerEvent: {}
+[3.318689] (-) TimerEvent: {}
+[3.368662] (gazebo_ros2_control) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[3.371303] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[3.419351] (-) TimerEvent: {}
+[3.453898] (cylinder_position_estimator) StdoutLine: {'line': b'running egg_info\n'}
+[3.454282] (cylinder_position_estimator) StdoutLine: {'line': b'creating ../../build/cylinder_position_estimator/cylinder_position_estimator.egg-info\n'}
+[3.454641] (cylinder_position_estimator) StdoutLine: {'line': b'writing ../../build/cylinder_position_estimator/cylinder_position_estimator.egg-info/PKG-INFO\n'}
+[3.456058] (cylinder_position_estimator) StdoutLine: {'line': b'writing dependency_links to ../../build/cylinder_position_estimator/cylinder_position_estimator.egg-info/dependency_links.txt\n'}
+[3.456624] (cylinder_position_estimator) StdoutLine: {'line': b'writing entry points to ../../build/cylinder_position_estimator/cylinder_position_estimator.egg-info/entry_points.txt\n'}
+[3.456972] (cylinder_position_estimator) StdoutLine: {'line': b'writing requirements to ../../build/cylinder_position_estimator/cylinder_position_estimator.egg-info/requires.txt\n'}
+[3.457667] (cylinder_position_estimator) StdoutLine: {'line': b'writing top-level names to ../../build/cylinder_position_estimator/cylinder_position_estimator.egg-info/top_level.txt\n'}
+[3.458768] (cylinder_position_estimator) StdoutLine: {'line': b"writing manifest file '../../build/cylinder_position_estimator/cylinder_position_estimator.egg-info/SOURCES.txt'\n"}
+[3.463005] (cylinder_position_estimator) StdoutLine: {'line': b"reading manifest file '../../build/cylinder_position_estimator/cylinder_position_estimator.egg-info/SOURCES.txt'\n"}
+[3.465617] (cylinder_position_estimator) StdoutLine: {'line': b"writing manifest file '../../build/cylinder_position_estimator/cylinder_position_estimator.egg-info/SOURCES.txt'\n"}
+[3.466410] (cylinder_position_estimator) StdoutLine: {'line': b'running build\n'}
+[3.466883] (cylinder_position_estimator) StdoutLine: {'line': b'running build_py\n'}
+[3.467014] (cylinder_position_estimator) StdoutLine: {'line': b'creating /home/devika/robo_ws/build/cylinder_position_estimator/build\n'}
+[3.467117] (cylinder_position_estimator) StdoutLine: {'line': b'creating /home/devika/robo_ws/build/cylinder_position_estimator/build/lib\n'}
+[3.467279] (cylinder_position_estimator) StdoutLine: {'line': b'creating /home/devika/robo_ws/build/cylinder_position_estimator/build/lib/cylinder_position_estimator\n'}
+[3.467555] (cylinder_position_estimator) StdoutLine: {'line': b'copying cylinder_position_estimator/pose_estimator_node.py -> /home/devika/robo_ws/build/cylinder_position_estimator/build/lib/cylinder_position_estimator\n'}
+[3.467910] (cylinder_position_estimator) StdoutLine: {'line': b'copying cylinder_position_estimator/__init__.py -> /home/devika/robo_ws/build/cylinder_position_estimator/build/lib/cylinder_position_estimator\n'}
+[3.471191] (perception_vision) StdoutLine: {'line': b'running egg_info\n'}
+[3.471526] (cylinder_position_estimator) StdoutLine: {'line': b'running install\n'}
+[3.472884] (cylinder_position_estimator) StdoutLine: {'line': b'running install_lib\n'}
+[3.473260] (perception_vision) StdoutLine: {'line': b'creating ../../build/perception_vision/perception_vision.egg-info\n'}
+[3.473578] (perception_vision) StdoutLine: {'line': b'writing ../../build/perception_vision/perception_vision.egg-info/PKG-INFO\n'}
+[3.474305] (perception_vision) StdoutLine: {'line': b'writing dependency_links to ../../build/perception_vision/perception_vision.egg-info/dependency_links.txt\n'}
+[3.474679] (perception_vision) StdoutLine: {'line': b'writing entry points to ../../build/perception_vision/perception_vision.egg-info/entry_points.txt\n'}
+[3.474922] (perception_vision) StdoutLine: {'line': b'writing requirements to ../../build/perception_vision/perception_vision.egg-info/requires.txt\n'}
+[3.475100] (perception_vision) StdoutLine: {'line': b'writing top-level names to ../../build/perception_vision/perception_vision.egg-info/top_level.txt\n'}
+[3.475340] (perception_vision) StdoutLine: {'line': b"writing manifest file '../../build/perception_vision/perception_vision.egg-info/SOURCES.txt'\n"}
+[3.475624] (cylinder_position_estimator) StdoutLine: {'line': b'creating /home/devika/robo_ws/install/cylinder_position_estimator/lib/python3.10/site-packages/cylinder_position_estimator\n'}
+[3.475833] (cylinder_position_estimator) StdoutLine: {'line': b'copying /home/devika/robo_ws/build/cylinder_position_estimator/build/lib/cylinder_position_estimator/pose_estimator_node.py -> /home/devika/robo_ws/install/cylinder_position_estimator/lib/python3.10/site-packages/cylinder_position_estimator\n'}
+[3.475978] (cylinder_position_estimator) StdoutLine: {'line': b'copying /home/devika/robo_ws/build/cylinder_position_estimator/build/lib/cylinder_position_estimator/__init__.py -> /home/devika/robo_ws/install/cylinder_position_estimator/lib/python3.10/site-packages/cylinder_position_estimator\n'}
+[3.476354] (cylinder_position_estimator) StdoutLine: {'line': b'byte-compiling /home/devika/robo_ws/install/cylinder_position_estimator/lib/python3.10/site-packages/cylinder_position_estimator/pose_estimator_node.py to pose_estimator_node.cpython-310.pyc\n'}
+[3.476947] (perception_vision) StdoutLine: {'line': b"reading manifest file '../../build/perception_vision/perception_vision.egg-info/SOURCES.txt'\n"}
+[3.479462] (perception_vision) StdoutLine: {'line': b"writing manifest file '../../build/perception_vision/perception_vision.egg-info/SOURCES.txt'\n"}
+[3.479972] (cylinder_position_estimator) StdoutLine: {'line': b'byte-compiling /home/devika/robo_ws/install/cylinder_position_estimator/lib/python3.10/site-packages/cylinder_position_estimator/__init__.py to __init__.cpython-310.pyc\n'}
+[3.480324] (perception_vision) StdoutLine: {'line': b'running build\n'}
+[3.480506] (perception_vision) StdoutLine: {'line': b'running build_py\n'}
+[3.480750] (perception_vision) StdoutLine: {'line': b'creating /home/devika/robo_ws/build/perception_vision/build\n'}
+[3.481148] (perception_vision) StdoutLine: {'line': b'creating /home/devika/robo_ws/build/perception_vision/build/lib\n'}
+[3.481553] (perception_vision) StdoutLine: {'line': b'creating /home/devika/robo_ws/build/perception_vision/build/lib/perception_vision\n'}
+[3.481808] (perception_vision) StdoutLine: {'line': b'copying perception_vision/yolov8_obb_node.py -> /home/devika/robo_ws/build/perception_vision/build/lib/perception_vision\n'}
+[3.482050] (perception_vision) StdoutLine: {'line': b'copying perception_vision/__init__.py -> /home/devika/robo_ws/build/perception_vision/build/lib/perception_vision\n'}
+[3.482356] (cylinder_position_estimator) StdoutLine: {'line': b'running install_data\n'}
+[3.482717] (cylinder_position_estimator) StdoutLine: {'line': b'creating /home/devika/robo_ws/install/cylinder_position_estimator/share/ament_index\n'}
+[3.482984] (cylinder_position_estimator) StdoutLine: {'line': b'creating /home/devika/robo_ws/install/cylinder_position_estimator/share/ament_index/resource_index\n'}
+[3.483455] (cylinder_position_estimator) StdoutLine: {'line': b'creating /home/devika/robo_ws/install/cylinder_position_estimator/share/ament_index/resource_index/packages\n'}
+[3.483638] (cylinder_position_estimator) StdoutLine: {'line': b'copying resource/cylinder_position_estimator -> /home/devika/robo_ws/install/cylinder_position_estimator/share/ament_index/resource_index/packages\n'}
+[3.484023] (cylinder_position_estimator) StdoutLine: {'line': b'copying package.xml -> /home/devika/robo_ws/install/cylinder_position_estimator/share/cylinder_position_estimator\n'}
+[3.484364] (cylinder_position_estimator) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.484616] (perception_vision) StdoutLine: {'line': b'running install\n'}
+[3.484781] (perception_vision) StdoutLine: {'line': b'running install_lib\n'}
+[3.485999] (perception_vision) StdoutLine: {'line': b'creating /home/devika/robo_ws/install/perception_vision/lib/python3.10/site-packages/perception_vision\n'}
+[3.486392] (perception_vision) StdoutLine: {'line': b'copying /home/devika/robo_ws/build/perception_vision/build/lib/perception_vision/yolov8_obb_node.py -> /home/devika/robo_ws/install/perception_vision/lib/python3.10/site-packages/perception_vision\n'}
+[3.486683] (perception_vision) StdoutLine: {'line': b'copying /home/devika/robo_ws/build/perception_vision/build/lib/perception_vision/__init__.py -> /home/devika/robo_ws/install/perception_vision/lib/python3.10/site-packages/perception_vision\n'}
+[3.487537] (perception_vision) StdoutLine: {'line': b'byte-compiling /home/devika/robo_ws/install/perception_vision/lib/python3.10/site-packages/perception_vision/yolov8_obb_node.py to yolov8_obb_node.cpython-310.pyc\n'}
+[3.487973] (cylinder_position_estimator) StdoutLine: {'line': b'Copying ../../build/cylinder_position_estimator/cylinder_position_estimator.egg-info to /home/devika/robo_ws/install/cylinder_position_estimator/lib/python3.10/site-packages/cylinder_position_estimator-0.0.0-py3.10.egg-info\n'}
+[3.489409] (perception_vision) StdoutLine: {'line': b'byte-compiling /home/devika/robo_ws/install/perception_vision/lib/python3.10/site-packages/perception_vision/__init__.py to __init__.cpython-310.pyc\n'}
+[3.490583] (perception_vision) StdoutLine: {'line': b'running install_data\n'}
+[3.490934] (perception_vision) StdoutLine: {'line': b'creating /home/devika/robo_ws/install/perception_vision/share/ament_index\n'}
+[3.492242] (perception_vision) StdoutLine: {'line': b'creating /home/devika/robo_ws/install/perception_vision/share/ament_index/resource_index\n'}
+[3.492568] (perception_vision) StdoutLine: {'line': b'creating /home/devika/robo_ws/install/perception_vision/share/ament_index/resource_index/packages\n'}
+[3.492735] (cylinder_position_estimator) StdoutLine: {'line': b'running install_scripts\n'}
+[3.492913] (perception_vision) StdoutLine: {'line': b'copying resource/perception_vision -> /home/devika/robo_ws/install/perception_vision/share/ament_index/resource_index/packages\n'}
+[3.493060] (perception_vision) StdoutLine: {'line': b'copying package.xml -> /home/devika/robo_ws/install/perception_vision/share/perception_vision\n'}
+[3.493233] (perception_vision) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.495943] (perception_vision) StdoutLine: {'line': b'Copying ../../build/perception_vision/perception_vision.egg-info to /home/devika/robo_ws/install/perception_vision/lib/python3.10/site-packages/perception_vision-0.0.0-py3.10.egg-info\n'}
+[3.497769] (perception_vision) StdoutLine: {'line': b'running install_scripts\n'}
+[3.519508] (-) TimerEvent: {}
+[3.542124] (cylinder_position_estimator) StdoutLine: {'line': b'Installing pose_estimator_node script to /home/devika/robo_ws/install/cylinder_position_estimator/lib/cylinder_position_estimator\n'}
+[3.543266] (cylinder_position_estimator) StdoutLine: {'line': b"writing list of installed files to '/home/devika/robo_ws/build/cylinder_position_estimator/install.log'\n"}
+[3.553206] (perception_vision) StdoutLine: {'line': b'Installing yolov8_obb_node script to /home/devika/robo_ws/install/perception_vision/lib/perception_vision\n'}
+[3.556646] (perception_vision) StdoutLine: {'line': b"writing list of installed files to '/home/devika/robo_ws/build/perception_vision/install.log'\n"}
+[3.619761] (-) TimerEvent: {}
+[3.649694] (cylinder_position_estimator) CommandEnded: {'returncode': 0}
+[3.679643] (cylinder_position_estimator) JobEnded: {'identifier': 'cylinder_position_estimator', 'rc': 0}
+[3.683121] (perception_vision) CommandEnded: {'returncode': 0}
+[3.691001] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found control_toolbox: 3.6.0 (/opt/ros/humble/share/control_toolbox/cmake)\n'}
+[3.701762] (perception_vision) JobEnded: {'identifier': 'perception_vision', 'rc': 0}
+[3.720003] (-) TimerEvent: {}
+[3.772616] (hello_moveit) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread \n'}
+[3.808081] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found gazebo_dev: 3.9.0 (/opt/ros/humble/share/gazebo_dev/cmake)\n'}
+[3.820126] (-) TimerEvent: {}
+[3.825197] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[3.827950] (gazebo_ros2_control) StdoutLine: {'line': b"-- Checking for module 'bullet>=2.82'\n"}
+[3.868237] (gazebo_ros2_control) StdoutLine: {'line': b'--   Found bullet, version 3.05\n'}
+[3.920310] (-) TimerEvent: {}
+[3.942681] (hello_moveit) StdoutLine: {'line': b'-- Found parameter_traits: 0.4.0 (/opt/ros/humble/share/parameter_traits/cmake)\n'}
+[4.020463] (-) TimerEvent: {}
+[4.057588] (hello_moveit) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[4.066935] (hello_moveit) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[4.120688] (-) TimerEvent: {}
+[4.161659] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") \n'}
+[4.220853] (-) TimerEvent: {}
+[4.307243] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found assimp: /usr/include (found version "5.2.0") \n'}
+[4.312882] (hello_moveit) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[4.320996] (-) TimerEvent: {}
+[4.357202] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[4.383911] (hello_moveit) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[4.421193] (-) TimerEvent: {}
+[4.437452] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time \n'}
+[4.480252] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[4.494559] (hello_moveit) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[4.495521] (gazebo_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[4.510580] (gazebo_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[4.513079] (gazebo_ros2_control) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[4.513916] (gazebo_ros2_control) StdoutLine: {'line': b'-- OGRE_PREFIX_WATCH changed.\n'}
+[4.520436] (hello_moveit) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[4.521228] (-) TimerEvent: {}
+[4.525895] (gazebo_ros2_control) StdoutLine: {'line': b"-- Checking for module 'OGRE'\n"}
+[4.564616] (gazebo_ros2_control) StdoutLine: {'line': b'--   Found OGRE, version 1.9.0\n'}
+[4.621397] (-) TimerEvent: {}
+[4.633978] (hello_moveit) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[4.642311] (hello_moveit) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 16.0.11 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)\n'}
+[4.667513] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[4.693577] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[4.706719] (hello_moveit) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem \n'}
+[4.713220] (gazebo_ros2_control) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[4.721677] (-) TimerEvent: {}
+[4.736432] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[4.736872] (gazebo_ros2_control) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[4.764349] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[4.764694] (gazebo_ros2_control) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[4.787299] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[4.787619] (gazebo_ros2_control) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[4.809701] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[4.810101] (gazebo_ros2_control) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[4.821737] (-) TimerEvent: {}
+[4.831985] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[4.832373] (gazebo_ros2_control) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[4.858429] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[4.921879] (-) TimerEvent: {}
+[4.977383] (hello_moveit) StdoutLine: {'line': b'-- library: /usr/lib/x86_64-linux-gnu/libcurl.so\n'}
+[5.022042] (-) TimerEvent: {}
+[5.071386] (hello_moveit) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[5.122226] (-) TimerEvent: {}
+[5.222679] (-) TimerEvent: {}
+[5.320194] (gazebo_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[5.322845] (-) TimerEvent: {}
+[5.326813] (gazebo_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[5.327698] (gazebo_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[5.374431] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[5.405201] (gazebo_ros2_control) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[5.415424] (gazebo_ros2_control) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[5.423008] (-) TimerEvent: {}
+[5.457994] (gazebo_ros2_control) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[5.500079] (hello_moveit) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono \n'}
+[5.523223] (-) TimerEvent: {}
+[5.566367] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[5.578651] (hello_moveit) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options \n'}
+[5.579859] (gazebo_ros2_control) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[5.621860] (gazebo_ros2_control) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[5.623254] (-) TimerEvent: {}
+[5.638371] (hello_moveit) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread \n'}
+[5.722401] (hello_moveit) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[5.723395] (-) TimerEvent: {}
+[5.725418] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[5.732242] (gazebo_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[5.733273] (gazebo_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[5.782887] (gazebo_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[5.796247] (gazebo_ros2_control) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[5.823510] (-) TimerEvent: {}
+[5.835524] (gazebo_ros2_control) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[5.923657] (-) TimerEvent: {}
+[5.928648] (hello_moveit) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[5.928995] (hello_moveit) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/devika/robo_ws/src/hello_moveit/include>\n'}
+[5.929195] (hello_moveit) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[5.930941] (hello_moveit) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.933392] (hello_moveit) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[5.933784] (hello_moveit) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[5.935039] (hello_moveit) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.938814] (hello_moveit) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.941848] (gazebo_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[5.950052] (gazebo_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[5.950700] (gazebo_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[5.951527] (gazebo_ros2_control) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[5.954002] (gazebo_ros2_control) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[5.957170] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[5.989198] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") \n'}
+[5.990209] (gazebo_ros2_control) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[5.998035] (gazebo_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[5.999191] (gazebo_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[6.001547] (gazebo_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[6.006944] (hello_moveit) StdoutLine: {'line': b'-- Generating done\n'}
+[6.009491] (gazebo_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[6.010527] (gazebo_ros2_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[6.023931] (-) TimerEvent: {}
+[6.025526] (hello_moveit) StdoutLine: {'line': b'-- Build files have been written to: /home/devika/robo_ws/build/hello_moveit\n'}
+[6.062259] (hello_moveit) CommandEnded: {'returncode': 0}
+[6.063629] (hello_moveit) JobProgress: {'identifier': 'hello_moveit', 'progress': 'build'}
+[6.065988] (hello_moveit) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/devika/robo_ws/build/hello_moveit', '--', '-j8', '-l8'], 'cwd': '/home/devika/robo_ws/build/hello_moveit', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'devika'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/devika/robo_ws/install/gazebo_ros2_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/devika'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2897'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/devika/robo_ws/install:/home/devika/manga_ws/install:/home/devika/some_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'devika'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'devika'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/devika/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/devika:@/tmp/.ICE-unix/1570,unix/devika:/tmp/.ICE-unix/1570'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f888b7d5_e258_4181_92ec_4571cea58831'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.0M0242'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.100'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/devika/robo_ws/install/urdf_humble_test_moveit_config:/home/devika/robo_ws/install/urdf_humble_test:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/hello_moveit:/home/devika/robo_ws/install/gazebo_ros2_control:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/manga_ws/install/urdf_humble_test_moveit_config:/home/devika/manga_ws/install/urdf_humble_test:/home/devika/manga_ws/install/hello_moveit:/home/devika/some_ws/install/motoman_hc10_support:/home/devika/some_ws/install/motoman_resources:/home/devika/some_ws/install/hello_moveit:/home/devika/some_ws/install/hc20_sim_moveit_config:/home/devika/some_ws/install/hc20_moveit_config:/home/devika/some_ws/install/hc10_movit2v3:/home/devika/some_ws/install/hc10dt_moveit_config:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/devika/robo_ws/build/hello_moveit'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/devika/robo_ws/install/perception_vision/lib/python3.10/site-packages:/home/devika/robo_ws/install/cylinder_position_estimator/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/devika/robo_ws/install/urdf_humble_test_moveit_config:/home/devika/robo_ws/install/urdf_humble_test:/home/devika/robo_ws/install/hello_moveit:/home/devika/robo_ws/install/gazebo_ros2_control:/home/devika/manga_ws/install/urdf_humble_test_moveit_config:/home/devika/manga_ws/install/urdf_humble_test:/home/devika/manga_ws/install/hello_moveit:/home/devika/some_ws/install/motoman_hc10_support:/home/devika/some_ws/install/motoman_resources:/home/devika/some_ws/install/hello_moveit:/home/devika/some_ws/install/hc20_sim_moveit_config:/home/devika/some_ws/install/hc20_moveit_config:/home/devika/some_ws/install/hc10_movit2v3:/home/devika/some_ws/install/hc10dt_moveit_config:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble')]), 'shell': False}
+[6.124100] (-) TimerEvent: {}
+[6.184887] (hello_moveit) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/hello_moveit.dir/src/letsee.cpp.o\x1b[0m\n'}
+[6.224394] (-) TimerEvent: {}
+[6.250586] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[6.274207] (gazebo_ros2_control) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[6.315898] (gazebo_ros2_control) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[6.324586] (-) TimerEvent: {}
+[6.420231] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[6.424765] (-) TimerEvent: {}
+[6.433221] (gazebo_ros2_control) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[6.472433] (gazebo_ros2_control) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[6.524965] (-) TimerEvent: {}
+[6.575481] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[6.576768] (gazebo_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[6.577590] (gazebo_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[6.578704] (gazebo_ros2_control) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[6.590046] (gazebo_ros2_control) StdoutLine: {'line': b'-- Gazebo version: 11.10\n'}
+[6.590883] (gazebo_ros2_control) StdoutLine: {'line': b"-- Checking for module 'tbb'\n"}
+[6.625118] (-) TimerEvent: {}
+[6.633423] (gazebo_ros2_control) StdoutLine: {'line': b'--   Found tbb, version 2021.5.0\n'}
+[6.725297] (-) TimerEvent: {}
+[6.743451] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)\n'}
+[6.757123] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found yaml_cpp_vendor: 8.0.2 (/opt/ros/humble/share/yaml_cpp_vendor/cmake)\n'}
+[6.825522] (-) TimerEvent: {}
+[6.865097] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 1.3.11 (/opt/ros/humble/share/ament_cmake_gtest/cmake)\n'}
+[6.874295] (gazebo_ros2_control) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[6.925650] (-) TimerEvent: {}
+[7.026076] (-) TimerEvent: {}
+[7.103834] (gazebo_ros2_control) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[7.108045] (gazebo_ros2_control) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[7.109265] (gazebo_ros2_control) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/devika/robo_ws/src/gazebo_ros2_control/include\n'}
+[7.109510] (gazebo_ros2_control) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[7.113571] (gazebo_ros2_control) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[7.113967] (gazebo_ros2_control) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[7.116090] (gazebo_ros2_control) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[7.120084] (gazebo_ros2_control) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[7.120600] (gazebo_ros2_control) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[7.122117] (gazebo_ros2_control) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[7.126389] (-) TimerEvent: {}
+[7.127781] (gazebo_ros2_control) StdoutLine: {'line': b'-- Configuring done\n'}
+[7.226648] (-) TimerEvent: {}
+[7.275272] (gazebo_ros2_control) StdoutLine: {'line': b'-- Generating done\n'}
+[7.299738] (gazebo_ros2_control) StdoutLine: {'line': b'-- Build files have been written to: /home/devika/robo_ws/build/gazebo_ros2_control\n'}
+[7.326763] (-) TimerEvent: {}
+[7.346993] (gazebo_ros2_control) CommandEnded: {'returncode': 0}
+[7.349237] (gazebo_ros2_control) JobProgress: {'identifier': 'gazebo_ros2_control', 'progress': 'build'}
+[7.350764] (gazebo_ros2_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/devika/robo_ws/build/gazebo_ros2_control', '--', '-j8', '-l8'], 'cwd': '/home/devika/robo_ws/build/gazebo_ros2_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'devika'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/devika/robo_ws/install/gazebo_ros2_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/devika'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2897'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/devika/robo_ws/install:/home/devika/manga_ws/install:/home/devika/some_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'devika'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'devika'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/devika/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/devika:@/tmp/.ICE-unix/1570,unix/devika:/tmp/.ICE-unix/1570'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f888b7d5_e258_4181_92ec_4571cea58831'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.0M0242'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.100'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/devika/robo_ws/install/urdf_humble_test_moveit_config:/home/devika/robo_ws/install/urdf_humble_test:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/hello_moveit:/home/devika/robo_ws/install/gazebo_ros2_control:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/manga_ws/install/urdf_humble_test_moveit_config:/home/devika/manga_ws/install/urdf_humble_test:/home/devika/manga_ws/install/hello_moveit:/home/devika/some_ws/install/motoman_hc10_support:/home/devika/some_ws/install/motoman_resources:/home/devika/some_ws/install/hello_moveit:/home/devika/some_ws/install/hc20_sim_moveit_config:/home/devika/some_ws/install/hc20_moveit_config:/home/devika/some_ws/install/hc10_movit2v3:/home/devika/some_ws/install/hc10dt_moveit_config:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/devika/robo_ws/build/gazebo_ros2_control'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/devika/robo_ws/install/perception_vision/lib/python3.10/site-packages:/home/devika/robo_ws/install/cylinder_position_estimator/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/devika/robo_ws/install/urdf_humble_test_moveit_config:/home/devika/robo_ws/install/urdf_humble_test:/home/devika/robo_ws/install/hello_moveit:/home/devika/robo_ws/install/gazebo_ros2_control:/home/devika/manga_ws/install/urdf_humble_test_moveit_config:/home/devika/manga_ws/install/urdf_humble_test:/home/devika/manga_ws/install/hello_moveit:/home/devika/some_ws/install/motoman_hc10_support:/home/devika/some_ws/install/motoman_resources:/home/devika/some_ws/install/hello_moveit:/home/devika/some_ws/install/hc20_sim_moveit_config:/home/devika/some_ws/install/hc20_moveit_config:/home/devika/some_ws/install/hc10_movit2v3:/home/devika/some_ws/install/hc10dt_moveit_config:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble')]), 'shell': False}
+[7.426926] (-) TimerEvent: {}
+[7.476576] (gazebo_ros2_control) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/gazebo_hardware_plugins.dir/src/gazebo_system.cpp.o\x1b[0m\n'}
+[7.477001] (gazebo_ros2_control) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/gazebo_ros2_control.dir/src/gazebo_ros2_control_plugin.cpp.o\x1b[0m\n'}
+[7.527235] (-) TimerEvent: {}
+[7.627972] (-) TimerEvent: {}
+[7.728634] (-) TimerEvent: {}
+[7.829412] (-) TimerEvent: {}
+[7.930302] (-) TimerEvent: {}
+[8.030850] (-) TimerEvent: {}
+[8.131499] (-) TimerEvent: {}
+[8.231984] (-) TimerEvent: {}
+[8.332490] (-) TimerEvent: {}
+[8.432966] (-) TimerEvent: {}
+[8.533760] (-) TimerEvent: {}
+[8.634387] (-) TimerEvent: {}
+[8.735389] (-) TimerEvent: {}
+[8.836084] (-) TimerEvent: {}
+[8.936669] (-) TimerEvent: {}
+[9.037475] (-) TimerEvent: {}
+[9.137959] (-) TimerEvent: {}
+[9.238971] (-) TimerEvent: {}
+[9.339546] (-) TimerEvent: {}
+[9.440078] (-) TimerEvent: {}
+[9.540762] (-) TimerEvent: {}
+[9.641507] (-) TimerEvent: {}
+[9.742700] (-) TimerEvent: {}
+[9.843459] (-) TimerEvent: {}
+[9.944773] (-) TimerEvent: {}
+[10.045487] (-) TimerEvent: {}
+[10.146224] (-) TimerEvent: {}
+[10.247007] (-) TimerEvent: {}
+[10.347676] (-) TimerEvent: {}
+[10.448727] (-) TimerEvent: {}
+[10.549488] (-) TimerEvent: {}
+[10.650126] (-) TimerEvent: {}
+[10.750972] (-) TimerEvent: {}
+[10.851546] (-) TimerEvent: {}
+[10.952072] (-) TimerEvent: {}
+[11.052593] (-) TimerEvent: {}
+[11.153552] (-) TimerEvent: {}
+[11.254105] (-) TimerEvent: {}
+[11.354767] (-) TimerEvent: {}
+[11.455646] (-) TimerEvent: {}
+[11.556126] (-) TimerEvent: {}
+[11.656629] (-) TimerEvent: {}
+[11.757088] (-) TimerEvent: {}
+[11.857960] (-) TimerEvent: {}
+[11.958640] (-) TimerEvent: {}
+[12.059257] (-) TimerEvent: {}
+[12.159908] (-) TimerEvent: {}
+[12.260795] (-) TimerEvent: {}
+[12.361640] (-) TimerEvent: {}
+[12.462846] (-) TimerEvent: {}
+[12.565330] (-) TimerEvent: {}
+[12.665853] (-) TimerEvent: {}
+[12.766963] (-) TimerEvent: {}
+[12.867789] (-) TimerEvent: {}
+[12.968450] (-) TimerEvent: {}
+[13.069328] (-) TimerEvent: {}
+[13.169821] (-) TimerEvent: {}
+[13.270914] (-) TimerEvent: {}
+[13.372282] (-) TimerEvent: {}
+[13.472820] (-) TimerEvent: {}
+[13.573428] (-) TimerEvent: {}
+[13.673952] (-) TimerEvent: {}
+[13.774748] (-) TimerEvent: {}
+[13.875269] (-) TimerEvent: {}
+[13.976033] (-) TimerEvent: {}
+[14.076616] (-) TimerEvent: {}
+[14.177208] (-) TimerEvent: {}
+[14.277681] (-) TimerEvent: {}
+[14.378287] (-) TimerEvent: {}
+[14.479868] (-) TimerEvent: {}
+[14.582282] (-) TimerEvent: {}
+[14.682953] (-) TimerEvent: {}
+[14.783500] (-) TimerEvent: {}
+[14.884062] (-) TimerEvent: {}
+[14.984825] (-) TimerEvent: {}
+[15.085469] (-) TimerEvent: {}
+[15.186107] (-) TimerEvent: {}
+[15.286764] (-) TimerEvent: {}
+[15.387338] (-) TimerEvent: {}
+[15.488089] (-) TimerEvent: {}
+[15.588572] (-) TimerEvent: {}
+[15.689080] (-) TimerEvent: {}
+[15.789701] (-) TimerEvent: {}
+[15.890129] (-) TimerEvent: {}
+[15.990640] (-) TimerEvent: {}
+[16.091199] (-) TimerEvent: {}
+[16.264078] (-) TimerEvent: {}
+[16.365182] (-) TimerEvent: {}
+[16.466889] (-) TimerEvent: {}
+[16.568520] (-) TimerEvent: {}
+[16.669314] (-) TimerEvent: {}
+[16.769856] (-) TimerEvent: {}
+[16.870461] (-) TimerEvent: {}
+[16.971037] (-) TimerEvent: {}
+[17.071680] (-) TimerEvent: {}
+[17.172599] (-) TimerEvent: {}
+[17.273232] (-) TimerEvent: {}
+[17.373726] (-) TimerEvent: {}
+[17.474291] (-) TimerEvent: {}
+[17.574760] (-) TimerEvent: {}
+[17.675821] (-) TimerEvent: {}
+[17.776632] (-) TimerEvent: {}
+[17.882326] (-) TimerEvent: {}
+[17.983013] (-) TimerEvent: {}
+[18.083791] (-) TimerEvent: {}
+[18.184755] (-) TimerEvent: {}
+[18.286223] (-) TimerEvent: {}
+[18.386707] (-) TimerEvent: {}
+[18.487773] (-) TimerEvent: {}
+[18.588272] (-) TimerEvent: {}
+[18.688717] (-) TimerEvent: {}
+[18.789432] (-) TimerEvent: {}
+[18.891965] (-) TimerEvent: {}
+[18.992583] (-) TimerEvent: {}
+[19.093114] (-) TimerEvent: {}
+[19.193889] (-) TimerEvent: {}
+[19.294487] (-) TimerEvent: {}
+[19.395009] (-) TimerEvent: {}
+[19.495931] (-) TimerEvent: {}
+[19.596517] (-) TimerEvent: {}
+[19.696996] (-) TimerEvent: {}
+[19.800176] (-) TimerEvent: {}
+[19.900979] (-) TimerEvent: {}
+[20.001763] (-) TimerEvent: {}
+[20.102258] (-) TimerEvent: {}
+[20.202778] (-) TimerEvent: {}
+[20.303951] (-) TimerEvent: {}
+[20.404403] (-) TimerEvent: {}
+[20.504809] (-) TimerEvent: {}
+[20.605379] (-) TimerEvent: {}
+[20.705983] (-) TimerEvent: {}
+[20.806583] (-) TimerEvent: {}
+[20.907141] (-) TimerEvent: {}
+[21.007899] (-) TimerEvent: {}
+[21.108394] (-) TimerEvent: {}
+[21.209026] (-) TimerEvent: {}
+[21.309524] (-) TimerEvent: {}
+[21.409995] (-) TimerEvent: {}
+[21.510509] (-) TimerEvent: {}
+[21.611249] (-) TimerEvent: {}
+[21.711981] (-) TimerEvent: {}
+[21.812548] (-) TimerEvent: {}
+[21.913013] (-) TimerEvent: {}
+[22.013805] (-) TimerEvent: {}
+[22.114566] (-) TimerEvent: {}
+[22.215271] (-) TimerEvent: {}
+[22.315794] (-) TimerEvent: {}
+[22.416428] (-) TimerEvent: {}
+[22.517250] (-) TimerEvent: {}
+[22.618121] (-) TimerEvent: {}
+[22.718673] (-) TimerEvent: {}
+[22.819081] (-) TimerEvent: {}
+[22.919584] (-) TimerEvent: {}
+[23.020133] (-) TimerEvent: {}
+[23.120747] (-) TimerEvent: {}
+[23.221302] (-) TimerEvent: {}
+[23.321793] (-) TimerEvent: {}
+[23.422250] (-) TimerEvent: {}
+[23.522652] (-) TimerEvent: {}
+[23.623251] (-) TimerEvent: {}
+[23.723828] (-) TimerEvent: {}
+[23.824474] (-) TimerEvent: {}
+[23.924996] (-) TimerEvent: {}
+[24.025428] (-) TimerEvent: {}
+[24.125998] (-) TimerEvent: {}
+[24.397622] (-) TimerEvent: {}
+[24.498326] (-) TimerEvent: {}
+[24.599018] (-) TimerEvent: {}
+[24.699739] (-) TimerEvent: {}
+[24.800558] (-) TimerEvent: {}
+[24.901447] (-) TimerEvent: {}
+[25.002472] (-) TimerEvent: {}
+[25.103019] (-) TimerEvent: {}
+[25.206276] (-) TimerEvent: {}
+[25.306783] (-) TimerEvent: {}
+[25.407360] (-) TimerEvent: {}
+[25.507838] (-) TimerEvent: {}
+[25.608257] (-) TimerEvent: {}
+[25.708723] (-) TimerEvent: {}
+[25.809261] (-) TimerEvent: {}
+[25.909793] (-) TimerEvent: {}
+[26.010467] (-) TimerEvent: {}
+[26.110995] (-) TimerEvent: {}
+[26.211522] (-) TimerEvent: {}
+[26.312091] (-) TimerEvent: {}
+[26.412711] (-) TimerEvent: {}
+[26.513503] (-) TimerEvent: {}
+[26.614048] (-) TimerEvent: {}
+[26.714569] (-) TimerEvent: {}
+[26.815078] (-) TimerEvent: {}
+[26.915712] (-) TimerEvent: {}
+[27.016278] (-) TimerEvent: {}
+[27.116827] (-) TimerEvent: {}
+[27.217372] (-) TimerEvent: {}
+[27.317928] (-) TimerEvent: {}
+[27.418515] (-) TimerEvent: {}
+[27.519141] (-) TimerEvent: {}
+[27.619770] (-) TimerEvent: {}
+[27.720347] (-) TimerEvent: {}
+[27.820868] (-) TimerEvent: {}
+[27.921446] (-) TimerEvent: {}
+[28.022087] (-) TimerEvent: {}
+[28.122857] (-) TimerEvent: {}
+[28.223633] (-) TimerEvent: {}
+[28.324287] (-) TimerEvent: {}
+[28.424793] (-) TimerEvent: {}
+[28.525541] (-) TimerEvent: {}
+[28.626293] (-) TimerEvent: {}
+[28.726827] (-) TimerEvent: {}
+[28.827985] (-) TimerEvent: {}
+[28.928773] (-) TimerEvent: {}
+[29.029596] (-) TimerEvent: {}
+[29.131016] (-) TimerEvent: {}
+[29.231579] (-) TimerEvent: {}
+[29.332228] (-) TimerEvent: {}
+[29.433960] (-) TimerEvent: {}
+[29.534549] (-) TimerEvent: {}
+[29.636509] (-) TimerEvent: {}
+[29.736987] (-) TimerEvent: {}
+[29.837558] (-) TimerEvent: {}
+[29.938124] (-) TimerEvent: {}
+[30.040639] (-) TimerEvent: {}
+[30.141100] (-) TimerEvent: {}
+[30.241553] (-) TimerEvent: {}
+[30.342021] (-) TimerEvent: {}
+[30.442682] (-) TimerEvent: {}
+[30.543707] (-) TimerEvent: {}
+[30.644393] (-) TimerEvent: {}
+[30.744971] (-) TimerEvent: {}
+[30.845570] (-) TimerEvent: {}
+[30.946274] (-) TimerEvent: {}
+[31.047239] (-) TimerEvent: {}
+[31.147728] (-) TimerEvent: {}
+[31.248409] (-) TimerEvent: {}
+[31.349285] (-) TimerEvent: {}
+[31.450070] (-) TimerEvent: {}
+[31.550676] (-) TimerEvent: {}
+[31.651416] (-) TimerEvent: {}
+[31.752240] (-) TimerEvent: {}
+[31.852868] (-) TimerEvent: {}
+[31.953402] (-) TimerEvent: {}
+[32.053961] (-) TimerEvent: {}
+[32.154618] (-) TimerEvent: {}
+[32.255336] (-) TimerEvent: {}
+[32.355849] (-) TimerEvent: {}
+[32.456386] (-) TimerEvent: {}
+[32.556886] (-) TimerEvent: {}
+[32.657847] (-) TimerEvent: {}
+[32.758577] (-) TimerEvent: {}
+[32.859263] (-) TimerEvent: {}
+[32.959751] (-) TimerEvent: {}
+[33.060293] (-) TimerEvent: {}
+[33.160900] (-) TimerEvent: {}
+[33.262201] (-) TimerEvent: {}
+[33.362746] (-) TimerEvent: {}
+[33.463377] (-) TimerEvent: {}
+[33.563947] (-) TimerEvent: {}
+[33.664550] (-) TimerEvent: {}
+[33.764992] (-) TimerEvent: {}
+[33.865443] (-) TimerEvent: {}
+[33.965977] (-) TimerEvent: {}
+[34.066475] (-) TimerEvent: {}
+[34.167648] (-) TimerEvent: {}
+[34.268278] (-) TimerEvent: {}
+[34.369008] (-) TimerEvent: {}
+[34.470152] (-) TimerEvent: {}
+[34.570876] (-) TimerEvent: {}
+[34.671788] (-) TimerEvent: {}
+[34.772493] (-) TimerEvent: {}
+[34.873612] (-) TimerEvent: {}
+[34.974341] (-) TimerEvent: {}
+[35.075097] (-) TimerEvent: {}
+[35.175628] (-) TimerEvent: {}
+[35.276236] (-) TimerEvent: {}
+[35.376966] (-) TimerEvent: {}
+[35.478131] (-) TimerEvent: {}
+[35.579288] (-) TimerEvent: {}
+[35.680201] (-) TimerEvent: {}
+[35.781268] (-) TimerEvent: {}
+[35.881757] (-) TimerEvent: {}
+[35.982354] (-) TimerEvent: {}
+[36.082933] (-) TimerEvent: {}
+[36.183514] (-) TimerEvent: {}
+[36.284299] (-) TimerEvent: {}
+[36.385083] (-) TimerEvent: {}
+[36.486242] (-) TimerEvent: {}
+[36.586953] (-) TimerEvent: {}
+[36.687507] (-) TimerEvent: {}
+[36.788231] (-) TimerEvent: {}
+[36.888728] (-) TimerEvent: {}
+[36.993015] (-) TimerEvent: {}
+[37.094406] (-) TimerEvent: {}
+[37.195513] (-) TimerEvent: {}
+[37.296070] (-) TimerEvent: {}
+[37.397223] (-) TimerEvent: {}
+[37.497869] (-) TimerEvent: {}
+[37.599491] (-) TimerEvent: {}
+[37.699950] (-) TimerEvent: {}
+[37.800555] (-) TimerEvent: {}
+[37.838789] (hello_moveit) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable hello_moveit\x1b[0m\n'}
+[37.900689] (-) TimerEvent: {}
+[38.001260] (-) TimerEvent: {}
+[38.101872] (-) TimerEvent: {}
+[38.202796] (-) TimerEvent: {}
+[38.303365] (-) TimerEvent: {}
+[38.403936] (-) TimerEvent: {}
+[38.504749] (-) TimerEvent: {}
+[38.605330] (-) TimerEvent: {}
+[38.705758] (-) TimerEvent: {}
+[38.806446] (-) TimerEvent: {}
+[38.907023] (-) TimerEvent: {}
+[39.007542] (-) TimerEvent: {}
+[39.108030] (-) TimerEvent: {}
+[39.208799] (-) TimerEvent: {}
+[39.309317] (-) TimerEvent: {}
+[39.409819] (-) TimerEvent: {}
+[39.510405] (-) TimerEvent: {}
+[39.599371] (hello_moveit) StdoutLine: {'line': b'[100%] Built target hello_moveit\n'}
+[39.610798] (-) TimerEvent: {}
+[39.634362] (hello_moveit) CommandEnded: {'returncode': 0}
+[39.637574] (hello_moveit) JobProgress: {'identifier': 'hello_moveit', 'progress': 'install'}
+[39.660286] (hello_moveit) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/devika/robo_ws/build/hello_moveit'], 'cwd': '/home/devika/robo_ws/build/hello_moveit', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'devika'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/devika/robo_ws/install/gazebo_ros2_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/devika'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2897'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/devika/robo_ws/install:/home/devika/manga_ws/install:/home/devika/some_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'devika'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'devika'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/devika/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/devika:@/tmp/.ICE-unix/1570,unix/devika:/tmp/.ICE-unix/1570'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f888b7d5_e258_4181_92ec_4571cea58831'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.0M0242'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.100'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/devika/robo_ws/install/urdf_humble_test_moveit_config:/home/devika/robo_ws/install/urdf_humble_test:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/hello_moveit:/home/devika/robo_ws/install/gazebo_ros2_control:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/manga_ws/install/urdf_humble_test_moveit_config:/home/devika/manga_ws/install/urdf_humble_test:/home/devika/manga_ws/install/hello_moveit:/home/devika/some_ws/install/motoman_hc10_support:/home/devika/some_ws/install/motoman_resources:/home/devika/some_ws/install/hello_moveit:/home/devika/some_ws/install/hc20_sim_moveit_config:/home/devika/some_ws/install/hc20_moveit_config:/home/devika/some_ws/install/hc10_movit2v3:/home/devika/some_ws/install/hc10dt_moveit_config:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/devika/robo_ws/build/hello_moveit'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/devika/robo_ws/install/perception_vision/lib/python3.10/site-packages:/home/devika/robo_ws/install/cylinder_position_estimator/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/devika/robo_ws/install/urdf_humble_test_moveit_config:/home/devika/robo_ws/install/urdf_humble_test:/home/devika/robo_ws/install/hello_moveit:/home/devika/robo_ws/install/gazebo_ros2_control:/home/devika/manga_ws/install/urdf_humble_test_moveit_config:/home/devika/manga_ws/install/urdf_humble_test:/home/devika/manga_ws/install/hello_moveit:/home/devika/some_ws/install/motoman_hc10_support:/home/devika/some_ws/install/motoman_resources:/home/devika/some_ws/install/hello_moveit:/home/devika/some_ws/install/hc20_sim_moveit_config:/home/devika/some_ws/install/hc20_moveit_config:/home/devika/some_ws/install/hc10_movit2v3:/home/devika/some_ws/install/hc10dt_moveit_config:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble')]), 'shell': False}
+[39.688935] (hello_moveit) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[39.694677] (hello_moveit) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/hello_moveit/lib/hello_moveit/hello_moveit\n'}
+[39.696395] (hello_moveit) StdoutLine: {'line': b'-- Set runtime path of "/home/devika/robo_ws/install/hello_moveit/lib/hello_moveit/hello_moveit" to ""\n'}
+[39.697461] (hello_moveit) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/hello_moveit/share/ament_index/resource_index/package_run_dependencies/hello_moveit\n'}
+[39.697913] (hello_moveit) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/hello_moveit/share/ament_index/resource_index/parent_prefix_path/hello_moveit\n'}
+[39.699572] (hello_moveit) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/environment/ament_prefix_path.sh\n'}
+[39.700791] (hello_moveit) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/environment/ament_prefix_path.dsv\n'}
+[39.703771] (hello_moveit) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/environment/path.sh\n'}
+[39.704874] (hello_moveit) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/environment/path.dsv\n'}
+[39.706189] (hello_moveit) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/local_setup.bash\n'}
+[39.707273] (hello_moveit) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/local_setup.sh\n'}
+[39.708799] (hello_moveit) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/local_setup.zsh\n'}
+[39.709750] (hello_moveit) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/local_setup.dsv\n'}
+[39.710564] (hello_moveit) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/package.dsv\n'}
+[39.710867] (-) TimerEvent: {}
+[39.711763] (hello_moveit) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/hello_moveit/share/ament_index/resource_index/packages/hello_moveit\n'}
+[39.712333] (hello_moveit) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/cmake/hello_moveitConfig.cmake\n'}
+[39.713487] (hello_moveit) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/cmake/hello_moveitConfig-version.cmake\n'}
+[39.715288] (hello_moveit) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/package.xml\n'}
+[39.720470] (hello_moveit) CommandEnded: {'returncode': 0}
+[39.782623] (hello_moveit) JobEnded: {'identifier': 'hello_moveit', 'rc': 0}
+[39.811238] (-) TimerEvent: {}
+[39.911816] (-) TimerEvent: {}
+[40.012568] (-) TimerEvent: {}
+[40.113284] (-) TimerEvent: {}
+[40.215133] (-) TimerEvent: {}
+[40.317006] (-) TimerEvent: {}
+[40.418377] (-) TimerEvent: {}
+[40.519130] (-) TimerEvent: {}
+[40.619593] (-) TimerEvent: {}
+[40.719971] (-) TimerEvent: {}
+[40.820480] (-) TimerEvent: {}
+[40.921016] (-) TimerEvent: {}
+[41.022977] (-) TimerEvent: {}
+[41.124076] (-) TimerEvent: {}
+[41.224716] (-) TimerEvent: {}
+[41.325245] (-) TimerEvent: {}
+[41.425858] (-) TimerEvent: {}
+[41.526600] (-) TimerEvent: {}
+[41.627358] (-) TimerEvent: {}
+[41.728038] (-) TimerEvent: {}
+[41.828586] (-) TimerEvent: {}
+[41.929172] (-) TimerEvent: {}
+[42.029787] (-) TimerEvent: {}
+[42.130745] (-) TimerEvent: {}
+[42.231832] (-) TimerEvent: {}
+[42.332774] (-) TimerEvent: {}
+[42.434375] (-) TimerEvent: {}
+[42.535211] (-) TimerEvent: {}
+[42.635842] (-) TimerEvent: {}
+[42.736383] (-) TimerEvent: {}
+[42.837001] (-) TimerEvent: {}
+[42.937530] (-) TimerEvent: {}
+[43.038020] (-) TimerEvent: {}
+[43.140134] (-) TimerEvent: {}
+[43.241272] (-) TimerEvent: {}
+[43.342511] (-) TimerEvent: {}
+[43.443448] (-) TimerEvent: {}
+[43.544006] (-) TimerEvent: {}
+[43.644552] (-) TimerEvent: {}
+[43.745183] (-) TimerEvent: {}
+[43.846290] (-) TimerEvent: {}
+[43.946783] (-) TimerEvent: {}
+[44.047569] (-) TimerEvent: {}
+[44.148226] (-) TimerEvent: {}
+[44.248777] (-) TimerEvent: {}
+[44.349328] (-) TimerEvent: {}
+[44.450023] (-) TimerEvent: {}
+[44.550596] (-) TimerEvent: {}
+[44.651196] (-) TimerEvent: {}
+[44.751853] (-) TimerEvent: {}
+[44.852501] (-) TimerEvent: {}
+[44.953196] (-) TimerEvent: {}
+[45.053847] (-) TimerEvent: {}
+[45.154450] (-) TimerEvent: {}
+[45.254973] (-) TimerEvent: {}
+[45.355912] (-) TimerEvent: {}
+[45.456535] (-) TimerEvent: {}
+[45.557149] (-) TimerEvent: {}
+[45.657781] (-) TimerEvent: {}
+[45.758819] (-) TimerEvent: {}
+[45.859394] (-) TimerEvent: {}
+[45.959868] (-) TimerEvent: {}
+[46.060327] (-) TimerEvent: {}
+[46.160742] (-) TimerEvent: {}
+[46.261234] (-) TimerEvent: {}
+[46.361792] (-) TimerEvent: {}
+[46.462362] (-) TimerEvent: {}
+[46.563454] (-) TimerEvent: {}
+[46.663978] (-) TimerEvent: {}
+[46.764573] (-) TimerEvent: {}
+[46.865128] (-) TimerEvent: {}
+[46.965620] (-) TimerEvent: {}
+[47.066215] (-) TimerEvent: {}
+[47.166995] (-) TimerEvent: {}
+[47.267947] (-) TimerEvent: {}
+[47.368496] (-) TimerEvent: {}
+[47.468942] (-) TimerEvent: {}
+[47.569412] (-) TimerEvent: {}
+[47.669936] (-) TimerEvent: {}
+[47.770511] (-) TimerEvent: {}
+[47.871090] (-) TimerEvent: {}
+[47.971598] (-) TimerEvent: {}
+[48.072142] (-) TimerEvent: {}
+[48.172706] (-) TimerEvent: {}
+[48.273207] (-) TimerEvent: {}
+[48.373754] (-) TimerEvent: {}
+[48.474609] (-) TimerEvent: {}
+[48.575231] (-) TimerEvent: {}
+[48.675731] (-) TimerEvent: {}
+[48.776246] (-) TimerEvent: {}
+[48.876825] (-) TimerEvent: {}
+[48.977272] (-) TimerEvent: {}
+[49.077763] (-) TimerEvent: {}
+[49.178357] (-) TimerEvent: {}
+[49.278828] (-) TimerEvent: {}
+[49.379293] (-) TimerEvent: {}
+[49.480495] (-) TimerEvent: {}
+[49.580915] (-) TimerEvent: {}
+[49.681363] (-) TimerEvent: {}
+[49.781885] (-) TimerEvent: {}
+[49.882455] (-) TimerEvent: {}
+[49.982909] (-) TimerEvent: {}
+[50.083786] (-) TimerEvent: {}
+[50.184607] (-) TimerEvent: {}
+[50.285052] (-) TimerEvent: {}
+[50.385510] (-) TimerEvent: {}
+[50.486080] (-) TimerEvent: {}
+[50.586670] (-) TimerEvent: {}
+[50.687810] (-) TimerEvent: {}
+[50.788323] (-) TimerEvent: {}
+[50.888797] (-) TimerEvent: {}
+[50.989232] (-) TimerEvent: {}
+[51.089737] (-) TimerEvent: {}
+[51.190359] (-) TimerEvent: {}
+[51.291032] (-) TimerEvent: {}
+[51.391673] (-) TimerEvent: {}
+[51.493286] (-) TimerEvent: {}
+[51.593750] (-) TimerEvent: {}
+[51.694142] (-) TimerEvent: {}
+[51.794572] (-) TimerEvent: {}
+[51.895266] (-) TimerEvent: {}
+[51.995858] (-) TimerEvent: {}
+[52.096333] (-) TimerEvent: {}
+[52.197417] (-) TimerEvent: {}
+[52.297906] (-) TimerEvent: {}
+[52.398511] (-) TimerEvent: {}
+[52.498943] (-) TimerEvent: {}
+[52.599429] (-) TimerEvent: {}
+[52.699809] (-) TimerEvent: {}
+[52.800241] (-) TimerEvent: {}
+[52.900832] (-) TimerEvent: {}
+[53.001356] (-) TimerEvent: {}
+[53.101890] (-) TimerEvent: {}
+[53.202352] (-) TimerEvent: {}
+[53.604302] (-) TimerEvent: {}
+[53.704969] (-) TimerEvent: {}
+[53.805681] (-) TimerEvent: {}
+[53.906117] (-) TimerEvent: {}
+[54.006668] (-) TimerEvent: {}
+[54.107082] (-) TimerEvent: {}
+[54.207662] (-) TimerEvent: {}
+[54.308208] (-) TimerEvent: {}
+[54.408717] (-) TimerEvent: {}
+[54.509344] (-) TimerEvent: {}
+[54.609912] (-) TimerEvent: {}
+[54.710526] (-) TimerEvent: {}
+[54.811136] (-) TimerEvent: {}
+[54.911720] (-) TimerEvent: {}
+[55.012829] (-) TimerEvent: {}
+[55.115759] (-) TimerEvent: {}
+[55.216506] (-) TimerEvent: {}
+[55.316955] (-) TimerEvent: {}
+[55.417532] (-) TimerEvent: {}
+[55.518312] (-) TimerEvent: {}
+[55.618823] (-) TimerEvent: {}
+[55.719425] (-) TimerEvent: {}
+[55.820112] (-) TimerEvent: {}
+[55.920658] (-) TimerEvent: {}
+[56.021274] (-) TimerEvent: {}
+[56.121792] (-) TimerEvent: {}
+[56.222251] (-) TimerEvent: {}
+[56.322755] (-) TimerEvent: {}
+[56.423392] (-) TimerEvent: {}
+[56.523920] (-) TimerEvent: {}
+[56.625632] (-) TimerEvent: {}
+[56.727359] (-) TimerEvent: {}
+[56.827852] (-) TimerEvent: {}
+[56.930077] (-) TimerEvent: {}
+[57.030768] (-) TimerEvent: {}
+[57.131460] (-) TimerEvent: {}
+[57.231980] (-) TimerEvent: {}
+[57.332704] (-) TimerEvent: {}
+[57.433378] (-) TimerEvent: {}
+[57.533994] (-) TimerEvent: {}
+[57.634714] (-) TimerEvent: {}
+[57.735302] (-) TimerEvent: {}
+[57.835856] (-) TimerEvent: {}
+[57.936507] (-) TimerEvent: {}
+[58.037107] (-) TimerEvent: {}
+[58.137767] (-) TimerEvent: {}
+[58.238694] (-) TimerEvent: {}
+[58.339431] (-) TimerEvent: {}
+[58.439968] (-) TimerEvent: {}
+[58.540447] (-) TimerEvent: {}
+[58.640909] (-) TimerEvent: {}
+[58.741675] (-) TimerEvent: {}
+[58.842892] (-) TimerEvent: {}
+[58.943957] (-) TimerEvent: {}
+[59.044785] (-) TimerEvent: {}
+[59.145326] (-) TimerEvent: {}
+[59.245960] (-) TimerEvent: {}
+[59.346553] (-) TimerEvent: {}
+[59.447504] (-) TimerEvent: {}
+[59.572806] (-) TimerEvent: {}
+[59.673428] (-) TimerEvent: {}
+[59.773853] (-) TimerEvent: {}
+[59.874314] (-) TimerEvent: {}
+[59.974769] (-) TimerEvent: {}
+[60.075216] (-) TimerEvent: {}
+[60.175766] (-) TimerEvent: {}
+[60.276318] (-) TimerEvent: {}
+[60.284543] (gazebo_ros2_control) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX shared library libgazebo_hardware_plugins.so\x1b[0m\n'}
+[60.376451] (-) TimerEvent: {}
+[60.476914] (-) TimerEvent: {}
+[60.577425] (-) TimerEvent: {}
+[60.677985] (-) TimerEvent: {}
+[60.778556] (-) TimerEvent: {}
+[60.879024] (-) TimerEvent: {}
+[60.979520] (-) TimerEvent: {}
+[60.992875] (gazebo_ros2_control) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libgazebo_ros2_control.so\x1b[0m\n'}
+[61.079658] (-) TimerEvent: {}
+[61.180088] (-) TimerEvent: {}
+[61.280616] (-) TimerEvent: {}
+[61.381334] (-) TimerEvent: {}
+[61.482089] (-) TimerEvent: {}
+[61.582866] (-) TimerEvent: {}
+[61.683523] (-) TimerEvent: {}
+[61.784231] (-) TimerEvent: {}
+[61.884799] (-) TimerEvent: {}
+[61.985839] (-) TimerEvent: {}
+[62.087188] (-) TimerEvent: {}
+[62.187908] (-) TimerEvent: {}
+[62.288570] (-) TimerEvent: {}
+[62.389247] (-) TimerEvent: {}
+[62.490083] (-) TimerEvent: {}
+[62.590882] (-) TimerEvent: {}
+[62.692836] (-) TimerEvent: {}
+[62.793645] (-) TimerEvent: {}
+[62.894314] (-) TimerEvent: {}
+[62.995012] (-) TimerEvent: {}
+[63.095843] (-) TimerEvent: {}
+[63.196866] (-) TimerEvent: {}
+[63.299372] (-) TimerEvent: {}
+[63.400051] (-) TimerEvent: {}
+[63.500795] (-) TimerEvent: {}
+[63.601467] (-) TimerEvent: {}
+[63.702252] (-) TimerEvent: {}
+[63.803804] (-) TimerEvent: {}
+[63.906577] (-) TimerEvent: {}
+[64.007239] (-) TimerEvent: {}
+[64.030716] (gazebo_ros2_control) StdoutLine: {'line': b'[100%] Built target gazebo_hardware_plugins\n'}
+[64.107328] (-) TimerEvent: {}
+[64.207986] (-) TimerEvent: {}
+[64.308753] (-) TimerEvent: {}
+[64.409519] (-) TimerEvent: {}
+[64.510015] (-) TimerEvent: {}
+[64.610701] (-) TimerEvent: {}
+[64.667490] (gazebo_ros2_control) StdoutLine: {'line': b'[100%] Built target gazebo_ros2_control\n'}
+[64.692569] (gazebo_ros2_control) CommandEnded: {'returncode': 0}
+[64.696664] (gazebo_ros2_control) JobProgress: {'identifier': 'gazebo_ros2_control', 'progress': 'install'}
+[64.697702] (gazebo_ros2_control) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/devika/robo_ws/build/gazebo_ros2_control'], 'cwd': '/home/devika/robo_ws/build/gazebo_ros2_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'devika'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/devika/robo_ws/install/gazebo_ros2_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/devika'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2897'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/devika/robo_ws/install:/home/devika/manga_ws/install:/home/devika/some_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'devika'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'devika'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/devika/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/devika:@/tmp/.ICE-unix/1570,unix/devika:/tmp/.ICE-unix/1570'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f888b7d5_e258_4181_92ec_4571cea58831'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.0M0242'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.100'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/devika/robo_ws/install/urdf_humble_test_moveit_config:/home/devika/robo_ws/install/urdf_humble_test:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/hello_moveit:/home/devika/robo_ws/install/gazebo_ros2_control:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/manga_ws/install/urdf_humble_test_moveit_config:/home/devika/manga_ws/install/urdf_humble_test:/home/devika/manga_ws/install/hello_moveit:/home/devika/some_ws/install/motoman_hc10_support:/home/devika/some_ws/install/motoman_resources:/home/devika/some_ws/install/hello_moveit:/home/devika/some_ws/install/hc20_sim_moveit_config:/home/devika/some_ws/install/hc20_moveit_config:/home/devika/some_ws/install/hc10_movit2v3:/home/devika/some_ws/install/hc10dt_moveit_config:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/devika/robo_ws/build/gazebo_ros2_control'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/devika/robo_ws/install/perception_vision/lib/python3.10/site-packages:/home/devika/robo_ws/install/cylinder_position_estimator/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/devika/robo_ws/install/urdf_humble_test_moveit_config:/home/devika/robo_ws/install/urdf_humble_test:/home/devika/robo_ws/install/hello_moveit:/home/devika/robo_ws/install/gazebo_ros2_control:/home/devika/manga_ws/install/urdf_humble_test_moveit_config:/home/devika/manga_ws/install/urdf_humble_test:/home/devika/manga_ws/install/hello_moveit:/home/devika/some_ws/install/motoman_hc10_support:/home/devika/some_ws/install/motoman_resources:/home/devika/some_ws/install/hello_moveit:/home/devika/some_ws/install/hc20_sim_moveit_config:/home/devika/some_ws/install/hc20_moveit_config:/home/devika/some_ws/install/hc10_movit2v3:/home/devika/some_ws/install/hc10dt_moveit_config:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble')]), 'shell': False}
+[64.710918] (-) TimerEvent: {}
+[64.716325] (gazebo_ros2_control) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[64.716742] (gazebo_ros2_control) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/gazebo_ros2_control/lib/libgazebo_ros2_control.so\n'}
+[64.723804] (gazebo_ros2_control) StdoutLine: {'line': b'-- Set runtime path of "/home/devika/robo_ws/install/gazebo_ros2_control/lib/libgazebo_ros2_control.so" to ""\n'}
+[64.724289] (gazebo_ros2_control) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/gazebo_ros2_control/lib/libgazebo_hardware_plugins.so\n'}
+[64.729724] (gazebo_ros2_control) StdoutLine: {'line': b'-- Set runtime path of "/home/devika/robo_ws/install/gazebo_ros2_control/lib/libgazebo_hardware_plugins.so" to ""\n'}
+[64.730325] (gazebo_ros2_control) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/environment/library_path.sh\n'}
+[64.730985] (gazebo_ros2_control) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/environment/library_path.dsv\n'}
+[64.731639] (gazebo_ros2_control) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/gazebo_ros2_control/include/gazebo_ros2_control\n'}
+[64.731931] (gazebo_ros2_control) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/gazebo_ros2_control/include/gazebo_ros2_control/gazebo_ros2_control_plugin.hpp\n'}
+[64.732577] (gazebo_ros2_control) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/gazebo_ros2_control/include/gazebo_ros2_control/gazebo_system.hpp\n'}
+[64.732951] (gazebo_ros2_control) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/gazebo_ros2_control/include/gazebo_ros2_control/gazebo_system_interface.hpp\n'}
+[64.733653] (gazebo_ros2_control) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/gazebo_hardware_plugins.xml\n'}
+[64.734532] (gazebo_ros2_control) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/gazebo_ros2_control/share/ament_index/resource_index/package_run_dependencies/gazebo_ros2_control\n'}
+[64.735559] (gazebo_ros2_control) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/gazebo_ros2_control/share/ament_index/resource_index/parent_prefix_path/gazebo_ros2_control\n'}
+[64.736601] (gazebo_ros2_control) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/environment/ament_prefix_path.sh\n'}
+[64.737118] (gazebo_ros2_control) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/environment/ament_prefix_path.dsv\n'}
+[64.737896] (gazebo_ros2_control) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/environment/path.sh\n'}
+[64.738650] (gazebo_ros2_control) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/environment/path.dsv\n'}
+[64.739951] (gazebo_ros2_control) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/local_setup.bash\n'}
+[64.741798] (gazebo_ros2_control) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/local_setup.sh\n'}
+[64.742543] (gazebo_ros2_control) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/local_setup.zsh\n'}
+[64.743632] (gazebo_ros2_control) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/local_setup.dsv\n'}
+[64.744321] (gazebo_ros2_control) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/package.dsv\n'}
+[64.745131] (gazebo_ros2_control) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/gazebo_ros2_control/share/ament_index/resource_index/packages/gazebo_ros2_control\n'}
+[64.745819] (gazebo_ros2_control) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/gazebo_ros2_control/share/ament_index/resource_index/gazebo_ros2_control__pluginlib__plugin/gazebo_ros2_control\n'}
+[64.746801] (gazebo_ros2_control) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[64.747506] (gazebo_ros2_control) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[64.748333] (gazebo_ros2_control) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[64.749117] (gazebo_ros2_control) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/cmake/gazebo_ros2_controlConfig.cmake\n'}
+[64.749783] (gazebo_ros2_control) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/cmake/gazebo_ros2_controlConfig-version.cmake\n'}
+[64.750545] (gazebo_ros2_control) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/package.xml\n'}
+[64.755628] (gazebo_ros2_control) CommandEnded: {'returncode': 0}
+[64.797407] (gazebo_ros2_control) JobEnded: {'identifier': 'gazebo_ros2_control', 'rc': 0}
+[64.799735] (urdf_humble_test) JobStarted: {'identifier': 'urdf_humble_test'}
+[64.811072] (-) TimerEvent: {}
+[64.854373] (urdf_humble_test) JobProgress: {'identifier': 'urdf_humble_test', 'progress': 'cmake'}
+[64.855772] (urdf_humble_test) Command: {'cmd': ['/usr/bin/cmake', '/home/devika/robo_ws/src/urdf_humble_test', '-DCMAKE_INSTALL_PREFIX=/home/devika/robo_ws/install/urdf_humble_test'], 'cwd': '/home/devika/robo_ws/build/urdf_humble_test', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'devika'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/devika/robo_ws/install/gazebo_ros2_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/devika'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2897'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/devika/robo_ws/install:/home/devika/manga_ws/install:/home/devika/some_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'devika'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'devika'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/devika/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/devika:@/tmp/.ICE-unix/1570,unix/devika:/tmp/.ICE-unix/1570'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f888b7d5_e258_4181_92ec_4571cea58831'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.0M0242'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.100'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/devika/robo_ws/install/urdf_humble_test_moveit_config:/home/devika/robo_ws/install/urdf_humble_test:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/hello_moveit:/home/devika/robo_ws/install/gazebo_ros2_control:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/manga_ws/install/urdf_humble_test_moveit_config:/home/devika/manga_ws/install/urdf_humble_test:/home/devika/manga_ws/install/hello_moveit:/home/devika/some_ws/install/motoman_hc10_support:/home/devika/some_ws/install/motoman_resources:/home/devika/some_ws/install/hello_moveit:/home/devika/some_ws/install/hc20_sim_moveit_config:/home/devika/some_ws/install/hc20_moveit_config:/home/devika/some_ws/install/hc10_movit2v3:/home/devika/some_ws/install/hc10dt_moveit_config:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/devika/robo_ws/build/urdf_humble_test'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/devika/robo_ws/install/perception_vision/lib/python3.10/site-packages:/home/devika/robo_ws/install/cylinder_position_estimator/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/devika/robo_ws/install/gazebo_ros2_control:/home/devika/robo_ws/install/urdf_humble_test_moveit_config:/home/devika/robo_ws/install/urdf_humble_test:/home/devika/robo_ws/install/hello_moveit:/home/devika/manga_ws/install/urdf_humble_test_moveit_config:/home/devika/manga_ws/install/urdf_humble_test:/home/devika/manga_ws/install/hello_moveit:/home/devika/some_ws/install/motoman_hc10_support:/home/devika/some_ws/install/motoman_resources:/home/devika/some_ws/install/hello_moveit:/home/devika/some_ws/install/hc20_sim_moveit_config:/home/devika/some_ws/install/hc20_moveit_config:/home/devika/some_ws/install/hc10_movit2v3:/home/devika/some_ws/install/hc10dt_moveit_config:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble')]), 'shell': False}
+[64.911315] (-) TimerEvent: {}
+[65.011962] (-) TimerEvent: {}
+[65.112789] (-) TimerEvent: {}
+[65.176993] (urdf_humble_test) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[65.213042] (-) TimerEvent: {}
+[65.313868] (-) TimerEvent: {}
+[65.314447] (urdf_humble_test) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[65.339821] (urdf_humble_test) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[65.414034] (-) TimerEvent: {}
+[65.514705] (-) TimerEvent: {}
+[65.535617] (urdf_humble_test) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[65.551017] (urdf_humble_test) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[65.552191] (urdf_humble_test) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[65.553557] (urdf_humble_test) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[65.561644] (urdf_humble_test) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[65.614889] (-) TimerEvent: {}
+[65.715719] (-) TimerEvent: {}
+[65.758189] (urdf_humble_test) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[65.778356] (urdf_humble_test) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[65.778849] (urdf_humble_test) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[65.779952] (urdf_humble_test) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[65.799680] (urdf_humble_test) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[65.815844] (-) TimerEvent: {}
+[65.916374] (-) TimerEvent: {}
+[66.016885] (-) TimerEvent: {}
+[66.117531] (-) TimerEvent: {}
+[66.218020] (-) TimerEvent: {}
+[66.266756] (urdf_humble_test) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[66.318152] (-) TimerEvent: {}
+[66.418581] (-) TimerEvent: {}
+[66.519118] (-) TimerEvent: {}
+[66.619544] (-) TimerEvent: {}
+[66.635267] (urdf_humble_test) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[66.655836] (urdf_humble_test) StdoutLine: {'line': b'-- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)\n'}
+[66.719707] (-) TimerEvent: {}
+[66.820399] (-) TimerEvent: {}
+[66.871681] (urdf_humble_test) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[66.891829] (urdf_humble_test) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[66.920652] (-) TimerEvent: {}
+[66.922436] (urdf_humble_test) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[66.975507] (urdf_humble_test) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[67.020773] (-) TimerEvent: {}
+[67.038463] (urdf_humble_test) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[67.120938] (-) TimerEvent: {}
+[67.172816] (urdf_humble_test) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[67.181566] (urdf_humble_test) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[67.221125] (-) TimerEvent: {}
+[67.321615] (-) TimerEvent: {}
+[67.422141] (-) TimerEvent: {}
+[67.454813] (urdf_humble_test) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[67.522323] (-) TimerEvent: {}
+[67.526751] (urdf_humble_test) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[67.622481] (-) TimerEvent: {}
+[67.628647] (urdf_humble_test) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[67.656653] (urdf_humble_test) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[67.722634] (-) TimerEvent: {}
+[67.823082] (-) TimerEvent: {}
+[67.856735] (urdf_humble_test) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[67.857205] (urdf_humble_test) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[67.923285] (-) TimerEvent: {}
+[68.023713] (-) TimerEvent: {}
+[68.030063] (urdf_humble_test) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[68.033089] (urdf_humble_test) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[68.123856] (-) TimerEvent: {}
+[68.219795] (urdf_humble_test) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[68.222262] (urdf_humble_test) StdoutLine: {'line': b"-- Checking for module 'bullet>=2.82'\n"}
+[68.224001] (-) TimerEvent: {}
+[68.265447] (urdf_humble_test) StdoutLine: {'line': b'--   Found bullet, version 3.05\n'}
+[68.324217] (-) TimerEvent: {}
+[68.424711] (-) TimerEvent: {}
+[68.525240] (-) TimerEvent: {}
+[68.595152] (urdf_humble_test) StdoutLine: {'line': b'-- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") \n'}
+[68.625399] (-) TimerEvent: {}
+[68.725884] (-) TimerEvent: {}
+[68.748014] (urdf_humble_test) StdoutLine: {'line': b'-- Found assimp: /usr/include (found version "5.2.0") \n'}
+[68.825977] (-) TimerEvent: {}
+[68.831600] (urdf_humble_test) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[68.926057] (urdf_humble_test) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time \n'}
+[68.926657] (-) TimerEvent: {}
+[69.017138] (urdf_humble_test) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[69.026837] (-) TimerEvent: {}
+[69.039111] (urdf_humble_test) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[69.071663] (urdf_humble_test) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[69.079824] (urdf_humble_test) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[69.081123] (urdf_humble_test) StdoutLine: {'line': b'-- OGRE_PREFIX_WATCH changed.\n'}
+[69.096807] (urdf_humble_test) StdoutLine: {'line': b"-- Checking for module 'OGRE'\n"}
+[69.127038] (-) TimerEvent: {}
+[69.142886] (urdf_humble_test) StdoutLine: {'line': b'--   Found OGRE, version 1.9.0\n'}
+[69.227279] (-) TimerEvent: {}
+[69.276450] (urdf_humble_test) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[69.315504] (urdf_humble_test) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[69.327420] (-) TimerEvent: {}
+[69.346271] (urdf_humble_test) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[69.379671] (urdf_humble_test) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[69.380123] (urdf_humble_test) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[69.414265] (urdf_humble_test) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[69.414679] (urdf_humble_test) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[69.427626] (-) TimerEvent: {}
+[69.446783] (urdf_humble_test) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[69.447116] (urdf_humble_test) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[69.484810] (urdf_humble_test) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[69.485314] (urdf_humble_test) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[69.526941] (urdf_humble_test) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[69.527620] (urdf_humble_test) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[69.527876] (-) TimerEvent: {}
+[69.566238] (urdf_humble_test) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[69.628051] (-) TimerEvent: {}
+[69.728658] (-) TimerEvent: {}
+[69.829247] (-) TimerEvent: {}
+[69.929832] (-) TimerEvent: {}
+[70.030480] (-) TimerEvent: {}
+[70.131039] (-) TimerEvent: {}
+[70.139049] (urdf_humble_test) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[70.149403] (urdf_humble_test) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[70.150217] (urdf_humble_test) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[70.195567] (urdf_humble_test) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[70.224991] (urdf_humble_test) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[70.231380] (-) TimerEvent: {}
+[70.238531] (urdf_humble_test) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[70.283297] (urdf_humble_test) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[70.331518] (-) TimerEvent: {}
+[70.398073] (urdf_humble_test) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[70.412326] (urdf_humble_test) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[70.432038] (-) TimerEvent: {}
+[70.454605] (urdf_humble_test) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[70.532301] (-) TimerEvent: {}
+[70.558798] (urdf_humble_test) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[70.568219] (urdf_humble_test) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[70.569020] (urdf_humble_test) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[70.615416] (urdf_humble_test) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[70.628063] (urdf_humble_test) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[70.632452] (-) TimerEvent: {}
+[70.670737] (urdf_humble_test) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[70.732613] (-) TimerEvent: {}
+[70.782963] (urdf_humble_test) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[70.794236] (urdf_humble_test) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[70.795016] (urdf_humble_test) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[70.796364] (urdf_humble_test) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[70.798806] (urdf_humble_test) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[70.801451] (urdf_humble_test) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[70.832914] (-) TimerEvent: {}
+[70.834706] (urdf_humble_test) StdoutLine: {'line': b'-- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") \n'}
+[70.837074] (urdf_humble_test) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[70.845103] (urdf_humble_test) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[70.846373] (urdf_humble_test) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[70.846942] (urdf_humble_test) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[70.858319] (urdf_humble_test) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[70.859088] (urdf_humble_test) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[70.933076] (-) TimerEvent: {}
+[71.033751] (-) TimerEvent: {}
+[71.093106] (urdf_humble_test) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[71.122044] (urdf_humble_test) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[71.133972] (-) TimerEvent: {}
+[71.167067] (urdf_humble_test) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[71.234276] (-) TimerEvent: {}
+[71.272792] (urdf_humble_test) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[71.287843] (urdf_humble_test) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[71.324781] (urdf_humble_test) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[71.334516] (-) TimerEvent: {}
+[71.432967] (urdf_humble_test) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[71.433660] (urdf_humble_test) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[71.434306] (urdf_humble_test) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[71.434487] (-) TimerEvent: {}
+[71.434928] (urdf_humble_test) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[71.449268] (urdf_humble_test) StdoutLine: {'line': b'-- Gazebo version: 11.10\n'}
+[71.449886] (urdf_humble_test) StdoutLine: {'line': b"-- Checking for module 'tbb'\n"}
+[71.489981] (urdf_humble_test) StdoutLine: {'line': b'--   Found tbb, version 2021.5.0\n'}
+[71.534711] (-) TimerEvent: {}
+[71.635284] (-) TimerEvent: {}
+[71.735752] (-) TimerEvent: {}
+[71.836394] (-) TimerEvent: {}
+[71.863362] (urdf_humble_test) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[71.867530] (urdf_humble_test) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[71.869725] (urdf_humble_test) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[71.875408] (urdf_humble_test) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[71.883329] (urdf_humble_test) StdoutLine: {'line': b'-- Configuring done\n'}
+[71.895761] (urdf_humble_test) StdoutLine: {'line': b'-- Generating done\n'}
+[71.902823] (urdf_humble_test) StdoutLine: {'line': b'-- Build files have been written to: /home/devika/robo_ws/build/urdf_humble_test\n'}
+[71.936541] (-) TimerEvent: {}
+[71.938670] (urdf_humble_test) CommandEnded: {'returncode': 0}
+[71.940260] (urdf_humble_test) JobProgress: {'identifier': 'urdf_humble_test', 'progress': 'build'}
+[71.940989] (urdf_humble_test) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/devika/robo_ws/build/urdf_humble_test', '--', '-j8', '-l8'], 'cwd': '/home/devika/robo_ws/build/urdf_humble_test', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'devika'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/devika/robo_ws/install/gazebo_ros2_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/devika'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2897'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/devika/robo_ws/install:/home/devika/manga_ws/install:/home/devika/some_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'devika'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'devika'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/devika/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/devika:@/tmp/.ICE-unix/1570,unix/devika:/tmp/.ICE-unix/1570'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f888b7d5_e258_4181_92ec_4571cea58831'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.0M0242'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.100'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/devika/robo_ws/install/urdf_humble_test_moveit_config:/home/devika/robo_ws/install/urdf_humble_test:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/hello_moveit:/home/devika/robo_ws/install/gazebo_ros2_control:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/manga_ws/install/urdf_humble_test_moveit_config:/home/devika/manga_ws/install/urdf_humble_test:/home/devika/manga_ws/install/hello_moveit:/home/devika/some_ws/install/motoman_hc10_support:/home/devika/some_ws/install/motoman_resources:/home/devika/some_ws/install/hello_moveit:/home/devika/some_ws/install/hc20_sim_moveit_config:/home/devika/some_ws/install/hc20_moveit_config:/home/devika/some_ws/install/hc10_movit2v3:/home/devika/some_ws/install/hc10dt_moveit_config:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/devika/robo_ws/build/urdf_humble_test'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/devika/robo_ws/install/perception_vision/lib/python3.10/site-packages:/home/devika/robo_ws/install/cylinder_position_estimator/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/devika/robo_ws/install/gazebo_ros2_control:/home/devika/robo_ws/install/urdf_humble_test_moveit_config:/home/devika/robo_ws/install/urdf_humble_test:/home/devika/robo_ws/install/hello_moveit:/home/devika/manga_ws/install/urdf_humble_test_moveit_config:/home/devika/manga_ws/install/urdf_humble_test:/home/devika/manga_ws/install/hello_moveit:/home/devika/some_ws/install/motoman_hc10_support:/home/devika/some_ws/install/motoman_resources:/home/devika/some_ws/install/hello_moveit:/home/devika/some_ws/install/hc20_sim_moveit_config:/home/devika/some_ws/install/hc20_moveit_config:/home/devika/some_ws/install/hc10_movit2v3:/home/devika/some_ws/install/hc10dt_moveit_config:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble')]), 'shell': False}
+[72.036714] (-) TimerEvent: {}
+[72.048650] (urdf_humble_test) CommandEnded: {'returncode': 0}
+[72.050245] (urdf_humble_test) JobProgress: {'identifier': 'urdf_humble_test', 'progress': 'install'}
+[72.051275] (urdf_humble_test) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/devika/robo_ws/build/urdf_humble_test'], 'cwd': '/home/devika/robo_ws/build/urdf_humble_test', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'devika'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/devika/robo_ws/install/gazebo_ros2_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/devika'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2897'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/devika/robo_ws/install:/home/devika/manga_ws/install:/home/devika/some_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'devika'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'devika'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/devika/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/devika:@/tmp/.ICE-unix/1570,unix/devika:/tmp/.ICE-unix/1570'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f888b7d5_e258_4181_92ec_4571cea58831'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.0M0242'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.100'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/devika/robo_ws/install/urdf_humble_test_moveit_config:/home/devika/robo_ws/install/urdf_humble_test:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/hello_moveit:/home/devika/robo_ws/install/gazebo_ros2_control:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/manga_ws/install/urdf_humble_test_moveit_config:/home/devika/manga_ws/install/urdf_humble_test:/home/devika/manga_ws/install/hello_moveit:/home/devika/some_ws/install/motoman_hc10_support:/home/devika/some_ws/install/motoman_resources:/home/devika/some_ws/install/hello_moveit:/home/devika/some_ws/install/hc20_sim_moveit_config:/home/devika/some_ws/install/hc20_moveit_config:/home/devika/some_ws/install/hc10_movit2v3:/home/devika/some_ws/install/hc10dt_moveit_config:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/devika/robo_ws/build/urdf_humble_test'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/devika/robo_ws/install/perception_vision/lib/python3.10/site-packages:/home/devika/robo_ws/install/cylinder_position_estimator/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/devika/robo_ws/install/gazebo_ros2_control:/home/devika/robo_ws/install/urdf_humble_test_moveit_config:/home/devika/robo_ws/install/urdf_humble_test:/home/devika/robo_ws/install/hello_moveit:/home/devika/manga_ws/install/urdf_humble_test_moveit_config:/home/devika/manga_ws/install/urdf_humble_test:/home/devika/manga_ws/install/hello_moveit:/home/devika/some_ws/install/motoman_hc10_support:/home/devika/some_ws/install/motoman_resources:/home/devika/some_ws/install/hello_moveit:/home/devika/some_ws/install/hc20_sim_moveit_config:/home/devika/some_ws/install/hc20_moveit_config:/home/devika/some_ws/install/hc10_movit2v3:/home/devika/some_ws/install/hc10dt_moveit_config:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble')]), 'shell': False}
+[72.073809] (urdf_humble_test) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[72.074235] (urdf_humble_test) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/launch\n'}
+[72.074551] (urdf_humble_test) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/launch/__pycache__\n'}
+[72.074857] (urdf_humble_test) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/launch/__pycache__/gazebo.launch.cpython-310.pyc\n'}
+[72.075518] (urdf_humble_test) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/launch/robot_state_publisher.launch.py\n'}
+[72.076295] (urdf_humble_test) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/launch/gazebo.launch.py\n'}
+[72.076969] (urdf_humble_test) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/launch/display.launch.py\n'}
+[72.077806] (urdf_humble_test) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/urdf\n'}
+[72.078191] (urdf_humble_test) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/urdf/test.urdf\n'}
+[72.079290] (urdf_humble_test) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/urdf/model.sdf\n'}
+[72.080190] (urdf_humble_test) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/urdf/model.urdf\n'}
+[72.081325] (urdf_humble_test) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/urdf/cylinder.sdf\n'}
+[72.081911] (urdf_humble_test) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/config\n'}
+[72.082120] (urdf_humble_test) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/config/controller_manager.yaml\n'}
+[72.084043] (urdf_humble_test) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/config/config.rviz\n'}
+[72.086840] (urdf_humble_test) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/meshes\n'}
+[72.087183] (urdf_humble_test) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/meshes/base_link.STL\n'}
+[72.136871] (-) TimerEvent: {}
+[72.155381] (urdf_humble_test) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/meshes/link_4.STL\n'}
+[72.162350] (urdf_humble_test) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/meshes/link_3.STL\n'}
+[72.237339] (-) TimerEvent: {}
+[72.299830] (urdf_humble_test) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/meshes/link_2.STL\n'}
+[72.310932] (urdf_humble_test) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/meshes/link_6.STL\n'}
+[72.334903] (urdf_humble_test) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/meshes/link_1.STL\n'}
+[72.337466] (-) TimerEvent: {}
+[72.405476] (urdf_humble_test) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/meshes/link_5.STL\n'}
+[72.411656] (urdf_humble_test) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/meshes/link_7.STL\n'}
+[72.421781] (urdf_humble_test) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/ament_index/resource_index/package_run_dependencies/urdf_humble_test\n'}
+[72.422202] (urdf_humble_test) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/ament_index/resource_index/parent_prefix_path/urdf_humble_test\n'}
+[72.422724] (urdf_humble_test) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/environment/ament_prefix_path.sh\n'}
+[72.423196] (urdf_humble_test) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/environment/ament_prefix_path.dsv\n'}
+[72.423667] (urdf_humble_test) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/environment/path.sh\n'}
+[72.424071] (urdf_humble_test) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/environment/path.dsv\n'}
+[72.424593] (urdf_humble_test) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/local_setup.bash\n'}
+[72.424958] (urdf_humble_test) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/local_setup.sh\n'}
+[72.425261] (urdf_humble_test) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/local_setup.zsh\n'}
+[72.425729] (urdf_humble_test) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/local_setup.dsv\n'}
+[72.426036] (urdf_humble_test) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/package.dsv\n'}
+[72.426491] (urdf_humble_test) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/ament_index/resource_index/packages/urdf_humble_test\n'}
+[72.426790] (urdf_humble_test) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/cmake/urdf_humble_testConfig.cmake\n'}
+[72.427075] (urdf_humble_test) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/cmake/urdf_humble_testConfig-version.cmake\n'}
+[72.427460] (urdf_humble_test) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/package.xml\n'}
+[72.430292] (urdf_humble_test) CommandEnded: {'returncode': 0}
+[72.437649] (-) TimerEvent: {}
+[72.472176] (urdf_humble_test) JobEnded: {'identifier': 'urdf_humble_test', 'rc': 0}
+[72.473641] (urdf_humble_test_moveit_config) JobStarted: {'identifier': 'urdf_humble_test_moveit_config'}
+[72.495435] (urdf_humble_test_moveit_config) JobProgress: {'identifier': 'urdf_humble_test_moveit_config', 'progress': 'cmake'}
+[72.497680] (urdf_humble_test_moveit_config) Command: {'cmd': ['/usr/bin/cmake', '/home/devika/robo_ws/src/urdf_humble_test_moveit_config', '-DCMAKE_INSTALL_PREFIX=/home/devika/robo_ws/install/urdf_humble_test_moveit_config'], 'cwd': '/home/devika/robo_ws/build/urdf_humble_test_moveit_config', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'devika'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/devika/robo_ws/install/gazebo_ros2_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/devika'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2897'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/devika/robo_ws/install:/home/devika/manga_ws/install:/home/devika/some_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'devika'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'devika'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/devika/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/devika:@/tmp/.ICE-unix/1570,unix/devika:/tmp/.ICE-unix/1570'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f888b7d5_e258_4181_92ec_4571cea58831'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.0M0242'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.100'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/devika/robo_ws/install/urdf_humble_test_moveit_config:/home/devika/robo_ws/install/urdf_humble_test:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/hello_moveit:/home/devika/robo_ws/install/gazebo_ros2_control:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/manga_ws/install/urdf_humble_test_moveit_config:/home/devika/manga_ws/install/urdf_humble_test:/home/devika/manga_ws/install/hello_moveit:/home/devika/some_ws/install/motoman_hc10_support:/home/devika/some_ws/install/motoman_resources:/home/devika/some_ws/install/hello_moveit:/home/devika/some_ws/install/hc20_sim_moveit_config:/home/devika/some_ws/install/hc20_moveit_config:/home/devika/some_ws/install/hc10_movit2v3:/home/devika/some_ws/install/hc10dt_moveit_config:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/devika/robo_ws/build/urdf_humble_test_moveit_config'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/devika/robo_ws/install/perception_vision/lib/python3.10/site-packages:/home/devika/robo_ws/install/cylinder_position_estimator/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/devika/robo_ws/install/urdf_humble_test:/home/devika/robo_ws/install/gazebo_ros2_control:/home/devika/robo_ws/install/urdf_humble_test_moveit_config:/home/devika/robo_ws/install/hello_moveit:/home/devika/manga_ws/install/urdf_humble_test_moveit_config:/home/devika/manga_ws/install/urdf_humble_test:/home/devika/manga_ws/install/hello_moveit:/home/devika/some_ws/install/motoman_hc10_support:/home/devika/some_ws/install/motoman_resources:/home/devika/some_ws/install/hello_moveit:/home/devika/some_ws/install/hc20_sim_moveit_config:/home/devika/some_ws/install/hc20_moveit_config:/home/devika/some_ws/install/hc10_movit2v3:/home/devika/some_ws/install/hc10dt_moveit_config:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble')]), 'shell': False}
+[72.537832] (-) TimerEvent: {}
+[72.633558] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[72.638032] (-) TimerEvent: {}
+[72.738660] (-) TimerEvent: {}
+[72.767354] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[72.782502] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[72.838818] (-) TimerEvent: {}
+[72.939298] (-) TimerEvent: {}
+[72.944960] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[72.967228] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[72.967748] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[72.968727] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[72.974629] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[73.039558] (-) TimerEvent: {}
+[73.140055] (-) TimerEvent: {}
+[73.170268] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[73.190784] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[73.191356] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[73.192477] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[73.202039] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[73.240227] (-) TimerEvent: {}
+[73.340714] (-) TimerEvent: {}
+[73.441497] (-) TimerEvent: {}
+[73.541918] (-) TimerEvent: {}
+[73.576469] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[73.642092] (-) TimerEvent: {}
+[73.742671] (-) TimerEvent: {}
+[73.843233] (-) TimerEvent: {}
+[73.943720] (-) TimerEvent: {}
+[73.990578] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Configuring done\n'}
+[73.996790] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Generating done\n'}
+[74.000232] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Build files have been written to: /home/devika/robo_ws/build/urdf_humble_test_moveit_config\n'}
+[74.009426] (urdf_humble_test_moveit_config) CommandEnded: {'returncode': 0}
+[74.010513] (urdf_humble_test_moveit_config) JobProgress: {'identifier': 'urdf_humble_test_moveit_config', 'progress': 'build'}
+[74.011312] (urdf_humble_test_moveit_config) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/devika/robo_ws/build/urdf_humble_test_moveit_config', '--', '-j8', '-l8'], 'cwd': '/home/devika/robo_ws/build/urdf_humble_test_moveit_config', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'devika'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/devika/robo_ws/install/gazebo_ros2_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/devika'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2897'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/devika/robo_ws/install:/home/devika/manga_ws/install:/home/devika/some_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'devika'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'devika'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/devika/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/devika:@/tmp/.ICE-unix/1570,unix/devika:/tmp/.ICE-unix/1570'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f888b7d5_e258_4181_92ec_4571cea58831'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.0M0242'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.100'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/devika/robo_ws/install/urdf_humble_test_moveit_config:/home/devika/robo_ws/install/urdf_humble_test:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/hello_moveit:/home/devika/robo_ws/install/gazebo_ros2_control:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/manga_ws/install/urdf_humble_test_moveit_config:/home/devika/manga_ws/install/urdf_humble_test:/home/devika/manga_ws/install/hello_moveit:/home/devika/some_ws/install/motoman_hc10_support:/home/devika/some_ws/install/motoman_resources:/home/devika/some_ws/install/hello_moveit:/home/devika/some_ws/install/hc20_sim_moveit_config:/home/devika/some_ws/install/hc20_moveit_config:/home/devika/some_ws/install/hc10_movit2v3:/home/devika/some_ws/install/hc10dt_moveit_config:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/devika/robo_ws/build/urdf_humble_test_moveit_config'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/devika/robo_ws/install/perception_vision/lib/python3.10/site-packages:/home/devika/robo_ws/install/cylinder_position_estimator/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/devika/robo_ws/install/urdf_humble_test:/home/devika/robo_ws/install/gazebo_ros2_control:/home/devika/robo_ws/install/urdf_humble_test_moveit_config:/home/devika/robo_ws/install/hello_moveit:/home/devika/manga_ws/install/urdf_humble_test_moveit_config:/home/devika/manga_ws/install/urdf_humble_test:/home/devika/manga_ws/install/hello_moveit:/home/devika/some_ws/install/motoman_hc10_support:/home/devika/some_ws/install/motoman_resources:/home/devika/some_ws/install/hello_moveit:/home/devika/some_ws/install/hc20_sim_moveit_config:/home/devika/some_ws/install/hc20_moveit_config:/home/devika/some_ws/install/hc10_movit2v3:/home/devika/some_ws/install/hc10dt_moveit_config:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble')]), 'shell': False}
+[74.043901] (-) TimerEvent: {}
+[74.108109] (urdf_humble_test_moveit_config) CommandEnded: {'returncode': 0}
+[74.109522] (urdf_humble_test_moveit_config) JobProgress: {'identifier': 'urdf_humble_test_moveit_config', 'progress': 'install'}
+[74.111268] (urdf_humble_test_moveit_config) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/devika/robo_ws/build/urdf_humble_test_moveit_config'], 'cwd': '/home/devika/robo_ws/build/urdf_humble_test_moveit_config', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'devika'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/devika/robo_ws/install/gazebo_ros2_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/devika'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2897'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/devika/robo_ws/install:/home/devika/manga_ws/install:/home/devika/some_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'devika'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'devika'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/devika/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/devika:@/tmp/.ICE-unix/1570,unix/devika:/tmp/.ICE-unix/1570'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f888b7d5_e258_4181_92ec_4571cea58831'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.0M0242'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.100'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/devika/robo_ws/install/urdf_humble_test_moveit_config:/home/devika/robo_ws/install/urdf_humble_test:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/hello_moveit:/home/devika/robo_ws/install/gazebo_ros2_control:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/manga_ws/install/urdf_humble_test_moveit_config:/home/devika/manga_ws/install/urdf_humble_test:/home/devika/manga_ws/install/hello_moveit:/home/devika/some_ws/install/motoman_hc10_support:/home/devika/some_ws/install/motoman_resources:/home/devika/some_ws/install/hello_moveit:/home/devika/some_ws/install/hc20_sim_moveit_config:/home/devika/some_ws/install/hc20_moveit_config:/home/devika/some_ws/install/hc10_movit2v3:/home/devika/some_ws/install/hc10dt_moveit_config:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/devika/robo_ws/build/urdf_humble_test_moveit_config'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/devika/robo_ws/install/perception_vision/lib/python3.10/site-packages:/home/devika/robo_ws/install/cylinder_position_estimator/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/devika/robo_ws/install/urdf_humble_test:/home/devika/robo_ws/install/gazebo_ros2_control:/home/devika/robo_ws/install/urdf_humble_test_moveit_config:/home/devika/robo_ws/install/hello_moveit:/home/devika/manga_ws/install/urdf_humble_test_moveit_config:/home/devika/manga_ws/install/urdf_humble_test:/home/devika/manga_ws/install/hello_moveit:/home/devika/some_ws/install/motoman_hc10_support:/home/devika/some_ws/install/motoman_resources:/home/devika/some_ws/install/hello_moveit:/home/devika/some_ws/install/hc20_sim_moveit_config:/home/devika/some_ws/install/hc20_moveit_config:/home/devika/some_ws/install/hc10_movit2v3:/home/devika/some_ws/install/hc10dt_moveit_config:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble')]), 'shell': False}
+[74.128513] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[74.129142] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/ament_index/resource_index/package_run_dependencies/urdf_humble_test_moveit_config\n'}
+[74.129649] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/ament_index/resource_index/parent_prefix_path/urdf_humble_test_moveit_config\n'}
+[74.130008] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/environment/ament_prefix_path.sh\n'}
+[74.130280] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/environment/ament_prefix_path.dsv\n'}
+[74.130550] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/environment/path.sh\n'}
+[74.130829] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/environment/path.dsv\n'}
+[74.131079] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/local_setup.bash\n'}
+[74.131409] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/local_setup.sh\n'}
+[74.131771] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/local_setup.zsh\n'}
+[74.132036] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/local_setup.dsv\n'}
+[74.132393] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/package.dsv\n'}
+[74.132686] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/ament_index/resource_index/packages/urdf_humble_test_moveit_config\n'}
+[74.133019] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/cmake/urdf_humble_test_moveit_configConfig.cmake\n'}
+[74.133402] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/cmake/urdf_humble_test_moveit_configConfig-version.cmake\n'}
+[74.133660] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/package.xml\n'}
+[74.133890] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/launch\n'}
+[74.134117] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/launch/moveit_rviz.launch.py\n'}
+[74.134858] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/launch/test.launch.py\n'}
+[74.135867] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/launch/static_virtual_joint_tfs.launch.py\n'}
+[74.136569] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/launch/spawn_controllers.launch.py\n'}
+[74.137308] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/launch/move_group.launch.py\n'}
+[74.138037] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/launch/pilz_industrial_motion_planner_planning_planner.yaml\n'}
+[74.138816] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/launch/demo.launch.py\n'}
+[74.139468] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/launch/rsp.launch.py\n'}
+[74.140031] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/launch/warehouse_db.launch.py\n'}
+[74.140657] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/launch/setup_assistant.launch.py\n'}
+[74.141514] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/config\n'}
+[74.141806] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/config/pilz_cartesian_limits.yaml\n'}
+[74.142695] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/config/kinematics.yaml\n'}
+[74.143413] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/config/ros2_controllers.yaml\n'}
+[74.143973] (-) TimerEvent: {}
+[74.144326] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/config/moveit.rviz\n'}
+[74.144887] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/config/initial_positions.yaml\n'}
+[74.145844] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/config/moveit_controllers.yaml\n'}
+[74.146520] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/config/urdf_humble_test.srdf\n'}
+[74.147101] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/config/joint_limits.yaml\n'}
+[74.147677] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/config/urdf_humble_test.urdf.xacro\n'}
+[74.148225] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/config/sensors_3d.yaml\n'}
+[74.148751] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/config/urdf_humble_test.ros2_control.xacro\n'}
+[74.149429] (urdf_humble_test_moveit_config) StdoutLine: {'line': b'-- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/.setup_assistant\n'}
+[74.154460] (urdf_humble_test_moveit_config) CommandEnded: {'returncode': 0}
+[74.188350] (urdf_humble_test_moveit_config) JobEnded: {'identifier': 'urdf_humble_test_moveit_config', 'rc': 0}
+[74.189671] (-) EventReactorShutdown: {}

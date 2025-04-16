@@ -85,7 +85,7 @@ def generate_launch_description():
         output="screen",
         parameters=[
             moveit_config.to_dict(),
-            {'use_sim_time': use_sim_time},
+            {'use_sim_time': True},
             {'start_state': {'content': initial_positions_file_path}},
             {'pilz_industrial_motion_planner.planner_id': 'PTP'},
         ],
@@ -104,7 +104,7 @@ def generate_launch_description():
             moveit_config.planning_pipelines,
             moveit_config.robot_description_kinematics,
             moveit_config.joint_limits,
-            {'use_sim_time': use_sim_time}
+            {'use_sim_time': True}
         ],
     )
      

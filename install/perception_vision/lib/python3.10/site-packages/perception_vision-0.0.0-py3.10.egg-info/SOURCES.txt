@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../build/perception_vision/perception_vision.egg-info/PKG-INFO
+../../build/perception_vision/perception_vision.egg-info/SOURCES.txt
+../../build/perception_vision/perception_vision.egg-info/dependency_links.txt
+../../build/perception_vision/perception_vision.egg-info/entry_points.txt
+../../build/perception_vision/perception_vision.egg-info/requires.txt
+../../build/perception_vision/perception_vision.egg-info/top_level.txt
+../../build/perception_vision/perception_vision.egg-info/zip-safe
+perception_vision/__init__.py
+perception_vision/yolov8_obb_node.py
+resource/perception_vision
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

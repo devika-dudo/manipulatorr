@@ -1,0 +1,37 @@
+[2.744s] Invoking command in '/home/devika/robo_ws/src/cylinder_position_estimator': PYTHONPATH=/home/devika/robo_ws/build/cylinder_position_estimator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/devika/robo_ws/install/cylinder_position_estimator/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/cylinder_position_estimator build --build-base /home/devika/robo_ws/build/cylinder_position_estimator/build install --record /home/devika/robo_ws/build/cylinder_position_estimator/install.log --single-version-externally-managed install_data
+[3.436s] running egg_info
+[3.437s] creating ../../build/cylinder_position_estimator/cylinder_position_estimator.egg-info
+[3.437s] writing ../../build/cylinder_position_estimator/cylinder_position_estimator.egg-info/PKG-INFO
+[3.439s] writing dependency_links to ../../build/cylinder_position_estimator/cylinder_position_estimator.egg-info/dependency_links.txt
+[3.439s] writing entry points to ../../build/cylinder_position_estimator/cylinder_position_estimator.egg-info/entry_points.txt
+[3.439s] writing requirements to ../../build/cylinder_position_estimator/cylinder_position_estimator.egg-info/requires.txt
+[3.440s] writing top-level names to ../../build/cylinder_position_estimator/cylinder_position_estimator.egg-info/top_level.txt
+[3.441s] writing manifest file '../../build/cylinder_position_estimator/cylinder_position_estimator.egg-info/SOURCES.txt'
+[3.445s] reading manifest file '../../build/cylinder_position_estimator/cylinder_position_estimator.egg-info/SOURCES.txt'
+[3.448s] writing manifest file '../../build/cylinder_position_estimator/cylinder_position_estimator.egg-info/SOURCES.txt'
+[3.449s] running build
+[3.449s] running build_py
+[3.449s] creating /home/devika/robo_ws/build/cylinder_position_estimator/build
+[3.449s] creating /home/devika/robo_ws/build/cylinder_position_estimator/build/lib
+[3.450s] creating /home/devika/robo_ws/build/cylinder_position_estimator/build/lib/cylinder_position_estimator
+[3.450s] copying cylinder_position_estimator/pose_estimator_node.py -> /home/devika/robo_ws/build/cylinder_position_estimator/build/lib/cylinder_position_estimator
+[3.451s] copying cylinder_position_estimator/__init__.py -> /home/devika/robo_ws/build/cylinder_position_estimator/build/lib/cylinder_position_estimator
+[3.455s] running install
+[3.455s] running install_lib
+[3.458s] creating /home/devika/robo_ws/install/cylinder_position_estimator/lib/python3.10/site-packages/cylinder_position_estimator
+[3.458s] copying /home/devika/robo_ws/build/cylinder_position_estimator/build/lib/cylinder_position_estimator/pose_estimator_node.py -> /home/devika/robo_ws/install/cylinder_position_estimator/lib/python3.10/site-packages/cylinder_position_estimator
+[3.458s] copying /home/devika/robo_ws/build/cylinder_position_estimator/build/lib/cylinder_position_estimator/__init__.py -> /home/devika/robo_ws/install/cylinder_position_estimator/lib/python3.10/site-packages/cylinder_position_estimator
+[3.459s] byte-compiling /home/devika/robo_ws/install/cylinder_position_estimator/lib/python3.10/site-packages/cylinder_position_estimator/pose_estimator_node.py to pose_estimator_node.cpython-310.pyc
+[3.462s] byte-compiling /home/devika/robo_ws/install/cylinder_position_estimator/lib/python3.10/site-packages/cylinder_position_estimator/__init__.py to __init__.cpython-310.pyc
+[3.465s] running install_data
+[3.465s] creating /home/devika/robo_ws/install/cylinder_position_estimator/share/ament_index
+[3.465s] creating /home/devika/robo_ws/install/cylinder_position_estimator/share/ament_index/resource_index
+[3.466s] creating /home/devika/robo_ws/install/cylinder_position_estimator/share/ament_index/resource_index/packages
+[3.466s] copying resource/cylinder_position_estimator -> /home/devika/robo_ws/install/cylinder_position_estimator/share/ament_index/resource_index/packages
+[3.466s] copying package.xml -> /home/devika/robo_ws/install/cylinder_position_estimator/share/cylinder_position_estimator
+[3.467s] running install_egg_info
+[3.470s] Copying ../../build/cylinder_position_estimator/cylinder_position_estimator.egg-info to /home/devika/robo_ws/install/cylinder_position_estimator/lib/python3.10/site-packages/cylinder_position_estimator-0.0.0-py3.10.egg-info
+[3.475s] running install_scripts
+[3.525s] Installing pose_estimator_node script to /home/devika/robo_ws/install/cylinder_position_estimator/lib/cylinder_position_estimator
+[3.526s] writing list of installed files to '/home/devika/robo_ws/build/cylinder_position_estimator/install.log'
+[3.635s] Invoked command in '/home/devika/robo_ws/src/cylinder_position_estimator' returned '0': PYTHONPATH=/home/devika/robo_ws/build/cylinder_position_estimator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/devika/robo_ws/install/cylinder_position_estimator/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/cylinder_position_estimator build --build-base /home/devika/robo_ws/build/cylinder_position_estimator/build install --record /home/devika/robo_ws/build/cylinder_position_estimator/install.log --single-version-externally-managed install_data
