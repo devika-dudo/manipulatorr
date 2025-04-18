@@ -1,0 +1,79 @@
+[0.043s] Invoking command in '/home/devika/robo_ws/build/hello_moveit_task_constructor': CMAKE_MODULE_PATH=/home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake:/home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/cmake CMAKE_PREFIX_PATH=/home/devika/robo_ws/install/moveit_task_constructor_core:/home/devika/robo_ws/install/rviz_marker_tools:/home/devika/robo_ws/install/moveit_task_constructor_msgs:/home/devika/robo_ws/install/urdf_humble_test_moveit_config:/home/devika/robo_ws/install/warehouse_ros_mongo:/home/devika/robo_ws/install/urdf_humble_test:/home/devika/robo_ws/install/moveit_task_constructor_visualization:/home/devika/robo_ws/install/moveit_task_constructor_demo:/home/devika/robo_ws/install/moveit_task_constructor_capabilities:/home/devika/robo_ws/install/hello_moveit_task_constructor:/home/devika/robo_ws/install/hello_moveit:/home/devika/robo_ws/install/gazebo_ros2_control:/home/devika/manga_ws/install/urdf_humble_test_moveit_config:/home/devika/manga_ws/install/urdf_humble_test:/home/devika/manga_ws/install/hello_moveit:/home/devika/some_ws/install/motoman_hc10_support:/home/devika/some_ws/install/motoman_resources:/home/devika/some_ws/install/hello_moveit:/home/devika/some_ws/install/hc20_sim_moveit_config:/home/devika/some_ws/install/hc20_moveit_config:/home/devika/some_ws/install/hc10_movit2v3:/home/devika/some_ws/install/hc10dt_moveit_config:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble LD_LIBRARY_PATH=/home/devika/robo_ws/install/moveit_task_constructor_core/lib:/home/devika/robo_ws/install/rviz_marker_tools/lib:/home/devika/robo_ws/install/moveit_task_constructor_msgs/lib:/home/devika/robo_ws/install/warehouse_ros_mongo/lib:/home/devika/robo_ws/install/moveit_task_constructor_visualization/lib:/home/devika/robo_ws/install/moveit_task_constructor_demo/lib:/home/devika/robo_ws/install/moveit_task_constructor_capabilities/lib:/home/devika/robo_ws/install/hello_moveit_task_constructor/lib:/home/devika/robo_ws/install/gazebo_ros2_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/devika/robo_ws/src/hello_moveit_task_constructor -DCMAKE_INSTALL_PREFIX=/home/devika/robo_ws/install/hello_moveit_task_constructor
+[0.653s] -- The C compiler identification is GNU 11.4.0
+[0.763s] -- The CXX compiler identification is GNU 11.4.0
+[0.796s] -- Detecting C compiler ABI info
+[0.977s] -- Detecting C compiler ABI info - done
+[1.004s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.006s] -- Detecting C compile features
+[1.007s] -- Detecting C compile features - done
+[1.018s] -- Detecting CXX compiler ABI info
+[1.197s] -- Detecting CXX compiler ABI info - done
+[1.206s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.206s] -- Detecting CXX compile features
+[1.206s] -- Detecting CXX compile features - done
+[1.215s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.451s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.685s] -- Found generate_parameter_library: 0.4.0 (/opt/ros/humble/share/generate_parameter_library/cmake)
+[1.699s] -- Found parameter_traits: 0.4.0 (/opt/ros/humble/share/parameter_traits/cmake)
+[1.827s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.843s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.867s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.898s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.937s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.053s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.064s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.345s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.397s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.471s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.498s] -- Looking for pthread.h
+[2.653s] -- Looking for pthread.h - found
+[2.653s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.811s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.812s] -- Found Threads: TRUE  
+[2.971s] -- Found rclcpp_lifecycle: 16.0.11 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[3.021s] -- Found moveit_common: 2.5.8 (/opt/ros/humble/share/moveit_common/cmake)
+[3.123s] -- Found moveit_core: 2.5.8 (/opt/ros/humble/share/moveit_core/cmake)
+[3.246s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[3.335s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[3.634s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[3.765s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[3.765s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[4.305s] -- Found moveit_ros_planning: 2.5.8 (/opt/ros/humble/share/moveit_ros_planning/cmake)
+[4.312s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[4.353s] -- Found moveit_ros_planning_interface: 2.5.8 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)
+[4.358s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+[4.383s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+[4.422s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[4.468s] -- Found moveit_task_constructor_core: 0.1.3 (/home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake)
+[4.607s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.671s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.673s] -- Configured cppcheck include dirs: /home/devika/robo_ws/src/hello_moveit_task_constructor/include
+[4.673s] -- Configured cppcheck exclude dirs and/or files: 
+[4.675s] -- Added test 'flake8' to check Python code syntax and style conventions
+[4.677s] -- Added test 'lint_cmake' to check CMake code style
+[4.679s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[4.682s] -- Added test 'uncrustify' to check C / C++ code style
+[4.682s] -- Configured uncrustify additional arguments: 
+[4.684s] -- Added test 'xmllint' to check XML markup files
+[4.687s] -- Configuring done
+[4.925s] -- Generating done
+[4.980s] -- Build files have been written to: /home/devika/robo_ws/build/hello_moveit_task_constructor
+[5.002s] Invoked command in '/home/devika/robo_ws/build/hello_moveit_task_constructor' returned '0': CMAKE_MODULE_PATH=/home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake:/home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/cmake CMAKE_PREFIX_PATH=/home/devika/robo_ws/install/moveit_task_constructor_core:/home/devika/robo_ws/install/rviz_marker_tools:/home/devika/robo_ws/install/moveit_task_constructor_msgs:/home/devika/robo_ws/install/urdf_humble_test_moveit_config:/home/devika/robo_ws/install/warehouse_ros_mongo:/home/devika/robo_ws/install/urdf_humble_test:/home/devika/robo_ws/install/moveit_task_constructor_visualization:/home/devika/robo_ws/install/moveit_task_constructor_demo:/home/devika/robo_ws/install/moveit_task_constructor_capabilities:/home/devika/robo_ws/install/hello_moveit_task_constructor:/home/devika/robo_ws/install/hello_moveit:/home/devika/robo_ws/install/gazebo_ros2_control:/home/devika/manga_ws/install/urdf_humble_test_moveit_config:/home/devika/manga_ws/install/urdf_humble_test:/home/devika/manga_ws/install/hello_moveit:/home/devika/some_ws/install/motoman_hc10_support:/home/devika/some_ws/install/motoman_resources:/home/devika/some_ws/install/hello_moveit:/home/devika/some_ws/install/hc20_sim_moveit_config:/home/devika/some_ws/install/hc20_moveit_config:/home/devika/some_ws/install/hc10_movit2v3:/home/devika/some_ws/install/hc10dt_moveit_config:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble LD_LIBRARY_PATH=/home/devika/robo_ws/install/moveit_task_constructor_core/lib:/home/devika/robo_ws/install/rviz_marker_tools/lib:/home/devika/robo_ws/install/moveit_task_constructor_msgs/lib:/home/devika/robo_ws/install/warehouse_ros_mongo/lib:/home/devika/robo_ws/install/moveit_task_constructor_visualization/lib:/home/devika/robo_ws/install/moveit_task_constructor_demo/lib:/home/devika/robo_ws/install/moveit_task_constructor_capabilities/lib:/home/devika/robo_ws/install/hello_moveit_task_constructor/lib:/home/devika/robo_ws/install/gazebo_ros2_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/devika/robo_ws/src/hello_moveit_task_constructor -DCMAKE_INSTALL_PREFIX=/home/devika/robo_ws/install/hello_moveit_task_constructor
+[5.005s] Invoking command in '/home/devika/robo_ws/build/hello_moveit_task_constructor': CMAKE_MODULE_PATH=/home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake:/home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/cmake CMAKE_PREFIX_PATH=/home/devika/robo_ws/install/moveit_task_constructor_core:/home/devika/robo_ws/install/rviz_marker_tools:/home/devika/robo_ws/install/moveit_task_constructor_msgs:/home/devika/robo_ws/install/urdf_humble_test_moveit_config:/home/devika/robo_ws/install/warehouse_ros_mongo:/home/devika/robo_ws/install/urdf_humble_test:/home/devika/robo_ws/install/moveit_task_constructor_visualization:/home/devika/robo_ws/install/moveit_task_constructor_demo:/home/devika/robo_ws/install/moveit_task_constructor_capabilities:/home/devika/robo_ws/install/hello_moveit_task_constructor:/home/devika/robo_ws/install/hello_moveit:/home/devika/robo_ws/install/gazebo_ros2_control:/home/devika/manga_ws/install/urdf_humble_test_moveit_config:/home/devika/manga_ws/install/urdf_humble_test:/home/devika/manga_ws/install/hello_moveit:/home/devika/some_ws/install/motoman_hc10_support:/home/devika/some_ws/install/motoman_resources:/home/devika/some_ws/install/hello_moveit:/home/devika/some_ws/install/hc20_sim_moveit_config:/home/devika/some_ws/install/hc20_moveit_config:/home/devika/some_ws/install/hc10_movit2v3:/home/devika/some_ws/install/hc10dt_moveit_config:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble LD_LIBRARY_PATH=/home/devika/robo_ws/install/moveit_task_constructor_core/lib:/home/devika/robo_ws/install/rviz_marker_tools/lib:/home/devika/robo_ws/install/moveit_task_constructor_msgs/lib:/home/devika/robo_ws/install/warehouse_ros_mongo/lib:/home/devika/robo_ws/install/moveit_task_constructor_visualization/lib:/home/devika/robo_ws/install/moveit_task_constructor_demo/lib:/home/devika/robo_ws/install/moveit_task_constructor_capabilities/lib:/home/devika/robo_ws/install/hello_moveit_task_constructor/lib:/home/devika/robo_ws/install/gazebo_ros2_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/devika/robo_ws/build/hello_moveit_task_constructor -- -j8 -l8
+[5.125s] [ 10%] [34m[1mRunning `/opt/ros/humble/bin/generate_parameter_library_cpp /home/devika/robo_ws/build/hello_moveit_task_constructor/include/hello_moveit_task_constructor/ik_clearance_cost_parameters.hpp /home/devika/robo_ws/src/hello_moveit_task_constructor/src/ik_clearance_cost_parameters.yaml `[0m
+[5.126s] [ 10%] [34m[1mRunning `/opt/ros/humble/bin/generate_parameter_library_cpp /home/devika/robo_ws/build/hello_moveit_task_constructor/include/hello_moveit_task_constructor/pick_place_demo_parameters.hpp /home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_demo_parameters.yaml `[0m
+[5.128s] [ 15%] [32mBuilding CXX object CMakeFiles/hello_moveit_task_constructor_cartesian.dir/src/cartesian.cpp.o[0m
+[5.130s] [ 20%] [32mBuilding CXX object CMakeFiles/hello_moveit_task_constructor_mtc_node.dir/src/mtc_node.cpp.o[0m
+[5.131s] [ 25%] [32mBuilding CXX object CMakeFiles/hello_moveit_task_constructor_fallbacks_move_to.dir/src/fallbacks_move_to.cpp.o[0m
+[5.132s] [ 35%] [32mBuilding CXX object CMakeFiles/hello_moveit_task_constructor_alternative_path_costs.dir/src/alternative_path_costs.cpp.o[0m
+[5.133s] [ 35%] [32mBuilding CXX object CMakeFiles/hello_moveit_task_constructor_modular.dir/src/modular.cpp.o[0m
+[5.400s] [ 40%] [34m[1mCreating deprecated header file /home/devika/robo_ws/build/hello_moveit_task_constructor/include/ik_clearance_cost_parameters.hpp[0m
+[5.499s] [ 40%] Built target ik_clearance_cost_parameters
+[5.550s] [ 45%] [32mBuilding CXX object CMakeFiles/hello_moveit_task_constructor_ik_clearance_cost.dir/src/ik_clearance_cost.cpp.o[0m
+[6.302s] [ 50%] [34m[1mCreating deprecated header file /home/devika/robo_ws/build/hello_moveit_task_constructor/include/pick_place_demo_parameters.hpp[0m
+[6.389s] [ 50%] Built target pick_place_demo_parameters
+[6.443s] [ 55%] [32mBuilding CXX object CMakeFiles/hello_moveit_task_constructor_pick_place_task.dir/src/pick_place_task.cpp.o[0m
+[34.245s] In file included from [01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/ik_clearance_cost.cpp:19[m[K:
+[34.324s] [01m[K/home/devika/robo_ws/build/hello_moveit_task_constructor/include/ik_clearance_cost_parameters.hpp:1:166:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: #include "ik_clearance_cost_parameters.hpp" is deprecated. Use #include <hello_moveit_task_constructor/ik_clearance_cost_parameters.hpp> instead.[m[K’
+[34.330s]     1 | #pragma message("#include \"ik_clearance_cost_parameters.hpp\" is deprecated. Use #include <hello_moveit_task_constructor/ik_clearance_cost_parameters.hpp> instead."[01;36m[K)[m[K
+[34.330s]       |                                                                                                                                                                      [01;36m[K^[m[K

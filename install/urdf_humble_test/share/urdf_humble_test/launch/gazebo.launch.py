@@ -39,20 +39,24 @@ def generate_launch_description():
     )
 
     # 3. Controller Loaders
+    # 3. Controller Loaders
     load_joint_state_broadcaster = ExecuteProcess(
-        cmd=['ros2', 'control', 'load_controller', '--set-state', 'active', 'joint_state_broadcaster'],
-        output='screen'
-    )
+    cmd=['ros2', 'control', 'load_controller', '--set-state', 'active',
+         'joint_state_broadcaster'],
+    output='screen'
+)
 
     load_arm_group_controller = ExecuteProcess(
-        cmd=['ros2', 'control', 'load_controller', '--set-state', 'active', 'arm_group_controller'],
-        output='screen'
-    )
+    cmd=['ros2', 'control', 'load_controller', '--set-state', 'active',
+         'arm_group_controller'],
+    output='screen'
+)
 
     load_hand_controller = ExecuteProcess(
-        cmd=['ros2', 'control', 'load_controller', '--set-state', 'active', 'hand_controller'],
-        output='screen'
-    )
+    cmd=['ros2', 'control', 'load_controller', '--set-state', 'active',
+         'hand_controller'],
+    output='screen'
+)
 
     # 4. Event Handlers for Sequential Loading
     load_joint_state_after_spawn = RegisterEventHandler(

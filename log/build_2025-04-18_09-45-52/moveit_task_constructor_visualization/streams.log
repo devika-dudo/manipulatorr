@@ -1,0 +1,21 @@
+[0.043s] Invoking command in '/home/devika/robo_ws/build/moveit_task_constructor_visualization': CMAKE_PREFIX_PATH=/home/devika/robo_ws/install/moveit_task_constructor_core:/home/devika/robo_ws/install/rviz_marker_tools:/home/devika/robo_ws/install/moveit_task_constructor_msgs:/home/devika/robo_ws/install/moveit_task_constructor_visualization:/home/devika/robo_ws/install/moveit_task_constructor_demo:/home/devika/robo_ws/install/moveit_task_constructor_capabilities:/home/devika/robo_ws/install/urdf_humble_test_moveit_config:/home/devika/robo_ws/install/warehouse_ros_mongo:/home/devika/robo_ws/install/urdf_humble_test:/home/devika/robo_ws/install/hello_moveit:/home/devika/robo_ws/install/gazebo_ros2_control:/home/devika/manga_ws/install/urdf_humble_test_moveit_config:/home/devika/manga_ws/install/urdf_humble_test:/home/devika/manga_ws/install/hello_moveit:/home/devika/some_ws/install/motoman_hc10_support:/home/devika/some_ws/install/motoman_resources:/home/devika/some_ws/install/hello_moveit:/home/devika/some_ws/install/hc20_sim_moveit_config:/home/devika/some_ws/install/hc20_moveit_config:/home/devika/some_ws/install/hc10_movit2v3:/home/devika/some_ws/install/hc10dt_moveit_config:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble LD_LIBRARY_PATH=/home/devika/robo_ws/install/moveit_task_constructor_core/lib:/home/devika/robo_ws/install/rviz_marker_tools/lib:/home/devika/robo_ws/install/moveit_task_constructor_msgs/lib:/home/devika/robo_ws/install/moveit_task_constructor_visualization/lib:/home/devika/robo_ws/install/moveit_task_constructor_demo/lib:/home/devika/robo_ws/install/moveit_task_constructor_capabilities/lib:/home/devika/robo_ws/install/warehouse_ros_mongo/lib:/home/devika/robo_ws/install/gazebo_ros2_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/devika/robo_ws/build/moveit_task_constructor_visualization
+[0.178s] [  1%] [34m[1mAutomatic MOC for target moveit_task_visualization_tools[0m
+[0.286s] [  1%] Built target moveit_task_visualization_tools_autogen
+[0.345s] [35m[1mConsolidate compiler generated dependencies of target moveit_task_visualization_tools[0m
+[0.439s] [ 10%] Built target moveit_task_visualization_tools
+[0.478s] [ 12%] [34m[1mAutomatic MOC for target motion_planning_tasks_utils[0m
+[0.523s] [ 12%] Built target motion_planning_tasks_utils_autogen
+[0.554s] [35m[1mConsolidate compiler generated dependencies of target motion_planning_tasks_utils[0m
+[0.583s] [ 20%] Built target motion_planning_tasks_utils
+[0.622s] [ 21%] [34m[1mAutomatic MOC for target motion_planning_tasks_properties[0m
+[0.657s] [ 21%] Built target motion_planning_tasks_properties_autogen
+[0.695s] [35m[1mConsolidate compiler generated dependencies of target motion_planning_tasks_properties[0m
+[0.733s] [ 27%] Built target motion_planning_tasks_properties
+[0.770s] [ 29%] [34m[1mAutomatic MOC for target motion_planning_tasks_rviz_plugin[0m
+[0.837s] [ 29%] Built target motion_planning_tasks_rviz_plugin_autogen
+[0.941s] [35m[1mConsolidate compiler generated dependencies of target motion_planning_tasks_rviz_plugin[0m
+[1.033s] [ 30%] [32mBuilding CXX object motion_planning_tasks/src/CMakeFiles/motion_planning_tasks_rviz_plugin.dir/remote_task_model.cpp.o[0m
+[18.022s] [ 32%] [32mBuilding CXX object motion_planning_tasks/src/CMakeFiles/motion_planning_tasks_rviz_plugin.dir/task_display.cpp.o[0m
+[29.587s] gmake[2]: *** [motion_planning_tasks/src/CMakeFiles/motion_planning_tasks_rviz_plugin.dir/build.make:217: motion_planning_tasks/src/CMakeFiles/motion_planning_tasks_rviz_plugin.dir/task_display.cpp.o] Interrupt
+[29.588s] gmake[1]: *** [CMakeFiles/Makefile2:450: motion_planning_tasks/src/CMakeFiles/motion_planning_tasks_rviz_plugin.dir/all] Interrupt
+[29.588s] gmake: *** [Makefile:146: all] Interrupt

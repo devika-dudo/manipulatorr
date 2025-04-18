@@ -1,0 +1,153 @@
+[0.033s] Invoking command in '/home/devika/robo_ws/build/urdf_humble_test': CMAKE_PREFIX_PATH=/home/devika/robo_ws/install/gazebo_ros2_control:/home/devika/robo_ws/install/moveit_task_constructor_visualization:/home/devika/robo_ws/install/moveit_task_constructor_demo:/home/devika/robo_ws/install/moveit_task_constructor_capabilities:/home/devika/robo_ws/install/moveit_task_constructor_core:/home/devika/robo_ws/install/urdf_humble_test_moveit_config:/home/devika/robo_ws/install/warehouse_ros_mongo:/home/devika/robo_ws/install/urdf_humble_test:/home/devika/robo_ws/install/rviz_marker_tools:/home/devika/robo_ws/install/moveit_task_constructor_msgs:/home/devika/robo_ws/install/hello_moveit:/home/devika/manga_ws/install/urdf_humble_test_moveit_config:/home/devika/manga_ws/install/urdf_humble_test:/home/devika/manga_ws/install/hello_moveit:/home/devika/some_ws/install/motoman_hc10_support:/home/devika/some_ws/install/motoman_resources:/home/devika/some_ws/install/hello_moveit:/home/devika/some_ws/install/hc20_sim_moveit_config:/home/devika/some_ws/install/hc20_moveit_config:/home/devika/some_ws/install/hc10_movit2v3:/home/devika/some_ws/install/hc10dt_moveit_config:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble LD_LIBRARY_PATH=/home/devika/robo_ws/install/gazebo_ros2_control/lib:/home/devika/robo_ws/install/moveit_task_constructor_visualization/lib:/home/devika/robo_ws/install/moveit_task_constructor_demo/lib:/home/devika/robo_ws/install/moveit_task_constructor_capabilities/lib:/home/devika/robo_ws/install/moveit_task_constructor_core/lib:/home/devika/robo_ws/install/warehouse_ros_mongo/lib:/home/devika/robo_ws/install/rviz_marker_tools/lib:/home/devika/robo_ws/install/moveit_task_constructor_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/devika/robo_ws/src/urdf_humble_test -DCMAKE_INSTALL_PREFIX=/home/devika/robo_ws/install/urdf_humble_test
+[0.159s] -- The C compiler identification is GNU 11.4.0
+[0.296s] -- The CXX compiler identification is GNU 11.4.0
+[0.312s] -- Detecting C compiler ABI info
+[0.483s] -- Detecting C compiler ABI info - done
+[0.499s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.499s] -- Detecting C compile features
+[0.500s] -- Detecting C compile features - done
+[0.507s] -- Detecting CXX compiler ABI info
+[0.712s] -- Detecting CXX compiler ABI info - done
+[0.735s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.736s] -- Detecting CXX compile features
+[0.737s] -- Detecting CXX compile features - done
+[0.749s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.122s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.388s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.396s] -- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[1.545s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.564s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.592s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.624s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.671s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.802s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.813s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.114s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.197s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.309s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.337s] -- Looking for pthread.h
+[2.515s] -- Looking for pthread.h - found
+[2.515s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.703s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.706s] -- Found Threads: TRUE  
+[2.860s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[2.863s] -- Checking for module 'bullet>=2.82'
+[2.923s] --   Found bullet, version 3.05
+[3.298s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[3.479s] -- Found assimp: /usr/include (found version "5.2.0") 
+[3.542s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[3.633s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[3.688s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[3.705s] -- Looking for ignition-math6 -- found version 6.15.1
+[3.721s] -- Searching for dependencies of ignition-math6
+[3.724s] -- Looking for OGRE...
+[3.725s] -- OGRE_PREFIX_WATCH changed.
+[3.741s] -- Checking for module 'OGRE'
+[3.794s] --   Found OGRE, version 1.9.0
+[3.928s] -- Found Ogre Ghadamon (1.9.0)
+[3.969s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[3.989s] -- Looking for OGRE_Paging...
+[4.019s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[4.020s] -- Looking for OGRE_Terrain...
+[4.049s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[4.049s] -- Looking for OGRE_Property...
+[4.084s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[4.084s] -- Looking for OGRE_RTShaderSystem...
+[4.114s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[4.114s] -- Looking for OGRE_Volume...
+[4.145s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[4.146s] -- Looking for OGRE_Overlay...
+[4.178s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[4.769s] -- Looking for ignition-math6 -- found version 6.15.1
+[4.779s] -- Looking for ignition-transport8 -- found version 8.2.1
+[4.780s] -- Searching for dependencies of ignition-transport8
+[4.828s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[4.859s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[4.874s] -- Checking for module 'libzmq >= 4'
+[4.939s] --   Found libzmq , version 4.3.4
+[5.070s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[5.089s] -- Checking for module 'uuid'
+[5.146s] --   Found uuid, version 2.37.2
+[5.288s] -- Found UUID: TRUE  
+[5.296s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[5.297s] -- Searching for dependencies of ignition-msgs5
+[5.355s] -- Looking for ignition-math6 -- found version 6.15.1
+[5.371s] -- Checking for module 'tinyxml2'
+[5.436s] --   Found tinyxml2, version 9.0.0
+[5.561s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[5.575s] -- Looking for ignition-common3 -- found version 3.14.0
+[5.577s] -- Searching for dependencies of ignition-common3
+[5.580s] -- Looking for dlfcn.h - found
+[5.584s] -- Looking for libdl - found
+[5.588s] -- Found DL: TRUE  
+[5.624s] -- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") 
+[5.625s] -- Searching for <ignition-common3> component [graphics]
+[5.634s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[5.635s] -- Searching for dependencies of ignition-common3-graphics
+[5.636s] -- Looking for ignition-math6 -- found version 6.15.1
+[5.647s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[5.648s] -- Searching for dependencies of ignition-fuel_tools4
+[5.942s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[5.972s] -- Checking for module 'jsoncpp'
+[6.021s] --   Found jsoncpp, version 1.9.5
+[6.138s] -- Found JSONCPP: TRUE  
+[6.154s] -- Checking for module 'libzip'
+[6.208s] --   Found libzip, version 1.7.3
+[6.341s] -- Found ZIP: TRUE  
+[6.342s] -- Looking for ignition-common3 -- found version 3.14.0
+[6.343s] -- Looking for ignition-math6 -- found version 6.15.1
+[6.344s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[6.353s] -- Gazebo version: 11.10
+[6.353s] -- Checking for module 'tbb'
+[6.400s] --   Found tbb, version 2021.5.0
+[6.793s] -- Added test 'flake8' to check Python code syntax and style conventions
+[6.796s] -- Added test 'lint_cmake' to check CMake code style
+[6.799s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[6.805s] -- Added test 'xmllint' to check XML markup files
+[6.810s] -- Configuring done
+[6.824s] -- Generating done
+[6.831s] -- Build files have been written to: /home/devika/robo_ws/build/urdf_humble_test
+[6.867s] Invoked command in '/home/devika/robo_ws/build/urdf_humble_test' returned '0': CMAKE_PREFIX_PATH=/home/devika/robo_ws/install/gazebo_ros2_control:/home/devika/robo_ws/install/moveit_task_constructor_visualization:/home/devika/robo_ws/install/moveit_task_constructor_demo:/home/devika/robo_ws/install/moveit_task_constructor_capabilities:/home/devika/robo_ws/install/moveit_task_constructor_core:/home/devika/robo_ws/install/urdf_humble_test_moveit_config:/home/devika/robo_ws/install/warehouse_ros_mongo:/home/devika/robo_ws/install/urdf_humble_test:/home/devika/robo_ws/install/rviz_marker_tools:/home/devika/robo_ws/install/moveit_task_constructor_msgs:/home/devika/robo_ws/install/hello_moveit:/home/devika/manga_ws/install/urdf_humble_test_moveit_config:/home/devika/manga_ws/install/urdf_humble_test:/home/devika/manga_ws/install/hello_moveit:/home/devika/some_ws/install/motoman_hc10_support:/home/devika/some_ws/install/motoman_resources:/home/devika/some_ws/install/hello_moveit:/home/devika/some_ws/install/hc20_sim_moveit_config:/home/devika/some_ws/install/hc20_moveit_config:/home/devika/some_ws/install/hc10_movit2v3:/home/devika/some_ws/install/hc10dt_moveit_config:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble LD_LIBRARY_PATH=/home/devika/robo_ws/install/gazebo_ros2_control/lib:/home/devika/robo_ws/install/moveit_task_constructor_visualization/lib:/home/devika/robo_ws/install/moveit_task_constructor_demo/lib:/home/devika/robo_ws/install/moveit_task_constructor_capabilities/lib:/home/devika/robo_ws/install/moveit_task_constructor_core/lib:/home/devika/robo_ws/install/warehouse_ros_mongo/lib:/home/devika/robo_ws/install/rviz_marker_tools/lib:/home/devika/robo_ws/install/moveit_task_constructor_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/devika/robo_ws/src/urdf_humble_test -DCMAKE_INSTALL_PREFIX=/home/devika/robo_ws/install/urdf_humble_test
+[6.872s] Invoking command in '/home/devika/robo_ws/build/urdf_humble_test': CMAKE_PREFIX_PATH=/home/devika/robo_ws/install/gazebo_ros2_control:/home/devika/robo_ws/install/moveit_task_constructor_visualization:/home/devika/robo_ws/install/moveit_task_constructor_demo:/home/devika/robo_ws/install/moveit_task_constructor_capabilities:/home/devika/robo_ws/install/moveit_task_constructor_core:/home/devika/robo_ws/install/urdf_humble_test_moveit_config:/home/devika/robo_ws/install/warehouse_ros_mongo:/home/devika/robo_ws/install/urdf_humble_test:/home/devika/robo_ws/install/rviz_marker_tools:/home/devika/robo_ws/install/moveit_task_constructor_msgs:/home/devika/robo_ws/install/hello_moveit:/home/devika/manga_ws/install/urdf_humble_test_moveit_config:/home/devika/manga_ws/install/urdf_humble_test:/home/devika/manga_ws/install/hello_moveit:/home/devika/some_ws/install/motoman_hc10_support:/home/devika/some_ws/install/motoman_resources:/home/devika/some_ws/install/hello_moveit:/home/devika/some_ws/install/hc20_sim_moveit_config:/home/devika/some_ws/install/hc20_moveit_config:/home/devika/some_ws/install/hc10_movit2v3:/home/devika/some_ws/install/hc10dt_moveit_config:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble LD_LIBRARY_PATH=/home/devika/robo_ws/install/gazebo_ros2_control/lib:/home/devika/robo_ws/install/moveit_task_constructor_visualization/lib:/home/devika/robo_ws/install/moveit_task_constructor_demo/lib:/home/devika/robo_ws/install/moveit_task_constructor_capabilities/lib:/home/devika/robo_ws/install/moveit_task_constructor_core/lib:/home/devika/robo_ws/install/warehouse_ros_mongo/lib:/home/devika/robo_ws/install/rviz_marker_tools/lib:/home/devika/robo_ws/install/moveit_task_constructor_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/devika/robo_ws/build/urdf_humble_test
+[6.976s] Invoked command in '/home/devika/robo_ws/build/urdf_humble_test' returned '0': CMAKE_PREFIX_PATH=/home/devika/robo_ws/install/gazebo_ros2_control:/home/devika/robo_ws/install/moveit_task_constructor_visualization:/home/devika/robo_ws/install/moveit_task_constructor_demo:/home/devika/robo_ws/install/moveit_task_constructor_capabilities:/home/devika/robo_ws/install/moveit_task_constructor_core:/home/devika/robo_ws/install/urdf_humble_test_moveit_config:/home/devika/robo_ws/install/warehouse_ros_mongo:/home/devika/robo_ws/install/urdf_humble_test:/home/devika/robo_ws/install/rviz_marker_tools:/home/devika/robo_ws/install/moveit_task_constructor_msgs:/home/devika/robo_ws/install/hello_moveit:/home/devika/manga_ws/install/urdf_humble_test_moveit_config:/home/devika/manga_ws/install/urdf_humble_test:/home/devika/manga_ws/install/hello_moveit:/home/devika/some_ws/install/motoman_hc10_support:/home/devika/some_ws/install/motoman_resources:/home/devika/some_ws/install/hello_moveit:/home/devika/some_ws/install/hc20_sim_moveit_config:/home/devika/some_ws/install/hc20_moveit_config:/home/devika/some_ws/install/hc10_movit2v3:/home/devika/some_ws/install/hc10dt_moveit_config:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble LD_LIBRARY_PATH=/home/devika/robo_ws/install/gazebo_ros2_control/lib:/home/devika/robo_ws/install/moveit_task_constructor_visualization/lib:/home/devika/robo_ws/install/moveit_task_constructor_demo/lib:/home/devika/robo_ws/install/moveit_task_constructor_capabilities/lib:/home/devika/robo_ws/install/moveit_task_constructor_core/lib:/home/devika/robo_ws/install/warehouse_ros_mongo/lib:/home/devika/robo_ws/install/rviz_marker_tools/lib:/home/devika/robo_ws/install/moveit_task_constructor_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/devika/robo_ws/build/urdf_humble_test
+[6.983s] Invoking command in '/home/devika/robo_ws/build/urdf_humble_test': CMAKE_PREFIX_PATH=/home/devika/robo_ws/install/gazebo_ros2_control:/home/devika/robo_ws/install/moveit_task_constructor_visualization:/home/devika/robo_ws/install/moveit_task_constructor_demo:/home/devika/robo_ws/install/moveit_task_constructor_capabilities:/home/devika/robo_ws/install/moveit_task_constructor_core:/home/devika/robo_ws/install/urdf_humble_test_moveit_config:/home/devika/robo_ws/install/warehouse_ros_mongo:/home/devika/robo_ws/install/urdf_humble_test:/home/devika/robo_ws/install/rviz_marker_tools:/home/devika/robo_ws/install/moveit_task_constructor_msgs:/home/devika/robo_ws/install/hello_moveit:/home/devika/manga_ws/install/urdf_humble_test_moveit_config:/home/devika/manga_ws/install/urdf_humble_test:/home/devika/manga_ws/install/hello_moveit:/home/devika/some_ws/install/motoman_hc10_support:/home/devika/some_ws/install/motoman_resources:/home/devika/some_ws/install/hello_moveit:/home/devika/some_ws/install/hc20_sim_moveit_config:/home/devika/some_ws/install/hc20_moveit_config:/home/devika/some_ws/install/hc10_movit2v3:/home/devika/some_ws/install/hc10dt_moveit_config:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble LD_LIBRARY_PATH=/home/devika/robo_ws/install/gazebo_ros2_control/lib:/home/devika/robo_ws/install/moveit_task_constructor_visualization/lib:/home/devika/robo_ws/install/moveit_task_constructor_demo/lib:/home/devika/robo_ws/install/moveit_task_constructor_capabilities/lib:/home/devika/robo_ws/install/moveit_task_constructor_core/lib:/home/devika/robo_ws/install/warehouse_ros_mongo/lib:/home/devika/robo_ws/install/rviz_marker_tools/lib:/home/devika/robo_ws/install/moveit_task_constructor_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/devika/robo_ws/build/urdf_humble_test
+[7.010s] -- Install configuration: ""
+[7.011s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/launch
+[7.011s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/launch/__pycache__
+[7.011s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/launch/__pycache__/gazebo.launch.cpython-310.pyc
+[7.012s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/launch/robot_state_publisher.launch.py
+[7.012s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/launch/gazebo.launch.py
+[7.012s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/launch/display.launch.py
+[7.012s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/urdf
+[7.012s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/urdf/test.urdf
+[7.013s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/urdf/model.sdf
+[7.013s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/urdf/model.urdf
+[7.013s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/urdf/cylinder.sdf
+[7.013s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/config
+[7.014s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/config/controller_manager.yaml
+[7.014s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/config/config.rviz
+[7.014s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/meshes
+[7.014s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/meshes/base_link.STL
+[7.021s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/meshes/link_4.STL
+[7.021s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/meshes/link_3.STL
+[7.036s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/meshes/link_2.STL
+[7.037s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/meshes/link_6.STL
+[7.040s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/meshes/link_1.STL
+[7.047s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/meshes/link_5.STL
+[7.048s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/meshes/link_7.STL
+[7.049s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/ament_index/resource_index/package_run_dependencies/urdf_humble_test
+[7.050s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/ament_index/resource_index/parent_prefix_path/urdf_humble_test
+[7.051s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/environment/ament_prefix_path.sh
+[7.051s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/environment/ament_prefix_path.dsv
+[7.051s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/environment/path.sh
+[7.051s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/environment/path.dsv
+[7.051s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/local_setup.bash
+[7.052s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/local_setup.sh
+[7.052s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/local_setup.zsh
+[7.052s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/local_setup.dsv
+[7.052s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/package.dsv
+[7.053s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/ament_index/resource_index/packages/urdf_humble_test
+[7.053s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/cmake/urdf_humble_testConfig.cmake
+[7.053s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/cmake/urdf_humble_testConfig-version.cmake
+[7.054s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/package.xml
+[7.059s] Invoked command in '/home/devika/robo_ws/build/urdf_humble_test' returned '0': CMAKE_PREFIX_PATH=/home/devika/robo_ws/install/gazebo_ros2_control:/home/devika/robo_ws/install/moveit_task_constructor_visualization:/home/devika/robo_ws/install/moveit_task_constructor_demo:/home/devika/robo_ws/install/moveit_task_constructor_capabilities:/home/devika/robo_ws/install/moveit_task_constructor_core:/home/devika/robo_ws/install/urdf_humble_test_moveit_config:/home/devika/robo_ws/install/warehouse_ros_mongo:/home/devika/robo_ws/install/urdf_humble_test:/home/devika/robo_ws/install/rviz_marker_tools:/home/devika/robo_ws/install/moveit_task_constructor_msgs:/home/devika/robo_ws/install/hello_moveit:/home/devika/manga_ws/install/urdf_humble_test_moveit_config:/home/devika/manga_ws/install/urdf_humble_test:/home/devika/manga_ws/install/hello_moveit:/home/devika/some_ws/install/motoman_hc10_support:/home/devika/some_ws/install/motoman_resources:/home/devika/some_ws/install/hello_moveit:/home/devika/some_ws/install/hc20_sim_moveit_config:/home/devika/some_ws/install/hc20_moveit_config:/home/devika/some_ws/install/hc10_movit2v3:/home/devika/some_ws/install/hc10dt_moveit_config:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble LD_LIBRARY_PATH=/home/devika/robo_ws/install/gazebo_ros2_control/lib:/home/devika/robo_ws/install/moveit_task_constructor_visualization/lib:/home/devika/robo_ws/install/moveit_task_constructor_demo/lib:/home/devika/robo_ws/install/moveit_task_constructor_capabilities/lib:/home/devika/robo_ws/install/moveit_task_constructor_core/lib:/home/devika/robo_ws/install/warehouse_ros_mongo/lib:/home/devika/robo_ws/install/rviz_marker_tools/lib:/home/devika/robo_ws/install/moveit_task_constructor_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/devika/robo_ws/build/urdf_humble_test

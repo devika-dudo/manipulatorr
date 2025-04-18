@@ -1,0 +1,19 @@
+[ 10%] Built target pick_place_demo_parameters
+[ 20%] Built target ik_clearance_cost_parameters
+[ 40%] [32mBuilding CXX object CMakeFiles/hello_moveit_task_constructor_mtc_node.dir/src/mtc_node.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/hello_moveit_task_constructor_fallbacks_move_to.dir/src/fallbacks_move_to.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/hello_moveit_task_constructor_modular.dir/src/modular.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/hello_moveit_task_constructor_alternative_path_costs.dir/src/alternative_path_costs.cpp.o[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/hello_moveit_task_constructor_cartesian.dir/src/cartesian.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/hello_moveit_task_constructor_pick_place_task.dir/src/pick_place_task.cpp.o[0m
+[ 55%] [32mBuilding CXX object CMakeFiles/hello_moveit_task_constructor_ik_clearance_cost.dir/src/ik_clearance_cost.cpp.o[0m
+In file included from [01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/ik_clearance_cost.cpp:19[m[K:
+[01m[K/home/devika/robo_ws/build/hello_moveit_task_constructor/include/ik_clearance_cost_parameters.hpp:1:166:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: #include "ik_clearance_cost_parameters.hpp" is deprecated. Use #include <hello_moveit_task_constructor/ik_clearance_cost_parameters.hpp> instead.[m[K’
+    1 | #pragma message("#include \"ik_clearance_cost_parameters.hpp\" is deprecated. Use #include <hello_moveit_task_constructor/ik_clearance_cost_parameters.hpp> instead."[01;36m[K)[m[K
+      |                                                                                                                                                                      [01;36m[K^[m[K
+In file included from [01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/include/hello_moveit_task_constructor/pick_place_task.h:44[m[K,
+                 from [01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:14[m[K:
+[01m[K/home/devika/robo_ws/build/hello_moveit_task_constructor/include/pick_place_demo_parameters.hpp:1:162:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: #include "pick_place_demo_parameters.hpp" is deprecated. Use #include <hello_moveit_task_constructor/pick_place_demo_parameters.hpp> instead.[m[K’
+    1 | ello_moveit_task_constructor/pick_place_demo_parameters.hpp> instead."[01;36m[K)[m[K
+      |                                                                       [01;36m[K^[m[K
+

@@ -2051,8 +2051,32 @@ CMakeFiles/hello_moveit.dir/src/hello_moveit_v1.cpp.o: /home/devika/robo_ws/src/
   /opt/ros/humble/include/graph_msgs/graph_msgs/msg/detail/geometry_graph__traits.hpp \
   /opt/ros/humble/include/graph_msgs/graph_msgs/msg/detail/edges__traits.hpp \
   /opt/ros/humble/include/graph_msgs/graph_msgs/msg/detail/geometry_graph__type_support.hpp \
-  /opt/ros/humble/include/graph_msgs/graph_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+  /opt/ros/humble/include/graph_msgs/graph_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/moveit/planning_scene_interface/planning_scene_interface.h \
+  /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/object_color.hpp \
+  /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/object_color__builder.hpp \
+  /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/object_color__type_support.hpp \
+  /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/collision_object.hpp \
+  /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/collision_object__builder.hpp \
+  /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/collision_object__type_support.hpp \
+  /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/attached_collision_object.hpp \
+  /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/attached_collision_object__builder.hpp \
+  /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/attached_collision_object__type_support.hpp
 
+
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/attached_collision_object__type_support.hpp:
+
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/attached_collision_object__builder.hpp:
+
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/attached_collision_object.hpp:
+
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/collision_object__builder.hpp:
+
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/collision_object.hpp:
+
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/object_color__type_support.hpp:
+
+/opt/ros/humble/include/moveit/planning_scene_interface/planning_scene_interface.h:
 
 /opt/ros/humble/include/graph_msgs/graph_msgs/msg/detail/geometry_graph__type_support.hpp:
 
@@ -3068,6 +3092,8 @@ CMakeFiles/hello_moveit.dir/src/hello_moveit_v1.cpp.o: /home/devika/robo_ws/src/
 
 /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/grasp__builder.hpp:
 
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/object_color__builder.hpp:
+
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3_stamped__struct.hpp:
 
 /usr/include/boost/preprocessor/iteration/detail/bounds/upper1.hpp:
@@ -3444,6 +3470,8 @@ CMakeFiles/hello_moveit.dir/src/hello_moveit_v1.cpp.o: /home/devika/robo_ws/src/
 
 /usr/include/x86_64-linux-gnu/bits/signal_ext.h:
 
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/collision_object__type_support.hpp:
+
 /usr/include/boost/mpl/iterator_category.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types.h:
@@ -3511,6 +3539,8 @@ CMakeFiles/hello_moveit.dir/src/hello_moveit_v1.cpp.o: /home/devika/robo_ws/src/
 /opt/ros/humble/include/rcl/rcl/node.h:
 
 /opt/ros/humble/include/rmw/rmw/event_callback_type.h:
+
+/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/object_color.hpp:
 
 /opt/ros/humble/include/rcl/rcl/context.h:
 

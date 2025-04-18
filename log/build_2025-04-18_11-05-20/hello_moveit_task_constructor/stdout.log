@@ -1,0 +1,52 @@
+[ 10%] Built target ik_clearance_cost_parameters
+[ 20%] Built target pick_place_demo_parameters
+[ 30%] Built target hello_moveit_task_constructor_cartesian
+[ 40%] Built target hello_moveit_task_constructor_alternative_path_costs
+[ 45%] [32mBuilding CXX object CMakeFiles/hello_moveit_task_constructor_mtc_node.dir/src/mtc_node.cpp.o[0m
+[ 55%] Built target hello_moveit_task_constructor_fallbacks_move_to
+[ 65%] Built target hello_moveit_task_constructor_modular
+[ 75%] Built target hello_moveit_task_constructor_ik_clearance_cost
+[ 85%] Built target hello_moveit_task_constructor_pick_place_task
+[ 95%] Built target hello_moveit_task_constructor_pick_place_demo
+[100%] [32m[1mLinking CXX executable mtc_node[0m
+[100%] Built target hello_moveit_task_constructor_mtc_node
+-- Install configuration: "Release"
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit_task_constructor/lib/libhello_moveit_task_constructor_pick_place_task.so
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit_task_constructor/lib/hello_moveit_task_constructor/alternative_path_costs
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit_task_constructor/lib/hello_moveit_task_constructor/cartesian
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit_task_constructor/lib/hello_moveit_task_constructor/fallbacks_move_to
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit_task_constructor/include/hello_moveit_task_constructor
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit_task_constructor/include/hello_moveit_task_constructor/ik_clearance_cost_parameters.hpp
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit_task_constructor/include/hello_moveit_task_constructor/pick_place_demo_parameters.hpp
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit_task_constructor/lib/hello_moveit_task_constructor/ik_clearance_cost
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit_task_constructor/lib/hello_moveit_task_constructor/modular
+-- Installing: /home/devika/robo_ws/install/hello_moveit_task_constructor/lib/hello_moveit_task_constructor/mtc_node
+-- Set runtime path of "/home/devika/robo_ws/install/hello_moveit_task_constructor/lib/hello_moveit_task_constructor/mtc_node" to ""
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit_task_constructor/include/hello_moveit_task_constructor
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit_task_constructor/include/hello_moveit_task_constructor/ik_clearance_cost_parameters.hpp
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit_task_constructor/include/hello_moveit_task_constructor/pick_place_demo_parameters.hpp
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit_task_constructor/lib/hello_moveit_task_constructor/pick_place_demo
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit_task_constructor/share/hello_moveit_task_constructor/config
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit_task_constructor/share/hello_moveit_task_constructor/launch
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit_task_constructor/share/hello_moveit_task_constructor/launch/run.launch.py
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit_task_constructor/share/hello_moveit_task_constructor/launch/demo.launch.py
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit_task_constructor/share/hello_moveit_task_constructor/scripts
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit_task_constructor/include/hello_moveit_task_constructor
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit_task_constructor/include/hello_moveit_task_constructor/pick_place_task.h
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit_task_constructor/include/hello_moveit_task_constructor/hello_moveit_task_constructor
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit_task_constructor/include/hello_moveit_task_constructor/hello_moveit_task_constructor/pick_place_task.h
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit_task_constructor/share/ament_index/resource_index/package_run_dependencies/hello_moveit_task_constructor
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit_task_constructor/share/ament_index/resource_index/parent_prefix_path/hello_moveit_task_constructor
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit_task_constructor/share/hello_moveit_task_constructor/environment/ament_prefix_path.sh
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit_task_constructor/share/hello_moveit_task_constructor/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit_task_constructor/share/hello_moveit_task_constructor/environment/path.sh
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit_task_constructor/share/hello_moveit_task_constructor/environment/path.dsv
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit_task_constructor/share/hello_moveit_task_constructor/local_setup.bash
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit_task_constructor/share/hello_moveit_task_constructor/local_setup.sh
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit_task_constructor/share/hello_moveit_task_constructor/local_setup.zsh
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit_task_constructor/share/hello_moveit_task_constructor/local_setup.dsv
+-- Installing: /home/devika/robo_ws/install/hello_moveit_task_constructor/share/hello_moveit_task_constructor/package.dsv
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit_task_constructor/share/ament_index/resource_index/packages/hello_moveit_task_constructor
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit_task_constructor/share/hello_moveit_task_constructor/cmake/hello_moveit_task_constructorConfig.cmake
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit_task_constructor/share/hello_moveit_task_constructor/cmake/hello_moveit_task_constructorConfig-version.cmake
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit_task_constructor/share/hello_moveit_task_constructor/package.xml

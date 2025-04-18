@@ -1,0 +1,4 @@
+[0mmoveit_task_constructor_visualization: You did not request a specific build type: Choosing 'Release' for maximum performance[0m
+gmake[2]: *** [motion_planning_tasks/src/CMakeFiles/motion_planning_tasks_rviz_plugin.dir/build.make:203: motion_planning_tasks/src/CMakeFiles/motion_planning_tasks_rviz_plugin.dir/remote_task_model.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:450: motion_planning_tasks/src/CMakeFiles/motion_planning_tasks_rviz_plugin.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

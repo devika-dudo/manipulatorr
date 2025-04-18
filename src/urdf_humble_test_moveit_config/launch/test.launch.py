@@ -88,6 +88,7 @@ def generate_launch_description():
             {'use_sim_time': True},
             {'start_state': {'content': initial_positions_file_path}},
             {'pilz_industrial_motion_planner.planner_id': 'PTP'},
+            {'trajectory_execution.allowed_execution_duration_scaling': 0.0},
         ],
     )
  

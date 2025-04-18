@@ -1,0 +1,85 @@
+[0.051s] Invoking command in '/home/devika/robo_ws/build/hello_moveit_task_constructor': CMAKE_MODULE_PATH=/home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake:/home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/cmake CMAKE_PREFIX_PATH=/home/devika/robo_ws/install/moveit_task_constructor_core:/home/devika/robo_ws/install/rviz_marker_tools:/home/devika/robo_ws/install/moveit_task_constructor_msgs:/home/devika/robo_ws/install/urdf_humble_test_moveit_config:/home/devika/robo_ws/install/warehouse_ros_mongo:/home/devika/robo_ws/install/urdf_humble_test:/home/devika/robo_ws/install/moveit_task_constructor_visualization:/home/devika/robo_ws/install/moveit_task_constructor_demo:/home/devika/robo_ws/install/moveit_task_constructor_capabilities:/home/devika/robo_ws/install/hello_moveit_task_constructor:/home/devika/robo_ws/install/hello_moveit:/home/devika/robo_ws/install/gazebo_ros2_control:/home/devika/manga_ws/install/urdf_humble_test_moveit_config:/home/devika/manga_ws/install/urdf_humble_test:/home/devika/manga_ws/install/hello_moveit:/home/devika/some_ws/install/motoman_hc10_support:/home/devika/some_ws/install/motoman_resources:/home/devika/some_ws/install/hello_moveit:/home/devika/some_ws/install/hc20_sim_moveit_config:/home/devika/some_ws/install/hc20_moveit_config:/home/devika/some_ws/install/hc10_movit2v3:/home/devika/some_ws/install/hc10dt_moveit_config:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble LD_LIBRARY_PATH=/home/devika/robo_ws/install/moveit_task_constructor_core/lib:/home/devika/robo_ws/install/rviz_marker_tools/lib:/home/devika/robo_ws/install/moveit_task_constructor_msgs/lib:/home/devika/robo_ws/install/warehouse_ros_mongo/lib:/home/devika/robo_ws/install/moveit_task_constructor_visualization/lib:/home/devika/robo_ws/install/moveit_task_constructor_demo/lib:/home/devika/robo_ws/install/moveit_task_constructor_capabilities/lib:/home/devika/robo_ws/install/hello_moveit_task_constructor/lib:/home/devika/robo_ws/install/gazebo_ros2_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/devika/robo_ws/build/hello_moveit_task_constructor -- -j8 -l8
+[0.179s] [ 10%] Built target pick_place_demo_parameters
+[0.201s] [ 20%] Built target ik_clearance_cost_parameters
+[0.213s] [ 30%] Built target hello_moveit_task_constructor_alternative_path_costs
+[0.227s] [ 40%] Built target hello_moveit_task_constructor_fallbacks_move_to
+[0.231s] [35m[1mConsolidate compiler generated dependencies of target hello_moveit_task_constructor_pick_place_task[0m
+[0.233s] [ 50%] Built target hello_moveit_task_constructor_cartesian
+[0.242s] [ 60%] Built target hello_moveit_task_constructor_modular
+[0.266s] [ 70%] Built target hello_moveit_task_constructor_mtc_node
+[0.307s] [ 80%] Built target hello_moveit_task_constructor_ik_clearance_cost
+[0.314s] [ 85%] [32mBuilding CXX object CMakeFiles/hello_moveit_task_constructor_pick_place_task.dir/src/pick_place_task.cpp.o[0m
+[6.305s] In file included from [01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/include/hello_moveit_task_constructor/pick_place_task.h:44[m[K,
+[6.305s]                  from [01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:14[m[K:
+[6.305s] [01m[K/home/devika/robo_ws/build/hello_moveit_task_constructor/include/pick_place_demo_parameters.hpp:1:162:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: #include "pick_place_demo_parameters.hpp" is deprecated. Use #include <hello_moveit_task_constructor/pick_place_demo_parameters.hpp> instead.[m[K’
+[6.305s]     1 | ello_moveit_task_constructor/pick_place_demo_parameters.hpp> instead."[01;36m[K)[m[K
+[6.305s]       |                                                                       [01;36m[K^[m[K
+[6.305s] 
+[6.517s] In file included from [01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/include/hello_moveit_task_constructor/pick_place_task.h:44[m[K,
+[6.517s]                  from [01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:14[m[K:
+[6.517s] [01m[K/home/devika/robo_ws/build/hello_moveit_task_constructor/include/pick_place_demo_parameters.hpp:782:162:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: #include "pick_place_demo_parameters.hpp" is deprecated. Use #include <hello_moveit_task_constructor/pick_place_demo_parameters.hpp> instead.[m[K’
+[6.517s]   782 | ello_moveit_task_constructor/pick_place_demo_parameters.hpp> instead."[01;36m[K)[m[K
+[6.517s]       |                                                                       [01;36m[K^[m[K
+[6.518s] 
+[6.518s] [01m[K/home/devika/robo_ws/build/hello_moveit_task_constructor/include/pick_place_demo_parameters.hpp:838:20:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Ktemplate<class T> auto pick_place_demo::to_parameter_value(T)[m[K’
+[6.518s]   838 | [[nodiscard]] auto [01;31m[Kto_parameter_value[m[K(T value) {
+[6.518s]       |                    [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[6.518s] In file included from [01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/include/hello_moveit_task_constructor/pick_place_task.h:44[m[K,
+[6.518s]                  from [01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:14[m[K:
+[6.519s] [01m[K/home/devika/robo_ws/build/hello_moveit_task_constructor/include/pick_place_demo_parameters.hpp:57:20:[m[K [01;36m[Knote: [m[K‘[01m[Ktemplate<class T> auto pick_place_demo::to_parameter_value(T)[m[K’ previously declared here
+[6.519s]    57 | [[nodiscard]] auto [01;36m[Kto_parameter_value[m[K(T value) {
+[6.519s]       |                    [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[6.519s] In file included from [01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/include/hello_moveit_task_constructor/pick_place_task.h:44[m[K,
+[6.519s]                  from [01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:14[m[K:
+[6.519s] [01m[K/home/devika/robo_ws/build/hello_moveit_task_constructor/include/pick_place_demo_parameters.hpp:843:20:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Ktemplate<long unsigned int capacity> auto pick_place_demo::to_parameter_value(const rsl::StaticString<capacity>&)[m[K’
+[6.520s]   843 | [[nodiscard]] auto [01;31m[Kto_parameter_value[m[K(rsl::StaticString<capacity> const& value) {
+[6.520s]       |                    [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[6.520s] In file included from [01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/include/hello_moveit_task_constructor/pick_place_task.h:44[m[K,
+[6.520s]                  from [01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:14[m[K:
+[6.520s] [01m[K/home/devika/robo_ws/build/hello_moveit_task_constructor/include/pick_place_demo_parameters.hpp:62:20:[m[K [01;36m[Knote: [m[K‘[01m[Ktemplate<long unsigned int capacity> auto pick_place_demo::to_parameter_value(const rsl::StaticString<capacity>&)[m[K’ previously declared here
+[6.521s]    62 | [[nodiscard]] auto [01;36m[Kto_parameter_value[m[K(rsl::StaticString<capacity> const& value) {
+[6.521s]       |                    [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[6.521s] In file included from [01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/include/hello_moveit_task_constructor/pick_place_task.h:44[m[K,
+[6.521s]                  from [01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:14[m[K:
+[6.521s] [01m[K/home/devika/robo_ws/build/hello_moveit_task_constructor/include/pick_place_demo_parameters.hpp:848:20:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Ktemplate<class T, long unsigned int capacity> auto pick_place_demo::to_parameter_value(const rsl::StaticVector<T, capacity>&)[m[K’
+[6.521s]   848 | [[nodiscard]] auto [01;31m[Kto_parameter_value[m[K(rsl::StaticVector<T, capacity> const& value) {
+[6.522s]       |                    [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[6.522s] In file included from [01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/include/hello_moveit_task_constructor/pick_place_task.h:44[m[K,
+[6.522s]                  from [01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:14[m[K:
+[6.522s] [01m[K/home/devika/robo_ws/build/hello_moveit_task_constructor/include/pick_place_demo_parameters.hpp:67:20:[m[K [01;36m[Knote: [m[K‘[01m[Ktemplate<class T, long unsigned int capacity> auto pick_place_demo::to_parameter_value(const rsl::StaticVector<T, capacity>&)[m[K’ previously declared here
+[6.522s]    67 | [[nodiscard]] auto [01;36m[Kto_parameter_value[m[K(rsl::StaticVector<T, capacity> const& value) {
+[6.522s]       |                    [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[6.522s] In file included from [01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/include/hello_moveit_task_constructor/pick_place_task.h:44[m[K,
+[6.523s]                  from [01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:14[m[K:
+[6.523s] [01m[K/home/devika/robo_ws/build/hello_moveit_task_constructor/include/pick_place_demo_parameters.hpp:851:12:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct pick_place_demo::Params[m[K’
+[6.523s]   851 |     struct [01;31m[KParams[m[K {
+[6.523s]       |            [01;31m[K^~~~~~[m[K
+[6.523s] In file included from [01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/include/hello_moveit_task_constructor/pick_place_task.h:44[m[K,
+[6.524s]                  from [01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:14[m[K:
+[6.524s] [01m[K/home/devika/robo_ws/build/hello_moveit_task_constructor/include/pick_place_demo_parameters.hpp:70:12:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct pick_place_demo::Params[m[K’
+[6.524s]    70 |     struct [01;36m[KParams[m[K {
+[6.525s]       |            [01;36m[K^~~~~~[m[K
+[6.525s] In file included from [01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/include/hello_moveit_task_constructor/pick_place_task.h:44[m[K,
+[6.525s]                  from [01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:14[m[K:
+[6.525s] [01m[K/home/devika/robo_ws/build/hello_moveit_task_constructor/include/pick_place_demo_parameters.hpp:883:12:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct pick_place_demo::StackParams[m[K’
+[6.525s]   883 |     struct [01;31m[KStackParams[m[K {
+[6.526s]       |            [01;31m[K^~~~~~~~~~~[m[K
+[6.526s] In file included from [01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/include/hello_moveit_task_constructor/pick_place_task.h:44[m[K,
+[6.526s]                  from [01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:14[m[K:
+[6.526s] [01m[K/home/devika/robo_ws/build/hello_moveit_task_constructor/include/pick_place_demo_parameters.hpp:102:12:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct pick_place_demo::StackParams[m[K’
+[6.526s]   102 |     struct [01;36m[KStackParams[m[K {
+[6.526s]       |            [01;36m[K^~~~~~~~~~~[m[K
+[6.527s] In file included from [01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/include/hello_moveit_task_constructor/pick_place_task.h:44[m[K,
+[6.527s]                  from [01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:14[m[K:
+[6.527s] [01m[K/home/devika/robo_ws/build/hello_moveit_task_constructor/include/pick_place_demo_parameters.hpp:894:9:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kclass pick_place_demo::ParamListener[m[K’
+[6.527s]   894 |   class [01;31m[KParamListener[m[K{
+[6.527s]       |         [01;31m[K^~~~~~~~~~~~~[m[K
+[6.528s] In file included from [01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/include/hello_moveit_task_constructor/pick_place_task.h:44[m[K,
+[6.528s]                  from [01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:14[m[K:
+[6.528s] [01m[K/home/devika/robo_ws/build/hello_moveit_task_constructor/include/pick_place_demo_parameters.hpp:113:9:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kclass pick_place_demo::ParamListener[m[K’
+[6.528s]   113 |   class [01;36m[KParamListener[m[K{
+[6.528s]       |         [01;36m[K^~~~~~~~~~~~~[m[K
+[11.269s] gmake[2]: *** [CMakeFiles/hello_moveit_task_constructor_pick_place_task.dir/build.make:76: CMakeFiles/hello_moveit_task_constructor_pick_place_task.dir/src/pick_place_task.cpp.o] Error 1
+[11.270s] gmake[1]: *** [CMakeFiles/Makefile2:155: CMakeFiles/hello_moveit_task_constructor_pick_place_task.dir/all] Error 2
+[11.270s] gmake: *** [Makefile:146: all] Error 2
+[11.275s] Invoked command in '/home/devika/robo_ws/build/hello_moveit_task_constructor' returned '2': CMAKE_MODULE_PATH=/home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake:/home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/cmake CMAKE_PREFIX_PATH=/home/devika/robo_ws/install/moveit_task_constructor_core:/home/devika/robo_ws/install/rviz_marker_tools:/home/devika/robo_ws/install/moveit_task_constructor_msgs:/home/devika/robo_ws/install/urdf_humble_test_moveit_config:/home/devika/robo_ws/install/warehouse_ros_mongo:/home/devika/robo_ws/install/urdf_humble_test:/home/devika/robo_ws/install/moveit_task_constructor_visualization:/home/devika/robo_ws/install/moveit_task_constructor_demo:/home/devika/robo_ws/install/moveit_task_constructor_capabilities:/home/devika/robo_ws/install/hello_moveit_task_constructor:/home/devika/robo_ws/install/hello_moveit:/home/devika/robo_ws/install/gazebo_ros2_control:/home/devika/manga_ws/install/urdf_humble_test_moveit_config:/home/devika/manga_ws/install/urdf_humble_test:/home/devika/manga_ws/install/hello_moveit:/home/devika/some_ws/install/motoman_hc10_support:/home/devika/some_ws/install/motoman_resources:/home/devika/some_ws/install/hello_moveit:/home/devika/some_ws/install/hc20_sim_moveit_config:/home/devika/some_ws/install/hc20_moveit_config:/home/devika/some_ws/install/hc10_movit2v3:/home/devika/some_ws/install/hc10dt_moveit_config:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble LD_LIBRARY_PATH=/home/devika/robo_ws/install/moveit_task_constructor_core/lib:/home/devika/robo_ws/install/rviz_marker_tools/lib:/home/devika/robo_ws/install/moveit_task_constructor_msgs/lib:/home/devika/robo_ws/install/warehouse_ros_mongo/lib:/home/devika/robo_ws/install/moveit_task_constructor_visualization/lib:/home/devika/robo_ws/install/moveit_task_constructor_demo/lib:/home/devika/robo_ws/install/moveit_task_constructor_capabilities/lib:/home/devika/robo_ws/install/hello_moveit_task_constructor/lib:/home/devika/robo_ws/install/gazebo_ros2_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/devika/robo_ws/build/hello_moveit_task_constructor -- -j8 -l8

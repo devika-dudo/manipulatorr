@@ -1,5 +1,6 @@
 controller_manager:
   ros__parameters:
+    use_sim_time: true
     update_rate: 50  # Hz
     joint_state_broadcaster:
       type: joint_state_broadcaster/JointStateBroadcaster
@@ -40,7 +41,7 @@ hand_controller:
       - position
       - velocity
     open_loop_control: true
-    allow_integration_in_goal_trajectories: true
+    allow_integration_in_goal_trajectories: false
     max_effort: 100.0
     use_sim_time: true  
     constraints:

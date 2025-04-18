@@ -1,0 +1,11 @@
+[ 10%] Built target ik_clearance_cost_parameters
+[ 15%] [34m[1mRunning `/opt/ros/humble/bin/generate_parameter_library_cpp /home/devika/robo_ws/build/hello_moveit_task_constructor/include/hello_moveit_task_constructor/pick_place_demo_parameters.hpp /home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_demo_parameters.yaml `[0m
+[ 30%] Built target hello_moveit_task_constructor_cartesian
+[ 35%] Built target hello_moveit_task_constructor_fallbacks_move_to
+[ 60%] Built target hello_moveit_task_constructor_modular
+[ 65%] Built target hello_moveit_task_constructor_alternative_path_costs
+[ 65%] Built target hello_moveit_task_constructor_mtc_node
+[ 75%] Built target hello_moveit_task_constructor_ik_clearance_cost
+[ 80%] [34m[1mCreating deprecated header file /home/devika/robo_ws/build/hello_moveit_task_constructor/include/pick_place_demo_parameters.hpp[0m
+[ 80%] Built target pick_place_demo_parameters
+[ 85%] [32mBuilding CXX object CMakeFiles/hello_moveit_task_constructor_pick_place_task.dir/src/pick_place_task.cpp.o[0m
