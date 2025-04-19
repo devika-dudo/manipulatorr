@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/hello_moveit.dir/src/hello_moveit_v1.cpp.o"
-  "CMakeFiles/hello_moveit.dir/src/hello_moveit_v1.cpp.o.d"
+  "CMakeFiles/hello_moveit.dir/src/letsee.cpp.o"
+  "CMakeFiles/hello_moveit.dir/src/letsee.cpp.o.d"
   "hello_moveit"
   "hello_moveit.pdb"
 )

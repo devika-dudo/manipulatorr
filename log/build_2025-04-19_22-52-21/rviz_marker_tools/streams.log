@@ -1,0 +1,31 @@
+[0.202s] Invoking command in '/home/devika/robo_ws/build/rviz_marker_tools': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble /usr/bin/cmake --build /home/devika/robo_ws/build/rviz_marker_tools
+[2.084s] [100%] Built target rviz_marker_tools
+[2.096s] Invoked command in '/home/devika/robo_ws/build/rviz_marker_tools' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble /usr/bin/cmake --build /home/devika/robo_ws/build/rviz_marker_tools
+[2.160s] Invoking command in '/home/devika/robo_ws/build/rviz_marker_tools': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble /usr/bin/cmake --install /home/devika/robo_ws/build/rviz_marker_tools
+[2.208s] -- Install configuration: "Release"
+[2.208s] -- Up-to-date: /home/devika/robo_ws/install/rviz_marker_tools/include
+[2.209s] -- Up-to-date: /home/devika/robo_ws/install/rviz_marker_tools/include/rviz_marker_tools
+[2.209s] -- Up-to-date: /home/devika/robo_ws/install/rviz_marker_tools/include/rviz_marker_tools/marker_creation.h
+[2.209s] -- Up-to-date: /home/devika/robo_ws/install/rviz_marker_tools/lib/librviz_marker_tools.so
+[2.209s] -- Up-to-date: /home/devika/robo_ws/install/rviz_marker_tools/share/rviz_marker_tools/environment/library_path.sh
+[2.210s] -- Up-to-date: /home/devika/robo_ws/install/rviz_marker_tools/share/rviz_marker_tools/environment/library_path.dsv
+[2.210s] -- Up-to-date: /home/devika/robo_ws/install/rviz_marker_tools/share/ament_index/resource_index/package_run_dependencies/rviz_marker_tools
+[2.210s] -- Up-to-date: /home/devika/robo_ws/install/rviz_marker_tools/share/ament_index/resource_index/parent_prefix_path/rviz_marker_tools
+[2.214s] -- Up-to-date: /home/devika/robo_ws/install/rviz_marker_tools/share/rviz_marker_tools/environment/ament_prefix_path.sh
+[2.214s] -- Up-to-date: /home/devika/robo_ws/install/rviz_marker_tools/share/rviz_marker_tools/environment/ament_prefix_path.dsv
+[2.217s] -- Up-to-date: /home/devika/robo_ws/install/rviz_marker_tools/share/rviz_marker_tools/environment/path.sh
+[2.218s] -- Up-to-date: /home/devika/robo_ws/install/rviz_marker_tools/share/rviz_marker_tools/environment/path.dsv
+[2.218s] -- Up-to-date: /home/devika/robo_ws/install/rviz_marker_tools/share/rviz_marker_tools/local_setup.bash
+[2.220s] -- Up-to-date: /home/devika/robo_ws/install/rviz_marker_tools/share/rviz_marker_tools/local_setup.sh
+[2.222s] -- Up-to-date: /home/devika/robo_ws/install/rviz_marker_tools/share/rviz_marker_tools/local_setup.zsh
+[2.222s] -- Up-to-date: /home/devika/robo_ws/install/rviz_marker_tools/share/rviz_marker_tools/local_setup.dsv
+[2.226s] -- Installing: /home/devika/robo_ws/install/rviz_marker_tools/share/rviz_marker_tools/package.dsv
+[2.226s] -- Up-to-date: /home/devika/robo_ws/install/rviz_marker_tools/share/ament_index/resource_index/packages/rviz_marker_tools
+[2.227s] -- Up-to-date: /home/devika/robo_ws/install/rviz_marker_tools/share/rviz_marker_tools/cmake/rviz_marker_toolsTargetsExport.cmake
+[2.227s] -- Up-to-date: /home/devika/robo_ws/install/rviz_marker_tools/share/rviz_marker_tools/cmake/rviz_marker_toolsTargetsExport-release.cmake
+[2.228s] -- Up-to-date: /home/devika/robo_ws/install/rviz_marker_tools/share/rviz_marker_tools/cmake/ament_cmake_export_targets-extras.cmake
+[2.229s] -- Up-to-date: /home/devika/robo_ws/install/rviz_marker_tools/share/rviz_marker_tools/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.231s] -- Up-to-date: /home/devika/robo_ws/install/rviz_marker_tools/share/rviz_marker_tools/cmake/rviz_marker_toolsConfig.cmake
+[2.232s] -- Up-to-date: /home/devika/robo_ws/install/rviz_marker_tools/share/rviz_marker_tools/cmake/rviz_marker_toolsConfig-version.cmake
+[2.233s] -- Up-to-date: /home/devika/robo_ws/install/rviz_marker_tools/share/rviz_marker_tools/package.xml
+[2.234s] Invoked command in '/home/devika/robo_ws/build/rviz_marker_tools' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble /usr/bin/cmake --install /home/devika/robo_ws/build/rviz_marker_tools

@@ -1,0 +1,70 @@
+[1.053s] Invoking command in '/home/devika/robo_ws/build/hello_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble /usr/bin/cmake --build /home/devika/robo_ws/build/hello_moveit
+[1.790s] [35m[1mConsolidate compiler generated dependencies of target hello_moveit[0m
+[1.792s] [ 50%] [32mBuilding CXX object CMakeFiles/hello_moveit.dir/src/letsee.cpp.o[0m
+[18.965s] [01m[K/home/devika/robo_ws/src/hello_moveit/src/letsee.cpp:[m[K In member function ‘[01m[Kbool MoveitInterface::planAndExecuteMovement(const Pose&)[m[K’:
+[18.965s] [01m[K/home/devika/robo_ws/src/hello_moveit/src/letsee.cpp:235:84:[m[K [01;35m[Kwarning: [m[K‘[01m[Kusing MoveItErrorCode = class moveit::core::MoveItErrorCode[m[K’ is deprecated: Use moveit::core::MoveItErrorCode [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[18.965s]   235 |  (plan_result == moveit::planning_interface::MoveItErrorCode::[01;35m[KSUCCESS[m[K);
+[18.965s]       |                                                               [01;35m[K^~~~~~~[m[K
+[18.966s] 
+[18.966s] In file included from [01m[K/home/devika/robo_ws/src/hello_moveit/src/letsee.cpp:4[m[K:
+[18.966s] [01m[K/home/devika/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:71:7:[m[K [01;36m[Knote: [m[Kdeclared here
+[18.966s]    71 | using [01;36m[KMoveItErrorCode[m[K [[deprecated("Use moveit::core::MoveItErrorCode")]] = moveit::core::MoveItErrorCode;
+[18.966s]       |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+[18.969s] [01m[K/home/devika/robo_ws/src/hello_moveit/src/letsee.cpp:259:57:[m[K [01;35m[Kwarning: [m[K‘[01m[Kusing MoveItErrorCode = class moveit::core::MoveItErrorCode[m[K’ is deprecated: Use moveit::core::MoveItErrorCode [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[18.969s]   259 |             moveit::planning_interface::MoveItErrorCode [01;35m[Kexecute_result[m[K = move_group_ptr_->execute(plan);
+[18.969s]       |                                                         [01;35m[K^~~~~~~~~~~~~~[m[K
+[18.970s] In file included from [01m[K/home/devika/robo_ws/src/hello_moveit/src/letsee.cpp:4[m[K:
+[18.970s] [01m[K/home/devika/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:71:7:[m[K [01;36m[Knote: [m[Kdeclared here
+[18.970s]    71 | using [01;36m[KMoveItErrorCode[m[K [[deprecated("Use moveit::core::MoveItErrorCode")]] = moveit::core::MoveItErrorCode;
+[18.970s]       |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+[18.970s] [01m[K/home/devika/robo_ws/src/hello_moveit/src/letsee.cpp:260:80:[m[K [01;35m[Kwarning: [m[K‘[01m[Kusing MoveItErrorCode = class moveit::core::MoveItErrorCode[m[K’ is deprecated: Use moveit::core::MoveItErrorCode [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[18.970s]   260 | ecute_result == moveit::planning_interface::MoveItErrorCode::[01;35m[KSUCCESS[m[K) {
+[18.971s]       |                                                              [01;35m[K^~~~~~~[m[K
+[18.971s] 
+[18.971s] In file included from [01m[K/home/devika/robo_ws/src/hello_moveit/src/letsee.cpp:4[m[K:
+[18.971s] [01m[K/home/devika/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:71:7:[m[K [01;36m[Knote: [m[Kdeclared here
+[18.971s]    71 | using [01;36m[KMoveItErrorCode[m[K [[deprecated("Use moveit::core::MoveItErrorCode")]] = moveit::core::MoveItErrorCode;
+[18.972s]       |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+[18.972s] [01m[K/home/devika/robo_ws/src/hello_moveit/src/letsee.cpp:268:84:[m[K [01;35m[Kwarning: [m[K‘[01m[Kusing MoveItErrorCode = class moveit::core::MoveItErrorCode[m[K’ is deprecated: Use moveit::core::MoveItErrorCode [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[18.972s]   268 | ecute_result == moveit::planning_interface::MoveItErrorCode::[01;35m[KSUCCESS[m[K) {
+[18.972s]       |                                                              [01;35m[K^~~~~~~[m[K
+[18.972s] 
+[18.972s] In file included from [01m[K/home/devika/robo_ws/src/hello_moveit/src/letsee.cpp:4[m[K:
+[18.973s] [01m[K/home/devika/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:71:7:[m[K [01;36m[Knote: [m[Kdeclared here
+[18.973s]    71 | using [01;36m[KMoveItErrorCode[m[K [[deprecated("Use moveit::core::MoveItErrorCode")]] = moveit::core::MoveItErrorCode;
+[18.973s]       |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+[18.976s] [01m[K/home/devika/robo_ws/src/hello_moveit/src/letsee.cpp:271:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class moveit::planning_interface::MoveGroupInterface[m[K’ {aka ‘[01m[Kclass moveit::planning_interface::MoveGroupInterface[m[K’} has no member named ‘[01m[KwaitForMoveToFinish[m[K’
+[18.976s]   271 |                     move_group_ptr_->[01;31m[KwaitForMoveToFinish[m[K();
+[18.976s]       |                                      [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[18.984s] [01m[K/home/devika/robo_ws/src/hello_moveit/src/letsee.cpp:[m[K In member function ‘[01m[Kbool MoveitInterface::moveToNamedState(const string&)[m[K’:
+[18.984s] [01m[K/home/devika/robo_ws/src/hello_moveit/src/letsee.cpp:343:80:[m[K [01;35m[Kwarning: [m[K‘[01m[Kusing MoveItErrorCode = class moveit::core::MoveItErrorCode[m[K’ is deprecated: Use moveit::core::MoveItErrorCode [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[18.984s]   343 |  (plan_result == moveit::planning_interface::MoveItErrorCode::[01;35m[KSUCCESS[m[K);
+[18.984s]       |                                                               [01;35m[K^~~~~~~[m[K
+[18.985s] 
+[18.985s] In file included from [01m[K/home/devika/robo_ws/src/hello_moveit/src/letsee.cpp:4[m[K:
+[18.985s] [01m[K/home/devika/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:71:7:[m[K [01;36m[Knote: [m[Kdeclared here
+[18.985s]    71 | using [01;36m[KMoveItErrorCode[m[K [[deprecated("Use moveit::core::MoveItErrorCode")]] = moveit::core::MoveItErrorCode;
+[18.985s]       |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+[18.986s] [01m[K/home/devika/robo_ws/src/hello_moveit/src/letsee.cpp:360:76:[m[K [01;35m[Kwarning: [m[K‘[01m[Kusing MoveItErrorCode = class moveit::core::MoveItErrorCode[m[K’ is deprecated: Use moveit::core::MoveItErrorCode [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[18.987s]   360 | ecute_result == moveit::planning_interface::MoveItErrorCode::[01;35m[KSUCCESS[m[K) {
+[18.987s]       |                                                              [01;35m[K^~~~~~~[m[K
+[18.987s] 
+[18.987s] In file included from [01m[K/home/devika/robo_ws/src/hello_moveit/src/letsee.cpp:4[m[K:
+[18.987s] [01m[K/home/devika/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:71:7:[m[K [01;36m[Knote: [m[Kdeclared here
+[18.988s]    71 | using [01;36m[KMoveItErrorCode[m[K [[deprecated("Use moveit::core::MoveItErrorCode")]] = moveit::core::MoveItErrorCode;
+[18.988s]       |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+[18.988s] [01m[K/home/devika/robo_ws/src/hello_moveit/src/letsee.cpp:370:80:[m[K [01;35m[Kwarning: [m[K‘[01m[Kusing MoveItErrorCode = class moveit::core::MoveItErrorCode[m[K’ is deprecated: Use moveit::core::MoveItErrorCode [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[18.988s]   370 | ecute_result == moveit::planning_interface::MoveItErrorCode::[01;35m[KSUCCESS[m[K) {
+[18.989s]       |                                                              [01;35m[K^~~~~~~[m[K
+[18.989s] 
+[18.989s] In file included from [01m[K/home/devika/robo_ws/src/hello_moveit/src/letsee.cpp:4[m[K:
+[18.989s] [01m[K/home/devika/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:71:7:[m[K [01;36m[Knote: [m[Kdeclared here
+[18.989s]    71 | using [01;36m[KMoveItErrorCode[m[K [[deprecated("Use moveit::core::MoveItErrorCode")]] = moveit::core::MoveItErrorCode;
+[18.989s]       |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+[18.990s] [01m[K/home/devika/robo_ws/src/hello_moveit/src/letsee.cpp:371:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class moveit::planning_interface::MoveGroupInterface[m[K’ {aka ‘[01m[Kclass moveit::planning_interface::MoveGroupInterface[m[K’} has no member named ‘[01m[KwaitForMoveToFinish[m[K’
+[18.990s]   371 |                 move_group_ptr_->[01;31m[KwaitForMoveToFinish[m[K();
+[18.990s]       |                                  [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[26.725s] gmake[2]: *** [CMakeFiles/hello_moveit.dir/build.make:76: CMakeFiles/hello_moveit.dir/src/letsee.cpp.o] Error 1
+[26.725s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/hello_moveit.dir/all] Error 2
+[26.726s] gmake: *** [Makefile:146: all] Error 2
+[26.734s] Invoked command in '/home/devika/robo_ws/build/hello_moveit' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble /usr/bin/cmake --build /home/devika/robo_ws/build/hello_moveit

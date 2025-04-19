@@ -1,0 +1,32 @@
+[  0%] Built target ament_cmake_python_copy_moveit
+running egg_info
+writing moveit.egg-info/PKG-INFO
+writing dependency_links to moveit.egg-info/dependency_links.txt
+writing top-level names to moveit.egg-info/top_level.txt
+reading manifest file 'moveit.egg-info/SOURCES.txt'
+writing manifest file 'moveit.egg-info/SOURCES.txt'
+[  0%] Built target ament_cmake_python_build_moveit_egg
+[ 18%] Built target moveit_task_constructor_core
+[ 40%] Built target moveit_task_constructor_core_stages
+[ 42%] Built target moveit_task_constructor_core_stage_plugins
+[ 49%] Built target pymoveit_mtc
+[ 54%] Built target gtest_utils
+[ 56%] Built target gtest_main
+[ 60%] Built target gmock
+[ 62%] Built target gmock_main
+[ 64%] Built target moveit_task_constructor_core-test-mockups
+[ 67%] Built target gtest
+[ 69%] Built target moveit_task_constructor_core-test-stage
+[ 71%] Built target moveit_task_constructor_core-test-container
+[ 74%] Built target moveit_task_constructor_core-test-serial
+[ 76%] Built target moveit_task_constructor_core-test-pruning
+[ 78%] Built target moveit_task_constructor_core-test-properties
+[ 81%] Built target moveit_task_constructor_core-test-cost-terms
+[ 83%] Built target moveit_task_constructor_core-test-fallback
+[ 85%] Built target moveit_task_constructor_core-test-cost-queue
+[ 88%] Built target moveit_task_constructor_core-test-interface-state
+[ 90%] Built target moveit_task_constructor_core-test-move-to
+[ 92%] Built target moveit_task_constructor_core-test-move-relative
+[ 95%] Built target pick_ur5
+[ 97%] Built target pick_pr2
+[100%] Built target pick_pa10

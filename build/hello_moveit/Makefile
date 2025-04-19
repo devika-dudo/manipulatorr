@@ -210,29 +210,29 @@ hello_moveit/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_moveit.dir/build.make CMakeFiles/hello_moveit.dir/build
 .PHONY : hello_moveit/fast
 
-src/hello_moveit_v1.o: src/hello_moveit_v1.cpp.o
-.PHONY : src/hello_moveit_v1.o
+src/letsee.o: src/letsee.cpp.o
+.PHONY : src/letsee.o
 
 # target to build an object file
-src/hello_moveit_v1.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_moveit.dir/build.make CMakeFiles/hello_moveit.dir/src/hello_moveit_v1.cpp.o
-.PHONY : src/hello_moveit_v1.cpp.o
+src/letsee.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_moveit.dir/build.make CMakeFiles/hello_moveit.dir/src/letsee.cpp.o
+.PHONY : src/letsee.cpp.o
 
-src/hello_moveit_v1.i: src/hello_moveit_v1.cpp.i
-.PHONY : src/hello_moveit_v1.i
+src/letsee.i: src/letsee.cpp.i
+.PHONY : src/letsee.i
 
 # target to preprocess a source file
-src/hello_moveit_v1.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_moveit.dir/build.make CMakeFiles/hello_moveit.dir/src/hello_moveit_v1.cpp.i
-.PHONY : src/hello_moveit_v1.cpp.i
+src/letsee.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_moveit.dir/build.make CMakeFiles/hello_moveit.dir/src/letsee.cpp.i
+.PHONY : src/letsee.cpp.i
 
-src/hello_moveit_v1.s: src/hello_moveit_v1.cpp.s
-.PHONY : src/hello_moveit_v1.s
+src/letsee.s: src/letsee.cpp.s
+.PHONY : src/letsee.s
 
 # target to generate assembly for a file
-src/hello_moveit_v1.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_moveit.dir/build.make CMakeFiles/hello_moveit.dir/src/hello_moveit_v1.cpp.s
-.PHONY : src/hello_moveit_v1.cpp.s
+src/letsee.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_moveit.dir/build.make CMakeFiles/hello_moveit.dir/src/letsee.cpp.s
+.PHONY : src/letsee.cpp.s
 
 # Help Target
 help:
@@ -250,9 +250,9 @@ help:
 	@echo "... hello_moveit_uninstall"
 	@echo "... uninstall"
 	@echo "... hello_moveit"
-	@echo "... src/hello_moveit_v1.o"
-	@echo "... src/hello_moveit_v1.i"
-	@echo "... src/hello_moveit_v1.s"
+	@echo "... src/letsee.o"
+	@echo "... src/letsee.i"
+	@echo "... src/letsee.s"
 .PHONY : help
 
 

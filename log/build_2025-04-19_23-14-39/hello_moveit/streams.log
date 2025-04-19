@@ -1,0 +1,13 @@
+[0.838s] Invoking command in '/home/devika/robo_ws/build/hello_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble /usr/bin/cmake --build /home/devika/robo_ws/build/hello_moveit
+[1.470s] [35m[1mConsolidate compiler generated dependencies of target hello_moveit[0m
+[1.471s] [ 50%] [32mBuilding CXX object CMakeFiles/hello_moveit.dir/src/letsee.cpp.o[0m
+[16.048s] [01m[K/home/devika/robo_ws/src/hello_moveit/src/letsee.cpp:390:6:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kbool MoveitInterface::moveToNamedState(const string&)[m[K’
+[16.048s]   390 | bool [01;31m[KMoveitInterface[m[K::moveToNamedState(const std::string& state_name)
+[16.048s]       |      [01;31m[K^~~~~~~~~~~~~~~[m[K
+[16.049s] [01m[K/home/devika/robo_ws/src/hello_moveit/src/letsee.cpp:291:6:[m[K [01;36m[Knote: [m[K‘[01m[Kbool MoveitInterface::moveToNamedState(const string&)[m[K’ previously defined here
+[16.049s]   291 | bool [01;36m[KMoveitInterface[m[K::moveToNamedState(const std::string& state_name)
+[16.049s]       |      [01;36m[K^~~~~~~~~~~~~~~[m[K
+[22.890s] gmake[2]: *** [CMakeFiles/hello_moveit.dir/build.make:76: CMakeFiles/hello_moveit.dir/src/letsee.cpp.o] Error 1
+[22.891s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/hello_moveit.dir/all] Error 2
+[22.892s] gmake: *** [Makefile:146: all] Error 2
+[22.898s] Invoked command in '/home/devika/robo_ws/build/hello_moveit' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble /usr/bin/cmake --build /home/devika/robo_ws/build/hello_moveit

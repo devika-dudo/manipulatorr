@@ -1,0 +1,49 @@
+[0.742s] Invoking command in '/home/devika/robo_ws/build/hello_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble /usr/bin/cmake --build /home/devika/robo_ws/build/hello_moveit
+[1.379s] [35m[1mConsolidate compiler generated dependencies of target hello_moveit[0m
+[1.380s] [ 50%] [32mBuilding CXX object CMakeFiles/hello_moveit.dir/src/letsee.cpp.o[0m
+[15.885s] [01m[K/home/devika/robo_ws/src/hello_moveit/src/letsee.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[15.885s] [01m[K/home/devika/robo_ws/src/hello_moveit/src/letsee.cpp:648:115:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[15.885s]   648 |                     RCLCPP_INFO(moveit_interface->get_logger(), "Trying to move to '%s' state...", state.c_str());
+[15.886s]       |                                                                                                                   [01;31m[K^[m[K
+[15.886s] [01m[K/home/devika/robo_ws/src/hello_moveit/src/letsee.cpp:647:59:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[15.886s]   647 |                 for (const auto& state : fallback_states) [01;36m[K{[m[K
+[15.887s]       |                                                           [01;36m[K^[m[K
+[15.887s] [01m[K/home/devika/robo_ws/src/hello_moveit/src/letsee.cpp:648:115:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[15.887s]   648 |                     RCLCPP_INFO(moveit_interface->get_logger(), "Trying to move to '%s' state...", state.c_str());
+[15.887s]       |                                                                                                                   [01;31m[K^[m[K
+[15.888s] [01m[K/home/devika/robo_ws/src/hello_moveit/src/letsee.cpp:641:62:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[15.888s]   641 |             if (!moveit_interface->moveToNamedState("pick")) [01;36m[K{[m[K
+[15.888s]       |                                                              [01;36m[K^[m[K
+[15.889s] [01m[K/home/devika/robo_ws/src/hello_moveit/src/letsee.cpp:648:115:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[15.889s]   648 |                     RCLCPP_INFO(moveit_interface->get_logger(), "Trying to move to '%s' state...", state.c_str());
+[15.889s]       |                                                                                                                   [01;31m[K^[m[K
+[15.889s] [01m[K/home/devika/robo_ws/src/hello_moveit/src/letsee.cpp:637:23:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[15.890s]   637 |         if (!success) [01;36m[K{[m[K
+[15.890s]       |                       [01;36m[K^[m[K
+[15.890s] [01m[K/home/devika/robo_ws/src/hello_moveit/src/letsee.cpp:648:115:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[15.890s]   648 |                     RCLCPP_INFO(moveit_interface->get_logger(), "Trying to move to '%s' state...", state.c_str());
+[15.890s]       |                                                                                                                   [01;31m[K^[m[K
+[15.891s] [01m[K/home/devika/robo_ws/src/hello_moveit/src/letsee.cpp:547:9:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[15.891s]   547 |     try [01;36m[K{[m[K
+[15.891s]       |         [01;36m[K^[m[K
+[15.892s] [01m[K/home/devika/robo_ws/src/hello_moveit/src/letsee.cpp:648:115:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[Kcatch[m[K’ at end of input
+[15.892s]   648 |                     RCLCPP_INFO(moveit_interface->get_logger(), "Trying to move to '%s' state...", state.c_str());
+[15.892s]       |                                                                                                                   [01;31m[K^[m[K
+[15.892s] [01m[K/home/devika/robo_ws/src/hello_moveit/src/letsee.cpp:648:115:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K([m[K’ at end of input
+[15.892s]   648 |                     RCLCPP_INFO(moveit_interface->get_logger(), "Trying to move to '%s' state...", state.c_str());
+[15.893s]       |                                                                                                                   [01;31m[K^[m[K
+[15.893s]       |                                                                                                                   [32m[K([m[K
+[15.893s] [01m[K/home/devika/robo_ws/src/hello_moveit/src/letsee.cpp:648:115:[m[K [01;31m[Kerror: [m[Kexpected type-specifier at end of input
+[15.894s] [01m[K/home/devika/robo_ws/src/hello_moveit/src/letsee.cpp:648:115:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ at end of input
+[15.894s]   648 |                     RCLCPP_INFO(moveit_interface->get_logger(), "Trying to move to '%s' state...", state.c_str());
+[15.894s]       |                                                                                                                   [01;31m[K^[m[K
+[15.894s]       |                                                                                                                   [32m[K)[m[K
+[15.895s] [01m[K/home/devika/robo_ws/src/hello_moveit/src/letsee.cpp:648:115:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ at end of input
+[15.895s] [01m[K/home/devika/robo_ws/src/hello_moveit/src/letsee.cpp:648:115:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[15.895s] [01m[K/home/devika/robo_ws/src/hello_moveit/src/letsee.cpp:539:34:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[15.895s]   539 | int main(int argc, char* argv[]) [01;36m[K{[m[K
+[15.896s]       |                                  [01;36m[K^[m[K
+[23.041s] gmake[2]: *** [CMakeFiles/hello_moveit.dir/build.make:76: CMakeFiles/hello_moveit.dir/src/letsee.cpp.o] Error 1
+[23.041s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/hello_moveit.dir/all] Error 2
+[23.042s] gmake: *** [Makefile:146: all] Error 2
+[23.049s] Invoked command in '/home/devika/robo_ws/build/hello_moveit' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble /usr/bin/cmake --build /home/devika/robo_ws/build/hello_moveit
