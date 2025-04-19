@@ -1,0 +1,18 @@
+[0.896s] Invoking command in '/home/devika/robo_ws/build/hello_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble /usr/bin/cmake --build /home/devika/robo_ws/build/hello_moveit
+[1.646s] [ 50%] [32mBuilding CXX object CMakeFiles/hello_moveit.dir/src/hello_moveit_v1.cpp.o[0m
+[21.505s] [01m[K/home/devika/robo_ws/src/hello_moveit/src/hello_moveit_v1.cpp:[m[K In constructor ‘[01m[KMoveitInterface::MoveitInterface(const rclcpp::NodeOptions&)[m[K’:
+[21.506s] [01m[K/home/devika/robo_ws/src/hello_moveit/src/hello_moveit_v1.cpp:58:1:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[Kthis[m[K’
+[21.506s]    58 | [01;31m[Kthis[m[K->declare_parameter("use_sim_time", true);
+[21.506s]       | [01;31m[K^~~~[m[K
+[21.506s] [01m[K/home/devika/robo_ws/src/hello_moveit/src/hello_moveit_v1.cpp:[m[K At global scope:
+[21.506s] [01m[K/home/devika/robo_ws/src/hello_moveit/src/hello_moveit_v1.cpp:58:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kthis[m[K’
+[21.519s] [01m[K/home/devika/robo_ws/src/hello_moveit/src/hello_moveit_v1.cpp:59:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kmoveit_node_[m[K’ does not name a type
+[21.519s]    59 | [01;31m[Kmoveit_node_[m[K->declare_parameter("use_sim_time", true);
+[21.520s]       | [01;31m[K^~~~~~~~~~~~[m[K
+[21.520s] [01m[K/home/devika/robo_ws/src/hello_moveit/src/hello_moveit_v1.cpp:60:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K{[m[K’ token
+[21.520s]    60 | [01;31m[K{[m[K
+[21.520s]       | [01;31m[K^[m[K
+[27.706s] gmake[2]: *** [CMakeFiles/hello_moveit.dir/build.make:76: CMakeFiles/hello_moveit.dir/src/hello_moveit_v1.cpp.o] Error 1
+[27.707s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/hello_moveit.dir/all] Error 2
+[27.707s] gmake: *** [Makefile:146: all] Error 2
+[27.714s] Invoked command in '/home/devika/robo_ws/build/hello_moveit' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble /usr/bin/cmake --build /home/devika/robo_ws/build/hello_moveit

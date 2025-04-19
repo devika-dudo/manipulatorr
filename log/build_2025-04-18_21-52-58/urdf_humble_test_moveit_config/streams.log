@@ -1,0 +1,94 @@
+[0.925s] Invoking command in '/home/devika/robo_ws/build/urdf_humble_test_moveit_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble /usr/bin/cmake --build /home/devika/robo_ws/build/urdf_humble_test_moveit_config
+[1.014s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.335s] -- Found moveit_ros_planning_interface: 2.5.9 (/home/devika/ws_moveit2/install/moveit_ros_planning_interface/share/moveit_ros_planning_interface/cmake)
+[1.365s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+[1.419s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.425s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.434s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.458s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.484s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.781s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[1.849s] -- Found parameter_traits: 0.4.0 (/opt/ros/humble/share/parameter_traits/cmake)
+[1.896s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.903s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.206s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.282s] -- Found rclcpp_lifecycle: 16.0.12 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[2.314s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[2.403s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[2.450s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.674s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[2.730s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+[2.769s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[2.815s] -- Found moveit_kinematics: 2.5.9 (/home/devika/ws_moveit2/install/moveit_kinematics/share/moveit_kinematics/cmake)
+[2.822s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: program_options system 
+[2.842s] -- Found moveit_planners_ompl: 2.5.9 (/home/devika/ws_moveit2/install/moveit_planners_ompl/share/moveit_planners_ompl/cmake)
+[2.856s] -- Found moveit_ros_visualization: 2.5.9 (/home/devika/ws_moveit2/install/moveit_ros_visualization/share/moveit_ros_visualization/cmake)
+[2.863s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread date_time system filesystem 
+[2.914s] -- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[2.916s] -- Found OGRE
+[2.917s] --   static     : OFF
+[2.918s] --   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[2.918s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[2.918s] --   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media
+[2.918s] -- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[2.919s] -- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib
+[2.919s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[2.920s] -- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE
+[2.920s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[2.920s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[2.920s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[2.921s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[3.070s] -- Setting assimp_DIR to: '/opt/ros/humble/share/rviz_assimp_vendor/cmake/../../../opt/rviz_assimp_vendor/lib/cmake/assimp-4.1'
+[3.175s] -- Found rviz_visual_tools: 4.1.4 (/opt/ros/humble/share/rviz_visual_tools/cmake)
+[3.192s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.325s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.326s] -- Added test 'lint_cmake' to check CMake code style
+[3.327s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[3.329s] -- Added test 'xmllint' to check XML markup files
+[3.333s] -- Configuring done
+[3.359s] -- Generating done
+[3.371s] -- Build files have been written to: /home/devika/robo_ws/build/urdf_humble_test_moveit_config
+[3.453s] Invoked command in '/home/devika/robo_ws/build/urdf_humble_test_moveit_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble /usr/bin/cmake --build /home/devika/robo_ws/build/urdf_humble_test_moveit_config
+[3.458s] Invoking command in '/home/devika/robo_ws/build/urdf_humble_test_moveit_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble /usr/bin/cmake --install /home/devika/robo_ws/build/urdf_humble_test_moveit_config
+[3.487s] -- Install configuration: ""
+[3.487s] -- Up-to-date: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/config
+[3.487s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/config/pilz_cartesian_limits.yaml
+[3.488s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/config/kinematics.yaml
+[3.488s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/config/ros2_controllers.yaml
+[3.488s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/config/moveit.rviz
+[3.488s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/config/initial_positions.yaml
+[3.489s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/config/moveit_controllers.yaml
+[3.489s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/config/urdf_humble_test.srdf
+[3.489s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/config/pilz_industrial_motion_planner_planning.yaml
+[3.490s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/config/joint_limits.yaml
+[3.490s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/config/urdf_humble_test.urdf.xacro
+[3.490s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/config/urdf_humble_test.ros2_control.xacro
+[3.490s] -- Up-to-date: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/launch
+[3.491s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/launch/moveit_rviz.launch.py
+[3.491s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/launch/test.launch.py
+[3.491s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/launch/static_virtual_joint_tfs.launch.py
+[3.491s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/launch/spawn_controllers.launch.py
+[3.492s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/launch/move_group.launch.py
+[3.492s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/launch/demo.launch.py
+[3.492s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/launch/rsp.launch.py
+[3.492s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/launch/warehouse_db.launch.py
+[3.493s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/launch/setup_assistant.launch.py
+[3.493s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/rviz
+[3.493s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/rviz/move_group.rviz
+[3.493s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/.setup_assistant
+[3.494s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/ament_index/resource_index/package_run_dependencies/urdf_humble_test_moveit_config
+[3.495s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/ament_index/resource_index/parent_prefix_path/urdf_humble_test_moveit_config
+[3.495s] -- Up-to-date: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/environment/ament_prefix_path.sh
+[3.495s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/environment/ament_prefix_path.dsv
+[3.496s] -- Up-to-date: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/environment/path.sh
+[3.496s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/environment/path.dsv
+[3.496s] -- Up-to-date: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/local_setup.bash
+[3.496s] -- Up-to-date: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/local_setup.sh
+[3.496s] -- Up-to-date: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/local_setup.zsh
+[3.496s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/local_setup.dsv
+[3.497s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/package.dsv
+[3.497s] -- Up-to-date: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/ament_index/resource_index/packages/urdf_humble_test_moveit_config
+[3.497s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/cmake/urdf_humble_test_moveit_configConfig.cmake
+[3.497s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/cmake/urdf_humble_test_moveit_configConfig-version.cmake
+[3.498s] -- Installing: /home/devika/robo_ws/install/urdf_humble_test_moveit_config/share/urdf_humble_test_moveit_config/package.xml
+[3.502s] Invoked command in '/home/devika/robo_ws/build/urdf_humble_test_moveit_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble /usr/bin/cmake --install /home/devika/robo_ws/build/urdf_humble_test_moveit_config

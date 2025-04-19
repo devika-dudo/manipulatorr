@@ -288,8 +288,8 @@ visualization_tools/CMakeFiles/moveit_task_visualization_tools.dir/moveit_task_v
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QMap \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h \
  /opt/ros/humble/include/rviz_common/rviz_common/visibility_control.hpp \
- /opt/ros/humble/include/moveit/macros/class_forward.h \
- /opt/ros/humble/include/moveit/macros/declare_ptr.h \
+ /home/devika/ws_moveit2/install/moveit_core/include/moveit/macros/class_forward.h \
+ /home/devika/ws_moveit2/install/moveit_core/include/moveit/macros/declare_ptr.h \
  /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/marker.hpp \
  /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/marker__struct.hpp \
  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/bounded_vector.hpp \

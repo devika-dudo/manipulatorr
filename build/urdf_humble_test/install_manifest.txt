@@ -1,6 +1,7 @@
 /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/launch/__pycache__/gazebo.launch.cpython-310.pyc
 /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/launch/robot_state_publisher.launch.py
 /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/launch/gazebo.launch.py
+/home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/launch/basic_gazebo.launch.py
 /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/launch/display.launch.py
 /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/urdf/test.urdf
 /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/urdf/model.sdf

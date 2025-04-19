@@ -14,6 +14,8 @@
   /home/devika/robo_ws/install/moveit_task_constructor_msgs/include/moveit_task_constructor_msgs/moveit_task_constructor_msgs/msg/detail/trajectory_execution_info__traits.hpp \
   /home/devika/robo_ws/install/moveit_task_constructor_msgs/include/moveit_task_constructor_msgs/moveit_task_constructor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /home/devika/robo_ws/install/moveit_task_constructor_msgs/include/moveit_task_constructor_msgs/moveit_task_constructor_msgs/msg/solution.hpp \
+  /home/devika/ws_moveit2/install/moveit_core/include/moveit/macros/class_forward.h \
+  /home/devika/ws_moveit2/install/moveit_core/include/moveit/macros/declare_ptr.h \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp \
@@ -38,8 +40,6 @@
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench__struct.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench__traits.hpp \
-  /opt/ros/humble/include/moveit/macros/class_forward.h \
-  /opt/ros/humble/include/moveit/macros/declare_ptr.h \
   /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/allowed_collision_entry__struct.hpp \
   /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/allowed_collision_entry__traits.hpp \
   /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/allowed_collision_matrix__struct.hpp \

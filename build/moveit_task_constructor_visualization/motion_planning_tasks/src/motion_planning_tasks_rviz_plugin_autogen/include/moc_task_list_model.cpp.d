@@ -41,6 +41,8 @@
   /home/devika/robo_ws/install/moveit_task_constructor_msgs/include/moveit_task_constructor_msgs/moveit_task_constructor_msgs/msg/trajectory_execution_info.hpp \
   /home/devika/robo_ws/src/moveit_task_constructor/visualization/motion_planning_tasks/src/pluginlib_factory.h \
   /home/devika/robo_ws/src/moveit_task_constructor/visualization/motion_planning_tasks/utils/flat_merge_proxy_model.h \
+  /home/devika/ws_moveit2/install/moveit_core/include/moveit/macros/class_forward.h \
+  /home/devika/ws_moveit2/install/moveit_core/include/moveit/macros/declare_ptr.h \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp \
@@ -82,8 +84,6 @@
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/received_message_period.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/topic_statistics_collector.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp \
-  /opt/ros/humble/include/moveit/macros/class_forward.h \
-  /opt/ros/humble/include/moveit/macros/declare_ptr.h \
   /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/allowed_collision_entry__struct.hpp \
   /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/allowed_collision_entry__traits.hpp \
   /opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/allowed_collision_matrix__struct.hpp \

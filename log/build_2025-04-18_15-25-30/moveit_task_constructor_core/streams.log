@@ -1,0 +1,178 @@
+[0.072s] Invoking command in '/home/devika/robo_ws/build/moveit_task_constructor_core': CMAKE_PREFIX_PATH=/home/devika/robo_ws/install/rviz_marker_tools:/home/devika/robo_ws/install/moveit_task_constructor_msgs:/home/devika/robo_ws/install/urdf_humble_test_moveit_config:/home/devika/robo_ws/install/warehouse_ros_mongo:/home/devika/robo_ws/install/urdf_humble_test:/home/devika/robo_ws/install/moveit_task_constructor_visualization:/home/devika/robo_ws/install/moveit_task_constructor_demo:/home/devika/robo_ws/install/moveit_task_constructor_capabilities:/home/devika/robo_ws/install/hello_moveit_task_constructor:/home/devika/robo_ws/install/moveit_task_constructor_core:/home/devika/robo_ws/install/hello_moveit:/home/devika/robo_ws/install/gazebo_ros2_control:/home/devika/manga_ws/install/urdf_humble_test_moveit_config:/home/devika/manga_ws/install/urdf_humble_test:/home/devika/manga_ws/install/hello_moveit:/home/devika/some_ws/install/motoman_hc10_support:/home/devika/some_ws/install/motoman_resources:/home/devika/some_ws/install/hello_moveit:/home/devika/some_ws/install/hc20_sim_moveit_config:/home/devika/some_ws/install/hc20_moveit_config:/home/devika/some_ws/install/hc10_movit2v3:/home/devika/some_ws/install/hc10dt_moveit_config:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble LD_LIBRARY_PATH=/home/devika/robo_ws/install/rviz_marker_tools/lib:/home/devika/robo_ws/install/moveit_task_constructor_msgs/lib:/home/devika/robo_ws/install/warehouse_ros_mongo/lib:/home/devika/robo_ws/install/moveit_task_constructor_visualization/lib:/home/devika/robo_ws/install/moveit_task_constructor_demo/lib:/home/devika/robo_ws/install/moveit_task_constructor_capabilities/lib:/home/devika/robo_ws/install/hello_moveit_task_constructor/lib:/home/devika/robo_ws/install/moveit_task_constructor_core/lib:/home/devika/robo_ws/install/gazebo_ros2_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/devika/robo_ws/build/moveit_task_constructor_core
+[0.256s] [  0%] Built target ament_cmake_python_copy_moveit
+[0.892s] running egg_info
+[0.894s] writing moveit.egg-info/PKG-INFO
+[0.894s] writing dependency_links to moveit.egg-info/dependency_links.txt
+[0.895s] writing top-level names to moveit.egg-info/top_level.txt
+[0.901s] reading manifest file 'moveit.egg-info/SOURCES.txt'
+[0.902s] writing manifest file 'moveit.egg-info/SOURCES.txt'
+[1.006s] [  0%] Built target ament_cmake_python_build_moveit_egg
+[1.179s] [ 18%] Built target moveit_task_constructor_core
+[1.350s] [ 40%] Built target moveit_task_constructor_core_stages
+[1.438s] [ 42%] Built target moveit_task_constructor_core_stage_plugins
+[1.562s] [ 49%] Built target pymoveit_mtc
+[1.655s] [ 54%] Built target gtest_utils
+[1.716s] [ 56%] Built target gtest_main
+[1.778s] [ 60%] Built target gmock
+[1.846s] [ 62%] Built target gmock_main
+[1.935s] [ 64%] Built target moveit_task_constructor_core-test-mockups
+[2.010s] [ 67%] Built target gtest
+[2.082s] [ 69%] Built target moveit_task_constructor_core-test-stage
+[2.175s] [ 71%] Built target moveit_task_constructor_core-test-container
+[2.268s] [ 74%] Built target moveit_task_constructor_core-test-serial
+[2.363s] [ 76%] Built target moveit_task_constructor_core-test-pruning
+[2.440s] [ 78%] Built target moveit_task_constructor_core-test-properties
+[2.540s] [ 81%] Built target moveit_task_constructor_core-test-cost-terms
+[2.634s] [ 83%] Built target moveit_task_constructor_core-test-fallback
+[2.715s] [ 85%] Built target moveit_task_constructor_core-test-cost-queue
+[2.808s] [ 88%] Built target moveit_task_constructor_core-test-interface-state
+[2.909s] [ 90%] Built target moveit_task_constructor_core-test-move-to
+[3.001s] [ 92%] Built target moveit_task_constructor_core-test-move-relative
+[3.087s] [ 95%] Built target pick_ur5
+[3.173s] [ 97%] Built target pick_pr2
+[3.258s] [100%] Built target pick_pa10
+[3.294s] Invoked command in '/home/devika/robo_ws/build/moveit_task_constructor_core' returned '0': CMAKE_PREFIX_PATH=/home/devika/robo_ws/install/rviz_marker_tools:/home/devika/robo_ws/install/moveit_task_constructor_msgs:/home/devika/robo_ws/install/urdf_humble_test_moveit_config:/home/devika/robo_ws/install/warehouse_ros_mongo:/home/devika/robo_ws/install/urdf_humble_test:/home/devika/robo_ws/install/moveit_task_constructor_visualization:/home/devika/robo_ws/install/moveit_task_constructor_demo:/home/devika/robo_ws/install/moveit_task_constructor_capabilities:/home/devika/robo_ws/install/hello_moveit_task_constructor:/home/devika/robo_ws/install/moveit_task_constructor_core:/home/devika/robo_ws/install/hello_moveit:/home/devika/robo_ws/install/gazebo_ros2_control:/home/devika/manga_ws/install/urdf_humble_test_moveit_config:/home/devika/manga_ws/install/urdf_humble_test:/home/devika/manga_ws/install/hello_moveit:/home/devika/some_ws/install/motoman_hc10_support:/home/devika/some_ws/install/motoman_resources:/home/devika/some_ws/install/hello_moveit:/home/devika/some_ws/install/hc20_sim_moveit_config:/home/devika/some_ws/install/hc20_moveit_config:/home/devika/some_ws/install/hc10_movit2v3:/home/devika/some_ws/install/hc10dt_moveit_config:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble LD_LIBRARY_PATH=/home/devika/robo_ws/install/rviz_marker_tools/lib:/home/devika/robo_ws/install/moveit_task_constructor_msgs/lib:/home/devika/robo_ws/install/warehouse_ros_mongo/lib:/home/devika/robo_ws/install/moveit_task_constructor_visualization/lib:/home/devika/robo_ws/install/moveit_task_constructor_demo/lib:/home/devika/robo_ws/install/moveit_task_constructor_capabilities/lib:/home/devika/robo_ws/install/hello_moveit_task_constructor/lib:/home/devika/robo_ws/install/moveit_task_constructor_core/lib:/home/devika/robo_ws/install/gazebo_ros2_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/devika/robo_ws/build/moveit_task_constructor_core
+[3.298s] Invoking command in '/home/devika/robo_ws/build/moveit_task_constructor_core': CMAKE_PREFIX_PATH=/home/devika/robo_ws/install/rviz_marker_tools:/home/devika/robo_ws/install/moveit_task_constructor_msgs:/home/devika/robo_ws/install/urdf_humble_test_moveit_config:/home/devika/robo_ws/install/warehouse_ros_mongo:/home/devika/robo_ws/install/urdf_humble_test:/home/devika/robo_ws/install/moveit_task_constructor_visualization:/home/devika/robo_ws/install/moveit_task_constructor_demo:/home/devika/robo_ws/install/moveit_task_constructor_capabilities:/home/devika/robo_ws/install/hello_moveit_task_constructor:/home/devika/robo_ws/install/moveit_task_constructor_core:/home/devika/robo_ws/install/hello_moveit:/home/devika/robo_ws/install/gazebo_ros2_control:/home/devika/manga_ws/install/urdf_humble_test_moveit_config:/home/devika/manga_ws/install/urdf_humble_test:/home/devika/manga_ws/install/hello_moveit:/home/devika/some_ws/install/motoman_hc10_support:/home/devika/some_ws/install/motoman_resources:/home/devika/some_ws/install/hello_moveit:/home/devika/some_ws/install/hc20_sim_moveit_config:/home/devika/some_ws/install/hc20_moveit_config:/home/devika/some_ws/install/hc10_movit2v3:/home/devika/some_ws/install/hc10dt_moveit_config:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble LD_LIBRARY_PATH=/home/devika/robo_ws/install/rviz_marker_tools/lib:/home/devika/robo_ws/install/moveit_task_constructor_msgs/lib:/home/devika/robo_ws/install/warehouse_ros_mongo/lib:/home/devika/robo_ws/install/moveit_task_constructor_visualization/lib:/home/devika/robo_ws/install/moveit_task_constructor_demo/lib:/home/devika/robo_ws/install/moveit_task_constructor_capabilities/lib:/home/devika/robo_ws/install/hello_moveit_task_constructor/lib:/home/devika/robo_ws/install/moveit_task_constructor_core/lib:/home/devika/robo_ws/install/gazebo_ros2_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --install /home/devika/robo_ws/build/moveit_task_constructor_core
+[3.324s] -- Install configuration: "Release"
+[3.325s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/lib/libmoveit_task_constructor_core_stages.so
+[3.326s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/lib/libmoveit_task_constructor_core_stage_plugins.so
+[3.327s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/lib/libmoveit_task_constructor_core.so
+[3.327s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/environment/pythonpath.sh
+[3.327s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/environment/pythonpath.dsv
+[3.328s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/moveit-0.1.3-py3.10.egg-info
+[3.328s] -- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/moveit-0.1.3-py3.10.egg-info/dependency_links.txt
+[3.328s] -- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/moveit-0.1.3-py3.10.egg-info/top_level.txt
+[3.329s] -- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/moveit-0.1.3-py3.10.egg-info/PKG-INFO
+[3.329s] -- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/moveit-0.1.3-py3.10.egg-info/SOURCES.txt
+[3.329s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/moveit
+[3.330s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/moveit/task_constructor
+[3.330s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/moveit/task_constructor/core.py
+[3.330s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/moveit/task_constructor/stages.py
+[3.330s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/moveit/task_constructor/__init__.py
+[3.330s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/moveit/__init__.py
+[3.398s] Listing '/home/devika/robo_ws/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/moveit'...
+[3.399s] Listing '/home/devika/robo_ws/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/moveit/task_constructor'...
+[3.409s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11
+[3.409s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/eval.h
+[3.410s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/trampoline_self_life_support.h
+[3.410s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/complex.h
+[3.410s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/embed.h
+[3.410s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/options.h
+[3.411s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/stl.h
+[3.411s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/functional.h
+[3.411s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/iostream.h
+[3.411s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/eigen
+[3.412s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/eigen/tensor.h
+[3.412s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/eigen/matrix.h
+[3.412s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/eigen/common.h
+[3.413s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/type_caster_pyobject_ptr.h
+[3.413s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/stl
+[3.413s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/stl/filesystem.h
+[3.413s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/attr.h
+[3.413s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/smart_holder.h
+[3.414s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/typing.h
+[3.414s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/gil_safe_call_once.h
+[3.414s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/chrono.h
+[3.415s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/pytypes.h
+[3.415s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/operators.h
+[3.415s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/buffer_info.h
+[3.415s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/pybind11.h
+[3.416s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/numpy.h
+[3.416s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/stl_bind.h
+[3.416s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/gil.h
+[3.416s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/detail
+[3.416s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/detail/descr.h
+[3.417s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/detail/internals.h
+[3.417s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/detail/smart_holder_sfinae_hooks_only.h
+[3.418s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/detail/class.h
+[3.418s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/detail/type_caster_base.h
+[3.418s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/detail/typeid.h
+[3.419s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/detail/smart_holder_type_casters.h
+[3.419s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/detail/smart_holder_poc.h
+[3.419s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/detail/init.h
+[3.419s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/detail/type_caster_odr_guard.h
+[3.420s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/detail/common.h
+[3.420s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/detail/dynamic_raw_ptr_cast_if_possible.h
+[3.420s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/common.h
+[3.420s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/cast.h
+[3.420s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/eigen.h
+[3.421s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake/pybind11Config.cmake
+[3.421s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake/pybind11ConfigVersion.cmake
+[3.421s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake/FindPythonLibsNew.cmake
+[3.422s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake/pybind11Common.cmake
+[3.422s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake/pybind11Tools.cmake
+[3.422s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake/pybind11NewTools.cmake
+[3.422s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake/pybind11Targets.cmake
+[3.423s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/share/pkgconfig/pybind11.pc
+[3.423s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/pymoveit_mtc.cpython-310-x86_64-linux-gnu.so
+[3.423s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include
+[3.423s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit
+[3.423s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor
+[3.424s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/stages.h
+[3.424s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/type_traits.h
+[3.424s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/properties.h
+[3.424s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/trajectory_execution_info.h
+[3.425s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/stage.h
+[3.425s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/container.h
+[3.425s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/solvers.h
+[3.425s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/moveit_compat.h
+[3.425s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/cost_terms.h
+[3.426s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/utils.h
+[3.426s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/solvers
+[3.426s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/solvers/cartesian_path.h
+[3.426s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/solvers/multi_planner.h
+[3.427s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/solvers/pipeline_planner.h
+[3.427s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/solvers/joint_interpolation.h
+[3.427s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/solvers/planner_interface.h
+[3.428s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/marker_tools.h
+[3.428s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/storage.h
+[3.428s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/cost_queue.h
+[3.428s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/stages
+[3.429s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/connect.h
+[3.429s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/generate_grasp_pose.h
+[3.429s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/noop.h
+[3.429s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/modify_planning_scene.h
+[3.430s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/generate_place_pose.h
+[3.430s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/passthrough.h
+[3.430s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/pick.h
+[3.430s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/move_to.h
+[3.431s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/generate_pose.h
+[3.431s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/current_state.h
+[3.431s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/fixed_cartesian_poses.h
+[3.431s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/compute_ik.h
+[3.432s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/fixed_state.h
+[3.432s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/move_relative.h
+[3.433s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/predicate_filter.h
+[3.434s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/fix_collision_objects.h
+[3.435s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/simple_grasp.h
+[3.435s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/generate_random_pose.h
+[3.435s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/task.h
+[3.435s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/introspection.h
+[3.436s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/merge.h
+[3.436s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python
+[3.436s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/task_constructor
+[3.436s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/task_constructor/properties.h
+[3.436s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/motion_planning_stages_plugin_description.xml
+[3.437s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/environment/library_path.sh
+[3.437s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/environment/library_path.dsv
+[3.437s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/share/ament_index/resource_index/package_run_dependencies/moveit_task_constructor_core
+[3.437s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/share/ament_index/resource_index/parent_prefix_path/moveit_task_constructor_core
+[3.437s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/environment/ament_prefix_path.sh
+[3.438s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/environment/ament_prefix_path.dsv
+[3.438s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/environment/path.sh
+[3.438s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/environment/path.dsv
+[3.438s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/local_setup.bash
+[3.439s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/local_setup.sh
+[3.439s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/local_setup.zsh
+[3.440s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/local_setup.dsv
+[3.441s] -- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/package.dsv
+[3.441s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/share/ament_index/resource_index/packages/moveit_task_constructor_core
+[3.441s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/share/ament_index/resource_index/moveit_task_constructor_core__pluginlib__plugin/moveit_task_constructor_core
+[3.441s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake/moveit_task_constructor_coreTargetsExport.cmake
+[3.442s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake/moveit_task_constructor_coreTargetsExport-release.cmake
+[3.443s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake/ament_cmake_export_targets-extras.cmake
+[3.443s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.443s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake/moveit_task_constructor_coreConfig.cmake
+[3.444s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake/moveit_task_constructor_coreConfig-version.cmake
+[3.444s] -- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/package.xml
+[3.445s] Invoked command in '/home/devika/robo_ws/build/moveit_task_constructor_core' returned '0': CMAKE_PREFIX_PATH=/home/devika/robo_ws/install/rviz_marker_tools:/home/devika/robo_ws/install/moveit_task_constructor_msgs:/home/devika/robo_ws/install/urdf_humble_test_moveit_config:/home/devika/robo_ws/install/warehouse_ros_mongo:/home/devika/robo_ws/install/urdf_humble_test:/home/devika/robo_ws/install/moveit_task_constructor_visualization:/home/devika/robo_ws/install/moveit_task_constructor_demo:/home/devika/robo_ws/install/moveit_task_constructor_capabilities:/home/devika/robo_ws/install/hello_moveit_task_constructor:/home/devika/robo_ws/install/moveit_task_constructor_core:/home/devika/robo_ws/install/hello_moveit:/home/devika/robo_ws/install/gazebo_ros2_control:/home/devika/manga_ws/install/urdf_humble_test_moveit_config:/home/devika/manga_ws/install/urdf_humble_test:/home/devika/manga_ws/install/hello_moveit:/home/devika/some_ws/install/motoman_hc10_support:/home/devika/some_ws/install/motoman_resources:/home/devika/some_ws/install/hello_moveit:/home/devika/some_ws/install/hc20_sim_moveit_config:/home/devika/some_ws/install/hc20_moveit_config:/home/devika/some_ws/install/hc10_movit2v3:/home/devika/some_ws/install/hc10dt_moveit_config:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble LD_LIBRARY_PATH=/home/devika/robo_ws/install/rviz_marker_tools/lib:/home/devika/robo_ws/install/moveit_task_constructor_msgs/lib:/home/devika/robo_ws/install/warehouse_ros_mongo/lib:/home/devika/robo_ws/install/moveit_task_constructor_visualization/lib:/home/devika/robo_ws/install/moveit_task_constructor_demo/lib:/home/devika/robo_ws/install/moveit_task_constructor_capabilities/lib:/home/devika/robo_ws/install/hello_moveit_task_constructor/lib:/home/devika/robo_ws/install/moveit_task_constructor_core/lib:/home/devika/robo_ws/install/gazebo_ros2_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --install /home/devika/robo_ws/build/moveit_task_constructor_core

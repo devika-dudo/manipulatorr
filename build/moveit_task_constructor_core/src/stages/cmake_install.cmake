@@ -54,7 +54,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmoveit_task_constructor_core_stages.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmoveit_task_constructor_core_stages.so"
-         OLD_RPATH "/home/devika/robo_ws/build/moveit_task_constructor_core/src:/opt/ros/humble/lib:/home/devika/robo_ws/install/moveit_task_constructor_msgs/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/home/devika/robo_ws/install/rviz_marker_tools/lib:"
+         OLD_RPATH "/home/devika/robo_ws/build/moveit_task_constructor_core/src:/home/devika/ws_moveit2/install/moveit_ros_planning_interface/lib:/home/devika/robo_ws/install/moveit_task_constructor_msgs/lib:/home/devika/ws_moveit2/install/moveit_ros_move_group/lib:/opt/ros/humble/lib:/home/devika/ws_moveit2/install/moveit_ros_warehouse/lib:/home/devika/ws_moveit2/install/moveit_ros_planning/lib:/home/devika/ws_moveit2/install/moveit_ros_occupancy_map_monitor/lib:/home/devika/ws_moveit2/install/moveit_core/lib:/home/devika/ws_moveit2/install/srdfdom/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/home/devika/robo_ws/install/rviz_marker_tools/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmoveit_task_constructor_core_stages.so")
@@ -77,7 +77,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmoveit_task_constructor_core_stage_plugins.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmoveit_task_constructor_core_stage_plugins.so"
-         OLD_RPATH "/home/devika/robo_ws/build/moveit_task_constructor_core/src/stages:/home/devika/robo_ws/build/moveit_task_constructor_core/src:/home/devika/robo_ws/install/rviz_marker_tools/lib:/opt/ros/humble/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/home/devika/robo_ws/install/moveit_task_constructor_msgs/lib:"
+         OLD_RPATH "/home/devika/robo_ws/build/moveit_task_constructor_core/src/stages:/home/devika/robo_ws/build/moveit_task_constructor_core/src:/home/devika/robo_ws/install/rviz_marker_tools/lib:/home/devika/ws_moveit2/install/moveit_ros_planning_interface/lib:/home/devika/ws_moveit2/install/moveit_ros_move_group/lib:/opt/ros/humble/lib:/home/devika/ws_moveit2/install/moveit_ros_warehouse/lib:/home/devika/ws_moveit2/install/moveit_ros_planning/lib:/home/devika/ws_moveit2/install/moveit_ros_occupancy_map_monitor/lib:/home/devika/ws_moveit2/install/moveit_core/lib:/home/devika/ws_moveit2/install/srdfdom/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/home/devika/robo_ws/install/moveit_task_constructor_msgs/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmoveit_task_constructor_core_stage_plugins.so")

@@ -1,3 +1,7 @@
+# Author: Addison Sears-Collins
+# Date: July 31, 2024
+# Description: Launch MoveIt 2 for the myCobot robotic arm
+ 
 import os
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, EmitEvent, RegisterEventHandler
@@ -22,7 +26,7 @@ def generate_launch_description():
     pkg_share_moveit_config = FindPackageShare(package=package_name_moveit_config).find(package_name_moveit_config)
  
     # Paths for various configuration files
-    urdf_file_path = 'config/urdf_humble_test.urdf.xacro'
+    urdf_file_path = 'urdf/model.urdf'
     srdf_file_path = 'config/urdf_humble_test.srdf'
     moveit_controllers_file_path = 'config/moveit_controllers.yaml'
     joint_limits_file_path = 'config/joint_limits.yaml'
@@ -67,7 +71,7 @@ def generate_launch_description():
         .robot_description_kinematics(file_path=kinematics_file_path)
         .planning_pipelines(
             pipelines=["ompl", "pilz_industrial_motion_planner"],
-            default_planning_pipeline="ompl"
+            default_planning_pipeline="pilz_industrial_motion_planner"
         )
         .planning_scene_monitor(
             publish_robot_description=False,
@@ -87,8 +91,6 @@ def generate_launch_description():
             moveit_config.to_dict(),
             {'use_sim_time': True},
             {'start_state': {'content': initial_positions_file_path}},
-            {'pilz_industrial_motion_planner.planner_id': 'PTP'},
-            {'trajectory_execution.allowed_execution_duration_scaling': 0.0},
         ],
     )
  

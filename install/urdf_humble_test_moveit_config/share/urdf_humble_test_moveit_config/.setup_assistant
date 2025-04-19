@@ -5,6 +5,21 @@ moveit_setup_assistant_config:
   srdf:
     relative_path: config/urdf_humble_test.srdf
   package_settings:
-    author_name: Devika
-    author_email: devika@email.com
-    generated_timestamp: 1744121494
+    author_name: devika
+    author_email: dev@gmail.com
+    generated_timestamp: 1744992047
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
