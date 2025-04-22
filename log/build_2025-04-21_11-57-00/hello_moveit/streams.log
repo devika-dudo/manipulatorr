@@ -1,0 +1,27 @@
+[1.103s] Invoking command in '/home/devika/robo_ws/build/hello_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/devika/robo_ws/build/hello_moveit -- -j8 -l8
+[1.873s] [ 50%] Built target hello_moveit
+[1.874s] [100%] Built target plan_around_objects
+[1.934s] Invoked command in '/home/devika/robo_ws/build/hello_moveit' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/devika/robo_ws/build/hello_moveit -- -j8 -l8
+[1.940s] Invoking command in '/home/devika/robo_ws/build/hello_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /home/devika/robo_ws/build/hello_moveit
+[2.171s] -- Install configuration: ""
+[2.182s] -- Up-to-date: /home/devika/robo_ws/install/hello_moveit/lib/hello_moveit/hello_moveit
+[2.183s] -- Up-to-date: /home/devika/robo_ws/install/hello_moveit/lib/hello_moveit/plan_around_objects
+[2.183s] -- Up-to-date: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/launch
+[2.184s] -- Up-to-date: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/launch/plan_around_objects.launch.py
+[2.195s] -- Up-to-date: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/launch/hello.launch.py
+[2.196s] -- Up-to-date: /home/devika/robo_ws/install/hello_moveit/share/ament_index/resource_index/package_run_dependencies/hello_moveit
+[2.196s] -- Up-to-date: /home/devika/robo_ws/install/hello_moveit/share/ament_index/resource_index/parent_prefix_path/hello_moveit
+[2.196s] -- Up-to-date: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/environment/ament_prefix_path.sh
+[2.196s] -- Up-to-date: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/environment/ament_prefix_path.dsv
+[2.196s] -- Up-to-date: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/environment/path.sh
+[2.196s] -- Up-to-date: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/environment/path.dsv
+[2.197s] -- Up-to-date: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/local_setup.bash
+[2.197s] -- Up-to-date: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/local_setup.sh
+[2.197s] -- Up-to-date: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/local_setup.zsh
+[2.197s] -- Up-to-date: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/local_setup.dsv
+[2.197s] -- Installing: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/package.dsv
+[2.197s] -- Up-to-date: /home/devika/robo_ws/install/hello_moveit/share/ament_index/resource_index/packages/hello_moveit
+[2.198s] -- Up-to-date: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/cmake/hello_moveitConfig.cmake
+[2.198s] -- Up-to-date: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/cmake/hello_moveitConfig-version.cmake
+[2.198s] -- Up-to-date: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/package.xml
+[2.353s] Invoked command in '/home/devika/robo_ws/build/hello_moveit' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /home/devika/robo_ws/build/hello_moveit

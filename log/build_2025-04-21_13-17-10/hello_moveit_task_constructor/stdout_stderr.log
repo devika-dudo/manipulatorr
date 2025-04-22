@@ -1,0 +1,101 @@
+[ 10%] Built target pick_place_demo_parameters
+[ 20%] Built target hello_moveit_task_constructor_fallbacks_move_to
+[ 30%] Built target ik_clearance_cost_parameters
+[ 40%] Built target hello_moveit_task_constructor_mtc_node
+[ 50%] Built target hello_moveit_task_constructor_alternative_path_costs
+[ 60%] Built target hello_moveit_task_constructor_cartesian
+[ 70%] Built target hello_moveit_task_constructor_modular
+[35m[1mConsolidate compiler generated dependencies of target hello_moveit_task_constructor_pick_place_task[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/hello_moveit_task_constructor_pick_place_task.dir/src/pick_place_task.cpp.o[0m
+[ 85%] Built target hello_moveit_task_constructor_ik_clearance_cost
+[01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:[m[K In member function ‘[01m[Kbool hello_moveit_task_constructor::PickPlaceTask::init(const SharedPtr&, const pick_place_demo::Params&)[m[K’:
+[01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:225:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot_state[m[K’ has not been declared
+  225 |     [01;31m[Krobot_state[m[K::RobotState robot_state(stage->getScene()->getRobotModel());
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:228:11:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot_state[m[K’ does not name a type
+  228 |     const [01;31m[Krobot_state[m[K::JointModelGroup* joint_model_group =
+      |           [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:233:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass moveit::task_constructor::stages::MoveTo[m[K’ has no member named ‘[01m[KgetScene[m[K’
+  233 |     stage->[01;31m[KgetScene[m[K()->getCurrentState().copyJointGroupPositions(params.arm_group_name, zero_pose_values);
+      |            [01;31m[K^~~~~~~~[m[K
+[01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:236:19:[m[K [01;31m[Kerror: [m[K‘[01m[KJointBounds[m[K’ is not a member of ‘[01m[Kmoveit::core[m[K’
+  236 |     moveit::core::[01;31m[KJointBounds[m[K joint_bounds;
+      |                   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:237:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint_model_group[m[K’ was not declared in this scope
+  237 |     for (size_t i = 0; i < [01;31m[Kjoint_model_group[m[K->getActiveJointModelNames().size(); ++i) {
+      |                            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:243:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kmoveit::core::JointBounds[m[K’ has not been declared
+  243 |         moveit::core::[01;31m[KJointBounds[m[K::BoundType bounds;
+      |                       [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:244:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kbounds[m[K’ was not declared in this scope
+  244 |         [01;31m[Kbounds[m[K.min_position_ = position - tolerance;
+      |         [01;31m[K^~~~~~[m[K
+[01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:244:9:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+In file included from [01m[K/home/devika/robo_ws/build/hello_moveit_task_constructor/include/hello_moveit_task_constructor/pick_place_demo_parameters.hpp:28[m[K,
+                 from [01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/include/hello_moveit_task_constructor/pick_place_task.h:44[m[K,
+                 from [01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:14[m[K:
+[01m[K/opt/ros/humble/include/rsl/rsl/parameter_validators.hpp:204:20:[m[K [01;36m[Knote: [m[K  ‘[01m[Krsl::bounds[m[K’
+  204 | [[nodiscard]] auto [01;36m[Kbounds[m[K(rclcpp::Parameter const& parameter, T const& lower, T const& upper)
+      |                    [01;36m[K^~~~~~[m[K
+[01m[K/opt/ros/humble/include/rsl/rsl/parameter_validators.hpp:204:20:[m[K [01;36m[Knote: [m[K  ‘[01m[Krsl::bounds[m[K’
+[01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:248:15:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot_model[m[K’ does not name a type
+  248 |         const [01;31m[Krobot_model[m[K::JointModel* joint_model = joint_model_group->getJointModel(joint_name);
+      |               [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:249:15:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot_model[m[K’ does not name a type
+  249 |         const [01;31m[Krobot_model[m[K::JointModel::Bounds& model_bounds = joint_model->getVariableBounds();
+      |               [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:250:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kmodel_bounds[m[K’ was not declared in this scope
+  250 |         if (![01;31m[Kmodel_bounds[m[K.empty()) {
+      |              [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:256:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint_bounds[m[K’ was not declared in this scope
+  256 |         [01;31m[Kjoint_bounds[m[K.push_back(bounds);
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:238:28:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kjoint_name[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  238 |         const std::string& [01;35m[Kjoint_name[m[K = joint_model_group->getActiveJointModelNames()[i];
+      |                            [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:260:19:[m[K [01;31m[Kerror: [m[K‘[01m[KJointConstraint[m[K’ is not a member of ‘[01m[Kmoveit::core[m[K’
+  260 |     moveit::core::[01;31m[KJointConstraint[m[K jc;
+      |                   [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:260:19:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+In file included from [01m[K/home/devika/ws_moveit2/install/moveit_core/include/moveit/planning_scene/planning_scene.h:45[m[K,
+                 from [01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/include/hello_moveit_task_constructor/pick_place_task.h:19[m[K,
+                 from [01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:14[m[K:
+[01m[K/home/devika/ws_moveit2/install/moveit_core/include/moveit/kinematic_constraints/kinematic_constraint.h:202:7:[m[K [01;36m[Knote: [m[K  ‘[01m[Kkinematic_constraints::JointConstraint[m[K’
+  202 | class [01;36m[KJointConstraint[m[K : public KinematicConstraint
+      |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/constraints__struct.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/constraints.hpp:7[m[K,
+                 from [01m[K/home/devika/ws_moveit2/install/moveit_core/include/moveit/kinematic_constraints/kinematic_constraint.h:46[m[K,
+                 from [01m[K/home/devika/ws_moveit2/install/moveit_core/include/moveit/planning_scene/planning_scene.h:45[m[K,
+                 from [01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/include/hello_moveit_task_constructor/pick_place_task.h:19[m[K,
+                 from [01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:14[m[K:
+[01m[K/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/joint_constraint__struct.hpp:178:7:[m[K [01;36m[Knote: [m[K  ‘[01m[Kmoveit_msgs::msg::JointConstraint[m[K’
+  178 | using [01;36m[KJointConstraint[m[K =
+      |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:261:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint_model_group[m[K’ was not declared in this scope
+  261 |     for (size_t i = 0; i < [01;31m[Kjoint_model_group[m[K->getActiveJointModelNames().size(); ++i) {
+      |                            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:262:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kjc[m[K’ was not declared in this scope; did you mean ‘[01m[Kjn[m[K’?
+  262 |         [01;31m[Kjc[m[K.joint_name = joint_model_group->getActiveJointModelNames()[i];
+      |         [01;31m[K^~[m[K
+      |         [32m[Kjn[m[K
+[01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:264:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint_bounds[m[K’ was not declared in this scope
+  264 |         jc.tolerance_above = [01;31m[Kjoint_bounds[m[K[i].max_position_ - zero_pose_values[i];
+      |                              [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:268:22:[m[K [01;31m[Kerror: [m[K‘[01m[KConstraints[m[K’ is not a member of ‘[01m[Kmoveit_msgs[m[K’; did you mean ‘[01m[Kmoveit_msgs::msg::Constraints[m[K’?
+  268 |         moveit_msgs::[01;31m[KConstraints[m[K goal_constraint;
+      |                      [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/constraints.hpp:7[m[K,
+                 from [01m[K/home/devika/ws_moveit2/install/moveit_core/include/moveit/kinematic_constraints/kinematic_constraint.h:46[m[K,
+                 from [01m[K/home/devika/ws_moveit2/install/moveit_core/include/moveit/planning_scene/planning_scene.h:45[m[K,
+                 from [01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/include/hello_moveit_task_constructor/pick_place_task.h:19[m[K,
+                 from [01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:14[m[K:
+[01m[K/opt/ros/humble/include/moveit_msgs/moveit_msgs/msg/detail/constraints__struct.hpp:180:7:[m[K [01;36m[Knote: [m[K‘[01m[Kmoveit_msgs::msg::Constraints[m[K’ declared here
+  180 | using [01;36m[KConstraints[m[K =
+      |       [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:269:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_constraint[m[K’ was not declared in this scope
+  269 |         [01;31m[Kgoal_constraint[m[K.joint_constraints.push_back(jc);
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/hello_moveit_task_constructor_pick_place_task.dir/build.make:76: CMakeFiles/hello_moveit_task_constructor_pick_place_task.dir/src/pick_place_task.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:155: CMakeFiles/hello_moveit_task_constructor_pick_place_task.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

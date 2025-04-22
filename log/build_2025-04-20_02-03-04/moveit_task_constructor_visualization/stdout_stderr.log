@@ -1,0 +1,11 @@
+[  1%] [34m[1mAutomatic MOC for target moveit_task_visualization_tools[0m
+[  1%] Built target moveit_task_visualization_tools_autogen
+[ 10%] Built target moveit_task_visualization_tools
+[ 12%] [34m[1mAutomatic MOC for target motion_planning_tasks_utils[0m
+[ 12%] Built target motion_planning_tasks_utils_autogen
+[ 20%] Built target motion_planning_tasks_utils
+[ 21%] [34m[1mAutomatic MOC for target motion_planning_tasks_properties[0m
+[ 21%] Built target motion_planning_tasks_properties_autogen
+gmake[2]: *** [motion_planning_tasks/properties/CMakeFiles/motion_planning_tasks_properties.dir/build.make:434: motion_planning_tasks/properties/CMakeFiles/motion_planning_tasks_properties.dir/depend] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:394: motion_planning_tasks/properties/CMakeFiles/motion_planning_tasks_properties.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

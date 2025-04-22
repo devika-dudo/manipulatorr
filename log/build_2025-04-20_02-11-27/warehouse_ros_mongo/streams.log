@@ -1,0 +1,13 @@
+[1.539s] Invoking command in '/home/devika/robo_ws/build/warehouse_ros_mongo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble /usr/bin/cmake --build /home/devika/robo_ws/build/warehouse_ros_mongo
+[1.803s] [  0%] Built target ament_cmake_python_copy_warehouse_ros_mongo
+[2.423s] running egg_info
+[2.425s] writing warehouse_ros_mongo.egg-info/PKG-INFO
+[2.425s] writing dependency_links to warehouse_ros_mongo.egg-info/dependency_links.txt
+[2.425s] writing top-level names to warehouse_ros_mongo.egg-info/top_level.txt
+[2.431s] reading manifest file 'warehouse_ros_mongo.egg-info/SOURCES.txt'
+[2.432s] writing manifest file 'warehouse_ros_mongo.egg-info/SOURCES.txt'
+[2.530s] [  0%] Built target ament_cmake_python_build_warehouse_ros_mongo_egg
+[2.645s] [ 40%] Built target warehouse_ros_mongo
+[2.744s] [ 60%] Built target gtest_main
+[2.852s] [ 80%] Built target gtest
+[2.966s] [100%] Built target test_warehouse_ros_mongo_cpp

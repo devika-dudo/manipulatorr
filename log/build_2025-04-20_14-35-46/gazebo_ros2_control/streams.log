@@ -1,0 +1,35 @@
+[0.183s] Invoking command in '/home/devika/robo_ws/build/gazebo_ros2_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble /usr/bin/cmake --build /home/devika/robo_ws/build/gazebo_ros2_control
+[1.710s] [ 50%] Built target gazebo_ros2_control
+[1.713s] [100%] Built target gazebo_hardware_plugins
+[1.771s] Invoked command in '/home/devika/robo_ws/build/gazebo_ros2_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble /usr/bin/cmake --build /home/devika/robo_ws/build/gazebo_ros2_control
+[1.771s] Invoking command in '/home/devika/robo_ws/build/gazebo_ros2_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble /usr/bin/cmake --install /home/devika/robo_ws/build/gazebo_ros2_control
+[1.832s] -- Install configuration: ""
+[1.832s] -- Up-to-date: /home/devika/robo_ws/install/gazebo_ros2_control/lib/libgazebo_ros2_control.so
+[1.832s] -- Up-to-date: /home/devika/robo_ws/install/gazebo_ros2_control/lib/libgazebo_hardware_plugins.so
+[1.832s] -- Up-to-date: /home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/environment/library_path.sh
+[1.833s] -- Up-to-date: /home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/environment/library_path.dsv
+[1.833s] -- Up-to-date: /home/devika/robo_ws/install/gazebo_ros2_control/include/gazebo_ros2_control
+[1.834s] -- Up-to-date: /home/devika/robo_ws/install/gazebo_ros2_control/include/gazebo_ros2_control/gazebo_ros2_control_plugin.hpp
+[1.835s] -- Up-to-date: /home/devika/robo_ws/install/gazebo_ros2_control/include/gazebo_ros2_control/gazebo_system.hpp
+[1.835s] -- Up-to-date: /home/devika/robo_ws/install/gazebo_ros2_control/include/gazebo_ros2_control/gazebo_system_interface.hpp
+[1.836s] -- Up-to-date: /home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/gazebo_hardware_plugins.xml
+[1.836s] -- Up-to-date: /home/devika/robo_ws/install/gazebo_ros2_control/share/ament_index/resource_index/package_run_dependencies/gazebo_ros2_control
+[1.836s] -- Up-to-date: /home/devika/robo_ws/install/gazebo_ros2_control/share/ament_index/resource_index/parent_prefix_path/gazebo_ros2_control
+[1.836s] -- Up-to-date: /home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/environment/ament_prefix_path.sh
+[1.836s] -- Up-to-date: /home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/environment/ament_prefix_path.dsv
+[1.836s] -- Up-to-date: /home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/environment/path.sh
+[1.836s] -- Up-to-date: /home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/environment/path.dsv
+[1.838s] -- Up-to-date: /home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/local_setup.bash
+[1.853s] -- Up-to-date: /home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/local_setup.sh
+[1.853s] -- Up-to-date: /home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/local_setup.zsh
+[1.853s] -- Up-to-date: /home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/local_setup.dsv
+[1.853s] -- Installing: /home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/package.dsv
+[1.853s] -- Up-to-date: /home/devika/robo_ws/install/gazebo_ros2_control/share/ament_index/resource_index/packages/gazebo_ros2_control
+[1.853s] -- Up-to-date: /home/devika/robo_ws/install/gazebo_ros2_control/share/ament_index/resource_index/gazebo_ros2_control__pluginlib__plugin/gazebo_ros2_control
+[1.854s] -- Up-to-date: /home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.854s] -- Up-to-date: /home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.854s] -- Up-to-date: /home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/cmake/ament_cmake_export_libraries-extras.cmake
+[1.854s] -- Up-to-date: /home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/cmake/gazebo_ros2_controlConfig.cmake
+[1.854s] -- Up-to-date: /home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/cmake/gazebo_ros2_controlConfig-version.cmake
+[1.854s] -- Up-to-date: /home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/package.xml
+[1.947s] Invoked command in '/home/devika/robo_ws/build/gazebo_ros2_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble /usr/bin/cmake --install /home/devika/robo_ws/build/gazebo_ros2_control

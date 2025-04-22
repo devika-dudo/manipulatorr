@@ -34,7 +34,6 @@ hand_controller:
     stall_velocity_threshold: 0.001
     joints:  
       - joint_6
-      - joint_7  # Mimicking joint_6
     command_interfaces:
       - position
     state_interfaces:

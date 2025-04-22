@@ -1,0 +1,2 @@
+gmake[1]: *** [CMakeFiles/Makefile2:204: CMakeFiles/moveit_task_constructor_demo_modular.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

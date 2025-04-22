@@ -1,0 +1,72 @@
+[ 10%] Built target pick_place_demo_parameters
+[ 20%] Built target hello_moveit_task_constructor_alternative_path_costs
+[35m[1mConsolidate compiler generated dependencies of target hello_moveit_task_constructor_pick_place_task[0m
+[ 30%] Built target hello_moveit_task_constructor_mtc_node
+[ 35%] [32mBuilding CXX object CMakeFiles/hello_moveit_task_constructor_pick_place_task.dir/src/pick_place_task.cpp.o[0m
+[ 45%] Built target hello_moveit_task_constructor_modular
+[ 55%] Built target ik_clearance_cost_parameters
+[ 65%] Built target hello_moveit_task_constructor_fallbacks_move_to
+[ 75%] Built target hello_moveit_task_constructor_ik_clearance_cost
+[ 85%] Built target hello_moveit_task_constructor_cartesian
+[01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:[m[K In member function ‘[01m[Kbool hello_moveit_task_constructor::PickPlaceTask::init(const SharedPtr&, const pick_place_demo::Params&)[m[K’:
+[01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:221:53:[m[K [01;31m[Kerror: [m[K‘[01m[KFixedState[m[K’ is not a member of ‘[01m[Kmoveit::task_constructor::stages[m[K’
+  221 |     auto set_valid_state = std::make_unique<stages::[01;31m[KFixedState[m[K>("set valid state");
+      |                                                     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:221:64:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_unique<<expression error> >(const char [16])[m[K’
+  221 |     auto set_valid_state = [01;31m[Kstd::make_unique<stages::FixedState>("set valid state")[m[K;
+      |                            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:59[m[K,
+                 from [01m[K/usr/include/c++/11/bits/shared_ptr.h:53[m[K,
+                 from [01m[K/usr/include/c++/11/condition_variable:43[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:19[m[K,
+                 from [01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/include/hello_moveit_task_constructor/pick_place_task.h:15[m[K,
+                 from [01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:14[m[K:
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:961:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> typename std::_MakeUniq<_Tp>::__single_object std::make_unique(_Args&& ...)[m[K’
+  961 |     [01;36m[Kmake_unique[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:961:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:221:64:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  221 |     auto set_valid_state = [01;31m[Kstd::make_unique<stages::FixedState>("set valid state")[m[K;
+      |                            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:59[m[K,
+                 from [01m[K/usr/include/c++/11/bits/shared_ptr.h:53[m[K,
+                 from [01m[K/usr/include/c++/11/condition_variable:43[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:19[m[K,
+                 from [01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/include/hello_moveit_task_constructor/pick_place_task.h:15[m[K,
+                 from [01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:14[m[K:
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:967:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> typename std::_MakeUniq<_Tp>::__array std::make_unique(std::size_t)[m[K’
+  967 |     [01;36m[Kmake_unique[m[K(size_t __num)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:967:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:221:64:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  221 |     auto set_valid_state = [01;31m[Kstd::make_unique<stages::FixedState>("set valid state")[m[K;
+      |                            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:59[m[K,
+                 from [01m[K/usr/include/c++/11/bits/shared_ptr.h:53[m[K,
+                 from [01m[K/usr/include/c++/11/condition_variable:43[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:19[m[K,
+                 from [01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/include/hello_moveit_task_constructor/pick_place_task.h:15[m[K,
+                 from [01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:14[m[K:
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:973:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> typename std::_MakeUniq<_Tp>::__invalid_type std::make_unique(_Args&& ...)[m[K’ (deleted)
+  973 |     [01;36m[Kmake_unique[m[K(_Args&&...) = delete;
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:973:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:221:64:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  221 |     auto set_valid_state = [01;31m[Kstd::make_unique<stages::FixedState>("set valid state")[m[K;
+      |                            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:225:56:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K->[m[K’ token
+  225 |     moveit::core::RobotState robot_state(planning_scene[01;31m[K->[m[KgetCurrentState());
+      |                                                        [01;31m[K^~[m[K
+[01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:242:19:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K->[m[K’ token
+  242 |     planning_scene[01;31m[K->[m[KgetCurrentStateNonConst().setJointGroupPositions(
+      |                   [01;31m[K^~[m[K
+[01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:244:19:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K->[m[K’ token
+  244 |     planning_scene[01;31m[K->[m[KgetCurrentStateNonConst().update();
+      |                   [01;31m[K^~[m[K
+[01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:247:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kplanning_scene_monitor[m[K’ was not declared in this scope; did you mean ‘[01m[Kplanning_scene[m[K’?
+  247 |     [01;31m[Kplanning_scene_monitor[m[K->getPlanningSceneMonitor()->getPlanningScene()
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+      |     [32m[Kplanning_scene[m[K
+gmake[2]: *** [CMakeFiles/hello_moveit_task_constructor_pick_place_task.dir/build.make:76: CMakeFiles/hello_moveit_task_constructor_pick_place_task.dir/src/pick_place_task.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:155: CMakeFiles/hello_moveit_task_constructor_pick_place_task.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

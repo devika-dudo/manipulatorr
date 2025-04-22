@@ -1,0 +1,29 @@
+[  1%] [34m[1mAutomatic MOC for target motion_planning_tasks_properties[0m
+[  3%] [34m[1mAutomatic MOC for target moveit_task_visualization_tools[0m
+[  4%] [34m[1mAutomatic MOC for target gtest_main[0m
+[  6%] [34m[1mAutomatic MOC for target gmock[0m
+[  7%] [34m[1mAutomatic MOC for target motion_planning_tasks_utils[0m
+[  9%] [34m[1mAutomatic MOC for target gtest[0m
+[ 10%] [34m[1mAutomatic MOC for target gmock_main[0m
+[ 10%] Built target motion_planning_tasks_properties_autogen
+[ 10%] Built target moveit_task_visualization_tools_autogen
+[ 10%] Built target gtest_main_autogen
+[ 10%] Built target gmock_autogen
+[ 10%] Built target motion_planning_tasks_utils_autogen
+[ 10%] Built target gmock_main_autogen
+[ 10%] Built target gtest_autogen
+[ 16%] Built target gmock
+[ 27%] Built target motion_planning_tasks_properties
+[ 27%] Built target gtest_main
+[ 32%] Built target gtest
+[ 43%] Built target gmock_main
+[ 44%] Built target motion_planning_tasks_utils
+[ 53%] Built target moveit_task_visualization_tools
+[ 55%] [34m[1mAutomatic MOC for target moveit_task_constructor_visualization-test-merge-models[0m
+[ 56%] [34m[1mAutomatic MOC for target motion_planning_tasks_rviz_plugin[0m
+[ 56%] Built target moveit_task_constructor_visualization-test-merge-models_autogen
+[ 56%] Built target motion_planning_tasks_rviz_plugin_autogen
+[ 61%] Built target moveit_task_constructor_visualization-test-merge-models
+[ 87%] Built target motion_planning_tasks_rviz_plugin
+[ 89%] [34m[1mAutomatic MOC for target moveit_task_constructor_visualization-test-solution-models[0m
+[ 90%] [34m[1mAutomatic MOC for target moveit_task_constructor_visualization-test-task_model[0m

@@ -196,20 +196,47 @@ ompl_planner_gripper->setProperty("planning_pipeline", params.gripper_group_name
 		// This filter acts as a gatekeeper to ensure that the pick-and-place task does not attempt 
 		// to pick up an object that is already attached to the robot 
 		auto current_state = std::make_unique<stages::CurrentState>("current state");
-		current_state->properties().set("trajectory_execution_info",
-		                        TrajectoryExecutionInfo().set__controller_names(params.controller_names));
-		auto applicability_filter =
-		  std::make_unique<stages::PredicateFilter>("applicability test", std::move(current_state));
-		applicability_filter->properties().set("trajectory_execution_info",
-		                        TrajectoryExecutionInfo().set__controller_names(params.controller_names));
-		applicability_filter->setPredicate([object = params.object_name](const SolutionBase& s, std::string& comment) {
-		  if (s.start()->scene()->getCurrentState().hasAttachedBody(object)) {
-                    comment = "object with id '" + object + "' is already attached and cannot be picked";
-                    return false;
-                  }
-                  return true;
-		});
-		t.add(std::move(applicability_filter));
+		current_state->setProperty("joint_bounds_tolerance", 0.01); 
+		current_state->properties().set("trajectory_execution_info",TrajectoryExecutionInfo().set__controller_names(params.controller_names));
+                auto applicability_filter =
+                std::make_unique<stages::PredicateFilter>("applicability test", std::move(current_state));
+    applicability_filter->properties().set("trajectory_execution_info",
+                            TrajectoryExecutionInfo().set__controller_names(params.controller_names));
+    applicability_filter->setPredicate([object = params.object_name](const SolutionBase& s, std::string& comment) {
+      if (s.start()->scene()->getCurrentState().hasAttachedBody(object)) {
+        comment = "object with id '" + object + "' is already attached and cannot be picked";
+        return false;
+      }
+      return true;
+    });
+    t.add(std::move(applicability_filter));
+}
+	/****************************************************
+	 *                                                  *
+	 *        Move to Safe Position                     *
+	 *                                                  *
+	 ***************************************************/
+	{
+	    // First stage: Move arm to the predefined "safe" pose from SRDF
+	    auto arm_stage = std::make_unique<stages::MoveTo>("move to safe pose", ompl_planner_arm);
+	    arm_stage->setGroup(params.arm_group_name);
+	    // Use the named state from SRDF
+	    arm_stage->setGoal("safe");  // Use the named state directly
+	    arm_stage->setProperty("joint_bounds_tolerance", 0.01);  // Add this line
+	    arm_stage->properties().set("trajectory_execution_info",
+		               TrajectoryExecutionInfo().set__controller_names(params.controller_names));
+	    t.add(std::move(arm_stage));
+	    
+	    // Second stage: Move gripper to the "safe_hand" pose from SRDF
+	    auto hand_stage = std::make_unique<stages::MoveTo>("move to safe hand pose", ompl_planner_gripper);
+	    hand_stage->setProperty("joint_bounds_tolerance", 0.01);  // Add this line
+	    hand_stage->setGroup(params.gripper_group_name);
+	    // Use the named state from SRDF
+	    hand_stage->setGoal("safe_hand");  // Use the named state directly
+
+	    hand_stage->properties().set("trajectory_execution_info",
+		               TrajectoryExecutionInfo().set__controller_names(params.controller_names));
+	    t.add(std::move(hand_stage));
 	}
 
 	/****************************************************
@@ -284,6 +311,19 @@ ompl_planner_gripper->setProperty("planning_pipeline", params.gripper_group_name
 			stage->setDirection(vec);
 			grasp->insert(std::move(stage));
 		}
+		/****************************************************
+  ---- *               Allow Collision (gripper,  object) *
+		 ***************************************************/
+		{
+			// Modify planning scene (w/o altering the robot's pose) to allow touching the object for picking
+			auto stage = std::make_unique<stages::ModifyPlanningScene>("allow collision (gripper,object)");
+			stage->allowCollisions(
+			    params.object_name,
+			    t.getRobotModel()->getJointModelGroup(params.gripper_group_name)->getLinkModelNamesWithCollisionGeometry(),
+			    true);
+			 stage->allowCollisions(params.object_name, "link_6", true);
+			grasp->insert(std::move(stage));
+		}
 
 		/****************************************************
   ---- *               Generate Grasp Pose                *
@@ -295,7 +335,7 @@ ompl_planner_gripper->setProperty("planning_pipeline", params.gripper_group_name
 			stage->properties().set("marker_ns", "grasp_pose");
 			stage->setPreGraspPose(params.gripper_open_pose);
 			stage->setObject(params.object_name);  // object to sample grasps for
-			stage->setAngleDelta(M_PI / 12); //  Angular resolution for sampling grasp poses around the object
+			stage->setAngleDelta(M_PI / 15); //  Angular resolution for sampling grasp poses around the object
 			stage->setMonitoredStage(initial_state_ptr);  // Ensure grasp poses are valid given the initial configuration of the robot 
 
 			// Compute IK for sampled grasp poses
@@ -310,18 +350,7 @@ ompl_planner_gripper->setProperty("planning_pipeline", params.gripper_group_name
 			grasp->insert(std::move(wrapper));
 		}
 
-		/****************************************************
-  ---- *               Allow Collision (gripper,  object) *
-		 ***************************************************/
-		{
-			// Modify planning scene (w/o altering the robot's pose) to allow touching the object for picking
-			auto stage = std::make_unique<stages::ModifyPlanningScene>("allow collision (gripper,object)");
-			stage->allowCollisions(
-			    params.object_name,
-			    t.getRobotModel()->getJointModelGroup(params.gripper_group_name)->getLinkModelNamesWithCollisionGeometry(),
-			    true);
-			grasp->insert(std::move(stage));
-		}
+		
 
 		/****************************************************
   ---- *               Close Gripper                      *

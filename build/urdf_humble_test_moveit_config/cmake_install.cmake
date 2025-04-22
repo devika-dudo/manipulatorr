@@ -43,18 +43,6 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/urdf_humble_test_moveit_config" TYPE DIRECTORY FILES
-    "/home/devika/robo_ws/src/urdf_humble_test_moveit_config/config"
-    "/home/devika/robo_ws/src/urdf_humble_test_moveit_config/launch"
-    "/home/devika/robo_ws/src/urdf_humble_test_moveit_config/rviz"
-    )
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/urdf_humble_test_moveit_config" TYPE FILE FILES "/home/devika/robo_ws/src/urdf_humble_test_moveit_config/.setup_assistant")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/devika/robo_ws/build/urdf_humble_test_moveit_config/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/urdf_humble_test_moveit_config")
 endif()
 
@@ -111,6 +99,18 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/urdf_humble_test_moveit_config" TYPE FILE FILES "/home/devika/robo_ws/src/urdf_humble_test_moveit_config/package.xml")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/urdf_humble_test_moveit_config" TYPE DIRECTORY FILES "/home/devika/robo_ws/src/urdf_humble_test_moveit_config/launch" REGEX "/setup\\_assistant\\.launch$" EXCLUDE)
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/urdf_humble_test_moveit_config" TYPE DIRECTORY FILES "/home/devika/robo_ws/src/urdf_humble_test_moveit_config/config")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/urdf_humble_test_moveit_config" TYPE FILE FILES "/home/devika/robo_ws/src/urdf_humble_test_moveit_config/.setup_assistant")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

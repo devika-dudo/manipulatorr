@@ -72,15 +72,15 @@ template <typename T, size_t capacity>
         std::string table_name = "table";
         std::string table_reference_frame = "base_link";
         std::vector<double> table_dimensions = {0.1, 0.2, 0.03};
-        std::vector<double> table_pose = {0.22, 0.12, 0.0, 0.0, 0.0, 0.0};
+        std::vector<double> table_pose = {0.32, 0.32, 0.0, 0.0, 0.0, 0.0};
         std::string object_name = "object";
         std::string object_reference_frame = "base_link";
         std::vector<double> object_dimensions = {0.35, 0.0125};
-        std::vector<double> object_pose = {0.22, 0.12, 0.0, 0.0, 0.0, 0.0};
+        std::vector<double> object_pose = {0.32, 0.32, 0.0, 0.0, 0.0, 0.0};
         bool spawn_table = true;
         int64_t max_solutions = 10;
         std::string arm_group_name = "arm_group";
-        std::string eef_name = "hand";
+        std::string eef_name = "hand_ee";
         std::string gripper_group_name = "hand";
         std::string gripper_frame = "link_5";
         std::string gripper_open_pose = "open";
@@ -88,7 +88,7 @@ template <typename T, size_t capacity>
         std::string arm_home_pose = "zero_pos";
         std::string world_frame = "base_link";
         std::string surface_link = "table";
-        std::vector<double> grasp_frame_transform = {0.0, 0.0, 0.096, 1.5708, 0.0, 0.0};
+        std::vector<double> grasp_frame_transform = {0.0, 0.0, 0.36, -1.571, 0.0, 0.0};
         std::vector<double> place_pose = {-0.183, -0.14, 0.0, 0.0, 0.0, 0.0};
         double place_surface_offset = -0.03;
         double approach_object_min_dist = 0.0015;

@@ -1,0 +1,28 @@
+[35m[1mConsolidate compiler generated dependencies of target hello_moveit[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/hello_moveit.dir/src/hello_moveit_v1.cpp.o[0m
+[ 50%] [32m[1mLinking CXX executable hello_moveit[0m
+[ 50%] Built target hello_moveit
+[35m[1mConsolidate compiler generated dependencies of target plan_around_objects[0m
+[100%] Built target plan_around_objects
+-- Install configuration: ""
+-- Installing: /home/devika/robo_ws/install/hello_moveit/lib/hello_moveit/hello_moveit
+-- Set runtime path of "/home/devika/robo_ws/install/hello_moveit/lib/hello_moveit/hello_moveit" to ""
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit/lib/hello_moveit/plan_around_objects
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/launch
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/launch/plan_around_objects.launch.py
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/launch/hello.launch.py
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit/share/ament_index/resource_index/package_run_dependencies/hello_moveit
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit/share/ament_index/resource_index/parent_prefix_path/hello_moveit
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/environment/ament_prefix_path.sh
+-- Installing: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/environment/path.sh
+-- Installing: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/environment/path.dsv
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/local_setup.bash
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/local_setup.sh
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/local_setup.zsh
+-- Installing: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/local_setup.dsv
+-- Installing: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/package.dsv
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit/share/ament_index/resource_index/packages/hello_moveit
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/cmake/hello_moveitConfig.cmake
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/cmake/hello_moveitConfig-version.cmake
+-- Up-to-date: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/package.xml

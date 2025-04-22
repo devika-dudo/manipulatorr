@@ -210,6 +210,19 @@ hello_moveit/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_moveit.dir/build.make CMakeFiles/hello_moveit.dir/build
 .PHONY : hello_moveit/fast
 
+#=============================================================================
+# Target rules for targets named plan_around_objects
+
+# Build rule for target.
+plan_around_objects: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 plan_around_objects
+.PHONY : plan_around_objects
+
+# fast build rule for target.
+plan_around_objects/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/plan_around_objects.dir/build.make CMakeFiles/plan_around_objects.dir/build
+.PHONY : plan_around_objects/fast
+
 src/letsee.o: src/letsee.cpp.o
 .PHONY : src/letsee.o
 
@@ -234,6 +247,30 @@ src/letsee.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_moveit.dir/build.make CMakeFiles/hello_moveit.dir/src/letsee.cpp.s
 .PHONY : src/letsee.cpp.s
 
+src/plan_around_objects.o: src/plan_around_objects.cpp.o
+.PHONY : src/plan_around_objects.o
+
+# target to build an object file
+src/plan_around_objects.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/plan_around_objects.dir/build.make CMakeFiles/plan_around_objects.dir/src/plan_around_objects.cpp.o
+.PHONY : src/plan_around_objects.cpp.o
+
+src/plan_around_objects.i: src/plan_around_objects.cpp.i
+.PHONY : src/plan_around_objects.i
+
+# target to preprocess a source file
+src/plan_around_objects.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/plan_around_objects.dir/build.make CMakeFiles/plan_around_objects.dir/src/plan_around_objects.cpp.i
+.PHONY : src/plan_around_objects.cpp.i
+
+src/plan_around_objects.s: src/plan_around_objects.cpp.s
+.PHONY : src/plan_around_objects.s
+
+# target to generate assembly for a file
+src/plan_around_objects.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/plan_around_objects.dir/build.make CMakeFiles/plan_around_objects.dir/src/plan_around_objects.cpp.s
+.PHONY : src/plan_around_objects.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -250,9 +287,13 @@ help:
 	@echo "... hello_moveit_uninstall"
 	@echo "... uninstall"
 	@echo "... hello_moveit"
+	@echo "... plan_around_objects"
 	@echo "... src/letsee.o"
 	@echo "... src/letsee.i"
 	@echo "... src/letsee.s"
+	@echo "... src/plan_around_objects.o"
+	@echo "... src/plan_around_objects.i"
+	@echo "... src/plan_around_objects.s"
 .PHONY : help
 
 

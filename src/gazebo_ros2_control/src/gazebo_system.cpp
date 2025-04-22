@@ -386,7 +386,7 @@ void GazeboSystem::registerJoints(
         "Joint '" << joint_name << "'is mimicking joint '" << mimicked_joint <<
           "' with multiplier: " << mimic_joint.multiplier);
       this->dataPtr->mimic_joints_.push_back(mimic_joint);
-      suffix = "_mimic";
+//     suffix = "_mimic"; 
     }
 
     RCLCPP_INFO_STREAM(this->nh_->get_logger(), "\tState:");
@@ -421,7 +421,7 @@ void GazeboSystem::registerJoints(
       if (joint_info.state_interfaces[i].name == "position") {
         RCLCPP_INFO_STREAM(this->nh_->get_logger(), "\t\t position");
         this->dataPtr->state_interfaces_.emplace_back(
-          joint_name + suffix,
+          joint_name,
           hardware_interface::HW_IF_POSITION,
           &this->dataPtr->joint_position_[j]);
         initial_position = get_initial_value(joint_info.state_interfaces[i]);
@@ -430,7 +430,7 @@ void GazeboSystem::registerJoints(
       if (joint_info.state_interfaces[i].name == "velocity") {
         RCLCPP_INFO_STREAM(this->nh_->get_logger(), "\t\t velocity");
         this->dataPtr->state_interfaces_.emplace_back(
-          joint_name + suffix,
+          joint_name,
           hardware_interface::HW_IF_VELOCITY,
           &this->dataPtr->joint_velocity_[j]);
         initial_velocity = get_initial_value(joint_info.state_interfaces[i]);
@@ -439,7 +439,7 @@ void GazeboSystem::registerJoints(
       if (joint_info.state_interfaces[i].name == "effort") {
         RCLCPP_INFO_STREAM(this->nh_->get_logger(), "\t\t effort");
         this->dataPtr->state_interfaces_.emplace_back(
-          joint_name + suffix,
+          joint_name ,
           hardware_interface::HW_IF_EFFORT,
           &this->dataPtr->joint_effort_[j]);
         initial_effort = get_initial_value(joint_info.state_interfaces[i]);
@@ -481,7 +481,7 @@ void GazeboSystem::registerJoints(
         }
 
         this->dataPtr->command_interfaces_.emplace_back(
-          joint_name + suffix,
+          joint_name ,
           hardware_interface::HW_IF_POSITION,
           &this->dataPtr->joint_position_cmd_[j]);
         if (!std::isnan(initial_position)) {
@@ -519,7 +519,7 @@ void GazeboSystem::registerJoints(
         }
 
         this->dataPtr->command_interfaces_.emplace_back(
-          joint_name + suffix,
+          joint_name ,
           hardware_interface::HW_IF_VELOCITY,
           &this->dataPtr->joint_velocity_cmd_[j]);
         if (!std::isnan(initial_velocity)) {
@@ -533,7 +533,7 @@ void GazeboSystem::registerJoints(
       if (joint_info.command_interfaces[i].name == "effort") {
         RCLCPP_INFO_STREAM(this->nh_->get_logger(), "\t\t effort");
         this->dataPtr->command_interfaces_.emplace_back(
-          joint_name + suffix,
+          joint_name ,
           hardware_interface::HW_IF_EFFORT,
           &this->dataPtr->joint_effort_cmd_[j]);
         if (!std::isnan(initial_effort)) {

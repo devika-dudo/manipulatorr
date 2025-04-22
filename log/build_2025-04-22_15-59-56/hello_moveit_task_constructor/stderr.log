@@ -1,0 +1,7 @@
+[01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_demo.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_demo.cpp:53:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass hello_moveit_task_constructor::PickPlaceTask[m[K’ has no member named ‘[01m[KenableIntrospection[m[K’
+   53 |   pick_place_task.[01;31m[KenableIntrospection[m[K();
+      |                   [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/hello_moveit_task_constructor_pick_place_demo.dir/build.make:76: CMakeFiles/hello_moveit_task_constructor_pick_place_demo.dir/src/pick_place_demo.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:364: CMakeFiles/hello_moveit_task_constructor_pick_place_demo.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -51,6 +51,7 @@ int main(int argc, char** argv) {
     return 1;
   }
 
+
   // Plan the pick and place task
   if (pick_place_task.plan(params.max_solutions)) {
     RCLCPP_INFO(LOGGER, "Planning succeeded");

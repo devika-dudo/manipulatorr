@@ -1,0 +1,23 @@
+[0.195s] Invoking command in '/home/devika/robo_ws/build/moveit_task_constructor_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble /usr/bin/cmake --build /home/devika/robo_ws/build/moveit_task_constructor_msgs
+[1.629s] [  0%] Built target moveit_task_constructor_msgs__cpp
+[1.630s] [ 12%] Built target moveit_task_constructor_msgs__rosidl_typesupport_cpp
+[1.630s] [ 24%] Built target moveit_task_constructor_msgs__rosidl_generator_c
+[1.630s] [ 36%] Built target moveit_task_constructor_msgs__rosidl_typesupport_fastrtps_c
+[1.630s] [ 47%] Built target moveit_task_constructor_msgs__rosidl_typesupport_fastrtps_cpp
+[1.630s] [ 59%] Built target moveit_task_constructor_msgs__rosidl_typesupport_introspection_c
+[1.631s] [ 71%] Built target moveit_task_constructor_msgs__rosidl_typesupport_c
+[1.631s] [ 83%] Built target moveit_task_constructor_msgs__rosidl_typesupport_introspection_cpp
+[1.631s] [ 83%] Built target moveit_task_constructor_msgs
+[1.631s] [ 83%] Built target ament_cmake_python_copy_moveit_task_constructor_msgs
+[2.090s] running egg_info
+[2.092s] writing moveit_task_constructor_msgs.egg-info/PKG-INFO
+[2.092s] writing dependency_links to moveit_task_constructor_msgs.egg-info/dependency_links.txt
+[2.093s] writing top-level names to moveit_task_constructor_msgs.egg-info/top_level.txt
+[2.099s] reading manifest file 'moveit_task_constructor_msgs.egg-info/SOURCES.txt'
+[2.100s] writing manifest file 'moveit_task_constructor_msgs.egg-info/SOURCES.txt'
+[2.206s] [ 83%] Built target ament_cmake_python_build_moveit_task_constructor_msgs_egg
+[2.302s] [ 84%] Built target moveit_task_constructor_msgs__py
+[2.417s] [ 95%] Built target moveit_task_constructor_msgs__rosidl_generator_py
+[2.516s] [ 97%] Built target moveit_task_constructor_msgs__rosidl_typesupport_fastrtps_c__pyext
+[2.611s] [ 99%] Built target moveit_task_constructor_msgs__rosidl_typesupport_introspection_c__pyext
+[2.704s] [100%] Built target moveit_task_constructor_msgs__rosidl_typesupport_c__pyext

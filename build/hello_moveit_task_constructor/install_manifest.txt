@@ -10,6 +10,7 @@
 /home/devika/robo_ws/install/hello_moveit_task_constructor/include/hello_moveit_task_constructor/ik_clearance_cost_parameters.hpp
 /home/devika/robo_ws/install/hello_moveit_task_constructor/include/hello_moveit_task_constructor/pick_place_demo_parameters.hpp
 /home/devika/robo_ws/install/hello_moveit_task_constructor/lib/hello_moveit_task_constructor/pick_place_demo
+/home/devika/robo_ws/install/hello_moveit_task_constructor/share/hello_moveit_task_constructor/config/mtc_node_params.yaml
 /home/devika/robo_ws/install/hello_moveit_task_constructor/share/hello_moveit_task_constructor/launch/run.launch.py
 /home/devika/robo_ws/install/hello_moveit_task_constructor/share/hello_moveit_task_constructor/launch/demo.launch.py
 /home/devika/robo_ws/install/hello_moveit_task_constructor/include/hello_moveit_task_constructor/pick_place_task.h

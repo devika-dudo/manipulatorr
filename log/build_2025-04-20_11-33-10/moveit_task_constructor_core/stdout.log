@@ -1,0 +1,182 @@
+[  0%] Built target ament_cmake_python_copy_moveit
+running egg_info
+writing moveit.egg-info/PKG-INFO
+writing dependency_links to moveit.egg-info/dependency_links.txt
+writing top-level names to moveit.egg-info/top_level.txt
+reading manifest file 'moveit.egg-info/SOURCES.txt'
+writing manifest file 'moveit.egg-info/SOURCES.txt'
+[  0%] Built target ament_cmake_python_build_moveit_egg
+[ 18%] Built target moveit_task_constructor_core
+[ 40%] Built target moveit_task_constructor_core_stages
+[ 42%] Built target moveit_task_constructor_core_stage_plugins
+[ 49%] Built target pymoveit_mtc
+[ 54%] Built target gtest_utils
+[ 56%] Built target gtest_main
+[ 60%] Built target gmock
+[ 62%] Built target gmock_main
+[ 64%] Built target moveit_task_constructor_core-test-mockups
+[ 67%] Built target gtest
+[ 69%] Built target moveit_task_constructor_core-test-stage
+[ 71%] Built target moveit_task_constructor_core-test-container
+[ 74%] Built target moveit_task_constructor_core-test-serial
+[ 76%] Built target moveit_task_constructor_core-test-pruning
+[ 78%] Built target moveit_task_constructor_core-test-properties
+[ 81%] Built target moveit_task_constructor_core-test-cost-terms
+[ 83%] Built target moveit_task_constructor_core-test-fallback
+[ 85%] Built target moveit_task_constructor_core-test-cost-queue
+[ 88%] Built target moveit_task_constructor_core-test-interface-state
+[ 90%] Built target moveit_task_constructor_core-test-move-to
+[ 92%] Built target moveit_task_constructor_core-test-move-relative
+[ 95%] Built target pick_ur5
+[ 97%] Built target pick_pr2
+[100%] Built target pick_pa10
+-- Install configuration: "Release"
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/lib/libmoveit_task_constructor_core_stages.so
+-- Set runtime path of "/home/devika/robo_ws/install/moveit_task_constructor_core/lib/libmoveit_task_constructor_core_stages.so" to ""
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/lib/libmoveit_task_constructor_core_stage_plugins.so
+-- Set runtime path of "/home/devika/robo_ws/install/moveit_task_constructor_core/lib/libmoveit_task_constructor_core_stage_plugins.so" to ""
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/lib/libmoveit_task_constructor_core.so
+-- Set runtime path of "/home/devika/robo_ws/install/moveit_task_constructor_core/lib/libmoveit_task_constructor_core.so" to ""
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/environment/pythonpath.sh
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/environment/pythonpath.dsv
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/moveit-0.1.3-py3.10.egg-info
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/moveit-0.1.3-py3.10.egg-info/dependency_links.txt
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/moveit-0.1.3-py3.10.egg-info/top_level.txt
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/moveit-0.1.3-py3.10.egg-info/PKG-INFO
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/moveit-0.1.3-py3.10.egg-info/SOURCES.txt
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/moveit
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/moveit/task_constructor
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/moveit/task_constructor/core.py
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/moveit/task_constructor/stages.py
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/moveit/task_constructor/__init__.py
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/moveit/__init__.py
+Listing '/home/devika/robo_ws/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/moveit'...
+Compiling '/home/devika/robo_ws/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/moveit/__init__.py'...
+Listing '/home/devika/robo_ws/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/moveit/task_constructor'...
+Compiling '/home/devika/robo_ws/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/moveit/task_constructor/__init__.py'...
+Compiling '/home/devika/robo_ws/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/moveit/task_constructor/core.py'...
+Compiling '/home/devika/robo_ws/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/moveit/task_constructor/stages.py'...
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/eval.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/trampoline_self_life_support.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/complex.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/embed.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/options.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/stl.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/functional.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/iostream.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/eigen
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/eigen/tensor.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/eigen/matrix.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/eigen/common.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/type_caster_pyobject_ptr.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/stl
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/stl/filesystem.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/attr.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/smart_holder.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/typing.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/gil_safe_call_once.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/chrono.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/pytypes.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/operators.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/buffer_info.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/pybind11.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/numpy.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/stl_bind.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/gil.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/detail
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/detail/descr.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/detail/internals.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/detail/smart_holder_sfinae_hooks_only.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/detail/class.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/detail/type_caster_base.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/detail/typeid.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/detail/smart_holder_type_casters.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/detail/smart_holder_poc.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/detail/init.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/detail/type_caster_odr_guard.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/detail/common.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/detail/dynamic_raw_ptr_cast_if_possible.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/common.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/cast.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/pybind11/eigen.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake/pybind11Config.cmake
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake/pybind11ConfigVersion.cmake
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake/FindPythonLibsNew.cmake
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake/pybind11Common.cmake
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake/pybind11Tools.cmake
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake/pybind11NewTools.cmake
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake/pybind11Targets.cmake
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/share/pkgconfig/pybind11.pc
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/pymoveit_mtc.cpython-310-x86_64-linux-gnu.so
+-- Set runtime path of "/home/devika/robo_ws/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages/pymoveit_mtc.cpython-310-x86_64-linux-gnu.so" to ""
+-- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include
+-- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/stages.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/type_traits.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/properties.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/trajectory_execution_info.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/stage.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/container.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/solvers.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/moveit_compat.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/cost_terms.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/utils.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/solvers
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/solvers/cartesian_path.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/solvers/multi_planner.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/solvers/pipeline_planner.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/solvers/joint_interpolation.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/solvers/planner_interface.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/marker_tools.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/storage.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/cost_queue.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/stages
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/connect.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/generate_grasp_pose.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/noop.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/modify_planning_scene.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/generate_place_pose.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/passthrough.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/pick.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/move_to.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/generate_pose.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/current_state.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/fixed_cartesian_poses.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/compute_ik.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/fixed_state.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/move_relative.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/predicate_filter.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/fix_collision_objects.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/simple_grasp.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/generate_random_pose.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/task.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/introspection.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/task_constructor/merge.h
+-- Up-to-date: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/task_constructor
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/include/moveit/python/task_constructor/properties.h
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/motion_planning_stages_plugin_description.xml
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/environment/library_path.sh
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/environment/library_path.dsv
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/share/ament_index/resource_index/package_run_dependencies/moveit_task_constructor_core
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/share/ament_index/resource_index/parent_prefix_path/moveit_task_constructor_core
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/environment/ament_prefix_path.sh
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/environment/ament_prefix_path.dsv
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/environment/path.sh
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/environment/path.dsv
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/local_setup.bash
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/local_setup.sh
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/local_setup.zsh
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/local_setup.dsv
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/package.dsv
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/share/ament_index/resource_index/packages/moveit_task_constructor_core
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/share/ament_index/resource_index/moveit_task_constructor_core__pluginlib__plugin/moveit_task_constructor_core
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake/moveit_task_constructor_coreTargetsExport.cmake
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake/moveit_task_constructor_coreTargetsExport-release.cmake
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake/moveit_task_constructor_coreConfig.cmake
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake/moveit_task_constructor_coreConfig-version.cmake
+-- Installing: /home/devika/robo_ws/install/moveit_task_constructor_core/share/moveit_task_constructor_core/package.xml
