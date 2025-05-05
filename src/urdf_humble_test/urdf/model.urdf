@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
      Commit Version 1.6.0-4-g7f85cfe  Build Version 1.6.7995.38578
-     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+     For more information, please see http//wiki.ros.org/sw_urdf_exporter -->
 <robot
   name="urdf_humble_test">
   <link name="world"/>
@@ -10,22 +10,21 @@
        <child link="base_link"/>
        <origin rpy="0 0 0" xyz="0.0 0.0 -0.17"/>
     </joint>
-
   <link
     name="base_link">
     <inertial>
       <origin
-        xyz="0.121698985911283 -0.0236195696900434 0.0372916801910451"
+        xyz="-4.743837915544E-07 2.08978815363636E-07 0.0398691291100305"
         rpy="0 0 0" />
       <mass
-        value="0.605406509419497" />
+        value="1.26158792714375" />
       <inertia
-        ixx="0.000512871371503761"
-        ixy="-1.63572815361529E-07"
-        ixz="6.72590933444044E-09"
-        iyy="0.0005129245435565"
-        iyz="-1.03810185969549E-09"
-        izz="0.000944657855345465" />
+        ixx="0.00175614754470773"
+        ixy="5.03614641481078E-10"
+        ixz="-5.92029157039739E-09"
+        iyy="0.00175614401963759"
+        iyz="4.98996166764941E-09"
+        izz="0.00323785623040002" />
     </inertial>
     <visual>
       <origin
@@ -55,17 +54,17 @@
     name="link_1">
     <inertial>
       <origin
-        xyz="1.253072492928E-05 0.143555093249607 0.0245373628541532"
+        xyz="0.0149258535370633 0.00446067865895465 0.168244863347586"
         rpy="0 0 0" />
       <mass
-        value="0.77988040158824" />
+        value="1.58252995063954" />
       <inertia
-        ixx="0.000946347994701942"
-        ixy="-1.56160174792233E-08"
-        ixz="6.24390645523272E-08"
-        iyy="0.000791439543866449"
-        iyz="-0.000180284945000654"
-        izz="0.00115466589270351" />
+        ixx="0.00367812068420756"
+        ixy="0.000197509197407523"
+        ixz="-0.000570515284281302"
+        iyy="0.00307651113357738"
+        iyz="-0.000170548507997464"
+        izz="0.00243728557277392" />
     </inertial>
     <visual>
       <origin
@@ -95,17 +94,17 @@
     name="joint_1"
     type="revolute">
     <origin
-      xyz="-0.12173 -0.02365 0"
-      rpy="1.5707963267949 0 0" />
+      xyz="0 0 0"
+      rpy="0 0 0" />
     <parent
       link="base_link" />
     <child
       link="link_1" />
     <axis
-      xyz="0 1 0" />
+      xyz="0 0 1" />
     <limit
-      lower="-3.1"
-      upper="3.1"
+      lower="-3.14"
+      upper="3.14"
       effort="0"
       velocity="0" />
   </joint>
@@ -113,17 +112,17 @@
     name="link_2">
     <inertial>
       <origin
-        xyz="0.193508430434921 -0.0505187421740012 -0.0192144311714147"
+        xyz="-0.174883405490475 0.0063906897068142 0.00767280405611698"
         rpy="0 0 0" />
       <mass
-        value="0.443829266836424" />
+        value="0.563584848829252" />
       <inertia
-        ixx="0.000292001732345868"
-        ixy="0.000113404038150472"
-        ixz="4.71209275747654E-10"
-        iyy="0.000696048134487327"
-        iyz="-1.23664245588396E-10"
-        izz="0.000788121904047933" />
+        ixx="0.0003348452374415"
+        ixy="1.8319476028181E-05"
+        ixz="1.8068947894986E-11"
+        iyy="0.000830253223733048"
+        iyz="-1.23818201394263E-10"
+        izz="0.000954579698356585" />
     </inertial>
     <visual>
       <origin
@@ -153,14 +152,14 @@
     name="joint_2"
     type="revolute">
     <origin
-      xyz="0 0.16104 -0.02365"
-      rpy="0 0 0" />
+      xyz="-0.0589237850211093 -0.0176135617858798 0.196439999999998"
+      rpy="1.5707963267949 0 1.86126299785025" />
     <parent
       link="link_1" />
     <child
       link="link_2" />
     <axis
-      xyz="0 0 1" />
+      xyz="0 0 -1" />
     <limit
       lower="0"
       upper="3.14"
@@ -171,17 +170,17 @@
     name="link_3">
     <inertial>
       <origin
-        xyz="-0.193037373819607 0.105517447006236 0.0359263292630594"
+        xyz="-0.0839733696945522 0.0681689753013363 0.250999435788853"
         rpy="0 0 0" />
       <mass
-        value="1.67091128229235" />
+        value="1.68158687764889" />
       <inertia
-        ixx="0.00180934738055401"
-        ixy="0.000466254324106307"
-        ixz="-6.69328806721858E-05"
-        iyy="0.00240700972817156"
-        iyz="3.65787680462394E-05"
-        izz="0.00354745402088964" />
+        ixx="0.00504091068027892"
+        ixy="1.08101033069321E-05"
+        ixz="4.35187158816721E-05"
+        iyy="0.00353441502010039"
+        iyz="-0.000395361521383045"
+        izz="0.00218512259624916" />
     </inertial>
     <visual>
       <origin
@@ -211,17 +210,17 @@
     name="joint_3"
     type="revolute">
     <origin
-      xyz="0.38703 -0.10104 0"
-      rpy="0 0 0" />
+      xyz="-0.349766547153894 0.0127813337346238 0"
+      rpy="0 1.5707963267949 0" />
     <parent
       link="link_2" />
     <child
       link="link_3" />
     <axis
-      xyz="0 0 -1" />
+      xyz="1 0 0" />
     <limit
-      lower="0"
-      upper="5.4"
+      lower="-6.28"
+      upper="0"
       effort="0"
       velocity="0" />
   </joint>
@@ -229,17 +228,17 @@
     name="link_4">
     <inertial>
       <origin
-        xyz="-0.000187554386352998 -0.000227879286717581 0.108399844251528"
+        xyz="-0.00396437330824225 -0.00335656550649432 -0.0138879516826375"
         rpy="0 0 0" />
       <mass
-        value="0.186464706015941" />
+        value="0.279984808714352" />
       <inertia
-        ixx="9.1301187552365E-05"
-        ixy="-3.87294369979115E-06"
-        ixz="1.12596217174292E-05"
-        iyy="8.99372698306374E-05"
-        iyz="1.34762616465969E-05"
-        izz="9.52179259926329E-05" />
+        ixx="0.000207044022235891"
+        ixy="-8.08620638254851E-06"
+        ixz="3.37117202629559E-05"
+        iyy="0.000209746991677377"
+        iyz="2.84970943544508E-05"
+        izz="0.000171797316469416" />
     </inertial>
     <visual>
       <origin
@@ -252,7 +251,7 @@
       <material
         name="">
         <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
       </material>
     </visual>
     <collision>
@@ -269,8 +268,8 @@
     name="joint_4"
     type="revolute">
     <origin
-      xyz="-0.38609 0.21104 0"
-      rpy="0 0 0" />
+      xyz="0 0.120795067593268 0.44489274173121"
+      rpy="0 1.5707963267949 0" />
     <parent
       link="link_3" />
     <child
@@ -287,17 +286,17 @@
     name="link_5">
     <inertial>
       <origin
-        xyz="0.0120020619795153 -0.0682246810571049 0.0195180747082753"
+        xyz="-0.0631049485055772 -0.0889500876207666 -0.117064136850921"
         rpy="0 0 0" />
       <mass
-        value="0.383985526073569" />
+        value="0.445153140088307" />
       <inertia
-        ixx="0.00119108318051543"
-        ixy="3.05957418140055E-05"
-        ixz="3.71467472242149E-05"
-        iyy="0.00102257169282491"
-        iyz="-0.000211154261991035"
-        izz="0.000274966805072859" />
+        ixx="0.000274094446182845"
+        ixy="-3.30773324406906E-05"
+        ixz="0.000139501198705416"
+        iyy="0.000858613379789018"
+        iyz="-1.51340224951864E-05"
+        izz="0.000835381695594303" />
     </inertial>
     <visual>
       <origin
@@ -327,14 +326,14 @@
     name="joint_5"
     type="revolute">
     <origin
-      xyz="-0.0225 -0.02681 0.12075"
-      rpy="0 0 -0.872490093071967" />
+      xyz="0.0475438829920029 0.0402600197471117 0.00549999999999323"
+      rpy="0 1.28032965573954 0" />
     <parent
       link="link_4" />
     <child
       link="link_5" />
     <axis
-      xyz="0.173285966010945 -0.984871552022726 0" />
+      xyz="-0.218564021615717 -0.646228246342021 -0.731176327628897" />
     <limit
       lower="-3.14"
       upper="3.14"
@@ -345,17 +344,17 @@
     name="link_6">
     <inertial>
       <origin
-        xyz="-5.02365226015544E-06 -3.4770807517126E-06 0.113953179250801"
+        xyz="-1.53672751190825E-08 1.37734778027365E-08 -0.0458100316941801"
         rpy="0 0 0" />
       <mass
-        value="0.0188998061392809" />
+        value="0.0156031455954719" />
       <inertia
-        ixx="6.05112847267621E-05"
-        ixy="1.17157925715202E-12"
-        ixz="3.92243347315067E-09"
-        iyy="6.05111612280011E-05"
-        iyz="1.23181343957805E-08"
-        izz="3.07815908805619E-07" />
+        ixx="1.35146476447596E-05"
+        ixy="-2.96356967640183E-10"
+        ixz="1.286858516959E-10"
+        iyy="1.3514426991419E-05"
+        iyz="-6.44123598726705E-11"
+        izz="1.5061875624562E-06" />
     </inertial>
     <visual>
       <origin
@@ -385,17 +384,17 @@
     name="joint_6"
     type="revolute">
     <origin
-      xyz="0.0154118344148917 -0.0875777161152765 -0.12075"
-      rpy="0 0 1.74498018614393" />
+      xyz="-0.0333725122311634 -0.114253153953276 -0.130847171307248"
+      rpy="-3.14159265358979 1.28032965573961 3.14159265358979" />
     <parent
       link="link_5" />
     <child
       link="link_6" />
     <axis
-      xyz="0 0 1" />
+      xyz="0 0 -1" />
     <limit
       lower="0"
-      upper="20"
+      upper="10"
       effort="0"
       velocity="0" />
   </joint>
@@ -403,17 +402,17 @@
     name="link_7">
     <inertial>
       <origin
-        xyz="-0.0101375264035755 4.61953293967587E-06 0.075571813348983"
+        xyz="7.65313491607467E-07 -3.74161015392893E-07 -0.0385405552273824"
         rpy="0 0 0" />
       <mass
-        value="0.0711438414703714" />
+        value="0.0157543709875629" />
       <inertia
-        ixx="1.02077228304247E-05"
-        ixy="8.52993902103974E-10"
-        ixz="-1.72824022392027E-06"
-        iyy="6.09656314561203E-05"
-        iyz="2.23587538206773E-10"
-        izz="6.16571834569286E-05" />
+        ixx="1.40004928900912E-05"
+        ixy="-2.53486156184897E-10"
+        ixz="-3.49587191185511E-10"
+        iyy="1.40011200138394E-05"
+        iyz="2.03591051059671E-10"
+        izz="1.50794786871328E-06" />
     </inertial>
     <visual>
       <origin
@@ -441,10 +440,10 @@
   </link>
   <joint
     name="joint_7"
-    type="prismatic">
+    type="revolute">
     <origin
-      xyz="0.0154118344148917 -0.0875777161152765 -0.12075"
-      rpy="0 0 1.74498018614393" />
+      xyz="-0.0410222529877187 -0.136871142575247 -0.15643834277427"
+      rpy="3.14159265358979 -1.28032965573961 0" />
     <parent
       link="link_5" />
     <child
@@ -452,48 +451,245 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="0"
-      upper="0.11"
+      lower="-10"
+      upper="0"
       effort="0"
       velocity="0" />
     <mimic
       joint="joint_6"
-      multiplier="0.005"
+      multiplier="-1"
+      offset="0" />
+  </joint>
+  <link
+    name="link_8">
+    <inertial>
+      <origin
+        xyz="0.0389414283701178 -0.0329757965501644 0.00477531130657782"
+        rpy="0 0 0" />
+      <mass
+        value="0.0657970930356421" />
+      <inertia
+        ixx="4.25330956873951E-05"
+        ixy="3.93690246189171E-05"
+        ixz="-3.97125807063E-06"
+        iyy="5.5687211021763E-05"
+        iyz="3.36290131876431E-06"
+        izz="9.53856903034168E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_humble_test/meshes/link_8.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_humble_test/meshes/link_8.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_8"
+    type="prismatic">
+    <origin
+      xyz="-0.0333725122311634 -0.114253153953276 -0.130847171307248"
+      rpy="-3.14159265358979 1.28032965573961 3.14159265358979" />
+    <parent
+      link="link_5" />
+    <child
+      link="link_8" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-0.042"
+      upper="0"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="joint_6"
+      multiplier="-0.0042"
+      offset="0" />
+  </joint>
+  <link
+    name="link_9">
+    <inertial>
+      <origin
+        xyz="-0.0128701655009559 0.0108981859411117 -0.0151891110782429"
+        rpy="0 0 0" />
+      <mass
+        value="0.0599258931002066" />
+      <inertia
+        ixx="3.72880562711355E-05"
+        ixy="3.42339778850729E-05"
+        ixz="-2.90054522617449E-06"
+        iyy="4.87264351315064E-05"
+        iyz="2.45613272001958E-06"
+        izz="8.37508902972254E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_humble_test/meshes/link_9.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_humble_test/meshes/link_9.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_9"
+    type="prismatic">
+    <origin
+      xyz="-0.0410222529877187 -0.136871142575247 -0.15643834277427"
+      rpy="3.14159265358979 -1.28032965573961 0" />
+    <parent
+      link="link_5" />
+    <child
+      link="link_9" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.042"
+      upper="0"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="joint_6"
+      multiplier="-0.0042"
       offset="0" />
   </joint>
   
   
-<!--<joint name="joint_7_mimic" type="fixed">
-  <parent link="world" />
-  <child link="random" /> 
   
   
-</joint>
-<link name="random"/>--> 
-  <link name="camera_link">
-  <visual>
-    <geometry>
-      <box size="0.05 0.05 0.05"/> <!-- Small camera-like box -->
-    </geometry>
-    <material name="black">
-      <color rgba="0 0 0 1"/>
-    </material>
-  </visual>
-</link>
+  
+  <ros2_control name="RealRobot" type="system">
+  <hardware>
+    <plugin>trajectory/TrajectoryTeensy</plugin>
+    <param name="joint_1_name">joint_1</param>
+    <param name="joint_2_name">joint_2</param>
+    <param name="joint_3_name">joint_3</param>
+    <param name="joint_4_name">joint_4</param>
+    <param name="joint_5_name">joint_5</param>
+    <param name="joint_6_name">joint_6</param>
+    <param name="loop_rate">30</param>
+    <param name="device">/dev/ttyUSB0</param>
+    <param name="baud_rate">57600</param>
+    <param name="enc_counts_per_rec">3450</param>
+    <param name="timeout">1000</param>
+  </hardware>
+  <joint name="joint_1">
+     <command_interface name="position"/>
+     <state_interface name="position">
+       <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="velocity"/>
+   </joint>
+   
+   <joint name="joint_2">
+     <command_interface name="position"/>
+     <state_interface name="position">
+       <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="velocity"/>
+   </joint>
+       
+  <joint name="joint_3">
+     <command_interface name="position"/>
+     <state_interface name="position">
+       <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="velocity"/>
+   </joint>
+   
+   <joint name="joint_4">
+     <command_interface name="position"/>
+     <state_interface name="position">
+       <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="velocity"/>
+   </joint>
+   
+   <joint name="joint_5">
+     <command_interface name="position"/>
+     <state_interface name="position">
+       <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="velocity"/>
+   </joint>
+   
+   <joint name="joint_6">
+     <command_interface name="position"/>
+     <state_interface name="position">
+       <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="velocity"/>
+   </joint>
+   
+   <joint name="joint_7">
 
-<joint name="camera_joint" type="fixed">
-  <parent link="link_5"/> <!-- Mounted on link_4 -->
-  <child link="camera_link"/>
-  <origin xyz="-0.025 0.0 0.0" rpy="-1.57 3.14 1.57"/> <!-- Adjust position based on where the real cam sits -->
-</joint>
-<joint name="camera_optical_joint" type="fixed">
-  <parent link="camera_link"/> <!-- Mounted on link_4 -->
-  <child link="camera_link_optical"/>
-  <origin xyz="0.0 0.0 0.0" rpy="-1.5708 0 -1.5708"/> <!-- Adjust position based on where the real cam sits -->
-</joint>
-  <link name="camera_link_optical"></link>
+     <state_interface name="position">
+       <param name="initial_value">0.0</param>
+     </state_interface>
+     <param name="mimic">joint_6</param>
+     <param name="multiplier">-1</param>
+     <state_interface name="velocity"/>
+   </joint>
+   
+   <joint name="joint_8">
 
-  <ros2_control name="GazeboSystem" type="system">
+     <state_interface name="position">
+       <param name="initial_value">0.0</param>
+     </state_interface>
+     <param name="mimic">joint_6</param>
+     <param name="multiplier">-0.01</param>
+     <state_interface name="velocity"/>
+   </joint>
+   
+   <joint name="joint_9">
+
+     <state_interface name="position">
+       <param name="initial_value">0.0</param>
+     </state_interface>
+     <param name="mimic">joint_6</param>
+     <param name="multiplier">-0.01</param>
+     <state_interface name="velocity"/>
+   </joint>
+</ros2_control>
+  
+  
+  
+  
+  
+  
+  
+  <!-- <ros2_control name="GazeboSystem" type="system">
   <hardware>
     <plugin>gazebo_ros2_control/GazeboSystem</plugin>
   </hardware>
@@ -546,16 +742,39 @@
    </joint>
    
    <joint name="joint_7">
-     <!-- Remove command interface for mimic joint -->
+
      <state_interface name="position">
        <param name="initial_value">0.0</param>
      </state_interface>
      <param name="mimic">joint_6</param>
-     <param name="multiplier">0.005</param>
+     <param name="multiplier">-1</param>
      <state_interface name="velocity"/>
    </joint>
    
-</ros2_control>
+   <joint name="joint_8">
+
+     <state_interface name="position">
+       <param name="initial_value">0.0</param>
+     </state_interface>
+     <param name="mimic">joint_6</param>
+     <param name="multiplier">-0.01</param>
+     <state_interface name="velocity"/>
+   </joint>
+   
+   <joint name="joint_9">
+
+     <state_interface name="position">
+       <param name="initial_value">0.0</param>
+     </state_interface>
+     <param name="mimic">joint_6</param>
+     <param name="multiplier">-0.01</param>
+     <state_interface name="velocity"/>
+   </joint>
+</ros2_control> -->
+
+
+
+
 <gazebo>
     <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
 <parameters>/home/devika/robo_ws/src/urdf_humble_test/config/controller_manager.yaml</parameters>
@@ -566,33 +785,8 @@
     </ros>
     </plugin>
 </gazebo>
-<gazebo reference="camera_link">
-<material name="black">
-      <color rgba="0 0 0 1"/>
-    </material>
-<sensor name="camera" type="depth">
-  <pose> 0 0 0 0 0 0 </pose>
-  <visualize>true</visualize>
-  <update_rate>10</update_rate>
-  <camera>
-     <horizontal_fov>1.089</horizontal_fov>
-     <image>
-        <format>B8G8R8</format>
-        <width>640</width>
-        <height>480</height>
-     </image>
-     <clip>
-        <near>0.05</near>
-        <far>1</far>
-     </clip>
-   </camera>
-<plugin name="camera_controller" filename="libgazebo_ros_camera.so">
-    <frame_name>camera_link_optical</frame_name>
-    <min_depth>0.1</min_depth>
-    <max_depth>10.0</max_depth>
-  </plugin>
-</sensor>
-</gazebo>
+
+
 <gazebo>
   <plugin name="joint_state_publisher" filename="libgazebo_ros_joint_state_publisher.so">
     <ros>
@@ -600,6 +794,8 @@
     </ros>
   </plugin>
 </gazebo>
+
+
 <gazebo>
   <plugin name="joint_trajectory_controller" filename="libgazebo_ros_joint_pose_trajectory.so">
     <ros>
@@ -617,5 +813,4 @@
     </joints>
   </plugin>
 </gazebo>
-
 </robot>

@@ -1,6 +1,0 @@
-In file included from [01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/include/hello_moveit_task_constructor/pick_place_task.h:44[m[K,
-                 from [01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:14[m[K:
-[01m[K/home/devika/robo_ws/build/hello_moveit_task_constructor/include/pick_place_demo_parameters.hpp:1:162:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: #include "pick_place_demo_parameters.hpp" is deprecated. Use #include <hello_moveit_task_constructor/pick_place_demo_parameters.hpp> instead.[m[K’
-    1 | ello_moveit_task_constructor/pick_place_demo_parameters.hpp> instead."[01;36m[K)[m[K
-      |                                                                       [01;36m[K^[m[K
-

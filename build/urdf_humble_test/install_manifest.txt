@@ -1,5 +1,6 @@
 /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/launch/__pycache__/gazebo.launch.cpython-310.pyc
 /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/launch/robot_state_publisher.launch.py
+/home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/launch/robot.launch.py
 /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/launch/gazebo.launch.py
 /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/launch/basic_gazebo.launch.py
 /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/launch/display.launch.py
@@ -10,11 +11,13 @@
 /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/urdf/cylinder.sdf
 /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/config/controller_manager.yaml
 /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/config/config.rviz
+/home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/meshes/link_8.STL
 /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/meshes/base_link.STL
 /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/meshes/link_4.STL
 /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/meshes/link_3.STL
 /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/meshes/link_2.STL
 /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/meshes/link_6.STL
+/home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/meshes/link_9.STL
 /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/meshes/link_1.STL
 /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/meshes/link_5.STL
 /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/meshes/link_7.STL

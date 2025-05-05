@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-7538b6808c42869ccf86.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "hello_moveit",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "hello_moveit::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hello_moveit-0aca4cc706f0da2f10a2.json",
+					"name" : "hello_moveit",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hello_moveit_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hello_moveit_uninstall-9c74180619236313e96f.json",
+					"name" : "hello_moveit_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "plan_around_objects::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-plan_around_objects-4d085f2b6900b857dce0.json",
+					"name" : "plan_around_objects",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-6b9217567f3b1f961c16.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/devika/robo_ws/build/hello_moveit",
+		"source" : "/home/devika/robo_ws/src/hello_moveit"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

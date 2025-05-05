@@ -1,3 +1,0 @@
-[0.355s] Invoking command in '/home/devika/robo_ws/build/gazebo_ros2_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/devika/robo_ws/build/gazebo_ros2_control -- -j8 -l8
-[3.044s] [ 50%] Built target gazebo_ros2_control
-[3.048s] [100%] Built target gazebo_hardware_plugins

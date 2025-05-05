@@ -1,0 +1,37 @@
+[1.773s] Invoking command in '/home/devika/robo_ws/src/perception_vision': PYTHONPATH=/home/devika/robo_ws/build/perception_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/devika/robo_ws/install/perception_vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/perception_vision build --build-base /home/devika/robo_ws/build/perception_vision/build install --record /home/devika/robo_ws/build/perception_vision/install.log --single-version-externally-managed install_data
+[2.505s] running egg_info
+[2.505s] creating ../../build/perception_vision/perception_vision.egg-info
+[2.506s] writing ../../build/perception_vision/perception_vision.egg-info/PKG-INFO
+[2.506s] writing dependency_links to ../../build/perception_vision/perception_vision.egg-info/dependency_links.txt
+[2.506s] writing entry points to ../../build/perception_vision/perception_vision.egg-info/entry_points.txt
+[2.506s] writing requirements to ../../build/perception_vision/perception_vision.egg-info/requires.txt
+[2.506s] writing top-level names to ../../build/perception_vision/perception_vision.egg-info/top_level.txt
+[2.506s] writing manifest file '../../build/perception_vision/perception_vision.egg-info/SOURCES.txt'
+[2.507s] reading manifest file '../../build/perception_vision/perception_vision.egg-info/SOURCES.txt'
+[2.507s] writing manifest file '../../build/perception_vision/perception_vision.egg-info/SOURCES.txt'
+[2.507s] running build
+[2.507s] running build_py
+[2.507s] creating /home/devika/robo_ws/build/perception_vision/build
+[2.507s] creating /home/devika/robo_ws/build/perception_vision/build/lib
+[2.507s] creating /home/devika/robo_ws/build/perception_vision/build/lib/perception_vision
+[2.507s] copying perception_vision/yolov8_obb_node.py -> /home/devika/robo_ws/build/perception_vision/build/lib/perception_vision
+[2.508s] copying perception_vision/__init__.py -> /home/devika/robo_ws/build/perception_vision/build/lib/perception_vision
+[2.508s] running install
+[2.508s] running install_lib
+[2.508s] creating /home/devika/robo_ws/install/perception_vision/lib/python3.10/site-packages/perception_vision
+[2.508s] copying /home/devika/robo_ws/build/perception_vision/build/lib/perception_vision/yolov8_obb_node.py -> /home/devika/robo_ws/install/perception_vision/lib/python3.10/site-packages/perception_vision
+[2.508s] copying /home/devika/robo_ws/build/perception_vision/build/lib/perception_vision/__init__.py -> /home/devika/robo_ws/install/perception_vision/lib/python3.10/site-packages/perception_vision
+[2.508s] byte-compiling /home/devika/robo_ws/install/perception_vision/lib/python3.10/site-packages/perception_vision/yolov8_obb_node.py to yolov8_obb_node.cpython-310.pyc
+[2.508s] byte-compiling /home/devika/robo_ws/install/perception_vision/lib/python3.10/site-packages/perception_vision/__init__.py to __init__.cpython-310.pyc
+[2.509s] running install_data
+[2.509s] creating /home/devika/robo_ws/install/perception_vision/share/ament_index
+[2.509s] creating /home/devika/robo_ws/install/perception_vision/share/ament_index/resource_index
+[2.509s] creating /home/devika/robo_ws/install/perception_vision/share/ament_index/resource_index/packages
+[2.510s] copying resource/perception_vision -> /home/devika/robo_ws/install/perception_vision/share/ament_index/resource_index/packages
+[2.510s] copying package.xml -> /home/devika/robo_ws/install/perception_vision/share/perception_vision
+[2.510s] running install_egg_info
+[2.510s] Copying ../../build/perception_vision/perception_vision.egg-info to /home/devika/robo_ws/install/perception_vision/lib/python3.10/site-packages/perception_vision-0.0.0-py3.10.egg-info
+[2.510s] running install_scripts
+[2.510s] Installing yolov8_obb_node script to /home/devika/robo_ws/install/perception_vision/lib/perception_vision
+[2.510s] writing list of installed files to '/home/devika/robo_ws/build/perception_vision/install.log'
+[2.529s] Invoked command in '/home/devika/robo_ws/src/perception_vision' returned '0': PYTHONPATH=/home/devika/robo_ws/build/perception_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/devika/robo_ws/install/perception_vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/perception_vision build --build-base /home/devika/robo_ws/build/perception_vision/build install --record /home/devika/robo_ws/build/perception_vision/install.log --single-version-externally-managed install_data

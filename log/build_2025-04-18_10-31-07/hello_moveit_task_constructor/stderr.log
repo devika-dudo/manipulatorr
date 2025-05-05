@@ -1,4 +1,0 @@
-In file included from [01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/ik_clearance_cost.cpp:19[m[K:
-[01m[K/home/devika/robo_ws/build/hello_moveit_task_constructor/include/ik_clearance_cost_parameters.hpp:1:166:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: #include "ik_clearance_cost_parameters.hpp" is deprecated. Use #include <hello_moveit_task_constructor/ik_clearance_cost_parameters.hpp> instead.[m[K’
-    1 | #pragma message("#include \"ik_clearance_cost_parameters.hpp\" is deprecated. Use #include <hello_moveit_task_constructor/ik_clearance_cost_parameters.hpp> instead."[01;36m[K)[m[K
-      |                                                                                                                                                                      [01;36m[K^[m[K

@@ -1,0 +1,62 @@
+[0.136s] Invoking command in '/home/devika/robo_ws/build/warehouse_ros_mongo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/devika/robo_ws/build/warehouse_ros_mongo -- -j8 -l8
+[1.301s] [ 20%] Built target gtest_main
+[1.301s] [ 40%] Built target gtest
+[1.301s] [ 40%] Built target ament_cmake_python_copy_warehouse_ros_mongo
+[1.301s] [ 80%] Built target warehouse_ros_mongo
+[1.301s] [100%] Built target test_warehouse_ros_mongo_cpp
+[1.302s] running egg_info
+[1.302s] writing warehouse_ros_mongo.egg-info/PKG-INFO
+[1.302s] writing dependency_links to warehouse_ros_mongo.egg-info/dependency_links.txt
+[1.302s] writing top-level names to warehouse_ros_mongo.egg-info/top_level.txt
+[1.302s] reading manifest file 'warehouse_ros_mongo.egg-info/SOURCES.txt'
+[1.302s] writing manifest file 'warehouse_ros_mongo.egg-info/SOURCES.txt'
+[1.302s] [100%] Built target ament_cmake_python_build_warehouse_ros_mongo_egg
+[1.340s] Invoked command in '/home/devika/robo_ws/build/warehouse_ros_mongo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/devika/robo_ws/build/warehouse_ros_mongo -- -j8 -l8
+[1.343s] Invoking command in '/home/devika/robo_ws/build/warehouse_ros_mongo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /home/devika/robo_ws/build/warehouse_ros_mongo
+[1.392s] -- Install configuration: ""
+[1.392s] -- Up-to-date: /home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/environment/pythonpath.sh
+[1.392s] -- Up-to-date: /home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/environment/pythonpath.dsv
+[1.392s] -- Up-to-date: /home/devika/robo_ws/install/warehouse_ros_mongo/local/lib/python3.10/dist-packages/warehouse_ros_mongo-2.0.3-py3.10.egg-info
+[1.393s] -- Installing: /home/devika/robo_ws/install/warehouse_ros_mongo/local/lib/python3.10/dist-packages/warehouse_ros_mongo-2.0.3-py3.10.egg-info/dependency_links.txt
+[1.393s] -- Installing: /home/devika/robo_ws/install/warehouse_ros_mongo/local/lib/python3.10/dist-packages/warehouse_ros_mongo-2.0.3-py3.10.egg-info/top_level.txt
+[1.393s] -- Installing: /home/devika/robo_ws/install/warehouse_ros_mongo/local/lib/python3.10/dist-packages/warehouse_ros_mongo-2.0.3-py3.10.egg-info/PKG-INFO
+[1.393s] -- Installing: /home/devika/robo_ws/install/warehouse_ros_mongo/local/lib/python3.10/dist-packages/warehouse_ros_mongo-2.0.3-py3.10.egg-info/SOURCES.txt
+[1.393s] -- Up-to-date: /home/devika/robo_ws/install/warehouse_ros_mongo/local/lib/python3.10/dist-packages/warehouse_ros_mongo
+[1.393s] -- Up-to-date: /home/devika/robo_ws/install/warehouse_ros_mongo/local/lib/python3.10/dist-packages/warehouse_ros_mongo/mongo_wrapper_ros.py
+[1.394s] -- Up-to-date: /home/devika/robo_ws/install/warehouse_ros_mongo/local/lib/python3.10/dist-packages/warehouse_ros_mongo/__init__.py
+[1.482s] Listing '/home/devika/robo_ws/install/warehouse_ros_mongo/local/lib/python3.10/dist-packages/warehouse_ros_mongo'...
+[1.521s] -- Up-to-date: /home/devika/robo_ws/install/warehouse_ros_mongo/lib/warehouse_ros_mongo/mongo_wrapper_ros.py
+[1.521s] -- Up-to-date: /home/devika/robo_ws/install/warehouse_ros_mongo/include
+[1.524s] -- Up-to-date: /home/devika/robo_ws/install/warehouse_ros_mongo/include/database_connection.h
+[1.526s] -- Up-to-date: /home/devika/robo_ws/install/warehouse_ros_mongo/include/query_results.h
+[1.527s] -- Up-to-date: /home/devika/robo_ws/install/warehouse_ros_mongo/include/metadata.h
+[1.527s] -- Up-to-date: /home/devika/robo_ws/install/warehouse_ros_mongo/include/message_collection.h
+[1.528s] -- Up-to-date: /home/devika/robo_ws/install/warehouse_ros_mongo/include/warehouse_ros_mongo/config.h
+[1.529s] -- Up-to-date: /home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/warehouse_ros_mongo.launch.py
+[1.529s] -- Up-to-date: /home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/cmake/FindMONGODB.cmake
+[1.530s] -- Up-to-date: /home/devika/robo_ws/install/warehouse_ros_mongo/lib/libwarehouse_ros_mongo.so
+[1.530s] -- Up-to-date: /home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/environment/library_path.sh
+[1.531s] -- Up-to-date: /home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/environment/library_path.dsv
+[1.532s] -- Up-to-date: /home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/mongo_database_connection_plugin_description.xml
+[1.532s] -- Up-to-date: /home/devika/robo_ws/install/warehouse_ros_mongo/share/ament_index/resource_index/package_run_dependencies/warehouse_ros_mongo
+[1.532s] -- Up-to-date: /home/devika/robo_ws/install/warehouse_ros_mongo/share/ament_index/resource_index/parent_prefix_path/warehouse_ros_mongo
+[1.532s] -- Up-to-date: /home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/environment/ament_prefix_path.sh
+[1.532s] -- Up-to-date: /home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/environment/ament_prefix_path.dsv
+[1.533s] -- Up-to-date: /home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/environment/path.sh
+[1.534s] -- Up-to-date: /home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/environment/path.dsv
+[1.535s] -- Up-to-date: /home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/local_setup.bash
+[1.535s] -- Up-to-date: /home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/local_setup.sh
+[1.536s] -- Up-to-date: /home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/local_setup.zsh
+[1.536s] -- Up-to-date: /home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/local_setup.dsv
+[1.537s] -- Installing: /home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/package.dsv
+[1.537s] -- Up-to-date: /home/devika/robo_ws/install/warehouse_ros_mongo/share/ament_index/resource_index/packages/warehouse_ros_mongo
+[1.537s] -- Up-to-date: /home/devika/robo_ws/install/warehouse_ros_mongo/share/ament_index/resource_index/warehouse_ros__pluginlib__plugin/warehouse_ros_mongo
+[1.537s] -- Up-to-date: /home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/cmake/export_warehouse_ros_mongoExport.cmake
+[1.537s] -- Up-to-date: /home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/cmake/export_warehouse_ros_mongoExport-noconfig.cmake
+[1.537s] -- Up-to-date: /home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/cmake/ConfigExtras.cmake
+[1.537s] -- Up-to-date: /home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/cmake/ament_cmake_export_targets-extras.cmake
+[1.538s] -- Up-to-date: /home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.538s] -- Up-to-date: /home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/cmake/warehouse_ros_mongoConfig.cmake
+[1.539s] -- Up-to-date: /home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/cmake/warehouse_ros_mongoConfig-version.cmake
+[1.540s] -- Up-to-date: /home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/package.xml
+[1.589s] Invoked command in '/home/devika/robo_ws/build/warehouse_ros_mongo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /home/devika/robo_ws/build/warehouse_ros_mongo

@@ -616,9 +616,9 @@ int main(int argc, char* argv[]) {
         
         // Define the target pose directly
         geometry_msgs::msg::Pose target_pose;
-        target_pose.position.x = -0.509;  // X position
-        target_pose.position.y = -0.247;  // Y position
-        target_pose.position.z = 0.135;   // Z position
+        target_pose.position.x = -0.167;  // X position
+        target_pose.position.y = -0.047;  // Y position
+        target_pose.position.z = 0.840;   // Z position
 
         // Set the orientation using the provided quaternion
         target_pose.orientation.x = -0.600;

@@ -8,7 +8,7 @@ controller_manager:
 
 
     hand_controller:
-      type: position_controllers/GripperActionController
+      type: joint_trajectory_controller/JointTrajectoryController
 
 
     joint_state_broadcaster:
@@ -29,4 +29,10 @@ arm_group_controller:
       - velocity
 hand_controller:
   ros__parameters:
-    joint: joint_6
+    joints:
+      - joint_6
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity

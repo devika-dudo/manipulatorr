@@ -1,9 +1,0 @@
-[0.805s] Invoking command in '/home/devika/robo_ws/build/hello_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble /usr/bin/cmake --build /home/devika/robo_ws/build/hello_moveit
-[1.538s] -- Configuring incomplete, errors occurred!
-[1.539s] See also "/home/devika/robo_ws/build/hello_moveit/CMakeFiles/CMakeOutput.log".
-[1.539s] [31mCMake Error at CMakeLists.txt:19 (function):
-[1.541s]   Flow control statements are not properly nested.
-[1.542s] 
-[1.542s] [0m
-[1.542s] gmake: *** [Makefile:267: cmake_check_build_system] Error 1
-[1.608s] Invoked command in '/home/devika/robo_ws/build/hello_moveit' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/opt/ros/humble /usr/bin/cmake --build /home/devika/robo_ws/build/hello_moveit

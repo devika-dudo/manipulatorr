@@ -1,0 +1,122 @@
+[0.456s] Invoking command in '/home/devika/robo_ws/build/hello_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake /home/devika/robo_ws/src/hello_moveit -DCMAKE_INSTALL_PREFIX=/home/devika/robo_ws/install/hello_moveit
+[0.900s] -- The C compiler identification is GNU 11.4.0
+[1.253s] -- The CXX compiler identification is GNU 11.4.0
+[1.275s] -- Detecting C compiler ABI info
+[1.494s] -- Detecting C compiler ABI info - done
+[1.510s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.511s] -- Detecting C compile features
+[1.512s] -- Detecting C compile features - done
+[1.524s] -- Detecting CXX compiler ABI info
+[1.766s] -- Detecting CXX compiler ABI info - done
+[1.781s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.782s] -- Detecting CXX compile features
+[1.782s] -- Detecting CXX compile features - done
+[1.813s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.210s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.574s] -- Found moveit_msgs: 2.2.1 (/opt/ros/humble/share/moveit_msgs/cmake)
+[2.753s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.786s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.820s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.868s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.938s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.341s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[3.507s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.517s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.840s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.929s] -- Found FastRTPS: /opt/ros/humble/include  
+[4.035s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.080s] -- Looking for pthread.h
+[4.242s] -- Looking for pthread.h - found
+[4.243s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.409s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[4.411s] -- Found Threads: TRUE  
+[4.503s] -- Found moveit_ros_planning_interface: 2.5.9 (/home/devika/ws_moveit2/install/moveit_ros_planning_interface/share/moveit_ros_planning_interface/cmake)
+[4.646s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+[4.725s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[4.939s] -- Found parameter_traits: 0.4.0 (/opt/ros/humble/share/parameter_traits/cmake)
+[4.983s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[4.997s] -- Found rclcpp_lifecycle: 16.0.12 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[5.068s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[5.413s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[5.501s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[6.054s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[6.142s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+[6.238s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[6.360s] -- Found moveit_visual_tools: 4.1.2 (/home/devika/ws_moveit2/install/moveit_visual_tools/share/moveit_visual_tools/cmake)
+[7.155s] -- Setting assimp_DIR to: '/opt/ros/humble/share/rviz_assimp_vendor/cmake/../../../opt/rviz_assimp_vendor/lib/cmake/assimp-4.1'
+[7.273s] -- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[7.288s] -- Found OGRE
+[7.289s] --   static     : OFF
+[7.289s] --   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[7.289s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[7.289s] --   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media
+[7.289s] -- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[7.290s] -- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib
+[7.290s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[7.290s] -- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE
+[7.290s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[7.290s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[7.291s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[7.291s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[7.546s] -- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") 
+[7.618s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   
+[8.677s] -- Found X11: /usr/include   
+[8.678s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+[9.114s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+[9.115s] -- Looking for gethostbyname
+[9.348s] -- Looking for gethostbyname - found
+[9.349s] -- Looking for connect
+[9.660s] -- Looking for connect - found
+[9.660s] -- Looking for remove
+[9.856s] -- Looking for remove - found
+[9.856s] -- Looking for shmat
+[10.054s] -- Looking for shmat - found
+[10.054s] -- Looking for IceConnectionNumber in ICE
+[10.268s] -- Looking for IceConnectionNumber in ICE - found
+[11.247s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[11.914s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[11.915s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/devika/robo_ws/src/hello_moveit/include>
+[11.915s] -- Configured cppcheck exclude dirs and/or files: 
+[11.921s] -- Added test 'flake8' to check Python code syntax and style conventions
+[11.926s] -- Added test 'lint_cmake' to check CMake code style
+[11.930s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[11.935s] -- Added test 'uncrustify' to check C / C++ code style
+[11.935s] -- Configured uncrustify additional arguments: 
+[11.939s] -- Added test 'xmllint' to check XML markup files
+[11.947s] -- Configuring done
+[19.416s] -- Generating done
+[19.550s] -- Build files have been written to: /home/devika/robo_ws/build/hello_moveit
+[19.607s] Invoked command in '/home/devika/robo_ws/build/hello_moveit' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake /home/devika/robo_ws/src/hello_moveit -DCMAKE_INSTALL_PREFIX=/home/devika/robo_ws/install/hello_moveit
+[19.611s] Invoking command in '/home/devika/robo_ws/build/hello_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/devika/robo_ws/build/hello_moveit -- -j8 -l8
+[20.050s] [ 25%] [32mBuilding CXX object CMakeFiles/hello_moveit.dir/src/letsee.cpp.o[0m
+[20.103s] [ 50%] [32mBuilding CXX object CMakeFiles/plan_around_objects.dir/src/plan_around_objects.cpp.o[0m
+[81.796s] [ 75%] [32m[1mLinking CXX executable hello_moveit[0m
+[84.309s] [100%] [32m[1mLinking CXX executable plan_around_objects[0m
+[292.643s] [100%] Built target hello_moveit
+[823.611s] [100%] Built target plan_around_objects
+[823.634s] Invoked command in '/home/devika/robo_ws/build/hello_moveit' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/devika/robo_ws/build/hello_moveit -- -j8 -l8
+[823.641s] Invoking command in '/home/devika/robo_ws/build/hello_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /home/devika/robo_ws/build/hello_moveit
+[823.666s] -- Install configuration: ""
+[823.666s] -- Installing: /home/devika/robo_ws/install/hello_moveit/lib/hello_moveit/hello_moveit
+[823.672s] -- Set runtime path of "/home/devika/robo_ws/install/hello_moveit/lib/hello_moveit/hello_moveit" to ""
+[823.672s] -- Installing: /home/devika/robo_ws/install/hello_moveit/lib/hello_moveit/plan_around_objects
+[823.678s] -- Set runtime path of "/home/devika/robo_ws/install/hello_moveit/lib/hello_moveit/plan_around_objects" to ""
+[823.679s] -- Installing: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/launch
+[823.681s] -- Installing: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/launch/plan_around_objects.launch.py
+[823.684s] -- Installing: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/launch/hello.launch.py
+[823.686s] -- Installing: /home/devika/robo_ws/install/hello_moveit/share/ament_index/resource_index/package_run_dependencies/hello_moveit
+[823.688s] -- Installing: /home/devika/robo_ws/install/hello_moveit/share/ament_index/resource_index/parent_prefix_path/hello_moveit
+[823.688s] -- Installing: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/environment/ament_prefix_path.sh
+[823.689s] -- Installing: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/environment/ament_prefix_path.dsv
+[823.689s] -- Installing: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/environment/path.sh
+[823.689s] -- Installing: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/environment/path.dsv
+[823.690s] -- Installing: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/local_setup.bash
+[823.690s] -- Installing: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/local_setup.sh
+[823.691s] -- Installing: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/local_setup.zsh
+[823.691s] -- Installing: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/local_setup.dsv
+[823.692s] -- Installing: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/package.dsv
+[823.692s] -- Installing: /home/devika/robo_ws/install/hello_moveit/share/ament_index/resource_index/packages/hello_moveit
+[823.693s] -- Installing: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/cmake/hello_moveitConfig.cmake
+[823.693s] -- Installing: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/cmake/hello_moveitConfig-version.cmake
+[823.694s] -- Installing: /home/devika/robo_ws/install/hello_moveit/share/hello_moveit/package.xml
+[823.698s] Invoked command in '/home/devika/robo_ws/build/hello_moveit' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /home/devika/robo_ws/build/hello_moveit

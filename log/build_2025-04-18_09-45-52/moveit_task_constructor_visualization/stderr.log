@@ -1,3 +1,0 @@
-gmake[2]: *** [motion_planning_tasks/src/CMakeFiles/motion_planning_tasks_rviz_plugin.dir/build.make:217: motion_planning_tasks/src/CMakeFiles/motion_planning_tasks_rviz_plugin.dir/task_display.cpp.o] Interrupt
-gmake[1]: *** [CMakeFiles/Makefile2:450: motion_planning_tasks/src/CMakeFiles/motion_planning_tasks_rviz_plugin.dir/all] Interrupt
-gmake: *** [Makefile:146: all] Interrupt

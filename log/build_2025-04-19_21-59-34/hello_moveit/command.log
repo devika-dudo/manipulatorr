@@ -1,2 +1,0 @@
-Invoking command in '/home/devika/robo_ws/build/hello_moveit': /usr/bin/cmake --build /home/devika/robo_ws/build/hello_moveit
-Invoked command in '/home/devika/robo_ws/build/hello_moveit' returned '2': /usr/bin/cmake --build /home/devika/robo_ws/build/hello_moveit

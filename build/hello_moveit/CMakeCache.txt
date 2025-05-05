@@ -425,10 +425,10 @@ X11_X11_INCLUDE_PATH:PATH=/usr/include
 X11_X11_LIB:FILEPATH=/usr/lib/x86_64-linux-gnu/libX11.so
 
 //Path to a file.
-X11_X11_xcb_INCLUDE_PATH:PATH=X11_X11_xcb_INCLUDE_PATH-NOTFOUND
+X11_X11_xcb_INCLUDE_PATH:PATH=/usr/include
 
 //Path to a library.
-X11_X11_xcb_LIB:FILEPATH=X11_X11_xcb_LIB-NOTFOUND
+X11_X11_xcb_LIB:FILEPATH=/usr/lib/x86_64-linux-gnu/libX11-xcb.so
 
 //Path to a file.
 X11_XRes_INCLUDE_PATH:PATH=X11_XRes_INCLUDE_PATH-NOTFOUND
@@ -599,25 +599,25 @@ X11_xcb_INCLUDE_PATH:PATH=/usr/include
 X11_xcb_LIB:FILEPATH=/usr/lib/x86_64-linux-gnu/libxcb.so
 
 //Path to a file.
-X11_xcb_icccm_INCLUDE_PATH:PATH=X11_xcb_icccm_INCLUDE_PATH-NOTFOUND
+X11_xcb_icccm_INCLUDE_PATH:PATH=/usr/include
 
 //Path to a library.
-X11_xcb_icccm_LIB:FILEPATH=X11_xcb_icccm_LIB-NOTFOUND
+X11_xcb_icccm_LIB:FILEPATH=/usr/lib/x86_64-linux-gnu/libxcb-icccm.so
 
 //Path to a file.
-X11_xcb_util_INCLUDE_PATH:PATH=X11_xcb_util_INCLUDE_PATH-NOTFOUND
+X11_xcb_util_INCLUDE_PATH:PATH=/usr/include
 
 //Path to a library.
-X11_xcb_util_LIB:FILEPATH=X11_xcb_util_LIB-NOTFOUND
+X11_xcb_util_LIB:FILEPATH=/usr/lib/x86_64-linux-gnu/libxcb-util.so
 
 //Path to a file.
-X11_xcb_xfixes_INCLUDE_PATH:PATH=X11_xcb_xfixes_INCLUDE_PATH-NOTFOUND
+X11_xcb_xfixes_INCLUDE_PATH:PATH=/usr/include
 
 //Path to a library.
-X11_xcb_xfixes_LIB:FILEPATH=X11_xcb_xfixes_LIB-NOTFOUND
+X11_xcb_xfixes_LIB:FILEPATH=/usr/lib/x86_64-linux-gnu/libxcb-xfixes.so
 
 //Path to a library.
-X11_xcb_xkb_LIB:FILEPATH=X11_xcb_xkb_LIB-NOTFOUND
+X11_xcb_xkb_LIB:FILEPATH=/usr/lib/x86_64-linux-gnu/libxcb-xkb.so
 
 //Path to a file.
 X11_xkbcommon_INCLUDE_PATH:PATH=/usr/include
@@ -670,17 +670,11 @@ action_msgs_DIR:PATH=/opt/ros/humble/share/action_msgs/cmake
 //The directory containing a CMake configuration file for ament_cmake.
 ament_cmake_DIR:PATH=/opt/ros/humble/share/ament_cmake/cmake
 
-//The directory containing a CMake configuration file for ament_cmake_copyright.
-ament_cmake_copyright_DIR:PATH=/opt/ros/humble/share/ament_cmake_copyright/cmake
-
 //The directory containing a CMake configuration file for ament_cmake_core.
 ament_cmake_core_DIR:PATH=/opt/ros/humble/share/ament_cmake_core/cmake
 
 //The directory containing a CMake configuration file for ament_cmake_cppcheck.
 ament_cmake_cppcheck_DIR:PATH=/opt/ros/humble/share/ament_cmake_cppcheck/cmake
-
-//The directory containing a CMake configuration file for ament_cmake_cpplint.
-ament_cmake_cpplint_DIR:PATH=/opt/ros/humble/share/ament_cmake_cpplint/cmake
 
 //The directory containing a CMake configuration file for ament_cmake_export_definitions.
 ament_cmake_export_definitions_DIR:PATH=/opt/ros/humble/share/ament_cmake_export_definitions/cmake
@@ -740,13 +734,7 @@ ament_cmake_version_DIR:PATH=/opt/ros/humble/share/ament_cmake_version/cmake
 ament_cmake_xmllint_DIR:PATH=/opt/ros/humble/share/ament_cmake_xmllint/cmake
 
 //Path to a program.
-ament_copyright_BIN:FILEPATH=/opt/ros/humble/bin/ament_copyright
-
-//Path to a program.
 ament_cppcheck_BIN:FILEPATH=/opt/ros/humble/bin/ament_cppcheck
-
-//Path to a program.
-ament_cpplint_BIN:FILEPATH=/opt/ros/humble/bin/ament_cpplint
 
 //Path to a program.
 ament_flake8_BIN:FILEPATH=/opt/ros/humble/bin/ament_flake8
@@ -1758,5 +1746,5 @@ pkgcfg_lib_PKG_FONTCONFIG_freetype-ADVANCED:INTERNAL=1
 pkgcfg_lib__OPENSSL_crypto-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib__OPENSSL_ssl
 pkgcfg_lib__OPENSSL_ssl-ADVANCED:INTERNAL=1
-prefix_result:INTERNAL=AsynchDNS;GSS-API;HSTS;HTTP2;HTTPS-proxy;IDN;IPv6;Kerberos;Largefile;NTLM;NTLM_WB;PSL;SPNEGO;SSL;TLS-SRP;UnixSockets;alt-svc;brotli;libz;zstd
+prefix_result:INTERNAL=/usr/lib/x86_64-linux-gnu
 

@@ -1,8 +1,0 @@
-[  1%] [34m[1mAutomatic MOC for target moveit_task_visualization_tools[0m
-[  1%] Built target moveit_task_visualization_tools_autogen
-[ 10%] Built target moveit_task_visualization_tools
-[ 12%] [34m[1mAutomatic MOC for target motion_planning_tasks_utils[0m
-[ 12%] Built target motion_planning_tasks_utils_autogen
-[ 20%] Built target motion_planning_tasks_utils
-[ 21%] [34m[1mAutomatic MOC for target motion_planning_tasks_properties[0m
-[ 21%] Built target motion_planning_tasks_properties_autogen

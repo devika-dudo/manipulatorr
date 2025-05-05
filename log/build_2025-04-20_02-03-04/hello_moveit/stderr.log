@@ -1,4 +1,0 @@
-gmake[2]: *** Deleting file 'hello_moveit'
-gmake[2]: *** [CMakeFiles/hello_moveit.dir/build.make:3164: hello_moveit] Interrupt
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/hello_moveit.dir/all] Interrupt
-gmake: *** [Makefile:146: all] Interrupt

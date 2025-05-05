@@ -1,5 +1,0 @@
-[ 11%] Built target pick_place_demo_parameters
-[ 22%] Built target moveit_task_constructor_demo_pick_place_task
-[ 33%] Built target moveit_task_constructor_demo_cartesian
-gmake[1]: *** [CMakeFiles/Makefile2:204: CMakeFiles/moveit_task_constructor_demo_modular.dir/all] Interrupt
-gmake: *** [Makefile:146: all] Interrupt
