@@ -117,6 +117,8 @@ MoveitInterface::MoveitInterface(const rclcpp::NodeOptions &options)
         
         // Configure the planner with more robust settings
         move_group_ptr_->setPlanningPipelineId("ompl");
+        // Set the planner to RRT*
+        move_group_ptr_->setPlannerId("RRTstar");
         move_group_ptr_->setPlanningTime(20.0);
         move_group_ptr_->setMaxVelocityScalingFactor(0.3);
         move_group_ptr_->setMaxAccelerationScalingFactor(0.3);
@@ -616,8 +618,8 @@ int main(int argc, char* argv[]) {
         geometry_msgs::msg::Pose target_pose;
         target_pose.position.x = -0.509;  // X position
         target_pose.position.y = -0.247;  // Y position
-        target_pose.position.z = 0.543;   // Z position
-        
+        target_pose.position.z = 0.135;   // Z position
+
         // Set the orientation using the provided quaternion
         target_pose.orientation.x = -0.600;
         target_pose.orientation.y = -0.517;

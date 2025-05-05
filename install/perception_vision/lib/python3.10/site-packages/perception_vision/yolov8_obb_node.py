@@ -56,7 +56,7 @@ class YoloNode(Node):
                 confidence = obb.conf[0].item()  # Confidence score of the detection
 
                 # Confidence threshold to filter out low-confidence detections
-                confidence_threshold = 0.5  # Example threshold (adjust as necessary)
+                confidence_threshold = 0.3  # Example threshold (adjust as necessary)
 
                 if confidence >= confidence_threshold:
                     centers.extend([xc, yc, w, h])

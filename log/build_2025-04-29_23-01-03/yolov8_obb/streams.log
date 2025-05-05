@@ -1,0 +1,29 @@
+[3.413s] Invoking command in '/home/devika/robo_ws/build/yolov8_obb': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/devika/robo_ws/build/yolov8_obb -- -j8 -l8
+[4.696s] Invoked command in '/home/devika/robo_ws/build/yolov8_obb' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/devika/robo_ws/build/yolov8_obb -- -j8 -l8
+[4.722s] Invoking command in '/home/devika/robo_ws/build/yolov8_obb': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /home/devika/robo_ws/build/yolov8_obb
+[4.883s] -- Install configuration: ""
+[4.884s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_obb/share/yolov8_obb//scripts
+[4.884s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_obb/share/yolov8_obb//scripts/yolov8_obb_subscriber.py
+[4.884s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_obb/share/yolov8_obb//scripts/yolov8_obb_publisher.py
+[4.884s] -- Installing: /home/devika/robo_ws/install/yolov8_obb/share/yolov8_obb//scripts/best.pt
+[4.964s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_obb/share/yolov8_obb//launch
+[5.241s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_obb/share/yolov8_obb//launch/yolov8_obb.launch.py
+[5.241s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_obb/lib/yolov8_obb/yolov8_obb_publisher.py
+[5.241s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_obb/lib/yolov8_obb/yolov8_obb_subscriber.py
+[5.242s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_obb/lib/yolov8_obb/yolov8_obb.launch.py
+[5.242s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_obb/share/ament_index/resource_index/package_run_dependencies/yolov8_obb
+[5.242s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_obb/share/ament_index/resource_index/parent_prefix_path/yolov8_obb
+[5.243s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_obb/share/yolov8_obb/environment/ament_prefix_path.sh
+[5.245s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_obb/share/yolov8_obb/environment/ament_prefix_path.dsv
+[5.245s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_obb/share/yolov8_obb/environment/path.sh
+[5.248s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_obb/share/yolov8_obb/environment/path.dsv
+[5.252s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_obb/share/yolov8_obb/local_setup.bash
+[5.253s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_obb/share/yolov8_obb/local_setup.sh
+[5.253s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_obb/share/yolov8_obb/local_setup.zsh
+[5.254s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_obb/share/yolov8_obb/local_setup.dsv
+[5.255s] -- Installing: /home/devika/robo_ws/install/yolov8_obb/share/yolov8_obb/package.dsv
+[5.495s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_obb/share/ament_index/resource_index/packages/yolov8_obb
+[5.497s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_obb/share/yolov8_obb/cmake/yolov8_obbConfig.cmake
+[5.497s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_obb/share/yolov8_obb/cmake/yolov8_obbConfig-version.cmake
+[5.500s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_obb/share/yolov8_obb/package.xml
+[5.748s] Invoked command in '/home/devika/robo_ws/build/yolov8_obb' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /home/devika/robo_ws/build/yolov8_obb

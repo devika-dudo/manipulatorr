@@ -1,0 +1,18 @@
+[ 10%] Built target pick_place_demo_parameters
+[ 20%] Built target ik_clearance_cost_parameters
+[ 30%] Built target hello_moveit_task_constructor_cartesian
+[ 40%] Built target hello_moveit_task_constructor_alternative_path_costs
+[ 50%] Built target hello_moveit_task_constructor_mtc_node
+[ 60%] Built target hello_moveit_task_constructor_modular
+[ 70%] Built target hello_moveit_task_constructor_fallbacks_move_to
+[35m[1mConsolidate compiler generated dependencies of target hello_moveit_task_constructor_pick_place_task[0m
+[ 80%] Built target hello_moveit_task_constructor_ik_clearance_cost
+[ 85%] [32mBuilding CXX object CMakeFiles/hello_moveit_task_constructor_pick_place_task.dir/src/pick_place_task.cpp.o[0m
+[01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:[m[K In member function ‘[01m[Kbool hello_moveit_task_constructor::PickPlaceTask::plan(std::size_t)[m[K’:
+[01m[K/home/devika/robo_ws/src/hello_moveit_task_constructor/src/pick_place_task.cpp:633:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass moveit::task_constructor::Introspection[m[K’ has no member named ‘[01m[KpublishTask[m[K’; did you mean ‘[01m[KpublishTaskState[m[K’?
+  633 |       task_->introspection().[01;31m[KpublishTask[m[K(*task_);
+      |                              [01;31m[K^~~~~~~~~~~[m[K
+      |                              [32m[KpublishTaskState[m[K
+gmake[2]: *** [CMakeFiles/hello_moveit_task_constructor_pick_place_task.dir/build.make:76: CMakeFiles/hello_moveit_task_constructor_pick_place_task.dir/src/pick_place_task.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:155: CMakeFiles/hello_moveit_task_constructor_pick_place_task.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

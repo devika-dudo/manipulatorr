@@ -75,8 +75,8 @@ template <typename T, size_t capacity>
         std::vector<double> table_pose = {0.32, 0.32, 0.0, 0.0, 0.0, 0.0};
         std::string object_name = "object";
         std::string object_reference_frame = "base_link";
-        std::vector<double> object_dimensions = {0.35, 0.0125};
-        std::vector<double> object_pose = {0.32, 0.32, 0.0, 0.0, 0.0, 0.0};
+        std::vector<double> object_dimensions = {0.15, 0.025};
+        std::vector<double> object_pose = {0.32, 0.32, 0.175, 0.0, 0.0, 0.0};
         bool spawn_table = true;
         int64_t max_solutions = 10;
         std::string arm_group_name = "arm_group";

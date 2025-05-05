@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+cc7843c773fbd42834b8365f42dc5090 CMakeFiles/yolov8_obb_uninstall

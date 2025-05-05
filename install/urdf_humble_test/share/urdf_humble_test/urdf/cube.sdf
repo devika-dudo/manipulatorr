@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="cube">
+    <static>true</static>
+    <link name="link">
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.05 0.05 0.05</size>  <!-- 5 cm x 5 cm x 5 cm cube -->
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 0 0 1</ambient>   <!-- Red color -->
+        </material>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.05 0.05 0.05</size>  <!-- Same size for collision -->
+          </box>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>
+

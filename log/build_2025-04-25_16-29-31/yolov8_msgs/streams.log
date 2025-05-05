@@ -1,0 +1,164 @@
+[2.339s] Invoking command in '/home/devika/robo_ws/build/yolov8_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/devika/robo_ws/build/yolov8_msgs -- -j8 -l8
+[3.039s] [  2%] Built target yolov8_msgs__cpp
+[3.500s] [  2%] Built target ament_cmake_python_copy_yolov8_msgs
+[3.843s] [ 12%] Built target yolov8_msgs__rosidl_typesupport_introspection_cpp
+[5.480s] running egg_info
+[5.483s] writing yolov8_msgs.egg-info/PKG-INFO
+[5.490s] writing dependency_links to yolov8_msgs.egg-info/dependency_links.txt
+[5.490s] writing top-level names to yolov8_msgs.egg-info/top_level.txt
+[5.503s] reading manifest file 'yolov8_msgs.egg-info/SOURCES.txt'
+[5.509s] writing manifest file 'yolov8_msgs.egg-info/SOURCES.txt'
+[5.697s] [ 12%] Built target ament_cmake_python_build_yolov8_msgs_egg
+[5.919s] [ 23%] Built target yolov8_msgs__rosidl_typesupport_fastrtps_cpp
+[6.178s] [ 33%] Built target yolov8_msgs__rosidl_typesupport_cpp
+[6.408s] [ 43%] Built target yolov8_msgs__rosidl_generator_c
+[6.625s] [ 53%] Built target yolov8_msgs__rosidl_typesupport_fastrtps_c
+[6.826s] [ 64%] Built target yolov8_msgs__rosidl_typesupport_c
+[7.015s] [ 74%] Built target yolov8_msgs__rosidl_typesupport_introspection_c
+[7.196s] [ 74%] Built target yolov8_msgs
+[7.405s] [ 76%] Built target yolov8_msgs__py
+[7.633s] [ 84%] Built target yolov8_msgs__rosidl_generator_py
+[7.832s] [ 89%] Built target yolov8_msgs__rosidl_typesupport_fastrtps_c__pyext
+[8.039s] [ 94%] Built target yolov8_msgs__rosidl_typesupport_c__pyext
+[8.190s] [100%] Built target yolov8_msgs__rosidl_typesupport_introspection_c__pyext
+[8.248s] Invoked command in '/home/devika/robo_ws/build/yolov8_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/devika/robo_ws/build/yolov8_msgs -- -j8 -l8
+[8.262s] Invoking command in '/home/devika/robo_ws/build/yolov8_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /home/devika/robo_ws/build/yolov8_msgs
+[8.308s] -- Install configuration: ""
+[8.308s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/share/ament_index/resource_index/rosidl_interfaces/yolov8_msgs
+[8.311s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs
+[8.311s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg
+[8.317s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/inference_result.h
+[8.317s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/rosidl_generator_c__visibility_control.h
+[8.318s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/yolov8_inference.h
+[8.318s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail
+[8.318s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/yolov8_inference__functions.c
+[8.319s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/inference_result__functions.c
+[8.319s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/inference_result__type_support.h
+[8.320s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/yolov8_inference__struct.h
+[8.324s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/yolov8_inference__functions.h
+[8.324s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/yolov8_inference__type_support.h
+[8.324s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/inference_result__struct.h
+[8.325s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/inference_result__functions.h
+[8.325s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/environment/library_path.sh
+[8.325s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/environment/library_path.dsv
+[8.326s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_generator_c.so
+[8.326s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs
+[8.326s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg
+[8.327s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[8.327s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail
+[8.327s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/yolov8_inference__rosidl_typesupport_fastrtps_c.h
+[8.328s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/inference_result__rosidl_typesupport_fastrtps_c.h
+[8.328s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_typesupport_fastrtps_c.so
+[8.328s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs
+[8.329s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg
+[8.329s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[8.329s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/inference_result.hpp
+[8.330s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/yolov8_inference.hpp
+[8.330s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail
+[8.333s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/yolov8_inference__type_support.hpp
+[8.334s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/inference_result__traits.hpp
+[8.334s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/inference_result__struct.hpp
+[8.334s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/yolov8_inference__builder.hpp
+[8.334s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/inference_result__builder.hpp
+[8.335s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/yolov8_inference__struct.hpp
+[8.335s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/inference_result__type_support.hpp
+[8.336s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/yolov8_inference__traits.hpp
+[8.336s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs
+[8.336s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg
+[8.336s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[8.337s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail
+[8.337s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/yolov8_inference__rosidl_typesupport_fastrtps_cpp.hpp
+[8.337s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/inference_result__rosidl_typesupport_fastrtps_cpp.hpp
+[8.338s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/dds_fastrtps
+[8.338s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_typesupport_fastrtps_cpp.so
+[8.338s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs
+[8.338s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg
+[8.339s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[8.339s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail
+[8.339s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/yolov8_inference__type_support.c
+[8.341s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/inference_result__rosidl_typesupport_introspection_c.h
+[8.342s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/inference_result__type_support.c
+[8.342s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/yolov8_inference__rosidl_typesupport_introspection_c.h
+[8.342s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_typesupport_introspection_c.so
+[8.343s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_typesupport_c.so
+[8.343s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs
+[8.343s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg
+[8.343s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail
+[8.344s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/yolov8_inference__type_support.cpp
+[8.344s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/inference_result__rosidl_typesupport_introspection_cpp.hpp
+[8.344s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/inference_result__type_support.cpp
+[8.345s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/yolov8_inference__rosidl_typesupport_introspection_cpp.hpp
+[8.346s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_typesupport_introspection_cpp.so
+[8.348s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_typesupport_cpp.so
+[8.348s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/environment/pythonpath.sh
+[8.349s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/environment/pythonpath.dsv
+[8.349s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/local/lib/python3.10/dist-packages/yolov8_msgs-0.0.0-py3.10.egg-info
+[8.354s] -- Installing: /home/devika/robo_ws/install/yolov8_msgs/local/lib/python3.10/dist-packages/yolov8_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[8.354s] -- Installing: /home/devika/robo_ws/install/yolov8_msgs/local/lib/python3.10/dist-packages/yolov8_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[8.354s] -- Installing: /home/devika/robo_ws/install/yolov8_msgs/local/lib/python3.10/dist-packages/yolov8_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[8.355s] -- Installing: /home/devika/robo_ws/install/yolov8_msgs/local/lib/python3.10/dist-packages/yolov8_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[8.355s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/local/lib/python3.10/dist-packages/yolov8_msgs
+[8.355s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/local/lib/python3.10/dist-packages/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[8.357s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/local/lib/python3.10/dist-packages/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[8.357s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/local/lib/python3.10/dist-packages/yolov8_msgs/msg
+[8.358s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/local/lib/python3.10/dist-packages/yolov8_msgs/msg/_inference_result_s.c
+[8.358s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/local/lib/python3.10/dist-packages/yolov8_msgs/msg/_yolov8_inference.py
+[8.358s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/local/lib/python3.10/dist-packages/yolov8_msgs/msg/_inference_result.py
+[8.359s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/local/lib/python3.10/dist-packages/yolov8_msgs/msg/_yolov8_inference_s.c
+[8.359s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/local/lib/python3.10/dist-packages/yolov8_msgs/msg/__init__.py
+[8.359s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/local/lib/python3.10/dist-packages/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[8.359s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/local/lib/python3.10/dist-packages/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[8.360s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/local/lib/python3.10/dist-packages/yolov8_msgs/libyolov8_msgs__rosidl_generator_py.so
+[8.360s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/local/lib/python3.10/dist-packages/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_c.c
+[8.360s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/local/lib/python3.10/dist-packages/yolov8_msgs/__init__.py
+[8.360s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/local/lib/python3.10/dist-packages/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[8.504s] Listing '/home/devika/robo_ws/install/yolov8_msgs/local/lib/python3.10/dist-packages/yolov8_msgs'...
+[8.505s] Listing '/home/devika/robo_ws/install/yolov8_msgs/local/lib/python3.10/dist-packages/yolov8_msgs/msg'...
+[8.526s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/local/lib/python3.10/dist-packages/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[8.526s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/local/lib/python3.10/dist-packages/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[8.530s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/local/lib/python3.10/dist-packages/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[8.532s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_generator_py.so
+[8.535s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/msg/InferenceResult.idl
+[8.536s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/msg/Yolov8Inference.idl
+[8.537s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/msg/InferenceResult.msg
+[8.537s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/msg/Yolov8Inference.msg
+[8.537s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/share/ament_index/resource_index/package_run_dependencies/yolov8_msgs
+[8.538s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/share/ament_index/resource_index/parent_prefix_path/yolov8_msgs
+[8.539s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/environment/ament_prefix_path.sh
+[8.540s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/environment/ament_prefix_path.dsv
+[8.540s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/environment/path.sh
+[8.540s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/environment/path.dsv
+[8.542s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/local_setup.bash
+[8.544s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/local_setup.sh
+[8.544s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/local_setup.zsh
+[8.544s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/local_setup.dsv
+[8.545s] -- Installing: /home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/package.dsv
+[8.546s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/share/ament_index/resource_index/packages/yolov8_msgs
+[8.546s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_generator_cExport.cmake
+[8.546s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_generator_cExport-noconfig.cmake
+[8.550s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[8.551s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[8.552s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_generator_cppExport.cmake
+[8.554s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[8.554s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[8.556s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_introspection_cExport.cmake
+[8.557s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[8.559s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_cExport.cmake
+[8.559s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[8.561s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[8.562s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[8.564s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_cppExport.cmake
+[8.568s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[8.569s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_generator_pyExport.cmake
+[8.569s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_generator_pyExport-noconfig.cmake
+[8.569s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/rosidl_cmake-extras.cmake
+[8.569s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[8.570s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[8.570s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[8.570s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[8.570s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[8.571s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[8.571s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgsConfig.cmake
+[8.571s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgsConfig-version.cmake
+[8.571s] -- Up-to-date: /home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/package.xml
+[8.586s] Invoked command in '/home/devika/robo_ws/build/yolov8_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /home/devika/robo_ws/build/yolov8_msgs

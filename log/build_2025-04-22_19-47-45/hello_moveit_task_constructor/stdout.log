@@ -1,0 +1,13 @@
+[ 10%] Built target pick_place_demo_parameters
+[ 20%] Built target ik_clearance_cost_parameters
+[ 30%] Built target hello_moveit_task_constructor_mtc_node
+[ 40%] Built target hello_moveit_task_constructor_alternative_path_costs
+[ 50%] Built target hello_moveit_task_constructor_fallbacks_move_to
+[ 60%] Built target hello_moveit_task_constructor_modular
+[ 70%] Built target hello_moveit_task_constructor_cartesian
+[35m[1mConsolidate compiler generated dependencies of target hello_moveit_task_constructor_pick_place_task[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/hello_moveit_task_constructor_pick_place_task.dir/src/pick_place_task.cpp.o[0m
+[ 85%] Built target hello_moveit_task_constructor_ik_clearance_cost
+[ 90%] [32m[1mLinking CXX shared library libhello_moveit_task_constructor_pick_place_task.so[0m
+[ 90%] Built target hello_moveit_task_constructor_pick_place_task
+[ 95%] [32m[1mLinking CXX executable pick_place_demo[0m

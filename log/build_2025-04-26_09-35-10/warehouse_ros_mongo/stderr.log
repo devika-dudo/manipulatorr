@@ -1,0 +1,31 @@
+Traceback (most recent call last):
+  File "/home/devika/robo_ws/build/warehouse_ros_mongo/ament_cmake_python/warehouse_ros_mongo/setup.py", line 1, in <module>
+    from setuptools import find_packages
+  File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 16, in <module>
+    import setuptools.version
+  File "/usr/lib/python3/dist-packages/setuptools/version.py", line 1, in <module>
+    import pkg_resources
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 78, in <module>
+    __import__('pkg_resources.extern.packaging.requirements')
+  File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/packaging/requirements.py", line 10, in <module>
+    from pkg_resources.extern.pyparsing import (  # noqa
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 674, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 571, in module_from_spec
+  File "/usr/lib/python3/dist-packages/pkg_resources/extern/__init__.py", line 52, in create_module
+    return self.load_module(spec.name)
+  File "/usr/lib/python3/dist-packages/pkg_resources/extern/__init__.py", line 37, in load_module
+    __import__(extant)
+  File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/pyparsing.py", line 5399, in <module>
+    class pyparsing_common:
+  File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/pyparsing.py", line 5551, in pyparsing_common
+    signed_integer = Regex(r'[+-]?\d+').setName("signed integer").setParseAction(convertToInteger)
+  File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/pyparsing.py", line 2808, in __init__
+    self.name = _ustr(self)
+  File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/pyparsing.py", line 2833, in __str__
+    self.strRepr = "Re:(%s)" % repr(self.pattern)
+KeyboardInterrupt
+gmake[2]: *** [CMakeFiles/ament_cmake_python_build_warehouse_ros_mongo_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_warehouse_ros_mongo_egg] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:186: CMakeFiles/ament_cmake_python_build_warehouse_ros_mongo_egg.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

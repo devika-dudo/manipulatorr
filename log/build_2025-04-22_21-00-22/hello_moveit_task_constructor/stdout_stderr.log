@@ -1,0 +1,23 @@
+[ 10%] Built target pick_place_demo_parameters
+[ 20%] Built target hello_moveit_task_constructor_modular
+[ 30%] Built target hello_moveit_task_constructor_alternative_path_costs
+[ 40%] Built target ik_clearance_cost_parameters
+[ 50%] Built target hello_moveit_task_constructor_cartesian
+[ 60%] Built target hello_moveit_task_constructor_fallbacks_move_to
+[35m[1mConsolidate compiler generated dependencies of target hello_moveit_task_constructor_pick_place_task[0m
+[ 70%] Built target hello_moveit_task_constructor_mtc_node
+[ 75%] [32mBuilding CXX object CMakeFiles/hello_moveit_task_constructor_pick_place_task.dir/src/pick_place_task.cpp.o[0m
+[ 85%] Built target hello_moveit_task_constructor_ik_clearance_cost
+[ 90%] [32m[1mLinking CXX shared library libhello_moveit_task_constructor_pick_place_task.so[0m
+[ 90%] Built target hello_moveit_task_constructor_pick_place_task
+[ 95%] [32m[1mLinking CXX executable pick_place_demo[0m
+/usr/bin/ld: CMakeFiles/hello_moveit_task_constructor_pick_place_demo.dir/src/pick_place_demo.cpp.o: in function `main':
+pick_place_demo.cpp:(.text.startup+0x2a2): undefined reference to `hello_moveit_task_constructor::setupDemoScene(pick_place_demo::Params const&)'
+/usr/bin/ld: pick_place_demo.cpp:(.text.startup+0x2c4): undefined reference to `hello_moveit_task_constructor::PickPlaceTask::PickPlaceTask(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/usr/bin/ld: pick_place_demo.cpp:(.text.startup+0x2f8): undefined reference to `hello_moveit_task_constructor::PickPlaceTask::init(std::shared_ptr<rclcpp::Node> const&, pick_place_demo::Params const&)'
+/usr/bin/ld: pick_place_demo.cpp:(.text.startup+0x3e8): undefined reference to `hello_moveit_task_constructor::PickPlaceTask::plan(unsigned long)'
+/usr/bin/ld: pick_place_demo.cpp:(.text.startup+0x59b): undefined reference to `hello_moveit_task_constructor::PickPlaceTask::execute()'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/hello_moveit_task_constructor_pick_place_demo.dir/build.make:368: pick_place_demo] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:364: CMakeFiles/hello_moveit_task_constructor_pick_place_demo.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

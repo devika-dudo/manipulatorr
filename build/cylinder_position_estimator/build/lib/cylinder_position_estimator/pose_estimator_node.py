@@ -56,12 +56,12 @@ class PoseEstimatorNode(Node):
         h = box_height / 2
         # Use a fixed model of the cylinder
         object_points = np.array([
-            [-0.025, 0.0, -0.025],  # bottom-left
-            [ 0.025, 0.0, -0.025],  # bottom-right
-            [ 0.025, 0.0,  0.025],  # top-right
-            [-0.025, 0.0,  0.025],  # top-left
-        ], dtype=np.float32)
-        
+    [-0.025, -0.025, 0.025],  # bottom-left (on front face)
+    [ 0.025, -0.025, 0.025],  # bottom-right
+    [ 0.025,  0.025, 0.025],  # top-right
+    [-0.025,  0.025, 0.025],  # top-left
+], dtype=np.float32)
+
         # Generate fake corners around the center (for testing)
         
         image_points = np.array([
@@ -84,9 +84,9 @@ class PoseEstimatorNode(Node):
             self.get_logger().info(f'Cylinder position: {tvec.ravel()}')
             
             try:
-                # Transform to 'world' frame
+                # Transform to 'base_link' frame
                 transform = self.tf_buffer.lookup_transform(
-    'world',
+    'base_link',
     position_msg.header.frame_id,
     rclpy.time.Time(),  # use latest available transform
     timeout=rclpy.duration.Duration(seconds=1.0)
@@ -94,7 +94,7 @@ class PoseEstimatorNode(Node):
 
                 transformed_pose = tf2_geometry_msgs.do_transform_point(position_msg, transform)
                 self.transformed_pose_pub.publish(transformed_pose)
-                self.get_logger().info(f'Cylinder position (world): ({transformed_pose.point.x}, {transformed_pose.point.y}, {transformed_pose.point.z})')
+                self.get_logger().info(f'Cylinder position (base_link): ({transformed_pose.point.x}, {transformed_pose.point.y}, {transformed_pose.point.z})')
 
             except Exception as e:
                 self.get_logger().warn(f'Could not transform pose to world: {e}')

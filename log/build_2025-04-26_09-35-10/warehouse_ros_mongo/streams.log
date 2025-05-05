@@ -1,0 +1,34 @@
+[0.343s] Invoking command in '/home/devika/robo_ws/build/warehouse_ros_mongo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/devika/robo_ws/build/warehouse_ros_mongo -- -j8 -l8
+[3.008s] [  0%] Built target ament_cmake_python_copy_warehouse_ros_mongo
+[3.009s] [ 20%] Built target gtest
+[3.017s] Traceback (most recent call last):
+[3.017s]   File "/home/devika/robo_ws/build/warehouse_ros_mongo/ament_cmake_python/warehouse_ros_mongo/setup.py", line 1, in <module>
+[3.017s]     from setuptools import find_packages
+[3.021s]   File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 16, in <module>
+[3.021s]     import setuptools.version
+[3.023s]   File "/usr/lib/python3/dist-packages/setuptools/version.py", line 1, in <module>
+[3.023s]     import pkg_resources
+[3.024s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 78, in <module>
+[3.027s]     __import__('pkg_resources.extern.packaging.requirements')
+[3.027s]   File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/packaging/requirements.py", line 10, in <module>
+[3.028s]     from pkg_resources.extern.pyparsing import (  # noqa
+[3.028s]   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+[3.028s]   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+[3.028s]   File "<frozen importlib._bootstrap>", line 674, in _load_unlocked
+[3.029s]   File "<frozen importlib._bootstrap>", line 571, in module_from_spec
+[3.029s]   File "/usr/lib/python3/dist-packages/pkg_resources/extern/__init__.py", line 52, in create_module
+[3.029s]     return self.load_module(spec.name)
+[3.029s]   File "/usr/lib/python3/dist-packages/pkg_resources/extern/__init__.py", line 37, in load_module
+[3.029s]     __import__(extant)
+[3.030s]   File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/pyparsing.py", line 5399, in <module>
+[3.030s]     class pyparsing_common:
+[3.030s]   File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/pyparsing.py", line 5551, in pyparsing_common
+[3.030s]     signed_integer = Regex(r'[+-]?\d+').setName("signed integer").setParseAction(convertToInteger)
+[3.031s]   File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/pyparsing.py", line 2808, in __init__
+[3.031s]     self.name = _ustr(self)
+[3.031s]   File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/pyparsing.py", line 2833, in __str__
+[3.032s]     self.strRepr = "Re:(%s)" % repr(self.pattern)
+[3.032s] KeyboardInterrupt
+[3.032s] gmake[2]: *** [CMakeFiles/ament_cmake_python_build_warehouse_ros_mongo_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_warehouse_ros_mongo_egg] Interrupt
+[3.032s] gmake[1]: *** [CMakeFiles/Makefile2:186: CMakeFiles/ament_cmake_python_build_warehouse_ros_mongo_egg.dir/all] Interrupt
+[3.033s] gmake: *** [Makefile:146: all] Interrupt

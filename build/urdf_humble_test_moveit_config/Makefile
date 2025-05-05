@@ -197,6 +197,43 @@ urdf_humble_test_moveit_config_uninstall/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/urdf_humble_test_moveit_config_uninstall.dir/build.make CMakeFiles/urdf_humble_test_moveit_config_uninstall.dir/build
 .PHONY : urdf_humble_test_moveit_config_uninstall/fast
 
+#=============================================================================
+# Target rules for targets named arm_control_from_UI
+
+# Build rule for target.
+arm_control_from_UI: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 arm_control_from_UI
+.PHONY : arm_control_from_UI
+
+# fast build rule for target.
+arm_control_from_UI/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_control_from_UI.dir/build.make CMakeFiles/arm_control_from_UI.dir/build
+.PHONY : arm_control_from_UI/fast
+
+scripts/arm_control_from_UI.o: scripts/arm_control_from_UI.cpp.o
+.PHONY : scripts/arm_control_from_UI.o
+
+# target to build an object file
+scripts/arm_control_from_UI.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_control_from_UI.dir/build.make CMakeFiles/arm_control_from_UI.dir/scripts/arm_control_from_UI.cpp.o
+.PHONY : scripts/arm_control_from_UI.cpp.o
+
+scripts/arm_control_from_UI.i: scripts/arm_control_from_UI.cpp.i
+.PHONY : scripts/arm_control_from_UI.i
+
+# target to preprocess a source file
+scripts/arm_control_from_UI.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_control_from_UI.dir/build.make CMakeFiles/arm_control_from_UI.dir/scripts/arm_control_from_UI.cpp.i
+.PHONY : scripts/arm_control_from_UI.cpp.i
+
+scripts/arm_control_from_UI.s: scripts/arm_control_from_UI.cpp.s
+.PHONY : scripts/arm_control_from_UI.s
+
+# target to generate assembly for a file
+scripts/arm_control_from_UI.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arm_control_from_UI.dir/build.make CMakeFiles/arm_control_from_UI.dir/scripts/arm_control_from_UI.cpp.s
+.PHONY : scripts/arm_control_from_UI.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -212,6 +249,10 @@ help:
 	@echo "... test"
 	@echo "... uninstall"
 	@echo "... urdf_humble_test_moveit_config_uninstall"
+	@echo "... arm_control_from_UI"
+	@echo "... scripts/arm_control_from_UI.o"
+	@echo "... scripts/arm_control_from_UI.i"
+	@echo "... scripts/arm_control_from_UI.s"
 .PHONY : help
 
 

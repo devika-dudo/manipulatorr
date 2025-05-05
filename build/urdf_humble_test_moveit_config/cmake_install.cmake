@@ -43,6 +43,46 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/urdf_humble_test_moveit_config/arm_control_from_UI" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/urdf_humble_test_moveit_config/arm_control_from_UI")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/urdf_humble_test_moveit_config/arm_control_from_UI"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/urdf_humble_test_moveit_config" TYPE EXECUTABLE FILES "/home/devika/robo_ws/build/urdf_humble_test_moveit_config/arm_control_from_UI")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/urdf_humble_test_moveit_config/arm_control_from_UI" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/urdf_humble_test_moveit_config/arm_control_from_UI")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/urdf_humble_test_moveit_config/arm_control_from_UI"
+         OLD_RPATH "/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/devika/ws_moveit2/install/moveit_ros_planning_interface/lib:/home/devika/ws_moveit2/install/moveit_ros_perception/lib:/home/devika/ws_moveit2/install/moveit_ros_move_group/lib:/home/devika/ws_moveit2/install/moveit_ros_warehouse/lib:/home/devika/ws_moveit2/install/moveit_ros_planning/lib:/home/devika/ws_moveit2/install/moveit_ros_occupancy_map_monitor/lib:/home/devika/ws_moveit2/install/moveit_core/lib:/home/devika/ws_moveit2/install/srdfdom/lib:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/urdf_humble_test_moveit_config/arm_control_from_UI")
+    endif()
+  endif()
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/urdf_humble_test_moveit_config" TYPE PROGRAM FILES "/home/devika/robo_ws/src/urdf_humble_test_moveit_config/scripts/arm_control_from_UI.cpp")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/urdf_humble_test_moveit_config" TYPE DIRECTORY FILES "/home/devika/robo_ws/src/urdf_humble_test_moveit_config/launch" REGEX "/setup\\_assistant\\.launch$" EXCLUDE)
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/urdf_humble_test_moveit_config" TYPE DIRECTORY FILES "/home/devika/robo_ws/src/urdf_humble_test_moveit_config/scripts")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/urdf_humble_test_moveit_config" TYPE DIRECTORY FILES "/home/devika/robo_ws/src/urdf_humble_test_moveit_config/config")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/urdf_humble_test_moveit_config" TYPE FILE FILES "/home/devika/robo_ws/src/urdf_humble_test_moveit_config/.setup_assistant")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/devika/robo_ws/build/urdf_humble_test_moveit_config/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/urdf_humble_test_moveit_config")
 endif()
 
@@ -99,18 +139,6 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/urdf_humble_test_moveit_config" TYPE FILE FILES "/home/devika/robo_ws/src/urdf_humble_test_moveit_config/package.xml")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/urdf_humble_test_moveit_config" TYPE DIRECTORY FILES "/home/devika/robo_ws/src/urdf_humble_test_moveit_config/launch" REGEX "/setup\\_assistant\\.launch$" EXCLUDE)
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/urdf_humble_test_moveit_config" TYPE DIRECTORY FILES "/home/devika/robo_ws/src/urdf_humble_test_moveit_config/config")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/urdf_humble_test_moveit_config" TYPE FILE FILES "/home/devika/robo_ws/src/urdf_humble_test_moveit_config/.setup_assistant")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

@@ -1,0 +1,664 @@
+[0.372s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.372s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x70e668595fc0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x70e668595b10>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x70e668595b10>>, mixin_verb=('build',))
+[0.977s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.977s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.977s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.977s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.977s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.978s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.978s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/devika/robo_ws'
+[0.978s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.979s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.041s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.041s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.042s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.042s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.042s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.042s] Level 1:colcon.colcon_core.package_identification:_identify(UI) by extensions ['ignore', 'ignore_ament_install']
+[1.043s] Level 1:colcon.colcon_core.package_identification:_identify(UI) by extension 'ignore'
+[1.043s] Level 1:colcon.colcon_core.package_identification:_identify(UI) by extension 'ignore_ament_install'
+[1.043s] Level 1:colcon.colcon_core.package_identification:_identify(UI) by extensions ['colcon_pkg']
+[1.043s] Level 1:colcon.colcon_core.package_identification:_identify(UI) by extension 'colcon_pkg'
+[1.043s] Level 1:colcon.colcon_core.package_identification:_identify(UI) by extensions ['colcon_meta']
+[1.044s] Level 1:colcon.colcon_core.package_identification:_identify(UI) by extension 'colcon_meta'
+[1.044s] Level 1:colcon.colcon_core.package_identification:_identify(UI) by extensions ['ros']
+[1.044s] Level 1:colcon.colcon_core.package_identification:_identify(UI) by extension 'ros'
+[1.044s] Level 1:colcon.colcon_core.package_identification:_identify(UI) by extensions ['cmake', 'python']
+[1.044s] Level 1:colcon.colcon_core.package_identification:_identify(UI) by extension 'cmake'
+[1.044s] Level 1:colcon.colcon_core.package_identification:_identify(UI) by extension 'python'
+[1.044s] Level 1:colcon.colcon_core.package_identification:_identify(UI) by extensions ['python_setup_py']
+[1.045s] Level 1:colcon.colcon_core.package_identification:_identify(UI) by extension 'python_setup_py'
+[1.045s] Level 1:colcon.colcon_core.package_identification:_identify(UI/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[1.045s] Level 1:colcon.colcon_core.package_identification:_identify(UI/__pycache__) by extension 'ignore'
+[1.045s] Level 1:colcon.colcon_core.package_identification:_identify(UI/__pycache__) by extension 'ignore_ament_install'
+[1.046s] Level 1:colcon.colcon_core.package_identification:_identify(UI/__pycache__) by extensions ['colcon_pkg']
+[1.046s] Level 1:colcon.colcon_core.package_identification:_identify(UI/__pycache__) by extension 'colcon_pkg'
+[1.046s] Level 1:colcon.colcon_core.package_identification:_identify(UI/__pycache__) by extensions ['colcon_meta']
+[1.046s] Level 1:colcon.colcon_core.package_identification:_identify(UI/__pycache__) by extension 'colcon_meta'
+[1.046s] Level 1:colcon.colcon_core.package_identification:_identify(UI/__pycache__) by extensions ['ros']
+[1.046s] Level 1:colcon.colcon_core.package_identification:_identify(UI/__pycache__) by extension 'ros'
+[1.046s] Level 1:colcon.colcon_core.package_identification:_identify(UI/__pycache__) by extensions ['cmake', 'python']
+[1.046s] Level 1:colcon.colcon_core.package_identification:_identify(UI/__pycache__) by extension 'cmake'
+[1.047s] Level 1:colcon.colcon_core.package_identification:_identify(UI/__pycache__) by extension 'python'
+[1.047s] Level 1:colcon.colcon_core.package_identification:_identify(UI/__pycache__) by extensions ['python_setup_py']
+[1.047s] Level 1:colcon.colcon_core.package_identification:_identify(UI/__pycache__) by extension 'python_setup_py'
+[1.047s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.047s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.048s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.048s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.048s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.049s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.049s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.050s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.050s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.050s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.051s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.051s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.051s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.051s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.051s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.051s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.052s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.052s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.052s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.052s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.052s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.052s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.052s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.053s] Level 1:colcon.colcon_core.package_identification:_identify(src/cylinder_position_estimator) by extensions ['ignore', 'ignore_ament_install']
+[1.053s] Level 1:colcon.colcon_core.package_identification:_identify(src/cylinder_position_estimator) by extension 'ignore'
+[1.053s] Level 1:colcon.colcon_core.package_identification:_identify(src/cylinder_position_estimator) by extension 'ignore_ament_install'
+[1.053s] Level 1:colcon.colcon_core.package_identification:_identify(src/cylinder_position_estimator) by extensions ['colcon_pkg']
+[1.053s] Level 1:colcon.colcon_core.package_identification:_identify(src/cylinder_position_estimator) by extension 'colcon_pkg'
+[1.054s] Level 1:colcon.colcon_core.package_identification:_identify(src/cylinder_position_estimator) by extensions ['colcon_meta']
+[1.054s] Level 1:colcon.colcon_core.package_identification:_identify(src/cylinder_position_estimator) by extension 'colcon_meta'
+[1.054s] Level 1:colcon.colcon_core.package_identification:_identify(src/cylinder_position_estimator) by extensions ['ros']
+[1.054s] Level 1:colcon.colcon_core.package_identification:_identify(src/cylinder_position_estimator) by extension 'ros'
+[1.062s] DEBUG:colcon.colcon_core.package_identification:Package 'src/cylinder_position_estimator' with type 'ros.ament_python' and name 'cylinder_position_estimator'
+[1.063s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ros2_control) by extensions ['ignore', 'ignore_ament_install']
+[1.063s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ros2_control) by extension 'ignore'
+[1.063s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ros2_control) by extension 'ignore_ament_install'
+[1.064s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ros2_control) by extensions ['colcon_pkg']
+[1.064s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ros2_control) by extension 'colcon_pkg'
+[1.064s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ros2_control) by extensions ['colcon_meta']
+[1.064s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ros2_control) by extension 'colcon_meta'
+[1.064s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ros2_control) by extensions ['ros']
+[1.064s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ros2_control) by extension 'ros'
+[1.068s] DEBUG:colcon.colcon_core.package_identification:Package 'src/gazebo_ros2_control' with type 'ros.ament_cmake' and name 'gazebo_ros2_control'
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(src/hello_moveit) by extensions ['ignore', 'ignore_ament_install']
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(src/hello_moveit) by extension 'ignore'
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(src/hello_moveit) by extension 'ignore_ament_install'
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(src/hello_moveit) by extensions ['colcon_pkg']
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(src/hello_moveit) by extension 'colcon_pkg'
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(src/hello_moveit) by extensions ['colcon_meta']
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(src/hello_moveit) by extension 'colcon_meta'
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(src/hello_moveit) by extensions ['ros']
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(src/hello_moveit) by extension 'ros'
+[1.073s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hello_moveit' with type 'ros.ament_cmake' and name 'hello_moveit'
+[1.073s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_vision) by extensions ['ignore', 'ignore_ament_install']
+[1.074s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_vision) by extension 'ignore'
+[1.074s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_vision) by extension 'ignore_ament_install'
+[1.074s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_vision) by extensions ['colcon_pkg']
+[1.074s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_vision) by extension 'colcon_pkg'
+[1.074s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_vision) by extensions ['colcon_meta']
+[1.074s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_vision) by extension 'colcon_meta'
+[1.074s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_vision) by extensions ['ros']
+[1.074s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_vision) by extension 'ros'
+[1.076s] DEBUG:colcon.colcon_core.package_identification:Package 'src/perception_vision' with type 'ros.ament_python' and name 'perception_vision'
+[1.076s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_humble_test) by extensions ['ignore', 'ignore_ament_install']
+[1.077s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_humble_test) by extension 'ignore'
+[1.077s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_humble_test) by extension 'ignore_ament_install'
+[1.077s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_humble_test) by extensions ['colcon_pkg']
+[1.077s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_humble_test) by extension 'colcon_pkg'
+[1.077s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_humble_test) by extensions ['colcon_meta']
+[1.077s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_humble_test) by extension 'colcon_meta'
+[1.077s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_humble_test) by extensions ['ros']
+[1.077s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_humble_test) by extension 'ros'
+[1.081s] DEBUG:colcon.colcon_core.package_identification:Package 'src/urdf_humble_test' with type 'ros.ament_cmake' and name 'urdf_humble_test'
+[1.081s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_humble_test_moveit_config) by extensions ['ignore', 'ignore_ament_install']
+[1.081s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_humble_test_moveit_config) by extension 'ignore'
+[1.082s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_humble_test_moveit_config) by extension 'ignore_ament_install'
+[1.082s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_humble_test_moveit_config) by extensions ['colcon_pkg']
+[1.082s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_humble_test_moveit_config) by extension 'colcon_pkg'
+[1.082s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_humble_test_moveit_config) by extensions ['colcon_meta']
+[1.082s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_humble_test_moveit_config) by extension 'colcon_meta'
+[1.082s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_humble_test_moveit_config) by extensions ['ros']
+[1.082s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_humble_test_moveit_config) by extension 'ros'
+[1.089s] DEBUG:colcon.colcon_core.package_identification:Found ROS schema reference in package manifest in 'src/urdf_humble_test_moveit_config'
+[1.090s] WARNING:colcon.colcon_core.package_identification:Failed to parse ROS package manifest in 'src/urdf_humble_test_moveit_config': Error(s) in package 'src/urdf_humble_test_moveit_config/package.xml':
+Error(s):
+- The generic dependency on 'urdf_humble_test' is redundant with: exec_depend
+[1.090s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_humble_test_moveit_config) by extensions ['cmake', 'python']
+[1.090s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_humble_test_moveit_config) by extension 'cmake'
+[1.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_humble_test_moveit_config) by extension 'python'
+[1.095s] DEBUG:colcon.colcon_core.package_identification:Package 'src/urdf_humble_test_moveit_config' with type 'cmake' and name 'urdf_humble_test_moveit_config'
+[1.095s] Level 1:colcon.colcon_core.package_identification:_identify(src/warehouse_ros_mongo) by extensions ['ignore', 'ignore_ament_install']
+[1.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/warehouse_ros_mongo) by extension 'ignore'
+[1.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/warehouse_ros_mongo) by extension 'ignore_ament_install'
+[1.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/warehouse_ros_mongo) by extensions ['colcon_pkg']
+[1.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/warehouse_ros_mongo) by extension 'colcon_pkg'
+[1.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/warehouse_ros_mongo) by extensions ['colcon_meta']
+[1.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/warehouse_ros_mongo) by extension 'colcon_meta'
+[1.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/warehouse_ros_mongo) by extensions ['ros']
+[1.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/warehouse_ros_mongo) by extension 'ros'
+[1.100s] DEBUG:colcon.colcon_core.package_identification:Package 'src/warehouse_ros_mongo' with type 'ros.ament_cmake' and name 'warehouse_ros_mongo'
+[1.101s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolov8_obb) by extensions ['ignore', 'ignore_ament_install']
+[1.101s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolov8_obb) by extension 'ignore'
+[1.101s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolov8_obb) by extension 'ignore_ament_install'
+[1.101s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolov8_obb) by extensions ['colcon_pkg']
+[1.101s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolov8_obb) by extension 'colcon_pkg'
+[1.101s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolov8_obb) by extensions ['colcon_meta']
+[1.101s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolov8_obb) by extension 'colcon_meta'
+[1.102s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolov8_obb) by extensions ['ros']
+[1.102s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolov8_obb) by extension 'ros'
+[1.103s] DEBUG:colcon.colcon_core.package_identification:Package 'src/yolov8_obb' with type 'ros.ament_cmake' and name 'yolov8_obb'
+[1.103s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolov8_obb_msgs) by extensions ['ignore', 'ignore_ament_install']
+[1.104s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolov8_obb_msgs) by extension 'ignore'
+[1.104s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolov8_obb_msgs) by extension 'ignore_ament_install'
+[1.104s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolov8_obb_msgs) by extensions ['colcon_pkg']
+[1.104s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolov8_obb_msgs) by extension 'colcon_pkg'
+[1.104s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolov8_obb_msgs) by extensions ['colcon_meta']
+[1.104s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolov8_obb_msgs) by extension 'colcon_meta'
+[1.104s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolov8_obb_msgs) by extensions ['ros']
+[1.104s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolov8_obb_msgs) by extension 'ros'
+[1.106s] DEBUG:colcon.colcon_core.package_identification:Package 'src/yolov8_obb_msgs' with type 'ros.ament_cmake' and name 'yolov8_msgs'
+[1.107s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.107s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.107s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.107s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.107s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.177s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.177s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.197s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 55 installed packages in /home/devika/ws_moveit2/install
+[1.201s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 16 installed packages in /home/devika/robo_ws/install
+[1.203s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/devika/manga_ws/install
+[1.205s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 7 installed packages in /home/devika/some_ws/install
+[1.210s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 384 installed packages in /opt/ros/humble
+[1.216s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.360s] WARNING:colcon.colcon_core.package_selection:Some selected packages are already built in one or more underlay workspaces:
+	'gazebo_ros2_control' is in: /home/devika/robo_ws/install/gazebo_ros2_control, /opt/ros/humble
+	'warehouse_ros_mongo' is in: /home/devika/robo_ws/install/warehouse_ros_mongo
+If a package in a merged underlay workspace is overridden and it installs headers, then all packages in the overlay must sort their include directories by workspace order. Failure to do so may result in build failures or undefined behavior at run time.
+If the overridden package is used by another package in any underlay, then the overriding package in the overlay must be API and ABI compatible or undefined behavior at run time may occur.
+
+If you understand the risks and want to override a package anyways, add the following to the command line:
+	--allow-overriding gazebo_ros2_control warehouse_ros_mongo
+
+This may be promoted to an error in a future release of colcon-override-check.
+[1.364s] Level 5:colcon.colcon_core.verb:set package 'cylinder_position_estimator' build argument 'cmake_args' from command line to 'None'
+[1.365s] Level 5:colcon.colcon_core.verb:set package 'cylinder_position_estimator' build argument 'cmake_target' from command line to 'None'
+[1.365s] Level 5:colcon.colcon_core.verb:set package 'cylinder_position_estimator' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.365s] Level 5:colcon.colcon_core.verb:set package 'cylinder_position_estimator' build argument 'cmake_clean_cache' from command line to 'False'
+[1.365s] Level 5:colcon.colcon_core.verb:set package 'cylinder_position_estimator' build argument 'cmake_clean_first' from command line to 'False'
+[1.365s] Level 5:colcon.colcon_core.verb:set package 'cylinder_position_estimator' build argument 'cmake_force_configure' from command line to 'False'
+[1.365s] Level 5:colcon.colcon_core.verb:set package 'cylinder_position_estimator' build argument 'ament_cmake_args' from command line to 'None'
+[1.365s] Level 5:colcon.colcon_core.verb:set package 'cylinder_position_estimator' build argument 'catkin_cmake_args' from command line to 'None'
+[1.365s] Level 5:colcon.colcon_core.verb:set package 'cylinder_position_estimator' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.365s] DEBUG:colcon.colcon_core.verb:Building package 'cylinder_position_estimator' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/devika/robo_ws/build/cylinder_position_estimator', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/devika/robo_ws/install/cylinder_position_estimator', 'merge_install': False, 'path': '/home/devika/robo_ws/src/cylinder_position_estimator', 'symlink_install': False, 'test_result_base': None}
+[1.366s] Level 5:colcon.colcon_core.verb:set package 'gazebo_ros2_control' build argument 'cmake_args' from command line to 'None'
+[1.366s] Level 5:colcon.colcon_core.verb:set package 'gazebo_ros2_control' build argument 'cmake_target' from command line to 'None'
+[1.367s] Level 5:colcon.colcon_core.verb:set package 'gazebo_ros2_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.367s] Level 5:colcon.colcon_core.verb:set package 'gazebo_ros2_control' build argument 'cmake_clean_cache' from command line to 'False'
+[1.367s] Level 5:colcon.colcon_core.verb:set package 'gazebo_ros2_control' build argument 'cmake_clean_first' from command line to 'False'
+[1.367s] Level 5:colcon.colcon_core.verb:set package 'gazebo_ros2_control' build argument 'cmake_force_configure' from command line to 'False'
+[1.367s] Level 5:colcon.colcon_core.verb:set package 'gazebo_ros2_control' build argument 'ament_cmake_args' from command line to 'None'
+[1.367s] Level 5:colcon.colcon_core.verb:set package 'gazebo_ros2_control' build argument 'catkin_cmake_args' from command line to 'None'
+[1.367s] Level 5:colcon.colcon_core.verb:set package 'gazebo_ros2_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.367s] DEBUG:colcon.colcon_core.verb:Building package 'gazebo_ros2_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/devika/robo_ws/build/gazebo_ros2_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/devika/robo_ws/install/gazebo_ros2_control', 'merge_install': False, 'path': '/home/devika/robo_ws/src/gazebo_ros2_control', 'symlink_install': False, 'test_result_base': None}
+[1.368s] Level 5:colcon.colcon_core.verb:set package 'hello_moveit' build argument 'cmake_args' from command line to 'None'
+[1.368s] Level 5:colcon.colcon_core.verb:set package 'hello_moveit' build argument 'cmake_target' from command line to 'None'
+[1.368s] Level 5:colcon.colcon_core.verb:set package 'hello_moveit' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.368s] Level 5:colcon.colcon_core.verb:set package 'hello_moveit' build argument 'cmake_clean_cache' from command line to 'False'
+[1.369s] Level 5:colcon.colcon_core.verb:set package 'hello_moveit' build argument 'cmake_clean_first' from command line to 'False'
+[1.369s] Level 5:colcon.colcon_core.verb:set package 'hello_moveit' build argument 'cmake_force_configure' from command line to 'False'
+[1.369s] Level 5:colcon.colcon_core.verb:set package 'hello_moveit' build argument 'ament_cmake_args' from command line to 'None'
+[1.369s] Level 5:colcon.colcon_core.verb:set package 'hello_moveit' build argument 'catkin_cmake_args' from command line to 'None'
+[1.369s] Level 5:colcon.colcon_core.verb:set package 'hello_moveit' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.369s] DEBUG:colcon.colcon_core.verb:Building package 'hello_moveit' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/devika/robo_ws/build/hello_moveit', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/devika/robo_ws/install/hello_moveit', 'merge_install': False, 'path': '/home/devika/robo_ws/src/hello_moveit', 'symlink_install': False, 'test_result_base': None}
+[1.370s] Level 5:colcon.colcon_core.verb:set package 'perception_vision' build argument 'cmake_args' from command line to 'None'
+[1.370s] Level 5:colcon.colcon_core.verb:set package 'perception_vision' build argument 'cmake_target' from command line to 'None'
+[1.370s] Level 5:colcon.colcon_core.verb:set package 'perception_vision' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.370s] Level 5:colcon.colcon_core.verb:set package 'perception_vision' build argument 'cmake_clean_cache' from command line to 'False'
+[1.370s] Level 5:colcon.colcon_core.verb:set package 'perception_vision' build argument 'cmake_clean_first' from command line to 'False'
+[1.370s] Level 5:colcon.colcon_core.verb:set package 'perception_vision' build argument 'cmake_force_configure' from command line to 'False'
+[1.370s] Level 5:colcon.colcon_core.verb:set package 'perception_vision' build argument 'ament_cmake_args' from command line to 'None'
+[1.370s] Level 5:colcon.colcon_core.verb:set package 'perception_vision' build argument 'catkin_cmake_args' from command line to 'None'
+[1.371s] Level 5:colcon.colcon_core.verb:set package 'perception_vision' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.371s] DEBUG:colcon.colcon_core.verb:Building package 'perception_vision' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/devika/robo_ws/build/perception_vision', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/devika/robo_ws/install/perception_vision', 'merge_install': False, 'path': '/home/devika/robo_ws/src/perception_vision', 'symlink_install': False, 'test_result_base': None}
+[1.372s] Level 5:colcon.colcon_core.verb:set package 'urdf_humble_test_moveit_config' build argument 'cmake_args' from command line to 'None'
+[1.372s] Level 5:colcon.colcon_core.verb:set package 'urdf_humble_test_moveit_config' build argument 'cmake_target' from command line to 'None'
+[1.372s] Level 5:colcon.colcon_core.verb:set package 'urdf_humble_test_moveit_config' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.372s] Level 5:colcon.colcon_core.verb:set package 'urdf_humble_test_moveit_config' build argument 'cmake_clean_cache' from command line to 'False'
+[1.372s] Level 5:colcon.colcon_core.verb:set package 'urdf_humble_test_moveit_config' build argument 'cmake_clean_first' from command line to 'False'
+[1.372s] Level 5:colcon.colcon_core.verb:set package 'urdf_humble_test_moveit_config' build argument 'cmake_force_configure' from command line to 'False'
+[1.372s] Level 5:colcon.colcon_core.verb:set package 'urdf_humble_test_moveit_config' build argument 'ament_cmake_args' from command line to 'None'
+[1.372s] Level 5:colcon.colcon_core.verb:set package 'urdf_humble_test_moveit_config' build argument 'catkin_cmake_args' from command line to 'None'
+[1.372s] Level 5:colcon.colcon_core.verb:set package 'urdf_humble_test_moveit_config' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.372s] DEBUG:colcon.colcon_core.verb:Building package 'urdf_humble_test_moveit_config' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/devika/robo_ws/build/urdf_humble_test_moveit_config', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/devika/robo_ws/install/urdf_humble_test_moveit_config', 'merge_install': False, 'path': '/home/devika/robo_ws/src/urdf_humble_test_moveit_config', 'symlink_install': False, 'test_result_base': None}
+[1.373s] Level 5:colcon.colcon_core.verb:set package 'warehouse_ros_mongo' build argument 'cmake_args' from command line to 'None'
+[1.373s] Level 5:colcon.colcon_core.verb:set package 'warehouse_ros_mongo' build argument 'cmake_target' from command line to 'None'
+[1.374s] Level 5:colcon.colcon_core.verb:set package 'warehouse_ros_mongo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.374s] Level 5:colcon.colcon_core.verb:set package 'warehouse_ros_mongo' build argument 'cmake_clean_cache' from command line to 'False'
+[1.374s] Level 5:colcon.colcon_core.verb:set package 'warehouse_ros_mongo' build argument 'cmake_clean_first' from command line to 'False'
+[1.374s] Level 5:colcon.colcon_core.verb:set package 'warehouse_ros_mongo' build argument 'cmake_force_configure' from command line to 'False'
+[1.374s] Level 5:colcon.colcon_core.verb:set package 'warehouse_ros_mongo' build argument 'ament_cmake_args' from command line to 'None'
+[1.374s] Level 5:colcon.colcon_core.verb:set package 'warehouse_ros_mongo' build argument 'catkin_cmake_args' from command line to 'None'
+[1.374s] Level 5:colcon.colcon_core.verb:set package 'warehouse_ros_mongo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.374s] DEBUG:colcon.colcon_core.verb:Building package 'warehouse_ros_mongo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/devika/robo_ws/build/warehouse_ros_mongo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/devika/robo_ws/install/warehouse_ros_mongo', 'merge_install': False, 'path': '/home/devika/robo_ws/src/warehouse_ros_mongo', 'symlink_install': False, 'test_result_base': None}
+[1.375s] Level 5:colcon.colcon_core.verb:set package 'yolov8_msgs' build argument 'cmake_args' from command line to 'None'
+[1.375s] Level 5:colcon.colcon_core.verb:set package 'yolov8_msgs' build argument 'cmake_target' from command line to 'None'
+[1.375s] Level 5:colcon.colcon_core.verb:set package 'yolov8_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.375s] Level 5:colcon.colcon_core.verb:set package 'yolov8_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[1.375s] Level 5:colcon.colcon_core.verb:set package 'yolov8_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[1.375s] Level 5:colcon.colcon_core.verb:set package 'yolov8_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[1.375s] Level 5:colcon.colcon_core.verb:set package 'yolov8_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[1.375s] Level 5:colcon.colcon_core.verb:set package 'yolov8_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[1.375s] Level 5:colcon.colcon_core.verb:set package 'yolov8_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.376s] DEBUG:colcon.colcon_core.verb:Building package 'yolov8_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/devika/robo_ws/build/yolov8_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/devika/robo_ws/install/yolov8_msgs', 'merge_install': False, 'path': '/home/devika/robo_ws/src/yolov8_obb_msgs', 'symlink_install': False, 'test_result_base': None}
+[1.376s] Level 5:colcon.colcon_core.verb:set package 'yolov8_obb' build argument 'cmake_args' from command line to 'None'
+[1.377s] Level 5:colcon.colcon_core.verb:set package 'yolov8_obb' build argument 'cmake_target' from command line to 'None'
+[1.377s] Level 5:colcon.colcon_core.verb:set package 'yolov8_obb' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.377s] Level 5:colcon.colcon_core.verb:set package 'yolov8_obb' build argument 'cmake_clean_cache' from command line to 'False'
+[1.377s] Level 5:colcon.colcon_core.verb:set package 'yolov8_obb' build argument 'cmake_clean_first' from command line to 'False'
+[1.377s] Level 5:colcon.colcon_core.verb:set package 'yolov8_obb' build argument 'cmake_force_configure' from command line to 'False'
+[1.377s] Level 5:colcon.colcon_core.verb:set package 'yolov8_obb' build argument 'ament_cmake_args' from command line to 'None'
+[1.377s] Level 5:colcon.colcon_core.verb:set package 'yolov8_obb' build argument 'catkin_cmake_args' from command line to 'None'
+[1.377s] Level 5:colcon.colcon_core.verb:set package 'yolov8_obb' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.377s] DEBUG:colcon.colcon_core.verb:Building package 'yolov8_obb' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/devika/robo_ws/build/yolov8_obb', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/devika/robo_ws/install/yolov8_obb', 'merge_install': False, 'path': '/home/devika/robo_ws/src/yolov8_obb', 'symlink_install': False, 'test_result_base': None}
+[1.378s] Level 5:colcon.colcon_core.verb:set package 'urdf_humble_test' build argument 'cmake_args' from command line to 'None'
+[1.378s] Level 5:colcon.colcon_core.verb:set package 'urdf_humble_test' build argument 'cmake_target' from command line to 'None'
+[1.378s] Level 5:colcon.colcon_core.verb:set package 'urdf_humble_test' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.379s] Level 5:colcon.colcon_core.verb:set package 'urdf_humble_test' build argument 'cmake_clean_cache' from command line to 'False'
+[1.379s] Level 5:colcon.colcon_core.verb:set package 'urdf_humble_test' build argument 'cmake_clean_first' from command line to 'False'
+[1.379s] Level 5:colcon.colcon_core.verb:set package 'urdf_humble_test' build argument 'cmake_force_configure' from command line to 'False'
+[1.379s] Level 5:colcon.colcon_core.verb:set package 'urdf_humble_test' build argument 'ament_cmake_args' from command line to 'None'
+[1.379s] Level 5:colcon.colcon_core.verb:set package 'urdf_humble_test' build argument 'catkin_cmake_args' from command line to 'None'
+[1.379s] Level 5:colcon.colcon_core.verb:set package 'urdf_humble_test' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.379s] DEBUG:colcon.colcon_core.verb:Building package 'urdf_humble_test' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/devika/robo_ws/build/urdf_humble_test', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/devika/robo_ws/install/urdf_humble_test', 'merge_install': False, 'path': '/home/devika/robo_ws/src/urdf_humble_test', 'symlink_install': False, 'test_result_base': None}
+[1.379s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.382s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.383s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/devika/robo_ws/src/gazebo_ros2_control' with build type 'ament_cmake'
+[1.383s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/devika/robo_ws/src/gazebo_ros2_control'
+[1.389s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.390s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.390s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.421s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/devika/robo_ws/src/cylinder_position_estimator' with build type 'ament_python'
+[1.421s] Level 1:colcon.colcon_core.shell:create_environment_hook('cylinder_position_estimator', 'ament_prefix_path')
+[1.422s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/devika/robo_ws/install/cylinder_position_estimator/share/cylinder_position_estimator/hook/ament_prefix_path.ps1'
+[1.427s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/devika/robo_ws/install/cylinder_position_estimator/share/cylinder_position_estimator/hook/ament_prefix_path.dsv'
+[1.429s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/devika/robo_ws/install/cylinder_position_estimator/share/cylinder_position_estimator/hook/ament_prefix_path.sh'
+[1.431s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.431s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.463s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/devika/robo_ws/src/hello_moveit' with build type 'ament_cmake'
+[1.464s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/devika/robo_ws/src/hello_moveit'
+[1.464s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.465s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.499s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/devika/robo_ws/src/perception_vision' with build type 'ament_python'
+[1.499s] Level 1:colcon.colcon_core.shell:create_environment_hook('perception_vision', 'ament_prefix_path')
+[1.500s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/devika/robo_ws/install/perception_vision/share/perception_vision/hook/ament_prefix_path.ps1'
+[1.506s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/devika/robo_ws/install/perception_vision/share/perception_vision/hook/ament_prefix_path.dsv'
+[1.508s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/devika/robo_ws/install/perception_vision/share/perception_vision/hook/ament_prefix_path.sh'
+[1.510s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.511s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.541s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/devika/robo_ws/src/urdf_humble_test_moveit_config'
+[1.544s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.544s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.576s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/devika/robo_ws/src/warehouse_ros_mongo' with build type 'ament_cmake'
+[1.576s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/devika/robo_ws/src/warehouse_ros_mongo'
+[1.577s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.577s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.618s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/devika/robo_ws/src/yolov8_obb_msgs' with build type 'ament_cmake'
+[1.619s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/devika/robo_ws/src/yolov8_obb_msgs'
+[1.619s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.620s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.655s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/devika/robo_ws/src/yolov8_obb' with build type 'ament_cmake'
+[1.656s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/devika/robo_ws/src/yolov8_obb'
+[1.656s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.657s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.721s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/devika/robo_ws/build/gazebo_ros2_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/devika/robo_ws/build/gazebo_ros2_control -- -j8 -l8
+[2.707s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/devika/robo_ws/src/cylinder_position_estimator'
+[2.710s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.710s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.760s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/devika/robo_ws/build/hello_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/devika/robo_ws/build/hello_moveit -- -j8 -l8
+[3.772s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/devika/robo_ws/src/perception_vision'
+[3.772s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.772s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.821s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/devika/robo_ws/build/urdf_humble_test_moveit_config': /usr/bin/cmake --build /home/devika/robo_ws/build/urdf_humble_test_moveit_config -- -j8 -l8
+[3.832s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/devika/robo_ws/build/warehouse_ros_mongo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/devika/robo_ws/build/warehouse_ros_mongo -- -j8 -l8
+[3.854s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/devika/robo_ws/build/yolov8_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/devika/robo_ws/build/yolov8_msgs -- -j8 -l8
+[3.900s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/devika/robo_ws/build/hello_moveit' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/devika/robo_ws/build/hello_moveit -- -j8 -l8
+[3.961s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/devika/robo_ws/build/hello_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /home/devika/robo_ws/build/hello_moveit
+[3.988s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/devika/robo_ws/build/yolov8_obb': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/devika/robo_ws/build/yolov8_obb -- -j8 -l8
+[4.021s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/devika/robo_ws/build/gazebo_ros2_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/devika/robo_ws/build/gazebo_ros2_control -- -j8 -l8
+[4.046s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/devika/robo_ws/build/gazebo_ros2_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /home/devika/robo_ws/build/gazebo_ros2_control
+[4.159s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hello_moveit)
+[4.163s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/devika/robo_ws/build/hello_moveit' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /home/devika/robo_ws/build/hello_moveit
+[4.174s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/hello_moveit' for CMake module files
+[4.175s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/hello_moveit' for CMake config files
+[4.181s] Level 1:colcon.colcon_core.shell:create_environment_hook('hello_moveit', 'cmake_prefix_path')
+[4.185s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/devika/robo_ws/install/hello_moveit/share/hello_moveit/hook/cmake_prefix_path.ps1'
+[4.195s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/devika/robo_ws/install/hello_moveit/share/hello_moveit/hook/cmake_prefix_path.dsv'
+[4.196s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/devika/robo_ws/install/hello_moveit/share/hello_moveit/hook/cmake_prefix_path.sh'
+[4.200s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/hello_moveit/lib'
+[4.200s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/hello_moveit/bin'
+[4.200s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/hello_moveit/lib/pkgconfig/hello_moveit.pc'
+[4.201s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/hello_moveit/lib/python3.10/site-packages'
+[4.201s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/hello_moveit/bin'
+[4.204s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/hello_moveit/share/hello_moveit/package.ps1'
+[4.206s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/devika/robo_ws/install/hello_moveit/share/hello_moveit/package.dsv'
+[4.209s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/hello_moveit/share/hello_moveit/package.sh'
+[4.219s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/hello_moveit/share/hello_moveit/package.bash'
+[4.227s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/hello_moveit/share/hello_moveit/package.zsh'
+[4.229s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/devika/robo_ws/install/hello_moveit/share/colcon-core/packages/hello_moveit)
+[4.232s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hello_moveit)
+[4.233s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/hello_moveit' for CMake module files
+[4.234s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/hello_moveit' for CMake config files
+[4.235s] Level 1:colcon.colcon_core.shell:create_environment_hook('hello_moveit', 'cmake_prefix_path')
+[4.236s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/devika/robo_ws/install/hello_moveit/share/hello_moveit/hook/cmake_prefix_path.ps1'
+[4.238s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/devika/robo_ws/install/hello_moveit/share/hello_moveit/hook/cmake_prefix_path.dsv'
+[4.240s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/devika/robo_ws/install/hello_moveit/share/hello_moveit/hook/cmake_prefix_path.sh'
+[4.246s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/hello_moveit/lib'
+[4.247s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/hello_moveit/bin'
+[4.247s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/hello_moveit/lib/pkgconfig/hello_moveit.pc'
+[4.248s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/hello_moveit/lib/python3.10/site-packages'
+[4.248s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/hello_moveit/bin'
+[4.249s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/hello_moveit/share/hello_moveit/package.ps1'
+[4.251s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/devika/robo_ws/install/hello_moveit/share/hello_moveit/package.dsv'
+[4.253s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/hello_moveit/share/hello_moveit/package.sh'
+[4.255s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/hello_moveit/share/hello_moveit/package.bash'
+[4.257s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/hello_moveit/share/hello_moveit/package.zsh'
+[4.260s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/devika/robo_ws/install/hello_moveit/share/colcon-core/packages/hello_moveit)
+[4.275s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gazebo_ros2_control)
+[4.276s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/gazebo_ros2_control' for CMake module files
+[4.277s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/gazebo_ros2_control' for CMake config files
+[4.279s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/devika/robo_ws/build/gazebo_ros2_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /home/devika/robo_ws/build/gazebo_ros2_control
+[4.280s] Level 1:colcon.colcon_core.shell:create_environment_hook('gazebo_ros2_control', 'cmake_prefix_path')
+[4.281s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/hook/cmake_prefix_path.ps1'
+[4.283s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/hook/cmake_prefix_path.dsv'
+[4.291s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/hook/cmake_prefix_path.sh'
+[4.295s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/gazebo_ros2_control/lib'
+[4.296s] Level 1:colcon.colcon_core.shell:create_environment_hook('gazebo_ros2_control', 'ld_library_path_lib')
+[4.297s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/hook/ld_library_path_lib.ps1'
+[4.300s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/hook/ld_library_path_lib.dsv'
+[4.302s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/hook/ld_library_path_lib.sh'
+[4.304s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/gazebo_ros2_control/bin'
+[4.304s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/gazebo_ros2_control/lib/pkgconfig/gazebo_ros2_control.pc'
+[4.305s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/gazebo_ros2_control/lib/python3.10/site-packages'
+[4.306s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/gazebo_ros2_control/bin'
+[4.325s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/package.ps1'
+[4.333s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/package.dsv'
+[4.337s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/package.sh'
+[4.342s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/package.bash'
+[4.346s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/package.zsh'
+[4.351s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/devika/robo_ws/install/gazebo_ros2_control/share/colcon-core/packages/gazebo_ros2_control)
+[4.359s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gazebo_ros2_control)
+[4.362s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/gazebo_ros2_control' for CMake module files
+[4.364s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/gazebo_ros2_control' for CMake config files
+[4.368s] Level 1:colcon.colcon_core.shell:create_environment_hook('gazebo_ros2_control', 'cmake_prefix_path')
+[4.372s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/hook/cmake_prefix_path.ps1'
+[4.379s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/hook/cmake_prefix_path.dsv'
+[4.384s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/hook/cmake_prefix_path.sh'
+[4.386s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/gazebo_ros2_control/lib'
+[4.387s] Level 1:colcon.colcon_core.shell:create_environment_hook('gazebo_ros2_control', 'ld_library_path_lib')
+[4.387s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/hook/ld_library_path_lib.ps1'
+[4.391s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/hook/ld_library_path_lib.dsv'
+[4.393s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/hook/ld_library_path_lib.sh'
+[4.395s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/gazebo_ros2_control/bin'
+[4.395s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/gazebo_ros2_control/lib/pkgconfig/gazebo_ros2_control.pc'
+[4.396s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/gazebo_ros2_control/lib/python3.10/site-packages'
+[4.397s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/gazebo_ros2_control/bin'
+[4.402s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/package.ps1'
+[4.403s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/package.dsv'
+[4.405s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/package.sh'
+[4.406s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/package.bash'
+[4.422s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/package.zsh'
+[4.431s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/devika/robo_ws/install/gazebo_ros2_control/share/colcon-core/packages/gazebo_ros2_control)
+[4.436s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/devika/robo_ws/src/urdf_humble_test' with build type 'ament_cmake'
+[4.436s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/devika/robo_ws/src/urdf_humble_test'
+[4.453s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.454s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.571s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/devika/robo_ws/build/yolov8_obb' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/devika/robo_ws/build/yolov8_obb -- -j8 -l8
+[4.578s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/devika/robo_ws/build/yolov8_obb': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /home/devika/robo_ws/build/yolov8_obb
+[4.730s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/devika/robo_ws/build/urdf_humble_test': CMAKE_PREFIX_PATH=/home/devika/robo_ws/install/gazebo_ros2_control:/home/devika/robo_ws/install/yolov8_obb:/home/devika/robo_ws/install/yolov8_msgs:/home/devika/robo_ws/install/urdf_humble_test_moveit_config:/home/devika/robo_ws/install/warehouse_ros_mongo:/home/devika/robo_ws/install/urdf_humble_test:/home/devika/robo_ws/install/moveit_task_constructor_visualization:/home/devika/robo_ws/install/moveit_task_constructor_demo:/home/devika/robo_ws/install/moveit_task_constructor_capabilities:/home/devika/robo_ws/install/hello_moveit_task_constructor:/home/devika/robo_ws/install/moveit_task_constructor_core:/home/devika/robo_ws/install/rviz_marker_tools:/home/devika/robo_ws/install/moveit_task_constructor_msgs:/home/devika/robo_ws/install/hello_moveit:/home/devika/ws_moveit2/install/pilz_industrial_motion_planner_testutils:/home/devika/ws_moveit2/install/moveit_runtime:/home/devika/ws_moveit2/install/moveit2_tutorials:/home/devika/ws_moveit2/install/moveit:/home/devika/ws_moveit2/install/moveit_planners:/home/devika/ws_moveit2/install/pilz_industrial_motion_planner:/home/devika/ws_moveit2/install/moveit_visual_tools:/home/devika/ws_moveit2/install/moveit_task_constructor_visualization:/home/devika/ws_moveit2/install/moveit_task_constructor_demo:/home/devika/ws_moveit2/install/moveit_task_constructor_capabilities:/home/devika/ws_moveit2/install/moveit_task_constructor_core:/home/devika/ws_moveit2/install/moveit_ros_control_interface:/home/devika/ws_moveit2/install/moveit_plugins:/home/devika/ws_moveit2/install/moveit_simple_controller_manager:/home/devika/ws_moveit2/install/moveit_setup_assistant:/home/devika/ws_moveit2/install/moveit_setup_srdf_plugins:/home/devika/ws_moveit2/install/moveit_setup_core_plugins:/home/devika/ws_moveit2/install/moveit_setup_controllers:/home/devika/ws_moveit2/install/moveit_setup_app_plugins:/home/devika/ws_moveit2/install/moveit_setup_framework:/home/devika/ws_moveit2/install/moveit_servo:/home/devika/ws_moveit2/install/moveit_ros:/home/devika/ws_moveit2/install/moveit_ros_visualization:/home/devika/ws_moveit2/install/moveit_hybrid_planning:/home/devika/ws_moveit2/install/moveit_ros_planning_interface:/home/devika/ws_moveit2/install/moveit_ros_benchmarks:/home/devika/ws_moveit2/install/moveit_ros_warehouse:/home/devika/ws_moveit2/install/moveit_ros_robot_interaction:/home/devika/ws_moveit2/install/moveit_ros_perception:/home/devika/ws_moveit2/install/moveit_resources_prbt_pg70_support:/home/devika/ws_moveit2/install/moveit_resources_prbt_moveit_config:/home/devika/ws_moveit2/install/moveit_ros_move_group:/home/devika/ws_moveit2/install/moveit_planners_ompl:/home/devika/ws_moveit2/install/moveit_ros_planning:/home/devika/ws_moveit2/install/moveit_ros_occupancy_map_monitor:/home/devika/ws_moveit2/install/moveit_resources_prbt_ikfast_manipulator_plugin:/home/devika/ws_moveit2/install/moveit_planners_chomp:/home/devika/ws_moveit2/install/moveit_kinematics:/home/devika/ws_moveit2/install/moveit_chomp_optimizer_adapter:/home/devika/ws_moveit2/install/chomp_motion_planner:/home/devika/ws_moveit2/install/moveit_core:/home/devika/ws_moveit2/install/srdfdom:/home/devika/ws_moveit2/install/rviz_marker_tools:/home/devika/ws_moveit2/install/rosparam_shortcuts:/home/devika/ws_moveit2/install/moveit_task_constructor_msgs:/home/devika/ws_moveit2/install/moveit_resources_prbt_support:/home/devika/ws_moveit2/install/moveit_resources:/home/devika/ws_moveit2/install/moveit_resources_pr2_description:/home/devika/ws_moveit2/install/moveit_resources_panda_moveit_config:/home/devika/ws_moveit2/install/moveit_resources_panda_description:/home/devika/ws_moveit2/install/moveit_resources_fanuc_moveit_config:/home/devika/ws_moveit2/install/moveit_resources_fanuc_description:/home/devika/ws_moveit2/install/moveit_common:/home/devika/manga_ws/install/urdf_humble_test_moveit_config:/home/devika/manga_ws/install/urdf_humble_test:/home/devika/manga_ws/install/hello_moveit:/home/devika/some_ws/install/motoman_hc10_support:/home/devika/some_ws/install/motoman_resources:/home/devika/some_ws/install/hello_moveit:/home/devika/some_ws/install/hc20_sim_moveit_config:/home/devika/some_ws/install/hc20_moveit_config:/home/devika/some_ws/install/hc10_movit2v3:/home/devika/some_ws/install/hc10dt_moveit_config:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble LD_LIBRARY_PATH=/home/devika/robo_ws/install/gazebo_ros2_control/lib:/home/devika/robo_ws/install/yolov8_msgs/lib:/home/devika/robo_ws/install/warehouse_ros_mongo/lib:/home/devika/robo_ws/install/moveit_task_constructor_visualization/lib:/home/devika/robo_ws/install/moveit_task_constructor_demo/lib:/home/devika/robo_ws/install/moveit_task_constructor_capabilities/lib:/home/devika/robo_ws/install/hello_moveit_task_constructor/lib:/home/devika/robo_ws/install/moveit_task_constructor_core/lib:/home/devika/robo_ws/install/rviz_marker_tools/lib:/home/devika/robo_ws/install/moveit_task_constructor_msgs/lib:/home/devika/ws_moveit2/install/pilz_industrial_motion_planner_testutils/lib:/home/devika/ws_moveit2/install/pilz_industrial_motion_planner/lib:/home/devika/ws_moveit2/install/moveit_visual_tools/lib:/home/devika/ws_moveit2/install/moveit_task_constructor_visualization/lib:/home/devika/ws_moveit2/install/moveit_task_constructor_demo/lib:/home/devika/ws_moveit2/install/moveit_task_constructor_capabilities/lib:/home/devika/ws_moveit2/install/moveit_task_constructor_core/lib:/home/devika/ws_moveit2/install/moveit_ros_control_interface/lib:/home/devika/ws_moveit2/install/moveit_simple_controller_manager/lib:/home/devika/ws_moveit2/install/moveit_setup_assistant/lib:/home/devika/ws_moveit2/install/moveit_setup_srdf_plugins/lib:/home/devika/ws_moveit2/install/moveit_setup_core_plugins/lib:/home/devika/ws_moveit2/install/moveit_setup_controllers/lib:/home/devika/ws_moveit2/install/moveit_setup_app_plugins/lib:/home/devika/ws_moveit2/install/moveit_setup_framework/lib:/home/devika/ws_moveit2/install/moveit_servo/lib:/home/devika/ws_moveit2/install/moveit_ros_visualization/lib:/home/devika/ws_moveit2/install/moveit_hybrid_planning/lib:/home/devika/ws_moveit2/install/moveit_ros_planning_interface/lib:/home/devika/ws_moveit2/install/moveit_ros_benchmarks/lib:/home/devika/ws_moveit2/install/moveit_ros_warehouse/lib:/home/devika/ws_moveit2/install/moveit_ros_robot_interaction/lib:/home/devika/ws_moveit2/install/moveit_ros_perception/lib:/home/devika/ws_moveit2/install/moveit_ros_move_group/lib:/home/devika/ws_moveit2/install/moveit_planners_ompl/lib:/home/devika/ws_moveit2/install/moveit_ros_planning/lib:/home/devika/ws_moveit2/install/moveit_ros_occupancy_map_monitor/lib:/home/devika/ws_moveit2/install/moveit_resources_prbt_ikfast_manipulator_plugin/lib:/home/devika/ws_moveit2/install/moveit_planners_chomp/lib:/home/devika/ws_moveit2/install/moveit_kinematics/lib:/home/devika/ws_moveit2/install/moveit_chomp_optimizer_adapter/lib:/home/devika/ws_moveit2/install/chomp_motion_planner/lib:/home/devika/ws_moveit2/install/moveit_core/lib:/home/devika/ws_moveit2/install/srdfdom/lib:/home/devika/ws_moveit2/install/rviz_marker_tools/lib:/home/devika/ws_moveit2/install/rosparam_shortcuts/lib:/home/devika/ws_moveit2/install/moveit_task_constructor_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/devika/robo_ws/build/urdf_humble_test -- -j8 -l8
+[4.731s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yolov8_obb)
+[4.735s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/devika/robo_ws/build/yolov8_obb' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /home/devika/robo_ws/build/yolov8_obb
+[4.740s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/yolov8_obb' for CMake module files
+[4.741s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/yolov8_obb' for CMake config files
+[4.742s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolov8_obb', 'cmake_prefix_path')
+[4.743s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/devika/robo_ws/install/yolov8_obb/share/yolov8_obb/hook/cmake_prefix_path.ps1'
+[4.747s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/devika/robo_ws/install/yolov8_obb/share/yolov8_obb/hook/cmake_prefix_path.dsv'
+[4.749s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/devika/robo_ws/install/yolov8_obb/share/yolov8_obb/hook/cmake_prefix_path.sh'
+[4.756s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/yolov8_obb/lib'
+[4.760s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/yolov8_obb/bin'
+[4.761s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/yolov8_obb/lib/pkgconfig/yolov8_obb.pc'
+[4.762s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/yolov8_obb/lib/python3.10/site-packages'
+[4.763s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/yolov8_obb/bin'
+[4.765s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/yolov8_obb/share/yolov8_obb/package.ps1'
+[4.770s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/devika/robo_ws/install/yolov8_obb/share/yolov8_obb/package.dsv'
+[4.773s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/yolov8_obb/share/yolov8_obb/package.sh'
+[4.775s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/yolov8_obb/share/yolov8_obb/package.bash'
+[4.781s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/yolov8_obb/share/yolov8_obb/package.zsh'
+[4.789s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/devika/robo_ws/install/yolov8_obb/share/colcon-core/packages/yolov8_obb)
+[4.792s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yolov8_obb)
+[4.794s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/yolov8_obb' for CMake module files
+[4.798s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/yolov8_obb' for CMake config files
+[4.802s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolov8_obb', 'cmake_prefix_path')
+[4.804s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/devika/robo_ws/install/yolov8_obb/share/yolov8_obb/hook/cmake_prefix_path.ps1'
+[4.808s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/devika/robo_ws/install/yolov8_obb/share/yolov8_obb/hook/cmake_prefix_path.dsv'
+[4.811s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/devika/robo_ws/install/yolov8_obb/share/yolov8_obb/hook/cmake_prefix_path.sh'
+[4.817s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/yolov8_obb/lib'
+[4.818s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/yolov8_obb/bin'
+[4.818s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/yolov8_obb/lib/pkgconfig/yolov8_obb.pc'
+[4.819s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/yolov8_obb/lib/python3.10/site-packages'
+[4.820s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/yolov8_obb/bin'
+[4.826s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/yolov8_obb/share/yolov8_obb/package.ps1'
+[4.831s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/devika/robo_ws/install/yolov8_obb/share/yolov8_obb/package.dsv'
+[4.837s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/yolov8_obb/share/yolov8_obb/package.sh'
+[4.840s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/yolov8_obb/share/yolov8_obb/package.bash'
+[4.846s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/yolov8_obb/share/yolov8_obb/package.zsh'
+[4.849s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/devika/robo_ws/install/yolov8_obb/share/colcon-core/packages/yolov8_obb)
+[5.142s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/devika/robo_ws/build/urdf_humble_test' returned '0': CMAKE_PREFIX_PATH=/home/devika/robo_ws/install/gazebo_ros2_control:/home/devika/robo_ws/install/yolov8_obb:/home/devika/robo_ws/install/yolov8_msgs:/home/devika/robo_ws/install/urdf_humble_test_moveit_config:/home/devika/robo_ws/install/warehouse_ros_mongo:/home/devika/robo_ws/install/urdf_humble_test:/home/devika/robo_ws/install/moveit_task_constructor_visualization:/home/devika/robo_ws/install/moveit_task_constructor_demo:/home/devika/robo_ws/install/moveit_task_constructor_capabilities:/home/devika/robo_ws/install/hello_moveit_task_constructor:/home/devika/robo_ws/install/moveit_task_constructor_core:/home/devika/robo_ws/install/rviz_marker_tools:/home/devika/robo_ws/install/moveit_task_constructor_msgs:/home/devika/robo_ws/install/hello_moveit:/home/devika/ws_moveit2/install/pilz_industrial_motion_planner_testutils:/home/devika/ws_moveit2/install/moveit_runtime:/home/devika/ws_moveit2/install/moveit2_tutorials:/home/devika/ws_moveit2/install/moveit:/home/devika/ws_moveit2/install/moveit_planners:/home/devika/ws_moveit2/install/pilz_industrial_motion_planner:/home/devika/ws_moveit2/install/moveit_visual_tools:/home/devika/ws_moveit2/install/moveit_task_constructor_visualization:/home/devika/ws_moveit2/install/moveit_task_constructor_demo:/home/devika/ws_moveit2/install/moveit_task_constructor_capabilities:/home/devika/ws_moveit2/install/moveit_task_constructor_core:/home/devika/ws_moveit2/install/moveit_ros_control_interface:/home/devika/ws_moveit2/install/moveit_plugins:/home/devika/ws_moveit2/install/moveit_simple_controller_manager:/home/devika/ws_moveit2/install/moveit_setup_assistant:/home/devika/ws_moveit2/install/moveit_setup_srdf_plugins:/home/devika/ws_moveit2/install/moveit_setup_core_plugins:/home/devika/ws_moveit2/install/moveit_setup_controllers:/home/devika/ws_moveit2/install/moveit_setup_app_plugins:/home/devika/ws_moveit2/install/moveit_setup_framework:/home/devika/ws_moveit2/install/moveit_servo:/home/devika/ws_moveit2/install/moveit_ros:/home/devika/ws_moveit2/install/moveit_ros_visualization:/home/devika/ws_moveit2/install/moveit_hybrid_planning:/home/devika/ws_moveit2/install/moveit_ros_planning_interface:/home/devika/ws_moveit2/install/moveit_ros_benchmarks:/home/devika/ws_moveit2/install/moveit_ros_warehouse:/home/devika/ws_moveit2/install/moveit_ros_robot_interaction:/home/devika/ws_moveit2/install/moveit_ros_perception:/home/devika/ws_moveit2/install/moveit_resources_prbt_pg70_support:/home/devika/ws_moveit2/install/moveit_resources_prbt_moveit_config:/home/devika/ws_moveit2/install/moveit_ros_move_group:/home/devika/ws_moveit2/install/moveit_planners_ompl:/home/devika/ws_moveit2/install/moveit_ros_planning:/home/devika/ws_moveit2/install/moveit_ros_occupancy_map_monitor:/home/devika/ws_moveit2/install/moveit_resources_prbt_ikfast_manipulator_plugin:/home/devika/ws_moveit2/install/moveit_planners_chomp:/home/devika/ws_moveit2/install/moveit_kinematics:/home/devika/ws_moveit2/install/moveit_chomp_optimizer_adapter:/home/devika/ws_moveit2/install/chomp_motion_planner:/home/devika/ws_moveit2/install/moveit_core:/home/devika/ws_moveit2/install/srdfdom:/home/devika/ws_moveit2/install/rviz_marker_tools:/home/devika/ws_moveit2/install/rosparam_shortcuts:/home/devika/ws_moveit2/install/moveit_task_constructor_msgs:/home/devika/ws_moveit2/install/moveit_resources_prbt_support:/home/devika/ws_moveit2/install/moveit_resources:/home/devika/ws_moveit2/install/moveit_resources_pr2_description:/home/devika/ws_moveit2/install/moveit_resources_panda_moveit_config:/home/devika/ws_moveit2/install/moveit_resources_panda_description:/home/devika/ws_moveit2/install/moveit_resources_fanuc_moveit_config:/home/devika/ws_moveit2/install/moveit_resources_fanuc_description:/home/devika/ws_moveit2/install/moveit_common:/home/devika/manga_ws/install/urdf_humble_test_moveit_config:/home/devika/manga_ws/install/urdf_humble_test:/home/devika/manga_ws/install/hello_moveit:/home/devika/some_ws/install/motoman_hc10_support:/home/devika/some_ws/install/motoman_resources:/home/devika/some_ws/install/hello_moveit:/home/devika/some_ws/install/hc20_sim_moveit_config:/home/devika/some_ws/install/hc20_moveit_config:/home/devika/some_ws/install/hc10_movit2v3:/home/devika/some_ws/install/hc10dt_moveit_config:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble LD_LIBRARY_PATH=/home/devika/robo_ws/install/gazebo_ros2_control/lib:/home/devika/robo_ws/install/yolov8_msgs/lib:/home/devika/robo_ws/install/warehouse_ros_mongo/lib:/home/devika/robo_ws/install/moveit_task_constructor_visualization/lib:/home/devika/robo_ws/install/moveit_task_constructor_demo/lib:/home/devika/robo_ws/install/moveit_task_constructor_capabilities/lib:/home/devika/robo_ws/install/hello_moveit_task_constructor/lib:/home/devika/robo_ws/install/moveit_task_constructor_core/lib:/home/devika/robo_ws/install/rviz_marker_tools/lib:/home/devika/robo_ws/install/moveit_task_constructor_msgs/lib:/home/devika/ws_moveit2/install/pilz_industrial_motion_planner_testutils/lib:/home/devika/ws_moveit2/install/pilz_industrial_motion_planner/lib:/home/devika/ws_moveit2/install/moveit_visual_tools/lib:/home/devika/ws_moveit2/install/moveit_task_constructor_visualization/lib:/home/devika/ws_moveit2/install/moveit_task_constructor_demo/lib:/home/devika/ws_moveit2/install/moveit_task_constructor_capabilities/lib:/home/devika/ws_moveit2/install/moveit_task_constructor_core/lib:/home/devika/ws_moveit2/install/moveit_ros_control_interface/lib:/home/devika/ws_moveit2/install/moveit_simple_controller_manager/lib:/home/devika/ws_moveit2/install/moveit_setup_assistant/lib:/home/devika/ws_moveit2/install/moveit_setup_srdf_plugins/lib:/home/devika/ws_moveit2/install/moveit_setup_core_plugins/lib:/home/devika/ws_moveit2/install/moveit_setup_controllers/lib:/home/devika/ws_moveit2/install/moveit_setup_app_plugins/lib:/home/devika/ws_moveit2/install/moveit_setup_framework/lib:/home/devika/ws_moveit2/install/moveit_servo/lib:/home/devika/ws_moveit2/install/moveit_ros_visualization/lib:/home/devika/ws_moveit2/install/moveit_hybrid_planning/lib:/home/devika/ws_moveit2/install/moveit_ros_planning_interface/lib:/home/devika/ws_moveit2/install/moveit_ros_benchmarks/lib:/home/devika/ws_moveit2/install/moveit_ros_warehouse/lib:/home/devika/ws_moveit2/install/moveit_ros_robot_interaction/lib:/home/devika/ws_moveit2/install/moveit_ros_perception/lib:/home/devika/ws_moveit2/install/moveit_ros_move_group/lib:/home/devika/ws_moveit2/install/moveit_planners_ompl/lib:/home/devika/ws_moveit2/install/moveit_ros_planning/lib:/home/devika/ws_moveit2/install/moveit_ros_occupancy_map_monitor/lib:/home/devika/ws_moveit2/install/moveit_resources_prbt_ikfast_manipulator_plugin/lib:/home/devika/ws_moveit2/install/moveit_planners_chomp/lib:/home/devika/ws_moveit2/install/moveit_kinematics/lib:/home/devika/ws_moveit2/install/moveit_chomp_optimizer_adapter/lib:/home/devika/ws_moveit2/install/chomp_motion_planner/lib:/home/devika/ws_moveit2/install/moveit_core/lib:/home/devika/ws_moveit2/install/srdfdom/lib:/home/devika/ws_moveit2/install/rviz_marker_tools/lib:/home/devika/ws_moveit2/install/rosparam_shortcuts/lib:/home/devika/ws_moveit2/install/moveit_task_constructor_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/devika/robo_ws/build/urdf_humble_test -- -j8 -l8
+[5.155s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/devika/robo_ws/build/urdf_humble_test': CMAKE_PREFIX_PATH=/home/devika/robo_ws/install/gazebo_ros2_control:/home/devika/robo_ws/install/yolov8_obb:/home/devika/robo_ws/install/yolov8_msgs:/home/devika/robo_ws/install/urdf_humble_test_moveit_config:/home/devika/robo_ws/install/warehouse_ros_mongo:/home/devika/robo_ws/install/urdf_humble_test:/home/devika/robo_ws/install/moveit_task_constructor_visualization:/home/devika/robo_ws/install/moveit_task_constructor_demo:/home/devika/robo_ws/install/moveit_task_constructor_capabilities:/home/devika/robo_ws/install/hello_moveit_task_constructor:/home/devika/robo_ws/install/moveit_task_constructor_core:/home/devika/robo_ws/install/rviz_marker_tools:/home/devika/robo_ws/install/moveit_task_constructor_msgs:/home/devika/robo_ws/install/hello_moveit:/home/devika/ws_moveit2/install/pilz_industrial_motion_planner_testutils:/home/devika/ws_moveit2/install/moveit_runtime:/home/devika/ws_moveit2/install/moveit2_tutorials:/home/devika/ws_moveit2/install/moveit:/home/devika/ws_moveit2/install/moveit_planners:/home/devika/ws_moveit2/install/pilz_industrial_motion_planner:/home/devika/ws_moveit2/install/moveit_visual_tools:/home/devika/ws_moveit2/install/moveit_task_constructor_visualization:/home/devika/ws_moveit2/install/moveit_task_constructor_demo:/home/devika/ws_moveit2/install/moveit_task_constructor_capabilities:/home/devika/ws_moveit2/install/moveit_task_constructor_core:/home/devika/ws_moveit2/install/moveit_ros_control_interface:/home/devika/ws_moveit2/install/moveit_plugins:/home/devika/ws_moveit2/install/moveit_simple_controller_manager:/home/devika/ws_moveit2/install/moveit_setup_assistant:/home/devika/ws_moveit2/install/moveit_setup_srdf_plugins:/home/devika/ws_moveit2/install/moveit_setup_core_plugins:/home/devika/ws_moveit2/install/moveit_setup_controllers:/home/devika/ws_moveit2/install/moveit_setup_app_plugins:/home/devika/ws_moveit2/install/moveit_setup_framework:/home/devika/ws_moveit2/install/moveit_servo:/home/devika/ws_moveit2/install/moveit_ros:/home/devika/ws_moveit2/install/moveit_ros_visualization:/home/devika/ws_moveit2/install/moveit_hybrid_planning:/home/devika/ws_moveit2/install/moveit_ros_planning_interface:/home/devika/ws_moveit2/install/moveit_ros_benchmarks:/home/devika/ws_moveit2/install/moveit_ros_warehouse:/home/devika/ws_moveit2/install/moveit_ros_robot_interaction:/home/devika/ws_moveit2/install/moveit_ros_perception:/home/devika/ws_moveit2/install/moveit_resources_prbt_pg70_support:/home/devika/ws_moveit2/install/moveit_resources_prbt_moveit_config:/home/devika/ws_moveit2/install/moveit_ros_move_group:/home/devika/ws_moveit2/install/moveit_planners_ompl:/home/devika/ws_moveit2/install/moveit_ros_planning:/home/devika/ws_moveit2/install/moveit_ros_occupancy_map_monitor:/home/devika/ws_moveit2/install/moveit_resources_prbt_ikfast_manipulator_plugin:/home/devika/ws_moveit2/install/moveit_planners_chomp:/home/devika/ws_moveit2/install/moveit_kinematics:/home/devika/ws_moveit2/install/moveit_chomp_optimizer_adapter:/home/devika/ws_moveit2/install/chomp_motion_planner:/home/devika/ws_moveit2/install/moveit_core:/home/devika/ws_moveit2/install/srdfdom:/home/devika/ws_moveit2/install/rviz_marker_tools:/home/devika/ws_moveit2/install/rosparam_shortcuts:/home/devika/ws_moveit2/install/moveit_task_constructor_msgs:/home/devika/ws_moveit2/install/moveit_resources_prbt_support:/home/devika/ws_moveit2/install/moveit_resources:/home/devika/ws_moveit2/install/moveit_resources_pr2_description:/home/devika/ws_moveit2/install/moveit_resources_panda_moveit_config:/home/devika/ws_moveit2/install/moveit_resources_panda_description:/home/devika/ws_moveit2/install/moveit_resources_fanuc_moveit_config:/home/devika/ws_moveit2/install/moveit_resources_fanuc_description:/home/devika/ws_moveit2/install/moveit_common:/home/devika/manga_ws/install/urdf_humble_test_moveit_config:/home/devika/manga_ws/install/urdf_humble_test:/home/devika/manga_ws/install/hello_moveit:/home/devika/some_ws/install/motoman_hc10_support:/home/devika/some_ws/install/motoman_resources:/home/devika/some_ws/install/hello_moveit:/home/devika/some_ws/install/hc20_sim_moveit_config:/home/devika/some_ws/install/hc20_moveit_config:/home/devika/some_ws/install/hc10_movit2v3:/home/devika/some_ws/install/hc10dt_moveit_config:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble LD_LIBRARY_PATH=/home/devika/robo_ws/install/gazebo_ros2_control/lib:/home/devika/robo_ws/install/yolov8_msgs/lib:/home/devika/robo_ws/install/warehouse_ros_mongo/lib:/home/devika/robo_ws/install/moveit_task_constructor_visualization/lib:/home/devika/robo_ws/install/moveit_task_constructor_demo/lib:/home/devika/robo_ws/install/moveit_task_constructor_capabilities/lib:/home/devika/robo_ws/install/hello_moveit_task_constructor/lib:/home/devika/robo_ws/install/moveit_task_constructor_core/lib:/home/devika/robo_ws/install/rviz_marker_tools/lib:/home/devika/robo_ws/install/moveit_task_constructor_msgs/lib:/home/devika/ws_moveit2/install/pilz_industrial_motion_planner_testutils/lib:/home/devika/ws_moveit2/install/pilz_industrial_motion_planner/lib:/home/devika/ws_moveit2/install/moveit_visual_tools/lib:/home/devika/ws_moveit2/install/moveit_task_constructor_visualization/lib:/home/devika/ws_moveit2/install/moveit_task_constructor_demo/lib:/home/devika/ws_moveit2/install/moveit_task_constructor_capabilities/lib:/home/devika/ws_moveit2/install/moveit_task_constructor_core/lib:/home/devika/ws_moveit2/install/moveit_ros_control_interface/lib:/home/devika/ws_moveit2/install/moveit_simple_controller_manager/lib:/home/devika/ws_moveit2/install/moveit_setup_assistant/lib:/home/devika/ws_moveit2/install/moveit_setup_srdf_plugins/lib:/home/devika/ws_moveit2/install/moveit_setup_core_plugins/lib:/home/devika/ws_moveit2/install/moveit_setup_controllers/lib:/home/devika/ws_moveit2/install/moveit_setup_app_plugins/lib:/home/devika/ws_moveit2/install/moveit_setup_framework/lib:/home/devika/ws_moveit2/install/moveit_servo/lib:/home/devika/ws_moveit2/install/moveit_ros_visualization/lib:/home/devika/ws_moveit2/install/moveit_hybrid_planning/lib:/home/devika/ws_moveit2/install/moveit_ros_planning_interface/lib:/home/devika/ws_moveit2/install/moveit_ros_benchmarks/lib:/home/devika/ws_moveit2/install/moveit_ros_warehouse/lib:/home/devika/ws_moveit2/install/moveit_ros_robot_interaction/lib:/home/devika/ws_moveit2/install/moveit_ros_perception/lib:/home/devika/ws_moveit2/install/moveit_ros_move_group/lib:/home/devika/ws_moveit2/install/moveit_planners_ompl/lib:/home/devika/ws_moveit2/install/moveit_ros_planning/lib:/home/devika/ws_moveit2/install/moveit_ros_occupancy_map_monitor/lib:/home/devika/ws_moveit2/install/moveit_resources_prbt_ikfast_manipulator_plugin/lib:/home/devika/ws_moveit2/install/moveit_planners_chomp/lib:/home/devika/ws_moveit2/install/moveit_kinematics/lib:/home/devika/ws_moveit2/install/moveit_chomp_optimizer_adapter/lib:/home/devika/ws_moveit2/install/chomp_motion_planner/lib:/home/devika/ws_moveit2/install/moveit_core/lib:/home/devika/ws_moveit2/install/srdfdom/lib:/home/devika/ws_moveit2/install/rviz_marker_tools/lib:/home/devika/ws_moveit2/install/rosparam_shortcuts/lib:/home/devika/ws_moveit2/install/moveit_task_constructor_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/devika/robo_ws/build/urdf_humble_test
+[5.298s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(urdf_humble_test)
+[5.299s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/urdf_humble_test' for CMake module files
+[5.307s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/devika/robo_ws/build/urdf_humble_test' returned '0': CMAKE_PREFIX_PATH=/home/devika/robo_ws/install/gazebo_ros2_control:/home/devika/robo_ws/install/yolov8_obb:/home/devika/robo_ws/install/yolov8_msgs:/home/devika/robo_ws/install/urdf_humble_test_moveit_config:/home/devika/robo_ws/install/warehouse_ros_mongo:/home/devika/robo_ws/install/urdf_humble_test:/home/devika/robo_ws/install/moveit_task_constructor_visualization:/home/devika/robo_ws/install/moveit_task_constructor_demo:/home/devika/robo_ws/install/moveit_task_constructor_capabilities:/home/devika/robo_ws/install/hello_moveit_task_constructor:/home/devika/robo_ws/install/moveit_task_constructor_core:/home/devika/robo_ws/install/rviz_marker_tools:/home/devika/robo_ws/install/moveit_task_constructor_msgs:/home/devika/robo_ws/install/hello_moveit:/home/devika/ws_moveit2/install/pilz_industrial_motion_planner_testutils:/home/devika/ws_moveit2/install/moveit_runtime:/home/devika/ws_moveit2/install/moveit2_tutorials:/home/devika/ws_moveit2/install/moveit:/home/devika/ws_moveit2/install/moveit_planners:/home/devika/ws_moveit2/install/pilz_industrial_motion_planner:/home/devika/ws_moveit2/install/moveit_visual_tools:/home/devika/ws_moveit2/install/moveit_task_constructor_visualization:/home/devika/ws_moveit2/install/moveit_task_constructor_demo:/home/devika/ws_moveit2/install/moveit_task_constructor_capabilities:/home/devika/ws_moveit2/install/moveit_task_constructor_core:/home/devika/ws_moveit2/install/moveit_ros_control_interface:/home/devika/ws_moveit2/install/moveit_plugins:/home/devika/ws_moveit2/install/moveit_simple_controller_manager:/home/devika/ws_moveit2/install/moveit_setup_assistant:/home/devika/ws_moveit2/install/moveit_setup_srdf_plugins:/home/devika/ws_moveit2/install/moveit_setup_core_plugins:/home/devika/ws_moveit2/install/moveit_setup_controllers:/home/devika/ws_moveit2/install/moveit_setup_app_plugins:/home/devika/ws_moveit2/install/moveit_setup_framework:/home/devika/ws_moveit2/install/moveit_servo:/home/devika/ws_moveit2/install/moveit_ros:/home/devika/ws_moveit2/install/moveit_ros_visualization:/home/devika/ws_moveit2/install/moveit_hybrid_planning:/home/devika/ws_moveit2/install/moveit_ros_planning_interface:/home/devika/ws_moveit2/install/moveit_ros_benchmarks:/home/devika/ws_moveit2/install/moveit_ros_warehouse:/home/devika/ws_moveit2/install/moveit_ros_robot_interaction:/home/devika/ws_moveit2/install/moveit_ros_perception:/home/devika/ws_moveit2/install/moveit_resources_prbt_pg70_support:/home/devika/ws_moveit2/install/moveit_resources_prbt_moveit_config:/home/devika/ws_moveit2/install/moveit_ros_move_group:/home/devika/ws_moveit2/install/moveit_planners_ompl:/home/devika/ws_moveit2/install/moveit_ros_planning:/home/devika/ws_moveit2/install/moveit_ros_occupancy_map_monitor:/home/devika/ws_moveit2/install/moveit_resources_prbt_ikfast_manipulator_plugin:/home/devika/ws_moveit2/install/moveit_planners_chomp:/home/devika/ws_moveit2/install/moveit_kinematics:/home/devika/ws_moveit2/install/moveit_chomp_optimizer_adapter:/home/devika/ws_moveit2/install/chomp_motion_planner:/home/devika/ws_moveit2/install/moveit_core:/home/devika/ws_moveit2/install/srdfdom:/home/devika/ws_moveit2/install/rviz_marker_tools:/home/devika/ws_moveit2/install/rosparam_shortcuts:/home/devika/ws_moveit2/install/moveit_task_constructor_msgs:/home/devika/ws_moveit2/install/moveit_resources_prbt_support:/home/devika/ws_moveit2/install/moveit_resources:/home/devika/ws_moveit2/install/moveit_resources_pr2_description:/home/devika/ws_moveit2/install/moveit_resources_panda_moveit_config:/home/devika/ws_moveit2/install/moveit_resources_panda_description:/home/devika/ws_moveit2/install/moveit_resources_fanuc_moveit_config:/home/devika/ws_moveit2/install/moveit_resources_fanuc_description:/home/devika/ws_moveit2/install/moveit_common:/home/devika/manga_ws/install/urdf_humble_test_moveit_config:/home/devika/manga_ws/install/urdf_humble_test:/home/devika/manga_ws/install/hello_moveit:/home/devika/some_ws/install/motoman_hc10_support:/home/devika/some_ws/install/motoman_resources:/home/devika/some_ws/install/hello_moveit:/home/devika/some_ws/install/hc20_sim_moveit_config:/home/devika/some_ws/install/hc20_moveit_config:/home/devika/some_ws/install/hc10_movit2v3:/home/devika/some_ws/install/hc10dt_moveit_config:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble LD_LIBRARY_PATH=/home/devika/robo_ws/install/gazebo_ros2_control/lib:/home/devika/robo_ws/install/yolov8_msgs/lib:/home/devika/robo_ws/install/warehouse_ros_mongo/lib:/home/devika/robo_ws/install/moveit_task_constructor_visualization/lib:/home/devika/robo_ws/install/moveit_task_constructor_demo/lib:/home/devika/robo_ws/install/moveit_task_constructor_capabilities/lib:/home/devika/robo_ws/install/hello_moveit_task_constructor/lib:/home/devika/robo_ws/install/moveit_task_constructor_core/lib:/home/devika/robo_ws/install/rviz_marker_tools/lib:/home/devika/robo_ws/install/moveit_task_constructor_msgs/lib:/home/devika/ws_moveit2/install/pilz_industrial_motion_planner_testutils/lib:/home/devika/ws_moveit2/install/pilz_industrial_motion_planner/lib:/home/devika/ws_moveit2/install/moveit_visual_tools/lib:/home/devika/ws_moveit2/install/moveit_task_constructor_visualization/lib:/home/devika/ws_moveit2/install/moveit_task_constructor_demo/lib:/home/devika/ws_moveit2/install/moveit_task_constructor_capabilities/lib:/home/devika/ws_moveit2/install/moveit_task_constructor_core/lib:/home/devika/ws_moveit2/install/moveit_ros_control_interface/lib:/home/devika/ws_moveit2/install/moveit_simple_controller_manager/lib:/home/devika/ws_moveit2/install/moveit_setup_assistant/lib:/home/devika/ws_moveit2/install/moveit_setup_srdf_plugins/lib:/home/devika/ws_moveit2/install/moveit_setup_core_plugins/lib:/home/devika/ws_moveit2/install/moveit_setup_controllers/lib:/home/devika/ws_moveit2/install/moveit_setup_app_plugins/lib:/home/devika/ws_moveit2/install/moveit_setup_framework/lib:/home/devika/ws_moveit2/install/moveit_servo/lib:/home/devika/ws_moveit2/install/moveit_ros_visualization/lib:/home/devika/ws_moveit2/install/moveit_hybrid_planning/lib:/home/devika/ws_moveit2/install/moveit_ros_planning_interface/lib:/home/devika/ws_moveit2/install/moveit_ros_benchmarks/lib:/home/devika/ws_moveit2/install/moveit_ros_warehouse/lib:/home/devika/ws_moveit2/install/moveit_ros_robot_interaction/lib:/home/devika/ws_moveit2/install/moveit_ros_perception/lib:/home/devika/ws_moveit2/install/moveit_ros_move_group/lib:/home/devika/ws_moveit2/install/moveit_planners_ompl/lib:/home/devika/ws_moveit2/install/moveit_ros_planning/lib:/home/devika/ws_moveit2/install/moveit_ros_occupancy_map_monitor/lib:/home/devika/ws_moveit2/install/moveit_resources_prbt_ikfast_manipulator_plugin/lib:/home/devika/ws_moveit2/install/moveit_planners_chomp/lib:/home/devika/ws_moveit2/install/moveit_kinematics/lib:/home/devika/ws_moveit2/install/moveit_chomp_optimizer_adapter/lib:/home/devika/ws_moveit2/install/chomp_motion_planner/lib:/home/devika/ws_moveit2/install/moveit_core/lib:/home/devika/ws_moveit2/install/srdfdom/lib:/home/devika/ws_moveit2/install/rviz_marker_tools/lib:/home/devika/ws_moveit2/install/rosparam_shortcuts/lib:/home/devika/ws_moveit2/install/moveit_task_constructor_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/devika/robo_ws/build/urdf_humble_test
+[5.308s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/urdf_humble_test' for CMake config files
+[5.314s] Level 1:colcon.colcon_core.shell:create_environment_hook('urdf_humble_test', 'cmake_prefix_path')
+[5.316s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/hook/cmake_prefix_path.ps1'
+[5.322s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/hook/cmake_prefix_path.dsv'
+[5.326s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/hook/cmake_prefix_path.sh'
+[5.331s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/urdf_humble_test/bin'
+[5.332s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/urdf_humble_test/lib/pkgconfig/urdf_humble_test.pc'
+[5.334s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/urdf_humble_test/lib/python3.10/site-packages'
+[5.336s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/urdf_humble_test/bin'
+[5.339s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/package.ps1'
+[5.358s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/package.dsv'
+[5.360s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/package.sh'
+[5.365s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/package.bash'
+[5.371s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/package.zsh'
+[5.378s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/devika/robo_ws/install/urdf_humble_test/share/colcon-core/packages/urdf_humble_test)
+[5.385s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(urdf_humble_test)
+[5.392s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/urdf_humble_test' for CMake module files
+[5.395s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/urdf_humble_test' for CMake config files
+[5.396s] Level 1:colcon.colcon_core.shell:create_environment_hook('urdf_humble_test', 'cmake_prefix_path')
+[5.404s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/hook/cmake_prefix_path.ps1'
+[5.409s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/hook/cmake_prefix_path.dsv'
+[5.414s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/hook/cmake_prefix_path.sh'
+[5.421s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/urdf_humble_test/bin'
+[5.422s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/urdf_humble_test/lib/pkgconfig/urdf_humble_test.pc'
+[5.424s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/urdf_humble_test/lib/python3.10/site-packages'
+[5.429s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/urdf_humble_test/bin'
+[5.430s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/package.ps1'
+[5.434s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/package.dsv'
+[5.439s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/package.sh'
+[5.444s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/package.bash'
+[5.447s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/package.zsh'
+[5.449s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/devika/robo_ws/install/urdf_humble_test/share/colcon-core/packages/urdf_humble_test)
+[7.093s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/devika/robo_ws/src/perception_vision': PYTHONPATH=/home/devika/robo_ws/build/perception_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/devika/robo_ws/install/perception_vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/perception_vision build --build-base /home/devika/robo_ws/build/perception_vision/build install --record /home/devika/robo_ws/build/perception_vision/install.log --single-version-externally-managed install_data
+[7.689s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/devika/robo_ws/src/cylinder_position_estimator': PYTHONPATH=/home/devika/robo_ws/build/cylinder_position_estimator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/devika/robo_ws/install/cylinder_position_estimator/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/cylinder_position_estimator build --build-base /home/devika/robo_ws/build/cylinder_position_estimator/build install --record /home/devika/robo_ws/build/cylinder_position_estimator/install.log --single-version-externally-managed install_data
+[8.660s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/devika/robo_ws/build/warehouse_ros_mongo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/devika/robo_ws/build/warehouse_ros_mongo -- -j8 -l8
+[8.662s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/devika/robo_ws/build/warehouse_ros_mongo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /home/devika/robo_ws/build/warehouse_ros_mongo
+[9.138s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(warehouse_ros_mongo)
+[9.140s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/warehouse_ros_mongo' for CMake module files
+[9.146s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/devika/robo_ws/build/warehouse_ros_mongo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /home/devika/robo_ws/build/warehouse_ros_mongo
+[9.148s] Level 1:colcon.colcon_core.shell:create_environment_hook('warehouse_ros_mongo', 'cmake_module_path')
+[9.151s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/hook/cmake_module_path.ps1'
+[9.154s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/hook/cmake_module_path.dsv'
+[9.158s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/hook/cmake_module_path.sh'
+[9.159s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/warehouse_ros_mongo' for CMake config files
+[9.165s] Level 1:colcon.colcon_core.shell:create_environment_hook('warehouse_ros_mongo', 'cmake_prefix_path')
+[9.166s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/hook/cmake_prefix_path.ps1'
+[9.167s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/hook/cmake_prefix_path.dsv'
+[9.170s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/hook/cmake_prefix_path.sh'
+[9.172s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/warehouse_ros_mongo/lib'
+[9.172s] Level 1:colcon.colcon_core.shell:create_environment_hook('warehouse_ros_mongo', 'ld_library_path_lib')
+[9.173s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/hook/ld_library_path_lib.ps1'
+[9.179s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/hook/ld_library_path_lib.dsv'
+[9.180s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/hook/ld_library_path_lib.sh'
+[9.182s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/warehouse_ros_mongo/bin'
+[9.182s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/warehouse_ros_mongo/lib/pkgconfig/warehouse_ros_mongo.pc'
+[9.183s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/warehouse_ros_mongo/lib/python3.10/site-packages'
+[9.184s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/warehouse_ros_mongo/bin'
+[9.185s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/package.ps1'
+[9.188s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/package.dsv'
+[9.197s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/package.sh'
+[9.199s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/package.bash'
+[9.200s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/package.zsh'
+[9.201s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/devika/robo_ws/install/warehouse_ros_mongo/share/colcon-core/packages/warehouse_ros_mongo)
+[9.204s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(warehouse_ros_mongo)
+[9.204s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/warehouse_ros_mongo' for CMake module files
+[9.207s] Level 1:colcon.colcon_core.shell:create_environment_hook('warehouse_ros_mongo', 'cmake_module_path')
+[9.210s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/hook/cmake_module_path.ps1'
+[9.217s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/hook/cmake_module_path.dsv'
+[9.221s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/hook/cmake_module_path.sh'
+[9.223s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/warehouse_ros_mongo' for CMake config files
+[9.229s] Level 1:colcon.colcon_core.shell:create_environment_hook('warehouse_ros_mongo', 'cmake_prefix_path')
+[9.230s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/hook/cmake_prefix_path.ps1'
+[9.236s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/hook/cmake_prefix_path.dsv'
+[9.237s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/hook/cmake_prefix_path.sh'
+[9.244s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/warehouse_ros_mongo/lib'
+[9.244s] Level 1:colcon.colcon_core.shell:create_environment_hook('warehouse_ros_mongo', 'ld_library_path_lib')
+[9.244s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/hook/ld_library_path_lib.ps1'
+[9.246s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/hook/ld_library_path_lib.dsv'
+[9.267s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/hook/ld_library_path_lib.sh'
+[9.268s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/warehouse_ros_mongo/bin'
+[9.268s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/warehouse_ros_mongo/lib/pkgconfig/warehouse_ros_mongo.pc'
+[9.269s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/warehouse_ros_mongo/lib/python3.10/site-packages'
+[9.270s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/warehouse_ros_mongo/bin'
+[9.271s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/package.ps1'
+[9.277s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/package.dsv'
+[9.279s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/package.sh'
+[9.284s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/package.bash'
+[9.286s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/warehouse_ros_mongo/share/warehouse_ros_mongo/package.zsh'
+[9.287s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/devika/robo_ws/install/warehouse_ros_mongo/share/colcon-core/packages/warehouse_ros_mongo)
+[9.482s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/perception_vision' for CMake module files
+[9.484s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/devika/robo_ws/src/perception_vision' returned '0': PYTHONPATH=/home/devika/robo_ws/build/perception_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/devika/robo_ws/install/perception_vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/perception_vision build --build-base /home/devika/robo_ws/build/perception_vision/build install --record /home/devika/robo_ws/build/perception_vision/install.log --single-version-externally-managed install_data
+[9.490s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/perception_vision' for CMake config files
+[9.495s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/perception_vision/lib'
+[9.496s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/perception_vision/bin'
+[9.496s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/perception_vision/lib/pkgconfig/perception_vision.pc'
+[9.496s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/perception_vision/lib/python3.10/site-packages'
+[9.497s] Level 1:colcon.colcon_core.shell:create_environment_hook('perception_vision', 'pythonpath')
+[9.497s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/devika/robo_ws/install/perception_vision/share/perception_vision/hook/pythonpath.ps1'
+[9.504s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/devika/robo_ws/install/perception_vision/share/perception_vision/hook/pythonpath.dsv'
+[9.505s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/devika/robo_ws/install/perception_vision/share/perception_vision/hook/pythonpath.sh'
+[9.511s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/perception_vision/bin'
+[9.511s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(perception_vision)
+[9.512s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/perception_vision/share/perception_vision/package.ps1'
+[9.514s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/devika/robo_ws/install/perception_vision/share/perception_vision/package.dsv'
+[9.515s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/perception_vision/share/perception_vision/package.sh'
+[9.517s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/perception_vision/share/perception_vision/package.bash'
+[9.519s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/perception_vision/share/perception_vision/package.zsh'
+[9.521s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/devika/robo_ws/install/perception_vision/share/colcon-core/packages/perception_vision)
+[10.072s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/cylinder_position_estimator' for CMake module files
+[10.081s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/cylinder_position_estimator' for CMake config files
+[10.083s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/cylinder_position_estimator/lib'
+[10.083s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/cylinder_position_estimator/bin'
+[10.083s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/cylinder_position_estimator/lib/pkgconfig/cylinder_position_estimator.pc'
+[10.078s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/devika/robo_ws/src/cylinder_position_estimator' returned '0': PYTHONPATH=/home/devika/robo_ws/build/cylinder_position_estimator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/devika/robo_ws/install/cylinder_position_estimator/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/cylinder_position_estimator build --build-base /home/devika/robo_ws/build/cylinder_position_estimator/build install --record /home/devika/robo_ws/build/cylinder_position_estimator/install.log --single-version-externally-managed install_data
+[10.091s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/cylinder_position_estimator/lib/python3.10/site-packages'
+[10.091s] Level 1:colcon.colcon_core.shell:create_environment_hook('cylinder_position_estimator', 'pythonpath')
+[10.092s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/devika/robo_ws/install/cylinder_position_estimator/share/cylinder_position_estimator/hook/pythonpath.ps1'
+[10.095s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/devika/robo_ws/install/cylinder_position_estimator/share/cylinder_position_estimator/hook/pythonpath.dsv'
+[10.096s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/devika/robo_ws/install/cylinder_position_estimator/share/cylinder_position_estimator/hook/pythonpath.sh'
+[10.100s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/cylinder_position_estimator/bin'
+[10.101s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cylinder_position_estimator)
+[10.102s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/cylinder_position_estimator/share/cylinder_position_estimator/package.ps1'
+[10.105s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/devika/robo_ws/install/cylinder_position_estimator/share/cylinder_position_estimator/package.dsv'
+[10.106s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/cylinder_position_estimator/share/cylinder_position_estimator/package.sh'
+[10.108s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/cylinder_position_estimator/share/cylinder_position_estimator/package.bash'
+[10.111s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/cylinder_position_estimator/share/cylinder_position_estimator/package.zsh'
+[10.113s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/devika/robo_ws/install/cylinder_position_estimator/share/colcon-core/packages/cylinder_position_estimator)
+[10.241s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/devika/robo_ws/build/yolov8_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/devika/robo_ws/build/yolov8_msgs -- -j8 -l8
+[10.252s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/devika/robo_ws/build/yolov8_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /home/devika/robo_ws/build/yolov8_msgs
+[10.526s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yolov8_msgs)
+[10.530s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/yolov8_msgs' for CMake module files
+[10.531s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/devika/robo_ws/build/yolov8_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /home/devika/robo_ws/build/yolov8_msgs
+[10.532s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/yolov8_msgs' for CMake config files
+[10.534s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolov8_msgs', 'cmake_prefix_path')
+[10.534s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/hook/cmake_prefix_path.ps1'
+[10.537s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/hook/cmake_prefix_path.dsv'
+[10.539s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/hook/cmake_prefix_path.sh'
+[10.543s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/yolov8_msgs/lib'
+[10.543s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolov8_msgs', 'ld_library_path_lib')
+[10.544s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/hook/ld_library_path_lib.ps1'
+[10.546s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/hook/ld_library_path_lib.dsv'
+[10.547s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/hook/ld_library_path_lib.sh'
+[10.549s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/yolov8_msgs/bin'
+[10.549s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/yolov8_msgs/lib/pkgconfig/yolov8_msgs.pc'
+[10.550s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/yolov8_msgs/lib/python3.10/site-packages'
+[10.551s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/yolov8_msgs/bin'
+[10.552s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/package.ps1'
+[10.554s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/package.dsv'
+[10.556s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/package.sh'
+[10.558s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/package.bash'
+[10.559s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/package.zsh'
+[10.561s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/devika/robo_ws/install/yolov8_msgs/share/colcon-core/packages/yolov8_msgs)
+[10.563s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yolov8_msgs)
+[10.564s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/yolov8_msgs' for CMake module files
+[10.566s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/yolov8_msgs' for CMake config files
+[10.568s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolov8_msgs', 'cmake_prefix_path')
+[10.569s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/hook/cmake_prefix_path.ps1'
+[10.571s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/hook/cmake_prefix_path.dsv'
+[10.573s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/hook/cmake_prefix_path.sh'
+[10.575s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/yolov8_msgs/lib'
+[10.575s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolov8_msgs', 'ld_library_path_lib')
+[10.576s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/hook/ld_library_path_lib.ps1'
+[10.578s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/hook/ld_library_path_lib.dsv'
+[10.579s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/hook/ld_library_path_lib.sh'
+[10.581s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/yolov8_msgs/bin'
+[10.581s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/yolov8_msgs/lib/pkgconfig/yolov8_msgs.pc'
+[10.581s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/yolov8_msgs/lib/python3.10/site-packages'
+[10.582s] Level 1:colcon.colcon_core.environment:checking '/home/devika/robo_ws/install/yolov8_msgs/bin'
+[10.584s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/package.ps1'
+[10.585s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/package.dsv'
+[10.587s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/package.sh'
+[10.589s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/package.bash'
+[10.591s] INFO:colcon.colcon_core.shell:Creating package script '/home/devika/robo_ws/install/yolov8_msgs/share/yolov8_msgs/package.zsh'
+[10.594s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/devika/robo_ws/install/yolov8_msgs/share/colcon-core/packages/yolov8_msgs)
+[10.907s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/devika/robo_ws/build/urdf_humble_test_moveit_config' returned '2': /usr/bin/cmake --build /home/devika/robo_ws/build/urdf_humble_test_moveit_config -- -j8 -l8
+[10.920s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[10.922s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[10.922s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[10.922s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[10.951s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[10.952s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[10.952s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[11.001s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[11.002s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/devika/robo_ws/install/local_setup.ps1'
+[11.005s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/devika/robo_ws/install/_local_setup_util_ps1.py'
+[11.008s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/devika/robo_ws/install/setup.ps1'
+[11.025s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/devika/robo_ws/install/local_setup.sh'
+[11.027s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/devika/robo_ws/install/_local_setup_util_sh.py'
+[11.029s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/devika/robo_ws/install/setup.sh'
+[11.043s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/devika/robo_ws/install/local_setup.bash'
+[11.045s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/devika/robo_ws/install/setup.bash'
+[11.060s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/devika/robo_ws/install/local_setup.zsh'
+[11.061s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/devika/robo_ws/install/setup.zsh'
