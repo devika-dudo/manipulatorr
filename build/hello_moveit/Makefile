@@ -223,29 +223,29 @@ plan_around_objects/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/plan_around_objects.dir/build.make CMakeFiles/plan_around_objects.dir/build
 .PHONY : plan_around_objects/fast
 
-src/letsee.o: src/letsee.cpp.o
-.PHONY : src/letsee.o
+src/easy.o: src/easy.cpp.o
+.PHONY : src/easy.o
 
 # target to build an object file
-src/letsee.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_moveit.dir/build.make CMakeFiles/hello_moveit.dir/src/letsee.cpp.o
-.PHONY : src/letsee.cpp.o
+src/easy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_moveit.dir/build.make CMakeFiles/hello_moveit.dir/src/easy.cpp.o
+.PHONY : src/easy.cpp.o
 
-src/letsee.i: src/letsee.cpp.i
-.PHONY : src/letsee.i
+src/easy.i: src/easy.cpp.i
+.PHONY : src/easy.i
 
 # target to preprocess a source file
-src/letsee.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_moveit.dir/build.make CMakeFiles/hello_moveit.dir/src/letsee.cpp.i
-.PHONY : src/letsee.cpp.i
+src/easy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_moveit.dir/build.make CMakeFiles/hello_moveit.dir/src/easy.cpp.i
+.PHONY : src/easy.cpp.i
 
-src/letsee.s: src/letsee.cpp.s
-.PHONY : src/letsee.s
+src/easy.s: src/easy.cpp.s
+.PHONY : src/easy.s
 
 # target to generate assembly for a file
-src/letsee.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_moveit.dir/build.make CMakeFiles/hello_moveit.dir/src/letsee.cpp.s
-.PHONY : src/letsee.cpp.s
+src/easy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_moveit.dir/build.make CMakeFiles/hello_moveit.dir/src/easy.cpp.s
+.PHONY : src/easy.cpp.s
 
 src/plan_around_objects.o: src/plan_around_objects.cpp.o
 .PHONY : src/plan_around_objects.o
@@ -288,9 +288,9 @@ help:
 	@echo "... uninstall"
 	@echo "... hello_moveit"
 	@echo "... plan_around_objects"
-	@echo "... src/letsee.o"
-	@echo "... src/letsee.i"
-	@echo "... src/letsee.s"
+	@echo "... src/easy.o"
+	@echo "... src/easy.i"
+	@echo "... src/easy.s"
 	@echo "... src/plan_around_objects.o"
 	@echo "... src/plan_around_objects.i"
 	@echo "... src/plan_around_objects.s"

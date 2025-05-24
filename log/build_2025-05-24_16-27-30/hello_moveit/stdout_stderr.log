@@ -1,0 +1,6 @@
+[ 25%] [32m[1mLinking CXX executable hello_moveit[0m
+[ 75%] Built target plan_around_objects
+gmake[2]: *** Deleting file 'hello_moveit'
+gmake[2]: *** [CMakeFiles/hello_moveit.dir/build.make:3136: hello_moveit] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/hello_moveit.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

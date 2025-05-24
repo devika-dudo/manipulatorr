@@ -9,6 +9,7 @@
 /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/urdf/model.sdf
 /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/urdf/model.urdf
 /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/urdf/cylinder.sdf
+/home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/config/my_controllers.yaml
 /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/config/controller_manager.yaml
 /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/config/config.rviz
 /home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test/meshes/link_8.STL

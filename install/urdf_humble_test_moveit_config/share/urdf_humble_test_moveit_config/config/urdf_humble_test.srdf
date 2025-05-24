@@ -15,6 +15,7 @@
         <joint name="joint_3"/>
         <joint name="joint_4"/>
         <joint name="joint_5"/>
+
     </group>
     <group name="hand">
         <joint name="joint_6"/>
@@ -58,7 +59,7 @@
         <joint name="joint_5" value="0"/>
     </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
-    <end_effector name="hand_ee" parent_link="link_5" group="arm_group"/>
+    <end_effector name="hand_ee" parent_link="joint_5" group="hand"/>
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
     <disable_collisions link1="base_link" link2="link_1" reason="Adjacent"/>
     <disable_collisions link1="base_link" link2="link_2" reason="Never"/>

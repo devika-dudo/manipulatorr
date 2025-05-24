@@ -589,107 +589,10 @@
   
   
   
-  <ros2_control name="RealRobot" type="system">
-  <hardware>
-    <plugin>trajectory/TrajectoryTeensy</plugin>
-    <param name="joint_1_name">joint_1</param>
-    <param name="joint_2_name">joint_2</param>
-    <param name="joint_3_name">joint_3</param>
-    <param name="joint_4_name">joint_4</param>
-    <param name="joint_5_name">joint_5</param>
-    <param name="joint_6_name">joint_6</param>
-    <param name="loop_rate">30</param>
-    <param name="device">/dev/ttyUSB0</param>
-    <param name="baud_rate">57600</param>
-    <param name="enc_counts_per_rec">3450</param>
-    <param name="timeout">1000</param>
-  </hardware>
-  <joint name="joint_1">
-     <command_interface name="position"/>
-     <state_interface name="position">
-       <param name="initial_value">0.0</param>
-      </state_interface>
-      <state_interface name="velocity"/>
-   </joint>
-   
-   <joint name="joint_2">
-     <command_interface name="position"/>
-     <state_interface name="position">
-       <param name="initial_value">0.0</param>
-      </state_interface>
-      <state_interface name="velocity"/>
-   </joint>
-       
-  <joint name="joint_3">
-     <command_interface name="position"/>
-     <state_interface name="position">
-       <param name="initial_value">0.0</param>
-      </state_interface>
-      <state_interface name="velocity"/>
-   </joint>
-   
-   <joint name="joint_4">
-     <command_interface name="position"/>
-     <state_interface name="position">
-       <param name="initial_value">0.0</param>
-      </state_interface>
-      <state_interface name="velocity"/>
-   </joint>
-   
-   <joint name="joint_5">
-     <command_interface name="position"/>
-     <state_interface name="position">
-       <param name="initial_value">0.0</param>
-      </state_interface>
-      <state_interface name="velocity"/>
-   </joint>
-   
-   <joint name="joint_6">
-     <command_interface name="position"/>
-     <state_interface name="position">
-       <param name="initial_value">0.0</param>
-      </state_interface>
-      <state_interface name="velocity"/>
-   </joint>
-   
-   <joint name="joint_7">
-
-     <state_interface name="position">
-       <param name="initial_value">0.0</param>
-     </state_interface>
-     <param name="mimic">joint_6</param>
-     <param name="multiplier">-1</param>
-     <state_interface name="velocity"/>
-   </joint>
-   
-   <joint name="joint_8">
-
-     <state_interface name="position">
-       <param name="initial_value">0.0</param>
-     </state_interface>
-     <param name="mimic">joint_6</param>
-     <param name="multiplier">-0.01</param>
-     <state_interface name="velocity"/>
-   </joint>
-   
-   <joint name="joint_9">
-
-     <state_interface name="position">
-       <param name="initial_value">0.0</param>
-     </state_interface>
-     <param name="mimic">joint_6</param>
-     <param name="multiplier">-0.01</param>
-     <state_interface name="velocity"/>
-   </joint>
-</ros2_control>
   
   
   
-  
-  
-  
-  
-  <!-- <ros2_control name="GazeboSystem" type="system">
+  <ros2_control name="GazeboSystem" type="system">
   <hardware>
     <plugin>gazebo_ros2_control/GazeboSystem</plugin>
   </hardware>
@@ -742,7 +645,7 @@
    </joint>
    
    <joint name="joint_7">
-
+     <!-- Remove command interface for mimic joint -->
      <state_interface name="position">
        <param name="initial_value">0.0</param>
      </state_interface>
@@ -752,7 +655,7 @@
    </joint>
    
    <joint name="joint_8">
-
+     <!-- Remove command interface for mimic joint -->
      <state_interface name="position">
        <param name="initial_value">0.0</param>
      </state_interface>
@@ -762,7 +665,7 @@
    </joint>
    
    <joint name="joint_9">
-
+     <!-- Remove command interface for mimic joint -->
      <state_interface name="position">
        <param name="initial_value">0.0</param>
      </state_interface>
@@ -770,7 +673,7 @@
      <param name="multiplier">-0.01</param>
      <state_interface name="velocity"/>
    </joint>
-</ros2_control> -->
+</ros2_control>
 
 
 

@@ -1,0 +1,33 @@
+[1.414s] Invoking command in '/home/devika/robo_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/devika/robo_ws/build/serial -- -j8 -l8
+[1.678s] [ 28%] Built target serial
+[1.686s] [ 42%] Built target gtest_main
+[1.711s] [ 57%] Built target gtest
+[1.807s] [ 71%] Built target serial_example
+[1.880s] [ 85%] Built target serial-test
+[1.898s] [100%] Built target serial-test-timer
+[2.051s] Invoked command in '/home/devika/robo_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/devika/robo_ws/build/serial -- -j8 -l8
+[2.056s] Invoking command in '/home/devika/robo_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /home/devika/robo_ws/build/serial
+[2.105s] -- Install configuration: ""
+[2.106s] -- Up-to-date: /home/devika/robo_ws/install/serial/lib/libserial.a
+[2.106s] -- Up-to-date: /home/devika/robo_ws/install/serial/include/serial/serial.h
+[2.107s] -- Up-to-date: /home/devika/robo_ws/install/serial/include/serial/v8stdint.h
+[2.108s] -- Up-to-date: /home/devika/robo_ws/install/serial/share/serial/environment/library_path.sh
+[2.109s] -- Up-to-date: /home/devika/robo_ws/install/serial/share/serial/environment/library_path.dsv
+[2.110s] -- Up-to-date: /home/devika/robo_ws/install/serial/share/ament_index/resource_index/package_run_dependencies/serial
+[2.111s] -- Up-to-date: /home/devika/robo_ws/install/serial/share/ament_index/resource_index/parent_prefix_path/serial
+[2.112s] -- Up-to-date: /home/devika/robo_ws/install/serial/share/serial/environment/ament_prefix_path.sh
+[2.112s] -- Up-to-date: /home/devika/robo_ws/install/serial/share/serial/environment/ament_prefix_path.dsv
+[2.112s] -- Up-to-date: /home/devika/robo_ws/install/serial/share/serial/environment/path.sh
+[2.113s] -- Up-to-date: /home/devika/robo_ws/install/serial/share/serial/environment/path.dsv
+[2.114s] -- Up-to-date: /home/devika/robo_ws/install/serial/share/serial/local_setup.bash
+[2.114s] -- Up-to-date: /home/devika/robo_ws/install/serial/share/serial/local_setup.sh
+[2.114s] -- Up-to-date: /home/devika/robo_ws/install/serial/share/serial/local_setup.zsh
+[2.114s] -- Up-to-date: /home/devika/robo_ws/install/serial/share/serial/local_setup.dsv
+[2.114s] -- Installing: /home/devika/robo_ws/install/serial/share/serial/package.dsv
+[2.115s] -- Up-to-date: /home/devika/robo_ws/install/serial/share/ament_index/resource_index/packages/serial
+[2.116s] -- Up-to-date: /home/devika/robo_ws/install/serial/share/serial/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.116s] -- Up-to-date: /home/devika/robo_ws/install/serial/share/serial/cmake/ament_cmake_export_libraries-extras.cmake
+[2.117s] -- Up-to-date: /home/devika/robo_ws/install/serial/share/serial/cmake/serialConfig.cmake
+[2.118s] -- Up-to-date: /home/devika/robo_ws/install/serial/share/serial/cmake/serialConfig-version.cmake
+[2.119s] -- Up-to-date: /home/devika/robo_ws/install/serial/share/serial/package.xml
+[2.130s] Invoked command in '/home/devika/robo_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /home/devika/robo_ws/build/serial

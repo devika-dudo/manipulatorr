@@ -1,0 +1,59 @@
+[0.817s] Invoking command in '/home/devika/robo_ws/build/hello_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/devika/robo_ws/build/hello_moveit -- -j8 -l8
+[1.543s] [35m[1mConsolidate compiler generated dependencies of target hello_moveit[0m
+[1.543s] [ 25%] [32mBuilding CXX object CMakeFiles/hello_moveit.dir/src/easy.cpp.o[0m
+[1.544s] [ 75%] Built target plan_around_objects
+[12.265s] [01m[K/home/devika/robo_ws/src/hello_moveit/src/easy.cpp:[m[K In constructor ‘[01m[KManipulatorController::ManipulatorController()[m[K’:
+[12.265s] [01m[K/home/devika/robo_ws/src/hello_moveit/src/easy.cpp:16:13:[m[K [01;31m[Kerror: [m[Kreference to ‘[01m[Kshared_from_this[m[K’ is ambiguous
+[12.266s]    16 |             [01;31m[Kshared_from_this[m[K(), "arm_group");
+[12.266s]       |             [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[12.266s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[12.266s]                  from [01m[K/home/devika/ws_moveit2/install/moveit_core/include/moveit/macros/declare_ptr.h:37[m[K,
+[12.267s]                  from [01m[K/home/devika/ws_moveit2/install/moveit_core/include/moveit/macros/class_forward.h:39[m[K,
+[12.267s]                  from [01m[K/home/devika/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:40[m[K,
+[12.267s]                  from [01m[K/home/devika/robo_ws/src/hello_moveit/src/easy.cpp:1[m[K:
+[12.267s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:811:7:[m[K [01;36m[Knote: [m[Kcandidates are: ‘[01m[Kstd::shared_ptr<const _Tp> std::enable_shared_from_this<_Tp>::shared_from_this() const [with _Tp = ManipulatorController][m[K’
+[12.267s]   811 |       [01;36m[Kshared_from_this[m[K() const
+[12.267s]       |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[12.267s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:807:7:[m[K [01;36m[Knote: [m[K                ‘[01m[Kstd::shared_ptr<_Tp> std::enable_shared_from_this<_Tp>::shared_from_this() [with _Tp = ManipulatorController][m[K’
+[12.267s]   807 |       [01;36m[Kshared_from_this[m[K()
+[12.268s]       |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[12.268s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:811:7:[m[K [01;36m[Knote: [m[K                ‘[01m[Kstd::shared_ptr<const _Tp> std::enable_shared_from_this<_Tp>::shared_from_this() const [with _Tp = rclcpp::Node][m[K’
+[12.268s]   811 |       [01;36m[Kshared_from_this[m[K() const
+[12.268s]       |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[12.268s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:807:7:[m[K [01;36m[Knote: [m[K                ‘[01m[Kstd::shared_ptr<_Tp> std::enable_shared_from_this<_Tp>::shared_from_this() [with _Tp = rclcpp::Node][m[K’
+[12.268s]   807 |       [01;36m[Kshared_from_this[m[K()
+[12.268s]       |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[12.272s] [01m[K/home/devika/robo_ws/src/hello_moveit/src/easy.cpp:[m[K In member function ‘[01m[Kbool ManipulatorController::moveToXYZRPY(double, double, double, double, double, double)[m[K’:
+[12.272s] [01m[K/home/devika/robo_ws/src/hello_moveit/src/easy.cpp:53:97:[m[K [01;35m[Kwarning: [m[K‘[01m[Kusing MoveItErrorCode = class moveit::core::MoveItErrorCode[m[K’ is deprecated: Use moveit::core::MoveItErrorCode [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[12.272s]    53 |         bool success = (move_group_->plan(plan) == moveit::planning_interface::MoveItErrorCode::[01;35m[KSUCCESS[m[K);
+[12.272s]       |                                                                                                 [01;35m[K^~~~~~~[m[K
+[12.272s] In file included from [01m[K/home/devika/robo_ws/src/hello_moveit/src/easy.cpp:1[m[K:
+[12.273s] [01m[K/home/devika/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:71:7:[m[K [01;36m[Knote: [m[Kdeclared here
+[12.273s]    71 | using [01;36m[KMoveItErrorCode[m[K [[deprecated("Use moveit::core::MoveItErrorCode")]] = moveit::core::MoveItErrorCode;
+[12.273s]       |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+[12.273s] [01m[K/home/devika/robo_ws/src/hello_moveit/src/easy.cpp:60:72:[m[K [01;35m[Kwarning: [m[K‘[01m[Kusing MoveItErrorCode = class moveit::core::MoveItErrorCode[m[K’ is deprecated: Use moveit::core::MoveItErrorCode [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[12.274s]    60 |             if (result == moveit::planning_interface::MoveItErrorCode::[01;35m[KSUCCESS[m[K) {
+[12.274s]       |                                                                        [01;35m[K^~~~~~~[m[K
+[12.274s] In file included from [01m[K/home/devika/robo_ws/src/hello_moveit/src/easy.cpp:1[m[K:
+[12.274s] [01m[K/home/devika/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:71:7:[m[K [01;36m[Knote: [m[Kdeclared here
+[12.274s]    71 | using [01;36m[KMoveItErrorCode[m[K [[deprecated("Use moveit::core::MoveItErrorCode")]] = moveit::core::MoveItErrorCode;
+[12.274s]       |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+[12.276s] [01m[K/home/devika/robo_ws/src/hello_moveit/src/easy.cpp:[m[K In member function ‘[01m[Kbool ManipulatorController::moveToNamedTarget(const string&)[m[K’:
+[12.276s] [01m[K/home/devika/robo_ws/src/hello_moveit/src/easy.cpp:79:97:[m[K [01;35m[Kwarning: [m[K‘[01m[Kusing MoveItErrorCode = class moveit::core::MoveItErrorCode[m[K’ is deprecated: Use moveit::core::MoveItErrorCode [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[12.276s]    79 |         bool success = (move_group_->plan(plan) == moveit::planning_interface::MoveItErrorCode::[01;35m[KSUCCESS[m[K);
+[12.277s]       |                                                                                                 [01;35m[K^~~~~~~[m[K
+[12.277s] In file included from [01m[K/home/devika/robo_ws/src/hello_moveit/src/easy.cpp:1[m[K:
+[12.277s] [01m[K/home/devika/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:71:7:[m[K [01;36m[Knote: [m[Kdeclared here
+[12.277s]    71 | using [01;36m[KMoveItErrorCode[m[K [[deprecated("Use moveit::core::MoveItErrorCode")]] = moveit::core::MoveItErrorCode;
+[12.277s]       |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+[12.277s] [01m[K/home/devika/robo_ws/src/hello_moveit/src/easy.cpp:82:96:[m[K [01;35m[Kwarning: [m[K‘[01m[Kusing MoveItErrorCode = class moveit::core::MoveItErrorCode[m[K’ is deprecated: Use moveit::core::MoveItErrorCode [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[12.277s]    82 |             return (move_group_->execute(plan) == moveit::planning_interface::MoveItErrorCode::[01;35m[KSUCCESS[m[K);
+[12.278s]       |                                                                                                [01;35m[K^~~~~~~[m[K
+[12.278s] In file included from [01m[K/home/devika/robo_ws/src/hello_moveit/src/easy.cpp:1[m[K:
+[12.278s] [01m[K/home/devika/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:71:7:[m[K [01;36m[Knote: [m[Kdeclared here
+[12.278s]    71 | using [01;36m[KMoveItErrorCode[m[K [[deprecated("Use moveit::core::MoveItErrorCode")]] = moveit::core::MoveItErrorCode;
+[12.278s]       |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+[17.008s] gmake[2]: *** [CMakeFiles/hello_moveit.dir/build.make:76: CMakeFiles/hello_moveit.dir/src/easy.cpp.o] Error 1
+[17.008s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/hello_moveit.dir/all] Error 2
+[17.009s] gmake: *** [Makefile:146: all] Error 2
+[17.014s] Invoked command in '/home/devika/robo_ws/build/hello_moveit' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/devika/robo_ws/build/hello_moveit -- -j8 -l8

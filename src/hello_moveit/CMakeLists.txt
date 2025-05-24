@@ -40,7 +40,7 @@ function(add_common_executable target_name source_file)
 endfunction()
 
 # Add executables
-add_common_executable(hello_moveit letsee.cpp)
+add_common_executable(hello_moveit easy.cpp)
 add_common_executable(plan_around_objects plan_around_objects.cpp)
 
 # Install launch files

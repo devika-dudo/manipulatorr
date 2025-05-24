@@ -1,0 +1,8 @@
+[35m[1mConsolidate compiler generated dependencies of target hello_moveit[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/hello_moveit.dir/src/easy.cpp.o[0m
+[ 75%] Built target plan_around_objects
+[100%] [32m[1mLinking CXX executable hello_moveit[0m
+gmake[2]: *** Deleting file 'hello_moveit'
+gmake[2]: *** [CMakeFiles/hello_moveit.dir/build.make:3136: hello_moveit] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/hello_moveit.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt
