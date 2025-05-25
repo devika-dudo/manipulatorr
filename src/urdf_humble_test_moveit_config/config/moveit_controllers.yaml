@@ -5,21 +5,14 @@ moveit_controller_manager: moveit_simple_controller_manager/MoveItSimpleControll
 moveit_simple_controller_manager:
   controller_names:
     - arm_group_controller
-    - hand_controller
 
   arm_group_controller:
     type: FollowJointTrajectory
+    action_ns: follow_joint_trajectory
     joints:
       - joint_1
       - joint_2
       - joint_3
       - joint_4
       - joint_5
-    action_ns: follow_joint_trajectory
-    default: true
-  hand_controller:
-    type: FollowJointTrajectory
-    joints:
       - joint_6
-    action_ns: follow_joint_trajectory
-    default: true

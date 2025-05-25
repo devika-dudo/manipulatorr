@@ -1,4 +1,0 @@
-source;share/urdf_humble_test_moveit_config/local_setup.bash
-source;share/urdf_humble_test_moveit_config/local_setup.dsv
-source;share/urdf_humble_test_moveit_config/local_setup.sh
-source;share/urdf_humble_test_moveit_config/local_setup.zsh

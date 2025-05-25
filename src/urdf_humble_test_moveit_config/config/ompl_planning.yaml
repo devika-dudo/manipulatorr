@@ -9,3 +9,10 @@ request_adapters: >-
     default_planner_request_adapters/FixStartStateBounds
     default_planner_request_adapters/FixStartStateCollision
     default_planner_request_adapters/FixStartStatePathConstraints
+planner_configs:
+  RRTConnectkConfigDefault:
+    type: geometric::RRTConnect
+    range: 0.1  # You can adjust this based on your robot's scale
+# optionally specify group specific overrides
+arm_group:
+  planner_configs: ["RRTConnectkConfigDefault"]

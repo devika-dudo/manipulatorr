@@ -7,10 +7,6 @@ controller_manager:
       type: joint_trajectory_controller/JointTrajectoryController
 
 
-    hand_controller:
-      type: joint_trajectory_controller/JointTrajectoryController
-
-
     joint_state_broadcaster:
       type: joint_state_broadcaster/JointStateBroadcaster
 
@@ -22,14 +18,6 @@ arm_group_controller:
       - joint_3
       - joint_4
       - joint_5
-    command_interfaces:
-      - position
-    state_interfaces:
-      - position
-      - velocity
-hand_controller:
-  ros__parameters:
-    joints:
       - joint_6
     command_interfaces:
       - position
