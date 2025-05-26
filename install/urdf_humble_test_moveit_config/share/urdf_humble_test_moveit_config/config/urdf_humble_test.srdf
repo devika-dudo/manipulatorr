@@ -15,51 +15,35 @@
         <joint name="joint_3"/>
         <joint name="joint_4"/>
         <joint name="joint_5"/>
-
-    </group>
-    <group name="hand">
         <joint name="joint_6"/>
-        <joint name="joint_7"/>
-        <joint name="joint_8"/>
-        <joint name="joint_9"/>
     </group>
     <!--GROUP STATES: Purpose: Define a named state for a particular group, in terms of joint values. This is useful to define states like 'folded arms'-->
-    <group_state name="open" group="hand">
-        <joint name="joint_6" value="10"/>
-    </group_state>
-    <group_state name="close" group="hand">
-        <joint name="joint_6" value="0"/>
-    </group_state>
-    <group_state name="zero_pos" group="arm_group">
+    <group_state name="zero_pose" group="arm_group">
         <joint name="joint_1" value="0"/>
         <joint name="joint_2" value="0"/>
         <joint name="joint_3" value="0"/>
         <joint name="joint_4" value="0"/>
         <joint name="joint_5" value="0"/>
+        <joint name="joint_6" value="0"/>
     </group_state>
     <group_state name="straight_up" group="arm_group">
         <joint name="joint_1" value="0"/>
         <joint name="joint_2" value="1.57"/>
         <joint name="joint_3" value="-3.14"/>
-        <joint name="joint_4" value="-1.0235"/>
+        <joint name="joint_4" value="0"/>
         <joint name="joint_5" value="0"/>
+        <joint name="joint_6" value="0"/>
     </group_state>
     <group_state name="pick" group="arm_group">
         <joint name="joint_1" value="0"/>
-        <joint name="joint_2" value="1.3705"/>
-        <joint name="joint_3" value="-0.9368"/>
+        <joint name="joint_2" value="1.5266"/>
+        <joint name="joint_3" value="-1.2491"/>
         <joint name="joint_4" value="0"/>
         <joint name="joint_5" value="0"/>
-    </group_state>
-    <group_state name="place" group="arm_group">
-        <joint name="joint_1" value="-3.1053"/>
-        <joint name="joint_2" value="1.7175"/>
-        <joint name="joint_3" value="-1.0062"/>
-        <joint name="joint_4" value="0"/>
-        <joint name="joint_5" value="0"/>
+        <joint name="joint_6" value="0"/>
     </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
-    <end_effector name="hand_ee" parent_link="joint_5" group="hand"/>
+    <end_effector name="hand_ee" parent_link="link_5" group="arm_group"/>
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
     <disable_collisions link1="base_link" link2="link_1" reason="Adjacent"/>
     <disable_collisions link1="base_link" link2="link_2" reason="Never"/>
