@@ -1,346 +1,188 @@
-// arm_control_from_UI.cpp - Optimized for single controller setup
 #include <rclcpp/rclcpp.hpp>
-#include <memory>
-#include <thread>
-#include <chrono>
 #include <moveit/move_group_interface/move_group_interface.h>
 #include <moveit/planning_scene_interface/planning_scene_interface.h>
 #include <geometry_msgs/msg/pose_stamped.hpp>
 #include <std_msgs/msg/float64_multi_array.hpp>
-#include <std_msgs/msg/string.hpp>
+#include <thread>
+#include <chrono>
 
-using std::placeholders::_1;
-
-class ArmControlFromUI : public rclcpp::Node
+class Controller : public rclcpp::Node
 {
 public:
-  ArmControlFromUI(const rclcpp::NodeOptions& options)
-  : Node("arm_control_from_ui", options)
-  {
-    // Create subscription to receive coordinates from UI
-    pose_subscription_ = this->create_subscription<std_msgs::msg::Float64MultiArray>(
-      "/target_point", 10, std::bind(&ArmControlFromUI::targetPointCallback, this, _1));
-    
-    // Create subscription for gripper commands
-    gripper_subscription_ = this->create_subscription<std_msgs::msg::String>(
-      "/gripper_command", 10, std::bind(&ArmControlFromUI::gripperCallback, this, _1));
-
-    // Allow MoveIt to fully initialize
-    RCLCPP_INFO(this->get_logger(), "Initializing MoveIt interfaces...");
-    
-    // Create executor for the MoveIt node
-    moveit_node_ = std::make_shared<rclcpp::Node>("moveit_node", options);
-    executor_ = std::make_shared<rclcpp::executors::SingleThreadedExecutor>();
-    executor_->add_node(moveit_node_);
-    
-    // Start the executor thread
-    executor_thread_ = std::thread([this]() { executor_->spin(); });
-    
-    // Initialize MoveGroupInterface with the dedicated node
-    try {
-      move_group_ptr_ = std::make_shared<moveit::planning_interface::MoveGroupInterface>(
-        moveit_node_, "arm_group");
-      
-      // Configure the planner
-      move_group_ptr_->setPlanningTime(10.0);
-      move_group_ptr_->setMaxVelocityScalingFactor(0.5);
-      move_group_ptr_->setMaxAccelerationScalingFactor(0.5);
-      move_group_ptr_->setGoalPositionTolerance(0.01);
-      move_group_ptr_->setGoalOrientationTolerance(0.1); // More tolerance for easier planning
-      move_group_ptr_->setNumPlanningAttempts(5);
-      move_group_ptr_->allowReplanning(true);
-      
-      // Get joint names for gripper control
-      joint_names_ = move_group_ptr_->getJointNames();
-      RCLCPP_INFO(this->get_logger(), "Available joints: %zu", joint_names_.size());
-      for (const auto& joint : joint_names_) {
-        RCLCPP_INFO(this->get_logger(), "  - %s", joint.c_str());
-      }
-      
-      RCLCPP_INFO(this->get_logger(), "MoveIt interface initialized successfully");
-      RCLCPP_INFO(this->get_logger(), "End-effector link: %s", move_group_ptr_->getEndEffectorLink().c_str());
-    } catch (const std::exception& e) {
-      RCLCPP_ERROR(this->get_logger(), "Failed to initialize MoveIt interface: %s", e.what());
-      throw;
+    Controller() : Node("controller")
+    {
+        // Initialize MoveGroupInterface for the single planning group
+        move_group_ = std::make_shared<moveit::planning_interface::MoveGroupInterface>(
+            shared_from_this(), "arm_group");  // Replace with your actual group name
+        
+        // Set reference frame
+        move_group_->setPoseReferenceFrame("link_6");
+        
+        // Set planning parameters
+        move_group_->setPlanningTime(10.0);
+        move_group_->setNumPlanningAttempts(5);
+        move_group_->setMaxVelocityScalingFactor(0.1);
+        move_group_->setMaxAccelerationScalingFactor(0.1);
+        
+        // Initialize height constants
+        height_ = 0.18;
+        pick_height_ = 0.126;
+        carrying_height_ = 0.3;
+        init_angle_ = -0.3825;
+        
+        // Create subscription to target point topic
+        subscription_ = this->create_subscription<std_msgs::msg::Float64MultiArray>(
+            "/target_point", 10,
+            std::bind(&PandaController::targetPointCallback, this, std::placeholders::_1));
+        
+        RCLCPP_INFO(this->get_logger(), "Controller initialized successfully");
     }
-  }
-
-  ~ArmControlFromUI()
-  {
-    // Stop the executor and join the thread
-    executor_->cancel();
-    if (executor_thread_.joinable()) {
-      executor_thread_.join();
-    }
-  }
 
 private:
-  void targetPointCallback(const std_msgs::msg::Float64MultiArray::SharedPtr msg)
-  {
-    if (msg->data.size() < 3) {
-      RCLCPP_ERROR(this->get_logger(), "Received target point with insufficient data");
-      return;
+    void targetPointCallback(const std_msgs::msg::Float64MultiArray::SharedPtr msg)
+    {
+        if (msg->data.size() < 3) {
+            RCLCPP_ERROR(this->get_logger(), "Invalid target point data. Expected at least 3 values [x, y, rotation]");
+            return;
+        }
+        
+        double x = msg->data[0];
+        double y = msg->data[1];
+        double rotation = msg->data[2];
+        
+        RCLCPP_INFO(this->get_logger(), "Received target point: x=%.3f, y=%.3f, rotation=%.3f", x, y, rotation);
+        
+        // Execute pick and place sequence
+        executePickAndPlace(x, y, rotation);
     }
     
-    RCLCPP_INFO(this->get_logger(), "Received target point: [%f, %f, %f]", 
-                msg->data[0], msg->data[1], msg->data[2]);
-    
-    // Extract target coordinates
-    double x = msg->data[0];
-    double y = msg->data[1];
-    double z = msg->data[2];
-    
-    // Get orientation from additional parameters if available
-    double qx = 0.0;
-    double qy = 0.0;
-    double qz = 0.0;
-    double qw = 1.0;
-    
-    if (msg->data.size() >= 7) {
-      qx = msg->data[3];
-      qy = msg->data[4];
-      qz = msg->data[5];
-      qw = msg->data[6];
+    void executePickAndPlace(double x, double y, double rotation)
+    {
+        try {
+            // 1. Approach: Move to position above the target
+            RCLCPP_INFO(this->get_logger(), "Step 1: Moving to approach position");
+            moveTo(x, y, height_, 1.0, init_angle_ + rotation, 0.0, 0.0);
+            
+            // 2. Open gripper
+            RCLCPP_INFO(this->get_logger(), "Step 2: Opening gripper");
+            gripperAction("open");
+            
+            // 3. Descend to pick height
+            RCLCPP_INFO(this->get_logger(), "Step 3: Descending to pick height");
+            moveTo(x, y, pick_height_, 1.0, init_angle_ + rotation, 0.0, 0.0);
+            
+            // 4. Close gripper to grasp object
+            RCLCPP_INFO(this->get_logger(), "Step 4: Closing gripper to grasp object");
+            gripperAction("close");
+            
+            // 5. Lift to carrying height
+            RCLCPP_INFO(this->get_logger(), "Step 5: Lifting to carrying height");
+            moveTo(x, y, carrying_height_, 1.0, init_angle_ + rotation, 0.0, 0.0);
+            
+            // 6. Transport to drop-off location
+            RCLCPP_INFO(this->get_logger(), "Step 6: Transporting to drop-off location");
+            moveTo(0.3, -0.3, carrying_height_, 1.0, init_angle_ + rotation, 0.0, 0.0);
+            
+            // 7. Open gripper to release object
+            RCLCPP_INFO(this->get_logger(), "Step 7: Opening gripper to release object");
+            gripperAction("open");
+            
+            RCLCPP_INFO(this->get_logger(), "Pick and place sequence completed successfully");
+            
+        } catch (const std::exception& e) {
+            RCLCPP_ERROR(this->get_logger(), "Error during pick and place sequence: %s", e.what());
+        }
     }
     
-    // Move to the target position
-    moveToTarget(x, y, z, qx, qy, qz, qw);
-  }
-
-  void gripperCallback(const std_msgs::msg::String::SharedPtr msg)
-  {
-    std::string command = msg->data;
-    RCLCPP_INFO(this->get_logger(), "Received gripper command: %s", command.c_str());
-    
-    if (command == "open") {
-      controlGripper(true);
-    } else if (command == "close") {
-      controlGripper(false);
-    } else {
-      RCLCPP_WARN(this->get_logger(), "Unknown gripper command: %s", command.c_str());
-    }
-  }
-
-  bool moveToTarget(double x, double y, double z, double qx, double qy, double qz, double qw)
-  {
-    // Reset any previous targets
-    move_group_ptr_->clearPoseTargets();
-    
-    // Create target pose
-    geometry_msgs::msg::Pose target_pose;
-    target_pose.position.x = x;
-    target_pose.position.y = y;
-    target_pose.position.z = z;
-    target_pose.orientation.x = qx;
-    target_pose.orientation.y = qy;
-    target_pose.orientation.z = qz;
-    target_pose.orientation.w = qw;
-    
-    // Set the target pose
-    RCLCPP_INFO(this->get_logger(), "Setting target pose: [%f, %f, %f]", x, y, z);
-    move_group_ptr_->setPoseTarget(target_pose);
-    
-    // Create a plan
-    moveit::planning_interface::MoveGroupInterface::Plan plan;
-    
-    bool success = false;
-    int max_attempts = 3;
-    
-    for (int attempt = 1; attempt <= max_attempts; attempt++) {
-      RCLCPP_INFO(this->get_logger(), "Planning attempt %d/%d...", attempt, max_attempts);
-      
-      try {
-        auto plan_result = move_group_ptr_->plan(plan);
-        success = (plan_result == moveit::core::MoveItErrorCode::SUCCESS);
+    bool moveTo(double x, double y, double z, double qx, double qy, double qz, double qw)
+    {
+        geometry_msgs::msg::Pose target_pose;
+        target_pose.position.x = x;
+        target_pose.position.y = y;
+        target_pose.position.z = z;
+        target_pose.orientation.x = qx;
+        target_pose.orientation.y = qy;
+        target_pose.orientation.z = qz;
+        target_pose.orientation.w = qw;
+        
+        move_group_->setPoseTarget(target_pose, "panda_link8");
+        
+        moveit::planning_interface::MoveGroupInterface::Plan plan;
+        bool success = (move_group_->plan(plan) == moveit::planning_interface::MoveItErrorCode::SUCCESS);
         
         if (success) {
-          RCLCPP_INFO(this->get_logger(), "Planning successful!");
-          break;
+            RCLCPP_INFO(this->get_logger(), "Planning successful, executing motion");
+            move_group_->execute(plan);
+            std::this_thread::sleep_for(std::chrono::seconds(3));
+            return true;
         } else {
-          RCLCPP_WARN(this->get_logger(), "Planning attempt %d failed", attempt);
+            RCLCPP_ERROR(this->get_logger(), "Planning failed for position [%.3f, %.3f, %.3f]", x, y, z);
+            return false;
         }
-      } catch (const std::exception& e) {
-        RCLCPP_ERROR(this->get_logger(), "Exception during planning attempt %d: %s", 
-                    attempt, e.what());
-      }
-      
-      if (attempt < max_attempts) {
-        RCLCPP_INFO(this->get_logger(), "Waiting before retry...");
-        std::this_thread::sleep_for(std::chrono::milliseconds(500));
-      }
     }
     
-    if (success) {
-      RCLCPP_INFO(this->get_logger(), "Executing plan...");
-      
-      try {
-        moveit::core::MoveItErrorCode execute_result = move_group_ptr_->execute(plan);
-        if (execute_result == moveit::core::MoveItErrorCode::SUCCESS) {
-          RCLCPP_INFO(this->get_logger(), "Execution complete!");
-          return true;
+    bool gripperAction(const std::string& action)
+    {
+        std::vector<double> joint_group_positions;
+        hand_move_group_->getCurrentState()->copyJointGroupPositions(
+            hand_move_group_->getCurrentState()->getRobotModel()->getJointModelGroup("hand"),
+            joint_group_positions);
+        
+        if (action == "open") {
+            // Open gripper - set both finger joints to 0.04 (max opening)
+            joint_group_positions[0] = 10;  // 6th joint
+        } else if (action == "close") {
+            // Close gripper - set both finger joints to 0.001 (almost closed)
+            joint_group_positions[0] = 2;  // 6th joint
         } else {
-          RCLCPP_ERROR(this->get_logger(), "Execution failed");
-          return false;
+            RCLCPP_ERROR(this->get_logger(), "Unknown gripper action: %s", action.c_str());
+            return false;
         }
-      } catch (const std::exception& e) {
-        RCLCPP_ERROR(this->get_logger(), "Exception during execution: %s", e.what());
-        return false;
-      }
-    } else {
-      RCLCPP_ERROR(this->get_logger(), "Planning failed after %d attempts!", max_attempts);
-      return false;
-    }
-  }
-  
-  // Method to control gripper using the same arm_group controller
-  bool controlGripper(bool open)
-  {
-    if (joint_names_.empty()) {
-      RCLCPP_ERROR(this->get_logger(), "No joints available for gripper control");
-      return false;
-    }
-    
-    // Assuming the last joint is the gripper (joint_6)
-    // Adjust these values based on your gripper's range
-    double gripper_open_value = 0.8;   // Adjust based on your gripper
-    double gripper_close_value = 0.0;  // Adjust based on your gripper
-    
-    double target_value = open ? gripper_open_value : gripper_close_value;
-    
-    RCLCPP_INFO(this->get_logger(), "Setting gripper to %s (value: %f)", 
-               open ? "open" : "close", target_value);
-    
-    // Get current joint values
-    std::vector<double> joint_values = move_group_ptr_->getCurrentJointValues();
-    
-    if (joint_values.size() != joint_names_.size()) {
-      RCLCPP_ERROR(this->get_logger(), "Joint values size mismatch");
-      return false;
+        
+        hand_move_group_->setJointValueTarget(joint_group_positions);
+        
+        moveit::planning_interface::MoveGroupInterface::Plan plan;
+        bool success = (hand_move_group_->plan(plan) == moveit::planning_interface::MoveItErrorCode::SUCCESS);
+        
+        if (success) {
+            RCLCPP_INFO(this->get_logger(), "Gripper %s planning successful, executing", action.c_str());
+            hand_move_group_->execute(plan);
+            std::this_thread::sleep_for(std::chrono::seconds(2));
+            return true;
+        } else {
+            RCLCPP_ERROR(this->get_logger(), "Gripper %s planning failed", action.c_str());
+            return false;
+        }
     }
     
-    // Set the last joint (gripper) to the target value
-    joint_values.back() = target_value;
+    // Member variables
+    std::shared_ptr<moveit::planning_interface::MoveGroupInterface> move_group_;
+    rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr subscription_;
     
-    // Set joint target
-    move_group_ptr_->setJointValueTarget(joint_values);
-    
-    // Plan and execute
-    moveit::planning_interface::MoveGroupInterface::Plan plan;
-    bool success = (move_group_ptr_->plan(plan) == moveit::core::MoveItErrorCode::SUCCESS);
-    
-    if (success) {
-      RCLCPP_INFO(this->get_logger(), "Executing gripper movement");
-      auto execute_result = move_group_ptr_->execute(plan);
-      return (execute_result == moveit::core::MoveItErrorCode::SUCCESS);
-    } else {
-      RCLCPP_ERROR(this->get_logger(), "Gripper planning failed");
-      return false;
-    }
-  }
-
-  // Pick and place helper methods
-  bool pickAndPlace(double pick_x, double pick_y, double pick_z,
-                   double place_x, double place_y, double place_z)
-  {
-    RCLCPP_INFO(this->get_logger(), "Starting pick and place operation");
-    
-    // 1. Move to approach position (above pick location)
-    if (!moveToTarget(pick_x, pick_y, pick_z + 0.1, 0, 0, 0, 1)) {
-      RCLCPP_ERROR(this->get_logger(), "Failed to move to approach position");
-      return false;
-    }
-    
-    // 2. Open gripper
-    if (!controlGripper(true)) {
-      RCLCPP_WARN(this->get_logger(), "Failed to open gripper");
-    }
-    
-    std::this_thread::sleep_for(std::chrono::milliseconds(500));
-    
-    // 3. Move down to pick position
-    if (!moveToTarget(pick_x, pick_y, pick_z, 0, 0, 0, 1)) {
-      RCLCPP_ERROR(this->get_logger(), "Failed to move to pick position");
-      return false;
-    }
-    
-    // 4. Close gripper
-    if (!controlGripper(false)) {
-      RCLCPP_ERROR(this->get_logger(), "Failed to close gripper");
-      return false;
-    }
-    
-    std::this_thread::sleep_for(std::chrono::milliseconds(500));
-    
-    // 5. Lift object
-    if (!moveToTarget(pick_x, pick_y, pick_z + 0.1, 0, 0, 0, 1)) {
-      RCLCPP_ERROR(this->get_logger(), "Failed to lift object");
-      return false;
-    }
-    
-    // 6. Move to place approach position
-    if (!moveToTarget(place_x, place_y, place_z + 0.1, 0, 0, 0, 1)) {
-      RCLCPP_ERROR(this->get_logger(), "Failed to move to place approach");
-      return false;
-    }
-    
-    // 7. Move down to place position
-    if (!moveToTarget(place_x, place_y, place_z, 0, 0, 0, 1)) {
-      RCLCPP_ERROR(this->get_logger(), "Failed to move to place position");
-      return false;
-    }
-    
-    // 8. Open gripper to release object
-    if (!controlGripper(true)) {
-      RCLCPP_ERROR(this->get_logger(), "Failed to open gripper for release");
-      return false;
-    }
-    
-    std::this_thread::sleep_for(std::chrono::milliseconds(500));
-    
-    // 9. Move up to finish
-    if (!moveToTarget(place_x, place_y, place_z + 0.1, 0, 0, 0, 1)) {
-      RCLCPP_ERROR(this->get_logger(), "Failed to move to final position");
-      return false;
-    }
-    
-    RCLCPP_INFO(this->get_logger(), "Pick and place operation completed successfully");
-    return true;
-  }
-
-  // Node for MoveGroupInterface
-  rclcpp::Node::SharedPtr moveit_node_;
-  
-  // Executor for the MoveIt node
-  rclcpp::executors::SingleThreadedExecutor::SharedPtr executor_;
-  
-  // Thread for the executor
-  std::thread executor_thread_;
-  
-  // MoveGroup interface (single controller)
-  std::shared_ptr<moveit::planning_interface::MoveGroupInterface> move_group_ptr_;
-  
-  // Joint names
-  std::vector<std::string> joint_names_;
-  
-  // Subscriptions
-  rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr pose_subscription_;
-  rclcpp::Subscription<std_msgs::msg::String>::SharedPtr gripper_subscription_;
+    double height_;
+    double pick_height_;
+    double carrying_height_;
+    double init_angle_;
 };
 
-int main(int argc, char* argv[])
+int main(int argc, char** argv)
 {
-  rclcpp::init(argc, argv);
-  
-  rclcpp::NodeOptions node_options;
-  node_options.automatically_declare_parameters_from_overrides(true);
-  
-  try {
-    auto arm_control_node = std::make_shared<ArmControlFromUI>(node_options);
-    rclcpp::spin(arm_control_node);
-  } catch (const std::exception& e) {
-    RCLCPP_ERROR(rclcpp::get_logger("arm_control_from_ui"), "Error: %s", e.what());
-  }
-  
-  rclcpp::shutdown();
-  return 0;
+    rclcpp::init(argc, argv);
+    
+    // Create node with MultiThreadedExecutor to handle callbacks
+    auto node = std::make_shared<PandaController>();
+    
+    rclcpp::executors::MultiThreadedExecutor executor;
+    executor.add_node(node);
+    
+    RCLCPP_INFO(node->get_logger(), "Starting Panda Controller node...");
+    
+    try {
+        executor.spin();
+    } catch (const std::exception& e) {
+        RCLCPP_ERROR(node->get_logger(), "Exception in executor: %s", e.what());
+    }
+    
+    rclcpp::shutdown();
+    return 0;
 }
