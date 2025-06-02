@@ -1,0 +1,68 @@
+/**:
+  ros__parameters:
+    # The name of the topic that will be used to publish the joint states
+    joint_topic: joint_states
+    
+    # The name of the topic that will be used to publish the trajectory
+    command_out_topic: /arm_group_controller/joint_trajectory
+    
+    # Publish period for outgoing commands
+    publish_period: 0.034  # 1/30 Hz
+    
+    # What type of topic does your robot driver expect?
+    # Currently supported are std_msgs/Float64MultiArray or trajectory_msgs/JointTrajectory
+    command_out_type: trajectory_msgs/JointTrajectory
+    
+    # What to publish? Can save some bandwidth as most robots only require positions or velocities
+    publish_joint_positions: true
+    publish_joint_velocities: true
+    publish_joint_accelerations: false
+    
+    # MoveIt group name for servo
+    move_group_name: arm_group  # Change this to your robot's planning group name
+    
+    # Planning frame
+    planning_frame: base_link  # Change this to your robot's base frame
+    
+    # End effector frame 
+    ee_frame_name: link_6  # Change this to your end-effector frame
+    
+    # Incoming command timeout
+    incoming_command_timeout: 1.0
+    
+    # Lower and upper thresholds for singularity checking
+    lower_singularity_threshold: 17.0  # Start decelerating when the condition number hits this (close to singularity)
+    hard_stop_singularity_threshold: 30.0  # Stop when the condition number hits this
+    
+    # Collision checking
+    check_collisions: true
+    collision_check_rate: 10.0
+    
+    # Self-collision proximity threshold
+    self_collision_proximity_threshold: 0.01
+    
+    # Scene collision proximity threshold  
+    scene_collision_proximity_threshold: 0.02
+    
+    # Velocity scaling factors
+    linear_scale: 0.4  # Max linear velocity as a fraction
+    rotational_scale: 0.8  # Max angular velocity as a fraction
+    joint_scale: 0.5      # Max joint velocity as a fraction
+    
+    # Joint position limits buffer
+    joint_limit_margin: 0.1
+    
+    # Override velocity scaling when the robot is stopped
+    override_velocity_scaling_factor: 0.0
+    
+    # Low latency mode reduces delays but may be less accurate
+    use_gazebo: true
+    
+    # Smoothing filter coefficient
+    smoothing_filter_plugin_name: "online_signal_smoothing::ButterworthFilterPlugin"
+    
+    # Planning scene monitor options
+    publish_period: 0.02
+    
+    # Wait for initial valid joint state before starting
+    wait_for_initial_state: true

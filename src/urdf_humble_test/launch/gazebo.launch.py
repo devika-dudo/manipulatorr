@@ -53,7 +53,6 @@ def generate_launch_description():
     )
     
     
-    
     # 4. Event Handlers for Sequential Loading
     load_joint_state_after_spawn = RegisterEventHandler(
         event_handler=OnProcessExit(

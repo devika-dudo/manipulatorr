@@ -1,80 +1,82 @@
 from launch import LaunchDescription
-from launch.actions import IncludeLaunchDescription, ExecuteProcess, RegisterEventHandler
+from launch.actions import IncludeLaunchDescription, RegisterEventHandler,TimerAction
 from launch.launch_description_sources import PythonLaunchDescriptionSource
+from launch.event_handlers import OnProcessExit,OnProcessStart
 from launch_ros.actions import Node
-from launch.event_handlers import OnProcessExit
+from launch.substituitions import Command
 import os
-
 from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
     # Paths
     pkg_path = get_package_share_directory('urdf_humble_test')
     urdf_file = os.path.join(pkg_path, 'urdf', 'model.urdf')
-    controller_yaml = os.path.join(pkg_path, 'config', 'controller_manager.yaml')
-
+    controller_config = os.path.join(pkg_path, 'config', 'my_controllers.yaml')
     # Read URDF
     with open(urdf_file, 'r') as infp:
         robot_description_content = infp.read()
-
+    
     # 1. Robot State Publisher
     robot_state_publisher_node = Node(
         package='robot_state_publisher',
         executable='robot_state_publisher',
         name='robot_state_publisher',
         output='screen',
-        parameters=[{'robot_description': robot_description_content},{'use_sim_time': True}
-]
+        parameters=[{'robot_description': robot_description_content}]
     )
-
-    # 2. Spawn Entity
-   
-
-    # 3. Controller Loaders
-    # 3. Controller Loaders
-    load_joint_state_broadcaster = ExecuteProcess(
-    cmd=['ros2', 'control', 'load_controller', '--set-state', 'active',
-         'joint_state_broadcaster'],
-    output='screen'
-)
-
-    load_arm_group_controller = ExecuteProcess(
-    cmd=['ros2', 'control', 'load_controller', '--set-state', 'active',
-         'arm_group_controller'],
-    output='screen'
-)
-
-    load_hand_controller = ExecuteProcess(
-    cmd=['ros2', 'control', 'load_controller', '--set-state', 'active',
-         'hand_controller'],
-    output='screen'
-)
-
-    # 4. Event Handlers for Sequential Loading
-    load_joint_state_after_spawn = RegisterEventHandler(
-        event_handler=OnProcessExit(
-            target_action=spawn_entity,
-            on_exit=[load_joint_state_broadcaster]
-        )
-    )
-
-    load_arm_and_hand_after_jsb = RegisterEventHandler(
-        event_handler=OnProcessExit(
-            target_action=load_joint_state_broadcaster,
-            on_exit=[load_arm_group_controller, load_hand_controller]
-        )
-    )
-
     
-
+   robot_description=Command(['ros2 param get --hide-type /robot_state_publisher robot_description'])
+    # 3. Controller Spawners (minimal version)
+    controller_manager = Node(
+        package='controller_manager',
+        executable='ros2_control_node',
+        parameters=[{'robot_description':robot_description},controller_config],
+        output='screen',
+    )
+    delayed_controller_manager=TimerAction(period=3.0,action=[controller_manager])
+    
+    joint_state_broadcaster_spawner = Node(
+        package='controller_manager',
+        executable='ros2_control_node',
+        arguments=['joint_state_broadcaster'],
+        output='screen',
+    )
+    
+    arm_group_controller_spawner = Node(
+        package='controller_manager',
+        executable='spawner',
+        arguments=['arm_group_controller'],
+        output='screen',
+    )
+    
+    hand_controller_spawner = Node(
+        package='controller_manager',
+        executable='spawner',
+        arguments=['hand_controller'],
+        output='screen',
+    )
+    
+    delayed_arm_and_hand_spawner = RegisterEventHandler(
+        event_handler=OnProcessStart(
+            target_action=controller_manager,
+            on_start=[arm_group_controller_spawner,hand_controller_spawner]
+        )
+    )
+     
+    delayed_joint_state_broadcaster_spawner = RegisterEventHandler(
+        event_handler=OnProcessStart(
+            target_action=controller_manager,
+            on_start=[joint_state_broadcaster_spawner]
+        )
+    )
+   
+    
+    return LaunchDescription([
+       
         # Robot Description Publisher
         robot_state_publisher_node,
-
-        # Spawn the Robot
-        spawn_entity,
-
+        delayed_controller_manager,
         # Load Controllers After Spawning
-        load_joint_state_after_spawn,
-        load_arm_and_hand_after_jsb
+        delayed_joint_state_broadcaster_spawner,
+        delayed_arm_and_hand_spawner
     ])
-

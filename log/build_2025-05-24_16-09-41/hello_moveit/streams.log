@@ -1,9 +1,0 @@
-[0.860s] Invoking command in '/home/devika/robo_ws/build/hello_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/devika/robo_ws/build/hello_moveit -- -j8 -l8
-[1.691s] [35m[1mConsolidate compiler generated dependencies of target hello_moveit[0m
-[1.691s] [ 25%] [32m[1mLinking CXX executable hello_moveit[0m
-[1.692s] [ 75%] Built target plan_around_objects
-[1063.253s] gmake[2]: *** Deleting file 'hello_moveit'
-[1063.254s] gmake[2]: *** [CMakeFiles/hello_moveit.dir/build.make:3136: hello_moveit] Interrupt
-[1063.254s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/hello_moveit.dir/all] Interrupt
-[1063.255s] gmake: *** [Makefile:146: all] Interrupt
-[1063.308s] Invoked command in '/home/devika/robo_ws/build/hello_moveit' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/devika/robo_ws/install/perception_vision:/home/devika/robo_ws/install/cylinder_position_estimator:/home/devika/ws_moveit2/install/moveit_configs_utils:/home/devika/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/devika/robo_ws/build/hello_moveit -- -j8 -l8

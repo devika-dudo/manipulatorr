@@ -15,6 +15,7 @@ find_package(moveit_visual_tools REQUIRED)
 find_package(rviz_visual_tools REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(graph_msgs REQUIRED)
+find_package(control_msgs REQUIRED)
 
 # Function to add executable with common settings
 function(add_common_executable target_name source_file)
@@ -30,6 +31,7 @@ function(add_common_executable target_name source_file)
     ${rviz_visual_tools_LIBRARIES})
   ament_target_dependencies(${target_name}
     rclcpp
+    control_msgs
     moveit_ros_planning_interface
     moveit_visual_tools
     rviz_visual_tools

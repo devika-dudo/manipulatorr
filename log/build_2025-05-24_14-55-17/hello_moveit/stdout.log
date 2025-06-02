@@ -1,3 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target hello_moveit[0m
-[ 25%] [32mBuilding CXX object CMakeFiles/hello_moveit.dir/src/easy.cpp.o[0m
-[ 75%] Built target plan_around_objects

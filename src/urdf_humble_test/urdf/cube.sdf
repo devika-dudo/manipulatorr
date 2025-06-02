@@ -1,24 +1,58 @@
 <?xml version="1.0" ?>
 <sdf version="1.6">
   <model name="cube">
-    <static>true</static>
+    <static>false</static>  <!-- Now movable -->
+
     <link name="link">
+      <inertial>
+        <mass>0.05</mass> <!-- 50 grams, light cube -->
+        <inertia>
+          <ixx>0.000083</ixx>
+          <iyy>0.000083</iyy>
+          <izz>0.000083</izz>
+          <ixy>0.0</ixy>
+          <ixz>0.0</ixz>
+          <iyz>0.0</iyz>
+        </inertia>
+      </inertial>
+
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.05 0.05 0.05</size>  <!-- 5 cm x 5 cm x 5 cm cube -->
+            <size>0.05 0.05 0.05</size>
           </box>
         </geometry>
         <material>
-          <ambient>1 0 0 1</ambient>   <!-- Red color -->
+          <ambient>1 0 0 1</ambient>
         </material>
       </visual>
+
       <collision name="collision">
         <geometry>
           <box>
-            <size>0.05 0.05 0.05</size>  <!-- Same size for collision -->
+            <size>0.05 0.05 0.05</size>
           </box>
         </geometry>
+
+        <surface>
+          <friction>
+            <ode>
+              <mu>0.8</mu>    <!-- lateral friction -->
+              <mu2>0.8</mu2>
+            </ode>
+          </friction>
+
+          <bounce>
+            <restitution_coefficient>0.0</restitution_coefficient>
+          </bounce>
+
+          <contact>
+            <ode>
+              <soft_cfm>0.001</soft_cfm>   <!-- soften contact -->
+              <soft_erp>0.2</soft_erp>
+            </ode>
+          </contact>
+        </surface>
       </collision>
     </link>
   </model>
