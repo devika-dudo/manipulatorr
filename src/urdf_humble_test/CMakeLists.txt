@@ -7,6 +7,7 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
+
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
@@ -14,7 +15,15 @@ find_package(ament_cmake REQUIRED)
 install(
   DIRECTORY launch urdf config meshes
   DESTINATION share/${PROJECT_NAME}
- )
+)
+
+# ADD THIS SECTION - Install Python scripts
+install(PROGRAMS
+  scripts/fake_joint_publisher.py
+  DESTINATION lib/${PROJECT_NAME}
+  RENAME fake_joint_publisher
+)
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   find_package(gazebo_ros REQUIRED)

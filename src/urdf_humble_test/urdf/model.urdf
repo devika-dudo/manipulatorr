@@ -340,6 +340,14 @@
       effort="0"
       velocity="0" />
   </joint>
+  <link name="fake_link"></link>
+  <joint name="fake_joint" type="revolute">
+  <parent link="link_5"/>
+  <child link="fake_link"/>
+  <origin xyz="0 0 0" rpy="0 0 0"/>
+  <axis xyz="0 0 1"/>  <!-- Yaw axis -->
+  <limit lower="-3.14159" upper="3.14159" effort="0" velocity="0"/>
+</joint>
   <link
     name="link_6">
     <inertial>
@@ -645,7 +653,7 @@
       </state_interface>
       <state_interface name="velocity"/>
    </joint>
-   
+  
    <joint name="joint_6">
      <command_interface name="position"/>
      <state_interface name="position">
@@ -716,6 +724,7 @@
       <joint>joint_3</joint>
       <joint>joint_4</joint>
       <joint>joint_5</joint>
+      <joint>fake_joint</joint>
       <joint>joint_6</joint>
       <!-- Do not include joint_7 here, it's a mimic joint -->
     </joints>

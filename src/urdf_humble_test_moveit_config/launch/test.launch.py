@@ -1,5 +1,8 @@
+# Author: Addison Sears-Collins
+# Date: July 31, 2024
+# Description: Launch MoveIt 2 for the myCobot robotic arm
+ 
 import os
-import yaml
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, EmitEvent, RegisterEventHandler
 from launch.conditions import IfCondition
@@ -10,17 +13,18 @@ from launch_ros.actions import Node
 from launch_ros.substitutions import FindPackageShare
 from moveit_configs_utils import MoveItConfigsBuilder
 import xacro
-
+ 
+ 
 def generate_launch_description():
-
+ 
     # Constants for paths to different files and folders
     package_name_gazebo = 'urdf_humble_test'
     package_name_moveit_config = 'urdf_humble_test_moveit_config'
-
+ 
     # Set the path to different files and folders
     pkg_share_gazebo = FindPackageShare(package=package_name_gazebo).find(package_name_gazebo)
     pkg_share_moveit_config = FindPackageShare(package=package_name_moveit_config).find(package_name_moveit_config)
-
+ 
     # Paths for various configuration files
     urdf_file_path = 'urdf/model.urdf'
     srdf_file_path = 'config/urdf_humble_test.srdf'
@@ -30,7 +34,7 @@ def generate_launch_description():
     pilz_cartesian_limits_file_path = 'config/pilz_cartesian_limits.yaml'
     initial_positions_file_path = 'config/initial_positions.yaml'
     rviz_config_file_path = 'rviz/move_group.rviz'
-
+ 
     # Set the full paths
     urdf_model_path = os.path.join(pkg_share_gazebo, urdf_file_path)
     srdf_model_path = os.path.join(pkg_share_moveit_config, srdf_file_path)
@@ -40,29 +44,25 @@ def generate_launch_description():
     pilz_cartesian_limits_file_path = os.path.join(pkg_share_moveit_config, pilz_cartesian_limits_file_path)
     initial_positions_file_path = os.path.join(pkg_share_moveit_config, initial_positions_file_path)
     rviz_config_file = os.path.join(pkg_share_moveit_config, rviz_config_file_path)
-
-    # Load kinematics.yaml and print for debugging
-    with open(kinematics_file_path, 'r') as f:
-        kinematics_params = yaml.safe_load(f)
-    print("Loaded kinematics.yaml content:")
-    print(kinematics_params)
-
+ 
     # Launch configuration variables
     use_sim_time = LaunchConfiguration('use_sim_time')
     use_rviz = LaunchConfiguration('use_rviz')
-
+ 
     # Declare the launch arguments
     declare_use_sim_time_cmd = DeclareLaunchArgument(
         name='use_sim_time',
         default_value='true',
         description='Use simulation (Gazebo) clock if true')
-
+ 
     declare_use_rviz_cmd = DeclareLaunchArgument(
         name='use_rviz',
         default_value='true',
         description='Whether to start RViz')
-
-    # Build MoveIt configuration
+ 
+    # Load the robot configuration
+    # Typically, you would also have this line in here: .robot_description(file_path=urdf_model_path)
+    # Another launch file is launching the robot description.
     moveit_config = (
         MoveItConfigsBuilder("urdf_humble_test", package_name=package_name_moveit_config)
         .trajectory_execution(file_path=moveit_controllers_file_path)
@@ -71,7 +71,7 @@ def generate_launch_description():
         .robot_description_kinematics(file_path=kinematics_file_path)
         .planning_pipelines(
             pipelines=["ompl", "pilz_industrial_motion_planner"],
-            default_planning_pipeline="ompl"
+            default_planning_pipeline="pilz_industrial_motion_planner"
         )
         .planning_scene_monitor(
             publish_robot_description=False,
@@ -81,16 +81,7 @@ def generate_launch_description():
         .pilz_cartesian_limits(file_path=pilz_cartesian_limits_file_path)
         .to_moveit_configs()
     )
-
-    # Print some loaded parameters from MoveItConfigsBuilder for verification
-    print("MoveItConfigsBuilder output:")
-    print("robot_description keys:", moveit_config.robot_description.keys())
-    print("robot_description_semantic keys:", moveit_config.robot_description_semantic.keys())
-    print("robot_description_kinematics keys:", moveit_config.robot_description_kinematics.keys())
-    print("joint_limits keys:", moveit_config.joint_limits.keys())
-    print("planning_pipelines keys:", moveit_config.planning_pipelines.keys())
-    print("trajectory_execution keys:", moveit_config.trajectory_execution.keys())
-
+     
     # Start the actual move_group node/action server
     start_move_group_node_cmd = Node(
         package="moveit_ros_move_group",
@@ -102,7 +93,7 @@ def generate_launch_description():
             {'start_state': {'content': initial_positions_file_path}},
         ],
     )
-
+ 
     # RViz
     start_rviz_node_cmd = Node(
         condition=IfCondition(use_rviz),
@@ -119,7 +110,7 @@ def generate_launch_description():
             {'use_sim_time': True}
         ],
     )
-
+     
     exit_event_handler = RegisterEventHandler(
         condition=IfCondition(use_rviz),
         event_handler=OnProcessExit(
@@ -127,20 +118,19 @@ def generate_launch_description():
             on_exit=EmitEvent(event=Shutdown(reason='rviz exited')),
         ),
     )
-
+     
     # Create the launch description and populate
     ld = LaunchDescription()
-
+ 
     # Declare the launch options
     ld.add_action(declare_use_sim_time_cmd)
     ld.add_action(declare_use_rviz_cmd)
-
+ 
     # Add any actions
     ld.add_action(start_move_group_node_cmd)
     ld.add_action(start_rviz_node_cmd)
-
+     
     # Clean shutdown of RViz
     ld.add_action(exit_event_handler)
-
+ 
     return ld
-

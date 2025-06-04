@@ -52,6 +52,12 @@ def generate_launch_description():
         output='screen',
     )
     
+    hand_controller_spawner = Node(
+        package='controller_manager',
+        executable='spawner',
+        arguments=['hand_controller'],
+        output='screen',
+    )
     
     # 4. Event Handlers for Sequential Loading
     load_joint_state_after_spawn = RegisterEventHandler(
@@ -64,7 +70,7 @@ def generate_launch_description():
     load_arm_and_hand_after_jsb = RegisterEventHandler(
         event_handler=OnProcessExit(
             target_action=joint_state_broadcaster_spawner,
-            on_exit=[arm_group_controller_spawner]
+            on_exit=[arm_group_controller_spawner, hand_controller_spawner]
         )
     )
     
