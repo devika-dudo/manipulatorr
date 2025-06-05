@@ -340,7 +340,19 @@
       effort="0"
       velocity="0" />
   </joint>
-  <link name="fake_link"></link>
+<link name="fake_link">
+  <inertial>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <mass value="0.001"/>
+    <inertia 
+      ixx="0.000001" 
+      ixy="0" 
+      ixz="0" 
+      iyy="0.000001" 
+      iyz="0" 
+      izz="0.000001"/>
+  </inertial>
+</link>
   <joint name="fake_joint" type="revolute">
   <parent link="link_5"/>
   <child link="fake_link"/>
@@ -653,7 +665,14 @@
       </state_interface>
       <state_interface name="velocity"/>
    </joint>
-  
+  <joint name="fake_joint">
+     <command_interface name="position"/>
+     <state_interface name="position">
+       <param name="initial_value">0.0</param>
+      </state_interface>
+      <state_interface name="velocity"/>
+   </joint>
+   
    <joint name="joint_6">
      <command_interface name="position"/>
      <state_interface name="position">
