@@ -1,0 +1,36 @@
+material Aruco0
+{
+  technique
+  {
+    pass
+    {
+      ambient 1.0 1.0 1.0 1.0
+      diffuse 1.0 1.0 1.0 1.0
+      specular 0.0 0.0 0.0 1.0
+      
+      texture_unit
+      {
+        texture /home/devika/robo_ws/src/urdf_humble_test/models/aruco_marker/materials/textures/aruco_0.png
+        filtering trilinear
+      }
+    }
+  }
+}
+material Aruco1
+{
+  technique
+  {
+    pass
+    {
+      ambient 1.0 1.0 1.0 1.0
+      diffuse 1.0 1.0 1.0 1.0
+      specular 0.0 0.0 0.0 1.0
+      
+      texture_unit
+      {
+        texture aruco_0.png
+        filtering trilinear
+      }
+    }
+  }
+}

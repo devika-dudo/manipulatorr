@@ -1,7 +1,8 @@
 from launch import LaunchDescription
-from launch.actions import IncludeLaunchDescription, RegisterEventHandler
+from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription, RegisterEventHandler
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.event_handlers import OnProcessExit
+from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
 import os
 from ament_index_python.packages import get_package_share_directory
@@ -10,7 +11,18 @@ def generate_launch_description():
     # Paths
     pkg_path = get_package_share_directory('urdf_humble_test')
     urdf_file = os.path.join(pkg_path, 'urdf', 'model.urdf')
+    custom_world_path = os.path.join(pkg_path, 'worlds', 'custom.world')
+
+    # Declare launch argument for world file path
+    declare_world_arg = DeclareLaunchArgument(
+        'world',
+        default_value=custom_world_path,
+        description='Full path to world file to load'
+    )
+    world = LaunchConfiguration('world')
     
+    print("Custom world path:", custom_world_path)
+    print("Exists:", os.path.isfile(custom_world_path))
     # Read URDF
     with open(urdf_file, 'r') as infp:
         robot_description_content = infp.read()
@@ -32,7 +44,7 @@ def generate_launch_description():
         arguments=[
             '-entity', 'urdf_humble_test',
             '-topic', '/robot_description',
-            '-x', '0', '-y', '0', '-z', '0.2'
+            '-x', '0', '-y', '0', '-z', '0.17'
         ],
         output='screen'
     )
@@ -75,11 +87,13 @@ def generate_launch_description():
     )
     
     return LaunchDescription([
+        declare_world_arg,
         # Launch Gazebo
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource([
                 os.path.join(get_package_share_directory('gazebo_ros'), 'launch', 'gazebo.launch.py')
-            ])
+            ]),
+            launch_arguments={'world': world}.items()
         ),
         # Robot Description Publisher
         robot_state_publisher_node,
@@ -89,3 +103,4 @@ def generate_launch_description():
         load_joint_state_after_spawn,
         load_arm_and_hand_after_jsb
     ])
+

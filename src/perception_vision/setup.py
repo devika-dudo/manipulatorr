@@ -21,6 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
         'yolov8_obb_node = perception_vision.yolov8_obb_node:main',
+        'depth_reader = perception_vision.depth_reader:main',  
         ],
     },
 )

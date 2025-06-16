@@ -70,8 +70,10 @@ class PoseEstimatorNode(Node):
             [cx + w, cy + h],
             [cx - w, cy + h]
         ], dtype=np.float32)
-
-        success, rvec, tvec = cv2.solvePnP(object_points, image_points, self.camera_matrix, self.dist_coeffs)
+        self.get_logger().info(f'Bounding box: w={w}, h={h}')
+        self.get_logger().info(f'Image points: {image_points}')
+        self.get_logger().info(f'Camera matrix: {self.camera_matrix}')
+        success, rvec, tvec = cv2.solvePnP(object_points, image_points, self.camera_matrix,     self.dist_coeffs)
 
         if success:
             position_msg = PointStamped()
@@ -97,7 +99,7 @@ class PoseEstimatorNode(Node):
                 self.get_logger().info(f'Cylinder position (base_link): ({transformed_pose.point.x}, {transformed_pose.point.y}, {transformed_pose.point.z})')
 
             except Exception as e:
-                self.get_logger().warn(f'Could not transform pose to world: {e}')
+                self.get_logger().warn(f'Could not transform pose to base_link: {e}')
 
         else:
             self.get_logger().warn('solvePnP failed')

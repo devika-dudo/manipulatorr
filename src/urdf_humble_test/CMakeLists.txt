@@ -8,33 +8,36 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 
-# uncomment the following section in order to fill in
-# further dependencies manually.
+# Uncomment and add any dependencies you need here
 # find_package(<dependency> REQUIRED)
 
 install(
-  DIRECTORY launch urdf config meshes
+  DIRECTORY launch urdf config meshes worlds models
   DESTINATION share/${PROJECT_NAME}
 )
 
-# ADD THIS SECTION - Install Python scripts
+# Install Python scripts
 install(PROGRAMS
   scripts/fake_joint_publisher.py
   DESTINATION lib/${PROJECT_NAME}
   RENAME fake_joint_publisher
 )
 
+install(PROGRAMS
+  scripts/pick_and_place_automation.py
+  DESTINATION lib/${PROJECT_NAME}
+)
+install(PROGRAMS
+  scripts/autonomous_pick_and_place.py
+  DESTINATION lib/${PROJECT_NAME}
+)
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   find_package(gazebo_ros REQUIRED)
-  # the following line skips the linter which checks for copyrights
-  # comment the line when a copyright and license is added to all source files
   set(ament_cmake_copyright_FOUND TRUE)
-  # the following line skips cpplint (only works in a git repo)
-  # comment the line when this package is in a git repo and when
-  # a copyright and license is added to all source files
   set(ament_cmake_cpplint_FOUND TRUE)
   ament_lint_auto_find_test_dependencies()
 endif()
 
 ament_package()
+

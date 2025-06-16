@@ -1,0 +1,7 @@
+cuboid_dimension_estimator:
+  ros__parameters:
+    size_threshold: 0.15  # 15cm threshold
+    min_depth: 0.1        # 10cm minimum depth
+    max_depth: 5.0        # 5m maximum depth
+    debug_mode: true      # Enable debug visualization
+

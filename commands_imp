@@ -4,3 +4,12 @@ ros2 topic pub /arm_joint_command std_msgs/msg/Float64MultiArray "{data: [0.0, 0
 ros2 topic pub /arm_position_command geometry_msgs/msg/PointStamped "{header: {stamp: {sec: 0, nanosec: 0}, frame_id: 'base_link'}, point: {x: 0.4, y: 0.2, z: 0.3}}" --once
 ros2 run urdf_humble_test fake_joint_publisher e --ros-args -p use_sim_time:=true
 ros2 topic pub /arm_xyz_rpy_command std_msgs/Float64MultiArray "data: [0.3, 0.2, 0.4, 0.1, 0.0, 0.0]" --once
+ros2 action send_goal /hand_controller/follow_joint_trajectory control_msgs/action/FollowJointTrajectory "
+trajectory:
+  joint_names: ['joint_6']
+  points:
+  - positions: [1.0]
+    time_from_start: {sec: 2, nanosec: 0}
+"
+ros2 service call /ATTACHLINK linkattacher_msgs/srv/AttachLink "{model1_name: 'urdf_humble_test', link1_name: 'link_8', model2_name: 'cylinder', link2_name: 'link'}"
+

@@ -277,8 +277,8 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="-3.14"
-      upper="3.14"
+      lower="-1.0"
+      upper="1.14"
       effort="0"
       velocity="0" />
   </joint>
@@ -356,7 +356,7 @@
   <joint name="fake_joint" type="revolute">
   <parent link="link_5"/>
   <child link="fake_link"/>
-  <origin xyz="0 0 0" rpy="0 0 0"/>
+  <origin xyz="-0.06 -0.175 -0.2" rpy="-0.3 2.355 1.37"/>
   <axis xyz="0 0 1"/>  <!-- Yaw axis -->
   <limit lower="-3.14159" upper="3.14159" effort="0" velocity="0"/>
 </joint>
@@ -415,7 +415,7 @@
     <limit
       lower="0"
       upper="10"
-      effort="0"
+      effort="10"
       velocity="0" />
   </joint>
   <link
@@ -473,7 +473,7 @@
     <limit
       lower="-10"
       upper="0"
-      effort="0"
+      effort="5"
       velocity="0" />
     <mimic
       joint="joint_6"
@@ -535,7 +535,7 @@
     <limit
       lower="-0.042"
       upper="0"
-      effort="0"
+      effort="10"
       velocity="0" />
     <mimic
       joint="joint_6"
@@ -597,7 +597,7 @@
     <limit
       lower="-0.042"
       upper="0"
-      effort="0"
+      effort="10"
       velocity="0" />
     <mimic
       joint="joint_6"
@@ -622,6 +622,7 @@
 </joint>
   
   <!-- ROS2 CONTROL CONFIGURATION -->
+  
   <ros2_control name="GazeboSystem" type="system">
   <hardware>
     <plugin>gazebo_ros2_control/GazeboSystem</plugin>
@@ -713,6 +714,7 @@
 </ros2_control>
 
 <!-- GAZEBO PLUGINS -->
+
 <gazebo>
     <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
 <parameters>/home/devika/robo_ws/src/urdf_humble_test/config/controller_manager.yaml</parameters>
