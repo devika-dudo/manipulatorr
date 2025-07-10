@@ -277,8 +277,8 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="-1.0"
-      upper="1.14"
+      lower="-3.140"
+      upper="3.14"
       effort="0"
       velocity="0" />
   </joint>
@@ -352,13 +352,31 @@
       iyz="0" 
       izz="0.000001"/>
   </inertial>
+  <!-- Visual element - small, almost invisible cube -->
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <box size="0.005 0.005 0.005"/>  <!-- 5mm cube -->
+    </geometry>
+    <material name="fake_link_material">
+      <color rgba="1.0 0.0 0.0 0.1"/>  <!-- Red with 10% opacity - almost invisible -->
+    </material>
+  </visual>
+  
+  <!-- Collision element - same small cube -->
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <box size="0.005 0.005 0.005"/>  <!-- Same 5mm cube -->
+    </geometry>
+  </collision>
 </link>
   <joint name="fake_joint" type="revolute">
   <parent link="link_5"/>
   <child link="fake_link"/>
   <origin xyz="-0.06 -0.175 -0.2" rpy="-0.3 2.355 1.37"/>
   <axis xyz="0 0 1"/>  <!-- Yaw axis -->
-  <limit lower="-3.14159" upper="3.14159" effort="0" velocity="0"/>
+  <limit lower="-1.14159" upper="1.14159" effort="0" velocity="0"/>
 </joint>
   <link
     name="link_6">

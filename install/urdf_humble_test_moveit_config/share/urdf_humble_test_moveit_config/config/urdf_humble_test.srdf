@@ -16,7 +16,6 @@
         <joint name="joint_4"/>
         <joint name="joint_5"/>
         <joint name="fake_joint"/>
-
     </group>
     <group name="hand">
         <joint name="joint_6"/>
@@ -32,43 +31,50 @@
         <joint name="joint_6" value="0"/>
     </group_state>
     <group_state name="zero_pos" group="arm_group">
+        <joint name="fake_joint" value="0"/>
         <joint name="joint_1" value="0"/>
         <joint name="joint_2" value="0"/>
         <joint name="joint_3" value="0"/>
         <joint name="joint_4" value="0"/>
         <joint name="joint_5" value="0"/>
-        <joint name="fake_joint" value="0"/>
     </group_state>
     <group_state name="straight_up" group="arm_group">
+        <joint name="fake_joint" value="0"/>
         <joint name="joint_1" value="0"/>
         <joint name="joint_2" value="1.57"/>
         <joint name="joint_3" value="-3.14"/>
         <joint name="joint_4" value="-1.0235"/>
         <joint name="joint_5" value="0"/>
-        <joint name="fake_joint" value="0"/>
     </group_state>
     <group_state name="pick" group="arm_group">
+        <joint name="fake_joint" value="0"/>
         <joint name="joint_1" value="0"/>
         <joint name="joint_2" value="1.3705"/>
         <joint name="joint_3" value="-0.9368"/>
         <joint name="joint_4" value="0"/>
         <joint name="joint_5" value="0"/>
-        <joint name="fake_joint" value="0"/>
     </group_state>
     <group_state name="place" group="arm_group">
+        <joint name="fake_joint" value="0"/>
         <joint name="joint_1" value="-3.1053"/>
         <joint name="joint_2" value="1.7175"/>
         <joint name="joint_3" value="-1.0062"/>
         <joint name="joint_4" value="0"/>
         <joint name="joint_5" value="0"/>
-        <joint name="fake_joint" value="0"/>
     </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="hand_ee" parent_link="fake_link" group="hand"/>
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
     <disable_collisions link1="base_link" link2="link_1" reason="Adjacent"/>
     <disable_collisions link1="base_link" link2="link_2" reason="Never"/>
-        <disable_collisions link1="base_link" link2="link_3" reason="Never"/>
+    <disable_collisions link1="fake_link" link2="link_1" reason="Never"/>
+    <disable_collisions link1="fake_link" link2="link_3" reason="Never"/>
+    <disable_collisions link1="fake_link" link2="link_4" reason="Never"/>
+    <disable_collisions link1="fake_link" link2="link_5" reason="Adjacent"/>
+    <disable_collisions link1="fake_link" link2="link_6" reason="Never"/>
+    <disable_collisions link1="fake_link" link2="link_7" reason="Never"/>
+    <disable_collisions link1="fake_link" link2="link_8" reason="Default"/>
+    <disable_collisions link1="fake_link" link2="link_9" reason="Default"/>
     <disable_collisions link1="link_1" link2="link_2" reason="Adjacent"/>
     <disable_collisions link1="link_2" link2="link_3" reason="Adjacent"/>
     <disable_collisions link1="link_2" link2="link_4" reason="Never"/>
@@ -76,10 +82,7 @@
     <disable_collisions link1="link_4" link2="link_5" reason="Adjacent"/>
     <disable_collisions link1="link_4" link2="link_6" reason="Never"/>
     <disable_collisions link1="link_4" link2="link_7" reason="Never"/>
-        <disable_collisions link1="link_5" link2="link_3" reason="Never"/>
-                <disable_collisions link1="link_8" link2="link_2" reason="Never"/>
     <disable_collisions link1="link_4" link2="link_8" reason="Never"/>
-        <disable_collisions link1="link_3" link2="link_6" reason="Never"/>
     <disable_collisions link1="link_4" link2="link_9" reason="Never"/>
     <disable_collisions link1="link_5" link2="link_6" reason="Adjacent"/>
     <disable_collisions link1="link_5" link2="link_7" reason="Adjacent"/>

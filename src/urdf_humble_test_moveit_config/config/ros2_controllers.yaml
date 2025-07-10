@@ -24,16 +24,14 @@ arm_group_controller:
       - joint_5
       - fake_joint
     command_interfaces:
-      - position
+      []
     state_interfaces:
-      - position
-      - velocity
+      []
 hand_controller:
   ros__parameters:
     joints:
       - joint_6
     command_interfaces:
-      - position
+      []
     state_interfaces:
-      - position
-      - velocity
+      []

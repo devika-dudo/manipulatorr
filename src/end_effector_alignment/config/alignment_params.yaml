@@ -1,0 +1,17 @@
+# Configuration parameters for end effector alignment
+
+end_effector_aligner:
+  ros__parameters:
+    # Topics
+    aruco_topic: "/aruco/poses"
+    target_topic: "/end_effector_target"
+    
+    # Frames
+    target_frame: "camera_link_optical"  # Use camera frame for testing
+    
+    # Alignment parameters  
+    offset_distance: 0.1  # Distance to maintain from panel (meters)
+    use_sim_time: true    # Use simulation time
+    
+    # Logging level (DEBUG, INFO, WARN, ERROR)
+    ros__log_level: "INFO"

@@ -43,7 +43,7 @@ endfunction()
 
 # Add executables
 add_common_executable(hello_moveit easy.cpp)
-add_common_executable(plan_around_objects plan_around_objects.cpp)
+add_common_executable(hello_moveit_cartesian cartesian_planner.cpp)
 
 # Install launch files
 install(DIRECTORY launch/

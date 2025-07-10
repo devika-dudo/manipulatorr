@@ -28,7 +28,25 @@ material Aruco1
       
       texture_unit
       {
-        texture aruco_0.png
+        texture /home/devika/robo_ws/src/urdf_humble_test/models/aruco_marker/materials/textures/aruco_1.png
+        filtering trilinear
+      }
+    }
+  }
+}
+material Aruco2
+{
+  technique
+  {
+    pass
+    {
+      ambient 1.0 1.0 1.0 1.0
+      diffuse 1.0 1.0 1.0 1.0
+      specular 0.0 0.0 0.0 1.0
+      
+      texture_unit
+      {
+        texture /home/devika/robo_ws/src/urdf_humble_test/models/aruco_marker/materials/textures/aruco_2.png
         filtering trilinear
       }
     }
