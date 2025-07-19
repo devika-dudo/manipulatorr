@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.22)
-project(moveit_servo)
+project(my_moveit_servo)
 
 # C++ Libraries #################################################
 
@@ -111,6 +111,20 @@ add_executable(${SERVO_NODE_MAIN_NAME} src/servo_node_main.cpp)
 target_link_libraries(${SERVO_NODE_MAIN_NAME} ${SERVO_COMPONENT_NODE})
 ament_target_dependencies(${SERVO_NODE_MAIN_NAME} ${THIS_PACKAGE_INCLUDE_DEPENDS})
 
+# Keyboard servo executable
+add_executable(keyboard_servo_node
+  src/teleop_demo/keyboard_servo_example.cpp
+)
+ament_target_dependencies(keyboard_servo_node
+  ${THIS_PACKAGE_INCLUDE_DEPENDS}
+)
+target_link_libraries(keyboard_servo_node
+  ${SERVO_LIB_NAME}
+)
+add_executable(simple_keyboard src/teleop_demo/simple_keyboard.cpp)
+ament_target_dependencies(simple_keyboard ${THIS_PACKAGE_INCLUDE_DEPENDS})
+target_link_libraries(simple_keyboard ${SERVO_LIB_NAME})
+
 # An example of pose tracking
 add_executable(${POSE_TRACKING_DEMO_NAME} src/cpp_interface_demo/pose_tracking_demo.cpp)
 target_link_libraries(${POSE_TRACKING_DEMO_NAME} ${POSE_TRACKING})
@@ -147,9 +161,10 @@ install(
 install(
   TARGETS
     ${SERVO_NODE_MAIN_NAME}
-    ${CPP_DEMO_NAME}
+    keyboard_servo_node
     ${POSE_TRACKING_DEMO_NAME}
     ${FAKE_SERVO_CMDS_NAME}
+    simple_keyboard
   ARCHIVE DESTINATION lib
   LIBRARY DESTINATION lib
   RUNTIME DESTINATION lib/${PROJECT_NAME}

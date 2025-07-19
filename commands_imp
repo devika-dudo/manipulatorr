@@ -19,3 +19,7 @@ export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/home/devika/robo_ws/install/urdf_hu
 source /opt/ros/humble/setup.bash
 export GAZEBO_MODEL_PATH=/usr/share/gazebo-11/models:$GAZEBO_MODEL_PATH
 export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:$HOME/robo_ws/src/urdf_humble_test/models
+
+ros2 service call /servo_node/start_servo std_srvs/srv/Trigger
+
+
