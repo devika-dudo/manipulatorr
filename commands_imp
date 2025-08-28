@@ -1,4 +1,4 @@
-ros2 run gazebo_ros spawn_entity.py -entity ce -file ~/robo_ws/src/urdf_humble_test/urdf/cube.sdf -x -0.3 -y .3 -z 0
+ros2 run gazebo_ros spawn_entity.py -entity ce -file ~/robo_ws/src/urdf_humble_test/urdf/cube.sdf -x -0.2 -y .3 -z 0
 ros2 component standalone moveit_servo moveit_servo::JoyToServoPub
 ros2 topic pub /arm_joint_command std_msgs/msg/Float64MultiArray "{data: [0.0, 0.5, -0.5, 0.0, 0.0]}"
 ros2 topic pub /arm_position_command geometry_msgs/msg/PointStamped "{header: {stamp: {sec: 0, nanosec: 0}, frame_id: 'base_link'}, point: {x: 0.4, y: 0.2, z: 0.3}}" --once
@@ -22,4 +22,12 @@ export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:$HOME/robo_ws/src/urdf_humble_test/m
 
 ros2 service call /servo_node/start_servo std_srvs/srv/Trigger
 
+ros2 run my_moveit_servo keyboard_servo_node \
+  --ros-args \
+  -r /delta_twist_cmds:=/servo_node/delta_twist_cmds \
+  -r /delta_joint_cmds:=/servo_node/delta_joint_cmds
 
+export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/home/devika/robo_ws/install/urdf_humble_test/share/urdf_humble_test
+source /opt/ros/humble/setup.bash
+export GAZEBO_MODEL_PATH=/usr/share/gazebo-11/models:$GAZEBO_MODEL_PATH
+export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:$HOME/robo_ws/src/urdf_humble_test/models

@@ -40,7 +40,6 @@ hand_controller:
     state_interfaces:
       - position
       - velocity
-    open_loop_control: true
     allow_integration_in_goal_trajectories: false
     max_effort: 100.0
     use_sim_time: true  

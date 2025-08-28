@@ -30,11 +30,11 @@ def generate_launch_description():
         .robot_description(file_path="config/urdf_humble_test.urdf.xacro")
         .to_moveit_configs()
     )
-
+    
     # Load servo config
     servo_yaml = load_yaml("my_moveit_servo", "config/urdf_humble_test_simulated_config.yaml")
     servo_params = {"moveit_servo": servo_yaml}
-
+    
     # RViz node
     rviz_config_file = os.path.join(
         get_package_share_directory("my_moveit_servo"),
@@ -52,20 +52,8 @@ def generate_launch_description():
             moveit_config.robot_description_semantic,
         ],
     )
-
-    # REMOVED: Joint State Publisher - Gazebo will provide joint states
-    # Keeping this commented out since Gazebo is handling joint state publishing
-    # joint_state_publisher_node = Node(
-    #     package="joint_state_publisher",
-    #     executable="joint_state_publisher",
-    #     name="joint_state_publisher",
-    #     parameters=[{"use_gui": False}],
-    # )
-
-    # REMOVED: ros2_control_node - Let Gazebo handle hardware interface
-    # This was causing the GazeboSystem plugin error
-
-    # Composable node container
+    
+    # Only static transform broadcaster (no robot_state_publisher)
     container = ComposableNodeContainer(
         name="moveit_servo_demo_container",
         namespace="/",
@@ -73,25 +61,27 @@ def generate_launch_description():
         executable="component_container_mt",
         composable_node_descriptions=[
             ComposableNode(
-                package="robot_state_publisher",
-                plugin="robot_state_publisher::RobotStatePublisher",
-                name="robot_state_publisher",
-                parameters=[
-                    moveit_config.robot_description,
-                    {"use_sim_time": True}  # Use simulation time from Gazebo
-                ],
-            ),
-            ComposableNode(
-                package="tf2_ros",
-                plugin="tf2_ros::StaticTransformBroadcasterNode",
-                name="static_tf2_broadcaster",
-                parameters=[{"child_frame_id": "/base_link", "frame_id": "/world"}],
-            ),
+    package="tf2_ros",
+    plugin="tf2_ros::StaticTransformBroadcasterNode",
+    name="static_tf2_broadcaster",
+    parameters=[{
+        "child_frame_id": "base_link", 
+        "frame_id": "world",
+        # Add the Z offset that matches your Gazebo spawn
+        "translation.z": 0.17,  # This should match your spawn Z value
+        "translation.x": 0.0,
+        "translation.y": 0.0,
+        "rotation.x": 0.0,
+        "rotation.y": 0.0,
+        "rotation.z": 0.0,
+        "rotation.w": 1.0,
+    }],
+),
         ],
         output="screen",
     )
-
-    # Standalone servo node with improved timing
+    
+    # Servo node
     servo_node = Node(
         package="my_moveit_servo",
         executable="servo_node_main",
@@ -100,14 +90,13 @@ def generate_launch_description():
             moveit_config.robot_description,
             moveit_config.robot_description_semantic,
             moveit_config.robot_description_kinematics,
-            {"use_sim_time": True},  # Use simulation time from Gazebo
+            {"use_sim_time": True},
         ],
         output="screen",
     )
-
+    
     return LaunchDescription([
         rviz_node,
-        # joint_state_publisher_node,  # REMOVED - Let Gazebo handle joint states
         servo_node,
         container,
     ])

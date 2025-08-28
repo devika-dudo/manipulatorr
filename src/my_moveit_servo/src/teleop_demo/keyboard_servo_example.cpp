@@ -36,11 +36,11 @@ public:
     {
         // Initialize publishers
         twist_publisher_ = this->create_publisher<geometry_msgs::msg::TwistStamped>(
-            "/delta_twist_cmds", 10);
+            "/servo_node/delta_twist_cmds", 10);
         joint_publisher_ = this->create_publisher<control_msgs::msg::JointJog>(
-            "/delta_joint_cmds", 10);
+            "/servo_node/delta_joint_cmds", 10);
         gripper_publisher_ = this->create_publisher<control_msgs::msg::JointJog>(
-            "/delta_gripper_cmds", 10);  // Separate gripper topic
+            "/servo_node/delta_gripper_cmds", 10);  // Separate gripper topic
         mode_publisher_ = this->create_publisher<std_msgs::msg::Int8>(
             "/switch_command", 10);
         
@@ -273,6 +273,7 @@ private:
         if (isKeyActive('8')) joint_msg.velocities[3] = -JOINT_SPEED;
         if (isKeyActive('9')) joint_msg.velocities[4] = JOINT_SPEED;
         if (isKeyActive('0')) joint_msg.velocities[4] = -JOINT_SPEED;
+
         
         return joint_msg;
     }
@@ -284,7 +285,7 @@ private:
         gripper_msg.header.frame_id = "base_link";
         
         // Initialize gripper joint (joint 6)
-        gripper_msg.joint_names = {"gripper_joint"}; // or "joint_6" - adjust based on your setup
+        gripper_msg.joint_names = {"joint_6"}; // or "joint_6" - adjust based on your setup
         gripper_msg.velocities = {0.0};
         
         // Gripper control - check if keys are currently active

@@ -64,7 +64,7 @@ struct ServoParameters
   // Properties of incoming commands
   std::string cartesian_command_in_topic{ "~/delta_twist_cmds" };
   std::string joint_command_in_topic{ "~/delta_joint_cmds" };
-  std::string robot_link_command_frame{ "base_link" };
+  std::string robot_link_command_frame{ "link_5" };
   std::string command_in_type{ "unitless" };
   double linear_scale{ 0.4 };
   double rotational_scale{ 0.8 };
