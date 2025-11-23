@@ -225,7 +225,7 @@ private:
     {
         geometry_msgs::msg::TwistStamped twist_msg;
         twist_msg.header.stamp = this->get_clock()->now();
-        twist_msg.header.frame_id = "base_link";
+        twist_msg.header.frame_id = "";
         
         // Initialize all values to zero
         twist_msg.twist.linear.x = 0.0;
@@ -256,7 +256,7 @@ private:
     {
         control_msgs::msg::JointJog joint_msg;
         joint_msg.header.stamp = this->get_clock()->now();
-        joint_msg.header.frame_id = "base_link";
+        joint_msg.header.frame_id = "";
         
         // Initialize joint names and velocities for 5 joints (arm only, no gripper)
         joint_msg.joint_names = {"joint_1", "joint_2", "joint_3", "joint_4", "joint_5"};
@@ -282,7 +282,7 @@ private:
     {
         control_msgs::msg::JointJog gripper_msg;
         gripper_msg.header.stamp = this->get_clock()->now();
-        gripper_msg.header.frame_id = "base_link";
+        gripper_msg.header.frame_id = "";
         
         // Initialize gripper joint (joint 6)
         gripper_msg.joint_names = {"joint_6"}; // or "joint_6" - adjust based on your setup

@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.5.0)
+cmake_minimum_required(VERSION 3.16.0)
 project(gazebo_ros2_control)
 
 find_package(ament_cmake REQUIRED)

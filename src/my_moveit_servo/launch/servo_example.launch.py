@@ -68,7 +68,7 @@ def generate_launch_description():
         "child_frame_id": "base_link", 
         "frame_id": "world",
         # Add the Z offset that matches your Gazebo spawn
-        "translation.z": 0.17,  # This should match your spawn Z value
+        "translation.z": 0.0,  # This should match your spawn Z value
         "translation.x": 0.0,
         "translation.y": 0.0,
         "rotation.x": 0.0,

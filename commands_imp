@@ -31,3 +31,15 @@ export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/home/devika/robo_ws/install/urdf_hu
 source /opt/ros/humble/setup.bash
 export GAZEBO_MODEL_PATH=/usr/share/gazebo-11/models:$GAZEBO_MODEL_PATH
 export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:$HOME/robo_ws/src/urdf_humble_test/models
+
+ros2 run franka_servo_config fr3_keyboard_servo_parameterized --ros-args --params-file /ros2_ws/src/franka_servo_config/config/keyboard_servo_params.yaml
+
+ros2 launch franka_servo_config franka_servo_fixed.launch.py use_fake_hardware:=true
+
+export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/home/devika/old_arm/install/armold_urdf/share/armold_urdf
+source /opt/ros/humble/setup.bash
+export GAZEBO_MODEL_PATH=/usr/share/gazebo-11/models:$GAZEBO_MODEL_PATH
+export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:$HOME/robo_ws/src/armold_urdf/models
+
+
+
